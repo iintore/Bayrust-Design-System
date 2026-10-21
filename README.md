@@ -31,7 +31,7 @@ captured markup.
 |---|---|
 | `npm run docs:content` | Rebuilds the docs content (`src/content/content.json`, `public/ds/`) from the captures |
 | `npm run check` | Typecheck, tests and production build of the docs |
-| `npm run audit` | Opens every component page, waits for each preview and writes contact sheets to `research/docs/audit/` |
+| `npm run audit` | Opens every component page, waits for each live preview and saves a picture of each to `research/docs/audit/` (`THEME=light npm run audit` checks the light theme, into `audit-light/`) |
 | `npm run verify` | Checks every in-app specimen against the size it had in its window |
 
 ## Repository layout
@@ -77,10 +77,24 @@ takes Bayrust's own look: the layout, type and colours of the app's internal com
 | Patterns | States, overlays, drag & drop, onboarding |
 | Blocks, Templates, Flows | Live windows: each captured window's own DOM at its size, with open panels at their native frames |
 
-Every preview is the real thing. Shipped components run live in the harness (in an iframe, interactive, with Bayrust's
-shimmer skeleton while they load); the Code tab shows the JSX they're written with, read from React. Window states
-render from their captured DOM with their native panels. Nothing on the docs pages is a screenshot (only the image
-assets themselves, on Illustrations, Imagery and Logo).
+Every preview is the real thing. Shipped components run live in the harness, in an iframe, interactive; until a live
+preview is ready its captured markup stands in (it renders at once from the shipped stylesheets), so the shimmer
+skeleton only shows for an example with nothing to stand in. Live previews boot six at a time in the order they come
+into view. The Code tab shows the JSX each example is written with, read from React. Window states render from their
+captured DOM with their native panels. Nothing on the docs pages is a screenshot (only the image assets themselves, on
+Illustrations, Imagery and Logo).
+
+The docs' own navigation is Bayrust's component index (the playground sidebar), rendered with the shipped class names;
+`scripts/build_content.py` extracts the rules it needs from the bundle into `public/ds/native.css`, scoped to the nav.
+
+Two things Chrome can't do as the Mac app does, handled the way Bayrust itself does:
+
+- **Liquid Glass.** `-apple-visual-effect` only draws in WebKit on macOS. Elsewhere the glass controls (the launcher
+  footer's pills) take `--tahoe-dimmed-bg`, the material Bayrust uses when the glass is off, instead of turning
+  transparent over the list.
+- **Many windows on one page.** Every harness window used to hold its own backend event stream, which used up the
+  browser's six connections per host after a few live previews. One window now holds the stream and relays it to the
+  others (`harness/shim.js`).
 
 **Composed components.** Checklist items Bayrust doesn't ship (Tabs, Breadcrumb, Pagination, Avatar Group, charts…) are
 built in `design-system/site/composed.js` only from Bayrust's shipped React primitives, text styles and tokens, and are

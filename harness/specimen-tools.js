@@ -8,6 +8,14 @@
 (() => {
   const q = new URLSearchParams(location.search);
 
+  // Liquid Glass (-apple-visual-effect) only draws in WebKit on macOS. In other browsers the glass controls take the
+  // material Bayrust uses when the glass is off (an unfocused window), instead of turning transparent.
+  if (!CSS.supports('-apple-visual-effect', 'none')) {
+    const glass = document.createElement('style');
+    glass.textContent = '[macos] :is([class*="macos__control_"], [class*="macos__glass_"]) { background-color: var(--tahoe-dimmed-bg); }';
+    (document.head ?? document.documentElement).append(glass);
+  }
+
   // ------------------------------------------------------------------ JSX from React elements
   const nameOf = (type) => {
     if (typeof type === 'string') return type;
@@ -135,10 +143,10 @@
     return false;
   };
   (async () => {
-    for (let i = 0; i < 60 && !routerNavigate('/playground'); i++) await wait(200);
+    for (let i = 0; i < 240 && !routerNavigate('/playground'); i++) await wait(50);
     let button = null;
-    for (let i = 0; i < 60 && !button; i++) {
-      await wait(200);
+    for (let i = 0; i < 240 && !button; i++) {
+      await wait(50);
       const groups = [...document.querySelectorAll('[class*="ai-chat-playground__entryGroup"]')];
       for (const g of groups) {
         if (group && !g.querySelector('[class*="groupHeader"]')?.textContent.startsWith(group)) continue;
@@ -146,8 +154,14 @@
       }
     }
     button?.click();
-    await wait(800);
-    const stage = document.querySelector('[class*="ai-chat-playground__stage"]');
+    // the entry has rendered once its stage holds sections (or content), then give its layout a frame to settle
+    let stage = null;
+    for (let i = 0; i < 100; i++) {
+      await wait(50);
+      stage = document.querySelector('[class*="ai-chat-playground__stage"]');
+      if (stage?.firstElementChild?.childElementCount) break;
+    }
+    await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
     const root = stage?.firstElementChild ?? stage;
     const sections = root ? [...root.querySelectorAll(':scope > section')] : [];
     const target = sections[index] ?? root;
@@ -172,9 +186,14 @@
     const fit = target.getBoundingClientRect();
     const wraps = leaves.some((el, i) => el.getBoundingClientRect().height > leafHeights[i] + 4);
     if (wraps || fit.width < 40 || fit.height < 4) target.style.width = `${Math.min(Math.max(app.width, 320), 720)}px`;
+    // room around the section for what's drawn outside its box (borders and shadows of fields, focus rings);
+    // the docs take it back with a negative margin
+    const BLEED = 12;
+    document.body.style.setProperty('padding', `${BLEED}px`, 'important');
+    document.body.style.setProperty('margin', '0', 'important');
     const post = () => {
       const r = target.getBoundingClientRect();
-      parent.postMessage({ type: 'bayrust-specimen', id: q.get('id'), w: Math.ceil(r.width), h: Math.ceil(r.height) }, '*');
+      parent.postMessage({ type: 'bayrust-specimen', id: q.get('id'), w: Math.ceil(r.width) + 2 * BLEED, h: Math.ceil(r.height) + 2 * BLEED }, '*');
     };
     new ResizeObserver(post).observe(target);
     post();

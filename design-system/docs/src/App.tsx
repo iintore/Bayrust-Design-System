@@ -1,9 +1,9 @@
 import { useEffect, useMemo, useState } from 'react';
 import content from './content/content.json';
 import { Icon } from './icons';
-import { AppIcon } from './iconParts';
 import { navigate, usePath, pageHref } from './router';
-import { setThemeChoice, useThemeChoice } from './theme';
+import { setThemeChoice, useTheme, useThemeChoice } from './theme';
+import { indexSidebar, nativeRoot } from './native';
 import { SearchDialog } from './Search';
 import { PageView } from './PageView';
 import { allPages, type NavGroup } from './data';
@@ -28,11 +28,14 @@ function Sidebar({ path, open, onClose }: { path: string; open: boolean; onClose
       /* storage unavailable: the state lasts for this visit */
     }
   };
+  const theme = useTheme();
+  const ui = indexSidebar;
   const link = (item: { title: string; path: string }) => (
     <a
       key={item.path}
       href={pageHref(item.path)}
-      className={'doc-nav-link' + (item.path === path ? ' on' : '')}
+      className={ui.entry}
+      data-selected={item.path === path || undefined}
       aria-current={item.path === path ? 'page' : undefined}
       onClick={(e) => {
         e.preventDefault();
@@ -43,29 +46,28 @@ function Sidebar({ path, open, onClose }: { path: string; open: boolean; onClose
       {item.title}
     </a>
   );
+  // Bayrust's own component index (its playground sidebar), with the shipped classes; the chevron to collapse a
+  // group is the docs' addition
   return (
     <aside className={'doc-sidebar' + (open ? ' open' : '')} aria-label="Documentation">
-      <nav>
+      <nav {...nativeRoot(theme)}>
         {nav.map((g) => {
           const isCollapsed = collapsed[g.label];
+          const count = (g.items?.length ?? 0) + (g.sub ?? []).reduce((n, x) => n + x.items.length, 0);
           return (
-            <section key={g.label} className="doc-nav-group">
-              <button className="doc-nav-head" aria-expanded={!isCollapsed} onClick={() => setCollapsed({ ...collapsed, [g.label]: !isCollapsed })}>
-                <AppIcon name={g.icon} size={16} />
-                <span>{g.label}</span>
-                <span className="doc-nav-count">{(g.items?.length ?? 0) + (g.sub ?? []).reduce((n, x) => n + x.items.length, 0)}</span>
-                <span className="doc-nav-chev">
-                  <Icon.chevron />
+            <section key={g.label} className={ui.group}>
+              <button type="button" className={ui.header + ' doc-nav-head'} aria-expanded={!isCollapsed} onClick={() => setCollapsed({ ...collapsed, [g.label]: !isCollapsed })}>
+                <h2 className={ui.title}>{g.label}</h2>
+                <span className="doc-nav-end">
+                  <span className={ui.count}>{count}</span>
+                  <span className="doc-nav-chev">
+                    <Icon.chevron />
+                  </span>
                 </span>
               </button>
-              <div className="doc-nav-body" hidden={isCollapsed}>
+              <div className={ui.entries} hidden={isCollapsed}>
                 {g.items?.map(link)}
-                {g.sub?.map((s) => (
-                  <div key={s.label} className="doc-nav-sub">
-                    <div className="doc-nav-sublabel">{s.label}</div>
-                    <div className="doc-nav-subitems">{s.items.map(link)}</div>
-                  </div>
-                ))}
+                {g.sub?.flatMap((x) => x.items).map(link)}
               </div>
             </section>
           );

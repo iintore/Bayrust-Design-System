@@ -83,3 +83,8 @@
   --purple: rgb(106, 61, 236);
   --magenta: rgb(154, 27, 110);
 }
+@supports not (-apple-visual-effect: none) {
+  [macos] :is([class*="macos__control_"], [class*="macos__glass_"]) {
+    background-color: var(--tahoe-dimmed-bg);
+  }
+}

@@ -16,7 +16,7 @@ const BLEED = 24;
 // components sit on the docs canvas the way the playground puts them on its canvas.
 const HEAD = `<meta charset="utf-8">
 <link rel="stylesheet" href="${BASE}ds/bundle.css"><link rel="stylesheet" href="${BASE}ds/theme.css"><link rel="stylesheet" href="${BASE}ds/ds.css">
-<style>html{overflow:hidden;background:transparent} body{height:auto;min-height:0;margin:0} .pv{position:relative;padding:${BLEED}px;display:flex;flex-direction:column;align-items:center;gap:var(--space-12)} .pv>.ds-row{margin:0;justify-content:center} .pv .ds-label{display:none} .pv:has(>section){align-items:stretch} .pv-panel{border-radius:var(--radius-18);background:var(--color-window-base);box-shadow:var(--shadow-panel-shadow),inset 0 0 0 0.5px var(--fg-20);overflow:hidden}</style>`;
+<style>html{overflow:hidden;background:transparent} body{height:auto;min-height:0;margin:0} .pv{position:relative;padding:${BLEED}px;display:flex;flex-direction:column;align-items:center;gap:var(--space-12)} .pv>.ds-row{margin:0;justify-content:center} .pv .ds-label{display:none} .pv>section{width:max-content;max-width:100%} .pv section>:is(h2,h3),.pv [class*="playground-annotation__root"]{display:none!important} .pv-panel{border-radius:var(--radius-18);background:var(--color-window-base);box-shadow:var(--shadow-panel-shadow),inset 0 0 0 0.5px var(--fg-20);overflow:hidden}</style>`;
 const ROOT = (theme: string, extra = '') => `lang="en" macos="27" ${theme} class="scaled-tokens theme-root active-theme transitions-ready no-background${extra}" style="--zoom: 1; --color-system-accent: #007AFF;"`;
 
 function contextFrame(body: string, elWidth: number, elHeight: number | null | undefined, ctx: SpecimenContext) {
@@ -119,7 +119,7 @@ export function WindowPreview({ win, crop, caption }: { win: WindowRef; crop?: s
     if (!el) return;
     const ro = new ResizeObserver(() => setAvail(el.clientWidth));
     ro.observe(el);
-    const io = new IntersectionObserver((e) => e.some((x) => x.isIntersecting) && setVisible(true), { rootMargin: '600px' });
+    const io = new IntersectionObserver((e) => e.some((x) => x.isIntersecting) && setVisible(true), { rootMargin: '300px' });
     io.observe(el);
     return () => {
       ro.disconnect();
@@ -191,6 +191,23 @@ let harnessUp: Promise<boolean> | null = null;
 const harnessReachable = () => (harnessUp ??= fetch(`${HARNESS}/ds/manifest.json`, { mode: 'no-cors' }).then(() => true, () => false));
 let seq = 0;
 
+// Each live preview boots a copy of the app; a few at a time, in the order they come into view, so each one arrives
+// sooner than if every preview on the page started at once.
+const LIVE_AT_ONCE = 6;
+let running = 0;
+const waiting: (() => void)[] = [];
+function takeSlot(start: () => void) {
+  if (running < LIVE_AT_ONCE) {
+    running++;
+    start();
+  } else waiting.push(start);
+}
+function freeSlot() {
+  const next = waiting.shift();
+  if (next) next();
+  else running--;
+}
+
 /** Bayrust's loading shimmer (the shipped shimmer block: fg-5 → fg-10 → fg-5, 1.5 s). */
 function Skeleton({ w, h }: { w?: number; h?: number }) {
   return (
@@ -201,7 +218,7 @@ function Skeleton({ w, h }: { w?: number; h?: number }) {
 }
 
 /** A shipped component running in the harness: interactive, in the docs theme, sized from the message it posts. */
-export function LiveSpecimen({ live, fallback }: { live: NonNullable<ExampleData['live']>; fallback: React.ReactNode }) {
+export function LiveSpecimen({ live, fallback }: { live: NonNullable<ExampleData['live']>; fallback: React.ReactNode | null }) {
   const theme = useTheme();
   const [id] = useState(() => `s${++seq}`);
   const [state, setState] = useState<'checking' | 'loading' | 'ready' | 'off'>('checking');
@@ -211,54 +228,74 @@ export function LiveSpecimen({ live, fallback }: { live: NonNullable<ExampleData
   useEffect(() => {
     const el = box.current;
     if (!el) return;
-    const io = new IntersectionObserver((e) => e.some((x) => x.isIntersecting) && setVisible(true), { rootMargin: '400px' });
+    const io = new IntersectionObserver((e) => e.some((x) => x.isIntersecting) && setVisible(true), { rootMargin: '600px' });
     io.observe(el);
     return () => io.disconnect();
   }, []);
   useEffect(() => {
     if (!visible) return;
     let alive = true;
-    harnessReachable().then((ok) => alive && setState(ok ? 'loading' : 'off'));
+    let slot = false;
+    const release = () => {
+      if (slot) freeSlot();
+      slot = false;
+    };
+    harnessReachable().then((ok) => {
+      if (!alive) return;
+      if (!ok) return setState('off');
+      takeSlot(() => {
+        if (!alive) return freeSlot();
+        slot = true;
+        setState('loading');
+        // one that's slow (off screen, throttled) keeps loading but stops holding up the others
+        setTimeout(release, 6000);
+      });
+    });
     const onMessage = (e: MessageEvent) => {
       if (e.data?.type !== 'bayrust-specimen' || e.data.id !== id) return;
       setSize({ w: e.data.w, h: e.data.h });
       setState('ready');
+      release();
     };
     addEventListener('message', onMessage);
-    const timer = setTimeout(() => alive && setState((s) => (s === 'ready' ? s : 'off')), 20000);
+    const timer = setTimeout(() => {
+      if (!alive) return;
+      setState((s) => (s === 'ready' ? s : 'off'));
+      release();
+    }, 45000);
     return () => {
       alive = false;
       removeEventListener('message', onMessage);
       clearTimeout(timer);
+      release();
     };
   }, [visible, id, theme]);
   useEffect(() => {
     setSize(null);
-    setState((s) => (s === 'ready' ? 'loading' : s));
+    // a theme change reloads the preview: back in line for a slot
+    setState((s) => (s === 'ready' ? 'checking' : s));
   }, [theme]);
   const src = live.ds
     ? `${HARNESS}/ds/?specimen=${encodeURIComponent(live.ds)}${live.row != null ? `&row=${live.row}` : ''}&appearance=${theme}&id=${id}`
     : `${HARNESS}/ai-chat-window.html?specimen-playground=${encodeURIComponent(live.pg ?? '')}&section=${live.section ?? 0}&appearance=${theme}&id=${id}`;
-  // /ds/ specimens keep 24 pt of room for shadows inside their page; take it back so they sit where the layout puts them
-  const bleed = live.ds ? 24 : 0;
+  // specimens keep room for shadows and borders inside their page (/ds/ 24 pt, playground 12 pt); take it back so
+  // they sit where the layout puts them
+  const bleed = live.ds ? 24 : 12;
+  const ready = state === 'ready' && size;
+  // Until the live component reports in, its captured markup stands in (it renders at once from the local
+  // stylesheets); the shimmer only shows when there's nothing to stand in.
   return (
     <div ref={box} className="doc-live-specimen">
-      {state === 'off' ? (
-        fallback
-      ) : (
-        <>
-          {state !== 'ready' && <Skeleton />}
-          {visible && state !== 'checking' && (
-            <iframe
-              key={src}
-              title="Live preview"
-              src={src}
-              className="doc-live-frame"
-              // while loading it keeps a real size (a 1 px cross-origin frame is throttled and never finishes booting)
-              style={size ? { width: size.w, height: size.h, margin: -bleed, opacity: 1 } : { width: '100%', height: 160, opacity: 0, position: 'absolute', inset: 0, pointerEvents: 'none' }}
-            />
-          )}
-        </>
+      {!ready && (fallback ?? <Skeleton />)}
+      {visible && state !== 'checking' && state !== 'off' && (
+        <iframe
+          key={src}
+          title="Live preview"
+          src={src}
+          className="doc-live-frame"
+          // while loading it keeps a real size (a 1 px cross-origin frame is throttled and never finishes booting)
+          style={ready ? { width: size.w, height: size.h, margin: -bleed, opacity: 1 } : { width: '100%', height: 160, opacity: 0, position: 'absolute', inset: 0, pointerEvents: 'none' }}
+        />
       )}
     </div>
   );
@@ -326,7 +363,7 @@ export function Example({ title, html, jsx, live, image, imageSize, width, heigh
         <div className={'doc-playground-stage' + (tab === 'code' ? ' code' : '') + (win ? ' window' : '')}>
           {tab === 'preview' ? (
             <div className="doc-canvas" style={{ zoom }}>
-              {win ? <WindowPreview win={win} crop={crop} /> : live ? <LiveSpecimen live={live} fallback={staticPreview} /> : staticPreview}
+              {win ? <WindowPreview win={win} crop={crop} /> : live ? <LiveSpecimen live={live} fallback={html || image ? staticPreview : null} /> : staticPreview}
             </div>
           ) : (
             <CodeBlock code={code} lang={jsx ? 'tsx' : 'html'} bare />

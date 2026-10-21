@@ -128,7 +128,7 @@ const ATOMS = [
   { name: 'KeyboardShortcut', render: () => row(h(P.KeyboardShortcut, { shortcut: HOTKEY_ALT_SPACE }), h(P.KeyboardShortcut, { shortcut: HOTKEY_CMD_K, size: 'small' })) },
   { name: 'VisualShortcut', note: 'Keycap rendering used by hotkey recorders (onboarding launch step).', render: () => row(h(P.VisualShortcut, { shortcut: HOTKEY_ALT_SPACE })) },
   { name: 'TagIcon', render: () => row(['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'magenta'].map((c) => h(P.TagIcon, { key: c, color: c }))) },
-  { name: 'Avatar', render: () => row(h(P.Avatar, { initials: 'RC', width: 16, height: 16 }), h(P.Avatar, { initials: 'RC', width: 24, height: 24 }), h(P.Avatar, { initials: 'TL', width: 32, height: 32 })) },
+  { name: 'Avatar', render: () => row(h(P.Avatar, { initials: 'RC', width: 16, height: 16, placeholderColor: 'var(--blue)' }), h(P.Avatar, { initials: 'RC', width: 24, height: 24, placeholderColor: 'var(--purple)' }), h(P.Avatar, { initials: 'TL', width: 32, height: 32, placeholderColor: 'var(--orange)' })) },
   { name: 'AppIcon', note: 'App icons are served by the host (ipc://image) — here, this Mac’s real icons.', render: () => row(['/Applications/Raycast.app', '/System/Applications/Notes.app', '/System/Applications/Calendar.app', '/System/Library/CoreServices/Finder.app'].map((p) =>
     h('div', { key: p, style: { width: 32, height: 32 } }, h(P.AppIcon, { src: `ipc://image?path=${encodeURIComponent(p)}&width=64&height=64` })))) },
   { name: 'Logo', note: 'Logo renders its own <linearGradient id="logo-gradient">, so only one flavor is mounted at a time (as in the app).', render: (t) => h(LogoSwitcher, { t, size: 48 }) },

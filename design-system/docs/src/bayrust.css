@@ -98,42 +98,55 @@ kbd {
   color: var(--b-color-text-primary);
 }
 
-/* sidebar: the playground's entry list */
+/* sidebar: Bayrust's component index (its playground sidebar), styled by the shipped rules in native.css.
+   What the docs add: the groups' spacing as the playground lays them out, a header that collapses its group, and
+   link resets. */
 .doc-sidebar {
   width: var(--doc-sidebar-w);
   background: transparent;
   border-right: 0.5px solid var(--b-color-border-separator);
   padding: 16px 0 24px;
 }
-.doc-nav-group + .doc-nav-group {
-  margin-top: 16px;
-  border-top: 0;
-  padding-top: 0;
-}
-.doc-nav-head {
-  height: 24px;
-  padding: 0 12px;
-  font: 500 11px/16px var(--doc-font);
-  letter-spacing: 0.11px;
-  color: var(--b-color-text-secondary);
-  border-radius: 0;
-  width: 100%;
-}
-.doc-nav-head:hover {
+.doc-sidebar .doc-native {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
   background: transparent;
-  color: var(--b-color-text-primary);
 }
-.doc-nav-head > .doc-icon {
-  display: none;
+/* Bayrust's global reset, for this scope: border-box sizing and buttons that inherit their text */
+.doc-native,
+.doc-native *,
+.doc-native *::before,
+.doc-native *::after {
+  box-sizing: border-box;
 }
-/* chevron after the count: points down when the group is open, right when it's collapsed */
+.doc-native button {
+  font: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+.doc-native .doc-nav-head {
+  width: 100%;
+  padding-block: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+.doc-native .doc-nav-head h2 {
+  margin: 0;
+}
+.doc-nav-end {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+/* points down when the group is open, right when it's collapsed */
 .doc-nav-chev {
   display: inline-grid;
   place-items: center;
-  width: 16px;
-  height: 16px;
-  margin-left: 4px;
-  color: var(--b-color-text-tertiary);
+  width: var(--icon-16);
+  height: var(--icon-16);
+  color: var(--color-text-tertiary);
   transform: rotate(90deg);
   transition: transform 200ms var(--b-ease), color 150ms linear;
 }
@@ -141,47 +154,17 @@ kbd {
   transform: rotate(0deg);
 }
 .doc-nav-head:hover .doc-nav-chev {
-  color: var(--b-color-text-secondary);
+  color: var(--color-text-secondary);
 }
 .doc-nav-chev .doc-sym {
   width: 12px !important;
   height: 12px !important;
 }
-.doc-nav-count {
-  margin-left: auto;
-  font: 500 8px/10px var(--doc-font);
-  letter-spacing: 0.11px;
-  padding: 2px 4px;
-  border-radius: 8px;
-  background: var(--b-fg-10);
-  color: var(--b-fg-40);
+.doc-native [hidden] {
+  display: none;
 }
-.doc-nav-body {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  margin-top: 4px;
-}
-.doc-nav-link {
-  display: flex;
-  align-items: center;
-  height: 28px;
-  margin: 0 8px;
-  padding: 6px 8px;
-  border-radius: 8px;
-  font: 400 11px/16px var(--doc-font);
-  letter-spacing: 0.1px;
-  color: var(--b-color-text-primary);
+.doc-native a {
   text-decoration: none;
-}
-.doc-nav-link:hover {
-  background: var(--b-color-surface-list-hover);
-  text-decoration: none;
-}
-.doc-nav-link.on {
-  background: var(--b-color-surface-list-selection);
-  color: var(--b-color-text-primary);
-  font-weight: 400;
 }
 
 /* canvas and page header */
@@ -661,7 +644,8 @@ kbd {
 .doc-playground-tabs button.on {
   color: var(--b-color-text-primary);
   background: var(--b-color-window-base);
-  box-shadow: 0 0 0 0.5px var(--b-fg-20), var(--b-shadow-panel);
+  /* a selected segment: hairline and a tight drop, not a floating panel's shadow */
+  box-shadow: 0 0 0 0.5px var(--b-fg-20), 0 1px 2px var(--b-fg-10);
 }
 .doc-playground-btn {
   background: var(--b-color-surface-list-hover);
@@ -892,9 +876,6 @@ kbd {
 }
 .bs-action kbd + kbd {
   margin-left: -6px; /* the shortcut's 2 pt key gap, after the 8 pt gap */
-}
-.doc-nav-body[hidden] {
-  display: none;
 }
 
 /* live specimens and their loading state */

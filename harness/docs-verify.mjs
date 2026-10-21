@@ -23,7 +23,7 @@ for (const [p, pg] of Object.entries(content.pages)) {
   await page.goto(`http://localhost:5174/${p}`);
   // every member's previews, including those behind "Show N more"
   await page.waitForTimeout(1000);
-  for (const more of await page.locator('.doc-more[aria-expanded="false"]').all()) await more.click();
+  for (let more = page.locator('.doc-more[aria-expanded="false"]'); await more.count(); ) await more.first().click();
   await page.waitForTimeout(3000);
   const got = await page.evaluate(async () => {
     const frames = [...document.querySelectorAll('.doc-example')].map((ex) => ex.querySelector('iframe'));

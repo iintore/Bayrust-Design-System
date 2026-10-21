@@ -1,35 +1,37 @@
 // Audit of every component preview in the docs: opens each family page (dev server :5174, harness :4317), brings
 // every example into view, waits for it, and records whether it rendered and at what size, with a picture of each
 // preview container for review. Output: research/docs/audit/ (audit.json, <page>--<n>.png, sheets/<page>.png)
-// Usage: node docs-audit.mjs [pagePathRegex]
+// Usage: node docs-audit.mjs [pagePathRegex]   (THEME=light audits the light theme, into research/docs/audit-light/)
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { chromium } from 'playwright-core';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
-const out = path.resolve(here, '../research/docs/audit');
+const theme = process.env.THEME === 'light' ? 'light' : 'dark';
+const out = path.resolve(here, theme === 'light' ? '../research/docs/audit-light' : '../research/docs/audit');
 await fs.mkdir(out, { recursive: true });
 const content = JSON.parse(await fs.readFile(path.resolve(here, '../design-system/docs/src/content/content.json'), 'utf8'));
 const only = process.argv[2] ? new RegExp(process.argv[2]) : null;
 const pages = Object.entries(content.pages).filter(([p, pg]) => (pg.members || pg.examples) && (!only || only.test(p)));
 
 const browser = await chromium.launch({ channel: 'chrome', headless: true });
-const ctx = await browser.newContext({ viewport: { width: 1440, height: 1000 }, deviceScaleFactor: 1, colorScheme: 'dark' });
+const ctx = await browser.newContext({ viewport: { width: 1440, height: 1000 }, deviceScaleFactor: 1, colorScheme: theme });
 const page = await ctx.newPage();
 const results = [];
 for (const [p] of pages) {
   await page.goto(`http://localhost:5174/${p}`);
   await page.waitForTimeout(1500);
   // every member's previews, including those behind "Show N more"
-  for (const more of await page.locator('.doc-more[aria-expanded="false"]').all()) await more.click();
+  for (let more = page.locator('.doc-more[aria-expanded="false"]'); await more.count(); ) await more.first().click();
   const n = await page.locator('.doc-example').count();
   for (let i = 0; i < n; i++) {
     const ex = page.locator('.doc-example').nth(i);
     await ex.scrollIntoViewIfNeeded();
     // live specimens: wait until the frame reports in (or falls back); windows and markup: a short settle
     const kind = await ex.evaluate((el) => (el.querySelector('.doc-live-specimen') ? 'live' : el.querySelector('.doc-window') ? 'window' : 'markup'));
-    if (kind === 'live') await ex.locator('.doc-skeleton').waitFor({ state: 'detached', timeout: 25000 }).catch(() => undefined);
+    // live: the captured markup shows first; wait until the live component has swapped in
+    if (kind === 'live') await ex.locator('.doc-live-frame[style*="opacity: 1"]').waitFor({ timeout: 30000 }).catch(() => undefined);
     await page.waitForTimeout(kind === 'window' ? 2500 : 900);
     const info = await ex.evaluate((el) => {
       const stage = el.querySelector('.doc-playground-stage');
@@ -39,7 +41,7 @@ for (const [p] of pages) {
       return {
         title: el.querySelector('h3')?.textContent ?? '',
         member: el.closest('.doc-member')?.querySelector('h2')?.firstChild?.textContent ?? '',
-        loading: !!el.querySelector('.doc-skeleton'),
+        loading: !!el.querySelector('.doc-skeleton') || (!!el.querySelector('.doc-live-specimen') && !el.querySelector('.doc-live-frame[style*="opacity: 1"]')),
         frame: r ? [Math.round(r.width), Math.round(r.height)] : null,
         // horizontal centring of the preview inside its container
         offCentre: r && sr ? Math.round(((r.left + r.right) / 2 - (sr.left + sr.right) / 2)) : null,

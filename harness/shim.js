@@ -38,8 +38,18 @@
   // Native child windows (action panel, menus) are window.open() documents rendered into from this window.
   const open = window.open;
   window.open = function (...a) { const w = open.apply(this, a); try { w && patchWindow(w); } catch {} return w; };
-  // Backend notifications → the UI's notification entry point.
-  const events = new EventSource('/__backend-events');
-  events.onmessage = (e) => { const { method, data } = JSON.parse(e.data); window.ipcNotification?.(method, JSON.stringify(data)); };
+  // Backend notifications → the UI's notification entry point. One window holds the event stream and relays it to
+  // the others: a stream per window would use up the browser's six connections per host once a page embeds several
+  // live windows (the docs' previews), and every window after that would stall loading.
+  const deliver = (raw) => { const { method, data } = JSON.parse(raw); window.ipcNotification?.(method, JSON.stringify(data)); };
+  const relay = typeof BroadcastChannel === 'function' ? new BroadcastChannel('bayrust-backend-events') : null;
+  const holdStream = () => new Promise(() => {
+    const events = new EventSource('/__backend-events');
+    events.onmessage = (e) => { deliver(e.data); relay?.postMessage(e.data); };
+  });
+  if (relay && navigator.locks) {
+    relay.onmessage = (e) => deliver(e.data);
+    navigator.locks.request('bayrust-backend-events', holdStream); // held until this window closes
+  } else holdStream();
   window.webkit = { messageHandlers: new Proxy({ ipcRequest }, { get: (t, k) => t[k] ?? (t[k] = other(String(k))) }) };
 })();
