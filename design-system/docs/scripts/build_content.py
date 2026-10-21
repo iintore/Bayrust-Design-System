@@ -54,10 +54,9 @@ for mode in ['dark', 'light']:
     toks = raw[mode]['tokens']
     decl = [f'  {k}: {v["resolved"]};' for k, v in toks.items() if '.active-theme' in v['declaredIn']]
     theme_css.append(f'.active-theme[{mode}] {{\n' + '\n'.join(decl) + '\n}')
-# Liquid Glass (-apple-visual-effect) is drawn by WebKit on macOS only. Elsewhere the glass controls (the launcher
-# footer's pills, toolbars over content) would be transparent and collide with what scrolls under them, so they take
-# the material Bayrust itself uses when the glass is off (an unfocused window): --tahoe-dimmed-bg.
-theme_css.append('@supports not (-apple-visual-effect: none) {\n  [macos] :is([class*="macos__control_"], [class*="macos__glass_"]) {\n    background-color: var(--tahoe-dimmed-bg);\n  }\n}')
+# Liquid Glass (-apple-visual-effect) is drawn by WebKit on macOS only; elsewhere glass surfaces take Bayrust's own
+# non-glass styling, shared with the harness
+theme_css.append(open(os.path.join(ROOT, 'harness', 'glass-fallback.css')).read().strip())
 open(os.path.join(DS, 'theme.css'), 'w').write('/* Bayrust Dark / Bayrust Light base colours, as the runtime sets them on .active-theme. */\n' + '\n'.join(theme_css) + '\n')
 
 # ---------------------------------------------------------------- shipped component styles for the docs chrome

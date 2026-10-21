@@ -1,0 +1,19 @@
+/* Liquid Glass (-apple-visual-effect) only draws in WebKit on macOS. Elsewhere these surfaces would be transparent,
+   so each takes the non-glass styling Bayrust itself uses for it. Loaded by every harness page (specimen-tools.js)
+   and appended to the docs' theme.css (scripts/build_content.py). */
+@supports not (-apple-visual-effect: none) {
+  /* controls and glass panels, sidebars: the material Bayrust uses when the glass is off (an unfocused window) */
+  [macos] :is([class*="macos__control_"], [class*="macos__glass_"], [class*="macos__sidebar_"]) {
+    background-color: var(--tahoe-dimmed-bg);
+  }
+  /* the sidebar's backdrop: as in an unfocused window */
+  [class*="sidebar-background__root_"]::before {
+    background-color: var(--fg-5);
+  }
+  /* an alert inside its window: the surface Bayrust gives it on Windows */
+  [macos] [class*="alert-primitive__content_"][data-is-in-native-view="false"] {
+    background-image: linear-gradient(var(--color-panel-overlay), var(--color-panel-overlay)), linear-gradient(to bottom, var(--color-panel-background), var(--color-panel-background));
+    background-color: var(--color-panel-backdrop);
+    box-shadow: inset 0 0 0 var(--half-pixel) var(--fg-5), inset 0 1px 0 var(--fg-5), 0 20px 24px #00000052;
+  }
+}

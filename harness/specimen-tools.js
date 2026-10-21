@@ -8,11 +8,11 @@
 (() => {
   const q = new URLSearchParams(location.search);
 
-  // Liquid Glass (-apple-visual-effect) only draws in WebKit on macOS. In other browsers the glass controls take the
-  // material Bayrust uses when the glass is off (an unfocused window), instead of turning transparent.
+  // Liquid Glass (-apple-visual-effect) only draws in WebKit on macOS; in other browsers glass surfaces take Bayrust's
+  // own non-glass styling (glass-fallback.css) instead of turning transparent.
   if (!CSS.supports('-apple-visual-effect', 'none')) {
-    const glass = document.createElement('style');
-    glass.textContent = '[macos] :is([class*="macos__control_"], [class*="macos__glass_"]) { background-color: var(--tahoe-dimmed-bg); }';
+    const glass = document.createElement('link');
+    Object.assign(glass, { rel: 'stylesheet', href: '/__mocks/glass-fallback.css' });
     (document.head ?? document.documentElement).append(glass);
   }
 
