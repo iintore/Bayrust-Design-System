@@ -1,0 +1,78 @@
+{
+  "name": "@krackedui/bayrust",
+  "version": "0.1.0",
+  "description": "Bayrust design system: tokens, the shipped component styles and components, themes and icons of Bayrust 2.8.2",
+  "author": "Tony Lewis MANZI",
+  "license": "UNLICENSED",
+  "private": false,
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iintore/Bayrust-Design-System.git",
+    "directory": "packages/bayrust"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "*.css",
+    "./dist/components.js",
+    "./dist/react.js"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./react": {
+      "types": "./dist/react.d.ts",
+      "default": "./dist/react.js"
+    },
+    "./components": {
+      "types": "./dist/components.d.ts",
+      "default": "./dist/components.js"
+    },
+    "./vite": {
+      "types": "./dist/vite.d.ts",
+      "default": "./dist/vite.js"
+    },
+    "./css": "./dist/css/bayrust.css",
+    "./css/components.css": "./dist/css/components.css",
+    "./css/theme.css": "./dist/css/theme.css",
+    "./tokens.css": "./dist/tokens/tokens.css",
+    "./tokens.json": "./dist/tokens/tokens.json",
+    "./icons/*": "./dist/icons/*",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "bayrust": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "prepack": "node scripts/build.mjs",
+    "test": "node scripts/test-install.mjs"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "vite": ">=5"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "vite": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.55.0"
+  }
+}

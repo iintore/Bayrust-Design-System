@@ -1,0 +1,8 @@
+# Vercel only needs the docs app (its content and public/ds are committed); everything else stays out of the upload.
+/*
+!/vercel.json
+!/design-system
+/design-system/*
+!/design-system/docs
+/design-system/docs/node_modules
+/design-system/docs/dist

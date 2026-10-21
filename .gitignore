@@ -30,3 +30,6 @@ harness/.venv/
 
 # audit and verify logs
 research/docs/*.log
+
+# the package build output (npm run build in packages/bayrust)
+packages/bayrust/dist/

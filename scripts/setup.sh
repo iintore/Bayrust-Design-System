@@ -24,5 +24,7 @@ echo "› harness dependencies"
 npm --prefix harness ci --no-audit --no-fund
 echo "› docs dependencies"
 npm --prefix design-system/docs ci --no-audit --no-fund
+echo "› package dev dependencies"
+npm --prefix packages/bayrust ci --no-audit --no-fund
 
 echo "Done. Run 'npm run harness' and, in another terminal, 'npm run docs' (http://localhost:5174)."

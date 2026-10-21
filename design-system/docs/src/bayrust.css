@@ -1007,3 +1007,10 @@ kbd {
 .doc-more[aria-expanded='true']::after {
   transform: rotate(-90deg);
 }
+
+/* a live-only example where the harness isn't running (a static host) */
+.doc-live-off {
+  margin: 0;
+  font: 400 13px/20px var(--doc-font);
+  color: var(--b-color-text-tertiary);
+}

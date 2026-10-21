@@ -13,6 +13,8 @@
     "docs:build": "npm --prefix design-system/docs run build",
     "check": "npm --prefix design-system/docs run check",
     "audit": "node harness/docs-audit.mjs",
-    "verify": "node harness/docs-verify.mjs"
+    "verify": "node harness/docs-verify.mjs",
+    "package:build": "npm --prefix packages/bayrust run build",
+    "package:test": "npm --prefix packages/bayrust test"
   }
 }

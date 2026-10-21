@@ -343,8 +343,76 @@ Everything on these pages is the app itself: its stylesheets, tokens, icon sprit
 }
 pages['installation'] = {
     'title': 'Installation',
-    'lead': 'Start the harness to use the live app, then the docs site.',
-    'md': """## The live app
+    'lead': 'Install the design system as a package, or run the live app and these docs from the repository.',
+    'md': """## Install the package
+
+```install
+@krackedui/bayrust
+```
+
+It's published under the `@krackedui` scope with restricted access: log in to npm as a member of the scope (`npm login`) before installing.
+
+| Import | What it is |
+|---|---|
+| `@krackedui/bayrust/css` | The shipped component styles, both themes and their fonts |
+| `@krackedui/bayrust` | Design tokens (typed), the CSS-module class names of the shipped styles, icon names, the root's attributes |
+| `@krackedui/bayrust/react` | `ThemeRoot`, `Icon`, and `Bayrust`, which runs a shipped component inside your React app |
+| `@krackedui/bayrust/components` | `loadBayrust()`: every shipped component by name, without React of your own |
+| `@krackedui/bayrust/vite` | Serves and bundles the files the components and icons load at runtime |
+| `@krackedui/bayrust/tokens.css`, `tokens.json`, `icons/*.svg` | Tokens as CSS and JSON, and the 730 icons as files |
+
+## Use it
+
+Add the Vite plugin, which serves the shipped components' runtime at `/bayrust/` and copies it into your build:
+
+```ts
+// vite.config.ts
+import bayrust from '@krackedui/bayrust/vite';
+
+export default { plugins: [bayrust()] };
+```
+
+Then wrap your UI in a theme root and use the components:
+
+```tsx
+import '@krackedui/bayrust/css';
+import { ThemeRoot, Icon, Bayrust } from '@krackedui/bayrust/react';
+
+export function Toolbar() {
+  return (
+    <ThemeRoot theme="dark">
+      <Icon name="magnifying-glass" />
+      <Bayrust component="Button" props={{ text: 'Run Script', variant: 'secondary', onClick: () => run() }} />
+    </ThemeRoot>
+  );
+}
+```
+
+`Bayrust` mounts the shipped component with the React it was built with, inside yours; its props, including event handlers, are passed as given. The shipped styles also work with your own markup through the class names:
+
+```tsx
+import { classes } from '@krackedui/bayrust';
+
+<button className={classes['action-button'].button}>Copy</button>;
+```
+
+Without Vite (Next.js and others), copy the runtime into your public folder once, and the default `/bayrust/` finds it:
+
+```bash
+npx bayrust copy public/bayrust
+```
+
+Without React of your own:
+
+```ts
+import { loadBayrust } from '@krackedui/bayrust/components';
+
+const ui = await loadBayrust();
+const Toggle = await ui.get('Toggle');
+ui.render(document.querySelector('#settings'), ui.h(Toggle, { checked: true }));
+```
+
+## The live app
 
 The harness serves the shipped frontend, runs the app's own backend in a sandbox, and answers the native host's calls.
 

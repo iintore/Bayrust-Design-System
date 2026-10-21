@@ -1,0 +1,12 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "npm --prefix design-system/docs ci --no-audit --no-fund",
+  "buildCommand": "npm --prefix design-system/docs run build",
+  "outputDirectory": "design-system/docs/dist",
+  "rewrites": [{ "source": "/((?!ds/|assets/).*)", "destination": "/index.html" }],
+  "headers": [
+    { "source": "/ds/(.*)", "headers": [{ "key": "cache-control", "value": "public, max-age=86400" }] },
+    { "source": "/assets/(.*)", "headers": [{ "key": "cache-control", "value": "public, max-age=31536000, immutable" }] }
+  ]
+}

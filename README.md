@@ -33,11 +33,14 @@ captured markup.
 | `npm run check` | Typecheck, tests and production build of the docs |
 | `npm run audit` | Opens every component page, waits for each live preview and saves a picture of each to `research/docs/audit/` (`THEME=light npm run audit` checks the light theme, into `audit-light/`) |
 | `npm run verify` | Checks every in-app specimen against the size it had in its window |
+| `npm run package:build` | Builds the `@krackedui/bayrust` package (`packages/bayrust/dist/`) |
+| `npm run package:test` | Packs it, installs it with npm, pnpm and yarn into a Vite + React app, and checks it in Chrome |
 
 ## Repository layout
 
 | Path | Contents |
 |---|---|
+| `packages/bayrust/` | The `@krackedui/bayrust` package: tokens, styles, icons and the shipped components, for npm, pnpm and yarn |
 | `design-system/docs/` | The documentation site (Vite + React). `scripts/` builds its content; `scripts/coverage.py` maps the 226-item checklist to Bayrust |
 | `design-system/site/` | The `/ds/` component runtime inside the live app; `composed.js` holds the components composed from Bayrust parts |
 | `design-system/tokens/`, `assets/` | Design tokens (Dark and Light), 730 icons, native catalog images, the icon-workflow package |
@@ -48,6 +51,26 @@ captured markup.
 
 Not in git: `node_modules/`, the backend's Node binary (`npm run setup` downloads the official release), the sandbox's
 runtime state (recreated on first run) and audit output. The REA graphs are stored as `.json.xz`; `xz -dk` restores them.
+
+## Package and hosting
+
+**Package.** `packages/bayrust` builds `@krackedui/bayrust` (see its README). It's set to publish with restricted
+access, so only members of the `@krackedui` scope can install it:
+
+```bash
+cd packages/bayrust && npm login && npm publish
+```
+
+**Docs on Vercel.** `vercel.json` builds only the docs app and serves it as a static site (deep links included);
+`.vercelignore` keeps the upload to the docs folder (about 56 MB). Without the harness, each preview shows its captured
+markup instead of the live component. From the repository root:
+
+```bash
+npx vercel login
+npx vercel deploy
+```
+
+`vercel deploy` makes a preview deployment, which Vercel Authentication can keep to your team; `--prod` publishes it.
 
 ## The live app
 

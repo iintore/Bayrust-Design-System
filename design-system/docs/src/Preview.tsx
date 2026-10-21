@@ -286,7 +286,7 @@ export function LiveSpecimen({ live, fallback }: { live: NonNullable<ExampleData
   // stylesheets); the shimmer only shows when there's nothing to stand in.
   return (
     <div ref={box} className="doc-live-specimen">
-      {!ready && (fallback ?? <Skeleton />)}
+      {!ready && (fallback ?? (state === 'off' ? <p className="doc-live-off">The live preview runs with the harness (npm run harness).</p> : <Skeleton />))}
       {visible && state !== 'checking' && state !== 'off' && (
         <iframe
           key={src}
