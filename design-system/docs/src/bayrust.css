@@ -431,11 +431,87 @@ kbd {
   background: var(--b-fg-5);
   border: 0;
 }
-.doc-code pre,
+/* room on the right for the language and Copy, and enough height for Copy on a one-line block */
+.doc-code pre {
+  min-height: 44px;
+  margin: 0;
+  padding: 14px 120px 14px 16px;
+  font: 400 11px/17px var(--doc-mono);
+  background: transparent;
+}
 .doc-code code {
   font: 400 11px/17px var(--doc-mono);
   background: transparent;
   padding: 0;
+}
+.doc-code-lang {
+  top: 10px;
+  right: 80px;
+  font: 500 11px/24px var(--doc-font);
+  letter-spacing: 0.11px;
+  color: var(--b-color-text-tertiary);
+}
+.doc-code-copy {
+  top: 9px;
+  right: 9px;
+  height: 26px;
+  padding: 0 8px 0 6px;
+  border: 0;
+  border-radius: 8px;
+  font: 500 12px/1 var(--doc-font);
+  color: var(--b-color-text-secondary);
+  background: var(--b-color-surface-list-hover);
+  box-shadow: none;
+}
+.doc-code-copy:hover {
+  color: var(--b-color-text-primary);
+  background: var(--b-color-surface-list-selection);
+}
+.doc-code-copy svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* install block: the package managers as the preview bar's tabs, over the command */
+.doc-install {
+  margin: 8px 0 16px;
+  border: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--b-fg-5);
+}
+.doc-install-tabs {
+  display: flex;
+  gap: 4px;
+  padding: 8px;
+  border-bottom: 0.5px solid var(--b-color-border-separator);
+}
+.doc-install-tabs button {
+  height: 28px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 8px;
+  background: none;
+  font: 500 13px/20px var(--doc-font);
+  letter-spacing: 0.11px;
+  color: var(--b-color-text-secondary);
+  cursor: pointer;
+}
+.doc-install-tabs button:hover {
+  color: var(--b-color-text-primary);
+}
+.doc-install-tabs button.on {
+  color: var(--b-color-text-primary);
+  background: var(--b-color-window-base);
+  box-shadow: 0 0 0 0.5px var(--b-fg-20), 0 1px 2px var(--b-fg-10);
+}
+.doc-install .doc-code.bare {
+  margin: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.doc-install .doc-code.bare pre {
+  padding-right: 96px;
 }
 
 /* outline, pager, footer */
@@ -677,6 +753,9 @@ kbd {
 .doc-playground-stage.code .doc-code {
   background: transparent;
   border-radius: 16px;
+}
+.doc-playground-stage.code .doc-code pre {
+  padding-right: 16px;
 }
 .doc-playground-stage.code .doc-code-copy {
   display: none;
@@ -973,7 +1052,7 @@ kbd {
 .doc-swatch-chips span.dark { color: var(--b-fg-on-dark); text-shadow: none; }
 .doc-search-backdrop { background: var(--b-bg-40); }
 .doc-scrim { background: var(--b-bg-40); }
-.doc-theme button.on, .doc-install-tabs button.on { box-shadow: 0 0 0 0.5px var(--b-fg-20); }
+.doc-theme button.on { box-shadow: 0 0 0 0.5px var(--b-fg-20); }
 
 /* more previews of a member, a click away */
 .doc-more {
