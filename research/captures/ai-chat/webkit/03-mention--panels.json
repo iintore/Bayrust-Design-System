@@ -1,0 +1,18 @@
+[
+  {
+    "x" : 0,
+    "y" : 0,
+    "file" : "03-mention--dialog.png",
+    "w" : 540,
+    "h" : 480,
+    "feature" : "dialog"
+  },
+  {
+    "x" : 324,
+    "feature" : "popover",
+    "w" : 280,
+    "file" : "03-mention--popover-1.png",
+    "h" : 280,
+    "y" : 582
+  }
+]

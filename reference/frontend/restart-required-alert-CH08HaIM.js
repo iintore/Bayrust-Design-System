@@ -1,0 +1,5 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="bdef6a4f-45b5-5e1b-9369-2fd11d65f088")}catch(e){}}();
+import{n as e}from"./logger-DNVmeXhU.js";import{m as t}from"./contrast-improvement-C3QOPKP9.js";import{t as n}from"./services-CI1JjB8Y.js";import{n as r}from"./string-sklO6-8f.js";import{t as i}from"./alert-store-DE6kVJ-t.js";import{n as a}from"./command-icons-CrAR_roK.js";import{a as o}from"./toast-store-yMR5z_cG.js";function s(s){i.open({icon:a.internal[t()],title:`Restart Required`,description:`To apply changes a restart is required.`,primaryAction:{title:`Restart Now`,action:async()=>{o.open({title:r(`Restarting Raycast`),variant:`pending`});try{await s.restart?.(),await n.ipc.host.raycast.restart()}catch(t){e.error(`app`,`Failed to restart application`,{error:t})}}},dismissAction:{action:async()=>await s.dismiss?.()}})}export{s as t};
+//# sourceMappingURL=restart-required-alert-CH08HaIM.js.map
+//# debugId=bdef6a4f-45b5-5e1b-9369-2fd11d65f088

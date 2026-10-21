@@ -1,0 +1,18 @@
+{
+  "name": "bayrust-design-system",
+  "private": true,
+  "version": "2.8.2",
+  "description": "Bayrust design system: Raycast 2.8.2 rebuilt from its shipped frontend, with a live harness and documentation site",
+  "author": "Tony Lewis MANZI",
+  "type": "module",
+  "scripts": {
+    "setup": "sh scripts/setup.sh",
+    "harness": "node harness/server.mjs",
+    "docs": "npm --prefix design-system/docs run dev -- --port 5174 --strictPort",
+    "docs:content": "npm --prefix design-system/docs run content",
+    "docs:build": "npm --prefix design-system/docs run build",
+    "check": "npm --prefix design-system/docs run check",
+    "audit": "node harness/docs-audit.mjs",
+    "verify": "node harness/docs-verify.mjs"
+  }
+}

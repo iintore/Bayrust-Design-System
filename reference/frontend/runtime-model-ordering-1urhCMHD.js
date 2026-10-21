@@ -1,0 +1,5 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="40d7b9e4-b122-5462-b2de-848e6c166a6e")}catch(e){}}();
+import{n as e}from"./text-BMG-lb-T.js";var t=new Set([`automatic`,`raycast-auto`,`raycast-auto-v2`,`raycast-fastest`,`raycast-smartest`]);function n(e,t,n){if(t===void 0||t.length===0)return[...e];let r=new Map(t.map((e,t)=>[e.itemId,t]));return e.map((e,t)=>({item:e,index:t,rank:r.get(n(e))??1/0})).sort((e,t)=>e.rank-t.rank||e.index-t.index).map(({item:e})=>e)}function r(e,t,n){let r=[];for(let i of e??[]){if(r.length>=t)break;n(i.itemId)&&r.push(i.itemId)}return r}function i(e){return!t.has(e)}function a(t,n){let r=e(t.name,n.name);return r===0?t.providerName.localeCompare(n.providerName):r}export{t as a,r as i,i as n,n as r,a as t};
+//# sourceMappingURL=runtime-model-ordering-1urhCMHD.js.map
+//# debugId=40d7b9e4-b122-5462-b2de-848e6c166a6e

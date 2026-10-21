@@ -1,0 +1,39 @@
+{
+ "name": "feedback",
+ "viewport": {
+  "width": 420,
+  "height": 714
+ },
+ "states": [
+  {
+   "id": "01-empty",
+   "label": "Feedback \u2014 empty form",
+   "url": "/feedback-window.html",
+   "wait": 5000
+  },
+  {
+   "id": "02-category",
+   "label": "Feedback \u2014 category menu",
+   "url": "/feedback-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Select a Category",
+     "wait": 1500
+    }
+   ]
+  },
+  {
+   "id": "fs-01-empty",
+   "label": "Feedback \u2014 full screen",
+   "url": "/feedback-window.html",
+   "viewport": {
+    "width": 1710,
+    "height": 1107
+   },
+   "wait": 5000
+  }
+ ],
+ "measured": "Real Raycast window on this Mac (CGWindowList): 420x714",
+ "chrome": "standard"
+}

@@ -1,0 +1,211 @@
+{
+ "name": "launcher",
+ "viewport": {
+  "width": 750,
+  "height": 475
+ },
+ "states": [
+  {
+   "id": "01-root",
+   "label": "Launcher \u2014 root search",
+   "url": "/main-window.html",
+   "wait": 5000,
+   "actions": []
+  },
+  {
+   "id": "02-search-clip",
+   "label": "Launcher \u2014 search \u201cclip\u201d",
+   "url": "/main-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "type": "clip",
+     "wait": 1500
+    }
+   ]
+  },
+  {
+   "id": "03-calculator",
+   "label": "Launcher \u2014 inline calculator \u201c24*7+12\u201d",
+   "url": "/main-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "type": "24*7+12",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "04-actions",
+   "label": "Launcher \u2014 Action Panel (\u2318K)",
+   "url": "/main-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "press": "Meta+k",
+     "wait": 1500
+    }
+   ]
+  },
+  {
+   "id": "05-search-window",
+   "label": "Launcher \u2014 search \u201cwindow\u201d",
+   "url": "/main-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "type": "window",
+     "wait": 1500
+    }
+   ]
+  },
+  {
+   "id": "06-clipboard-history",
+   "label": "Launcher \u2014 Clipboard History command",
+   "url": "/main-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "type": "clipboard history",
+     "wait": 1500
+    },
+    {
+     "press": "Enter",
+     "wait": 3000
+    }
+   ]
+  },
+  {
+   "id": "07-emoji",
+   "label": "Launcher \u2014 Search Emoji & Symbols command",
+   "url": "/main-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "type": "emoji",
+     "wait": 1500
+    },
+    {
+     "press": "Enter",
+     "wait": 3000
+    }
+   ]
+  },
+  {
+   "id": "08-store",
+   "label": "Launcher \u2014 Store command",
+   "url": "/main-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "type": "store",
+     "wait": 1500
+    },
+    {
+     "press": "Enter",
+     "wait": 6000
+    }
+   ]
+  },
+  {
+   "id": "09-search-files",
+   "label": "Launcher \u2014 Search Files command",
+   "url": "/main-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "type": "search files",
+     "wait": 1500
+    },
+    {
+     "press": "Enter",
+     "wait": 3000
+    }
+   ]
+  },
+  {
+   "id": "10-quick-ai",
+   "label": "Launcher \u2014 Quick AI (Tab)",
+   "url": "/main-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "type": "what is raycast",
+     "wait": 800
+    },
+    {
+     "press": "Tab",
+     "wait": 2500
+    }
+   ]
+  },
+  {
+   "id": "11-create-snippet",
+   "label": "Launcher \u2014 Create Snippet form",
+   "url": "/main-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "type": "create snippet",
+     "wait": 1500
+    },
+    {
+     "press": "Enter",
+     "wait": 3000
+    }
+   ]
+  },
+  {
+   "id": "12-create-quicklink",
+   "label": "Launcher \u2014 Create Quicklink form",
+   "url": "/main-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "type": "create quicklink",
+     "wait": 1500
+    },
+    {
+     "press": "Enter",
+     "wait": 3000
+    }
+   ]
+  },
+  {
+   "id": "13-no-results",
+   "label": "Launcher \u2014 no results",
+   "url": "/main-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "type": "zzqqxx",
+     "wait": 1500
+    }
+   ]
+  },
+  {
+   "id": "00-compact",
+   "label": "Launcher \u2014 compact mode (Window Mode: Compact)",
+   "url": "/main-window.html?windowMode=compact",
+   "viewport": {
+    "width": 750,
+    "height": 64
+   },
+   "wait": 5000,
+   "notes": "Compact window = search bar only; height from --main-window-header-height (64px macOS). Derived, not yet measured on a real compact window."
+  },
+  {
+   "id": "00-compact-typing",
+   "label": "Launcher \u2014 compact mode, typing expands",
+   "url": "/main-window.html?windowMode=compact",
+   "wait": 5000,
+   "actions": [
+    {
+     "type": "clip",
+     "wait": 1500
+    }
+   ]
+  }
+ ]
+}

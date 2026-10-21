@@ -1,0 +1,5 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="4f7b94ab-8505-570c-b348-f0303c562a39")}catch(e){}}();
+import{o as e}from"./chunk-CMxvf4Kt.js";import{n as t}from"./logger-DNVmeXhU.js";import{n}from"./time-BgPLLP_H.js";import{t as r}from"./services-CI1JjB8Y.js";import{r as i,t as a}from"./extensions-DiqfEUH7.js";var o=e(n(),1);async function s(e){let t=i();e.error?await t?.onRedirect({state:e.state,error:e.error,errorDescription:e.errorDescription}):e.code&&await t?.onRedirect({state:e.state,authorizationCode:e.code})}function c(){o.useEffect(()=>r.nodeExtensionUI.on(({data:e})=>{if(e.type===`handleExtensionOAuthCallback`){s(e.params);return}let n=a[e.type];if(!n){t.error(`extension::node`,`Unknown extension UI handler`,{metadata:{data:e}});return}n(e.params)}),[])}export{c as t};
+//# sourceMappingURL=use-extension-ui-handlers-C8WUGM3q.js.map
+//# debugId=4f7b94ab-8505-570c-b348-f0303c562a39

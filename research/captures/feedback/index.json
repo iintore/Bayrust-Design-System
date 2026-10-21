@@ -1,0 +1,65 @@
+[
+ {
+  "id": "01-empty",
+  "label": "Feedback — empty form",
+  "url": "http://localhost:4317/feedback-window.html",
+  "viewport": {
+   "width": 420,
+   "height": 714
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "settings.getContentZoom",
+   "raycast.webViewStateChanged",
+   "settings.getInternalExtensionSettings",
+   "userDefaults.get",
+   "auth.getUser",
+   "settings.getGeneralSettings",
+   "themes.getById",
+   "system.getManagedSignInPolicy",
+   "auth.getToken"
+  ]
+ },
+ {
+  "id": "02-category",
+  "label": "Feedback — category menu",
+  "url": "http://localhost:4317/feedback-window.html",
+  "viewport": {
+   "width": 420,
+   "height": 714
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "settings.getContentZoom",
+   "raycast.webViewStateChanged",
+   "settings.getInternalExtensionSettings",
+   "userDefaults.get",
+   "auth.getUser",
+   "settings.getGeneralSettings",
+   "themes.getById",
+   "system.getManagedSignInPolicy",
+   "auth.getToken"
+  ]
+ },
+ {
+  "id": "fs-01-empty",
+  "label": "Feedback — full screen",
+  "url": "http://localhost:4317/feedback-window.html",
+  "viewport": {
+   "width": 1710,
+   "height": 1107
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "settings.getContentZoom",
+   "raycast.webViewStateChanged",
+   "settings.getInternalExtensionSettings",
+   "userDefaults.get",
+   "auth.getUser",
+   "settings.getGeneralSettings",
+   "themes.getById",
+   "system.getManagedSignInPolicy",
+   "auth.getToken"
+  ]
+ }
+]

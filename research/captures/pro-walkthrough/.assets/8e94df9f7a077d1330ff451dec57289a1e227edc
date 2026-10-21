@@ -1,0 +1,1 @@
+.icon-button__root_3d5f4:where([data-size=mini]){width:var(--space-16)}.icon-button__root_3d5f4:where([data-size=small]){width:var(--space-24)}.icon-button__root_3d5f4:where([data-size=medium]){width:var(--space-32)}.icon-button__icon_799b3{width:var(--icon-16);height:var(--icon-16)}

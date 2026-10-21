@@ -1,0 +1,51 @@
+{
+ "name": "theme-studio",
+ "viewport": {
+  "width": 1370,
+  "height": 570
+ },
+ "states": [
+  {
+   "id": "01-raycast-dark",
+   "label": "Theme Studio \u2014 Raycast Dark",
+   "url": "/theme-studio-window.html",
+   "wait": 5000
+  },
+  {
+   "id": "02-sky",
+   "label": "Theme Studio \u2014 Sky",
+   "url": "/theme-studio-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Sky",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "03-raycast-light",
+   "label": "Theme Studio \u2014 Raycast Light",
+   "url": "/theme-studio-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Raycast Light",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "fs-01-raycast-dark",
+   "label": "Theme Studio \u2014 full screen",
+   "url": "/theme-studio-window.html",
+   "viewport": {
+    "width": 1710,
+    "height": 1107
+   },
+   "wait": 5000
+  }
+ ],
+ "measured": "Real Raycast window on this Mac (CGWindowList): 1370x570",
+ "chrome": "standard"
+}

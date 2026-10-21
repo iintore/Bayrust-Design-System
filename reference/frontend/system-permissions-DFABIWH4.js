@@ -1,0 +1,5 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="40d95422-3438-5dd0-a0b2-439c1f894aea")}catch(e){}}();
+function e(e){if(!e)return;let t=Number(e.split(`.`)[0]);return Number.isFinite(t)?t:void 0}function t(t,n){let r=e(t);return r!==void 0&&r>=n}function n(t,n){let r=e(t),i=e(n);return r!==void 0&&i!==void 0&&r<i}function r(e){let t=e.split(`.`);return t.at(-1)===`0`?`v${t.slice(0,2).join(`.`)}`:`v${e}`}function i(e){return e.split(`.`).slice(0,2).join(`.`)}var a=27;function o(e){return t(e,a)?`Device Control and Data Access`:`Accessibility`}function s(e,t){return e.toLowerCase().endsWith(` access`)?e:`${e} ${t}`}var c=o(typeof window>`u`?void 0:window.osVersion);export{e as a,i,s as n,n as o,r,c as t};
+//# sourceMappingURL=system-permissions-DFABIWH4.js.map
+//# debugId=40d95422-3438-5dd0-a0b2-439c1f894aea

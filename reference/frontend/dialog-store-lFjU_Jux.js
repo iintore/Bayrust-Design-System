@@ -1,0 +1,5 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="343fdfec-8535-5140-a41d-cd10ab9e5692")}catch(e){}}();
+import{o as e}from"./chunk-CMxvf4Kt.js";import{n as t}from"./time-BgPLLP_H.js";import{i as n}from"./hud-store-D8l7mVGu.js";var r=e(t(),1),i=new class extends n{dialogContent=null;open(e){this.dialogContent=e,this.notify()}close(){this.dialogContent?.onClose&&this.dialogContent.onClose(),this.dismiss()}dismiss(){this.dialogContent=null,this.notify()}getDialog(){return this.dialogContent}},a={open:i.open.bind(i),get:i.getDialog.bind(i)},o=i.close.bind(i),s=i.dismiss.bind(i),c=i.subscribe.bind(i);function l(){let e=r.useMemo(()=>i.subscribe.bind(i),[]),t=r.useMemo(()=>i.getDialog.bind(i),[]);return r.useSyncExternalStore(e,t)}export{l as a,c as i,a as n,s as r,o as t};
+//# sourceMappingURL=dialog-store-lFjU_Jux.js.map
+//# debugId=343fdfec-8535-5140-a41d-cd10ab9e5692

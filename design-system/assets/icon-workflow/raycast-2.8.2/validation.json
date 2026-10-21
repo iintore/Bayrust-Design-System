@@ -1,0 +1,2943 @@
+{
+  "renderingRequested": false,
+  "rasterizedExports": 0,
+  "rendererErrors": [],
+  "transparentAt64px": [],
+  "renderSkipped": [
+    {
+      "file": "svg/inline-svg-c008677d33-053a2826f2.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-2ab3944b04-738acda0a1.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-ebcc87c3a9-496ba8600f.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-d2c38cc21a-99f8c6546d.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-ca0a5efdbd-6a978868df.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-8a197b6bdd-acab71e928.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-879019f236-b27b4aa59f.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-1813f4ac30-6d6ed0eba9.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-d1f95b86b7-e3c4923a30.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-cc8101cfca-69422e1236.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-2936a38d06-4993bc0e76.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-ceeda99cad-b9731b5087.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-399fe399d4-fd06c69ff9.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-5d2a586240-3b7bf5a943.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-e227ef3c85-79a9394ed1.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-56d478a281-8468ba889b.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-d73303c5f0-aec40c1417.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-11a9eeb906-af796a57f0.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-d26e69d673-6bbbad4ce9.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-462b1de997-c8865223b5.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-20503d9ff2-b5e2195ae8.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-e1caaced6d-efbee290eb.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-8133e2a00a-c85b2eb483.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-80ed2cc8fa-5dd6319903.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-062b7b2498-eb80d3bc4a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-c768c89365-546a1c88c2.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-7795d2b662-433f2e6ea2.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-5e780055c6-3ff9dd554c.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-cee53ecfe0-1e475a4b4e.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-0ebca48edd-4f641f43c4.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-6033df02b3-3f5fa4022d.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-e03f57ab4e-d284196335.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-1b6c8dea10-c174ae903d.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-0388b96b40-ec3b6c2dda.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-bfb9718e76-f06e4f9243.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-e9f795121d-09ccd1b2c5.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-8b1510c4e6-b650541065.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-d62a3561c5-878c8447f0.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-86a69dbfc6-743e7c619a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-90e46b8031-cbbe48e990.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-7f8de0a3bc-64aa39b0fc.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-2f6b7e9f89-30eecca673.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-14fbb52e6c-d5745220bf.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-f99c527036-8fb7a270bf.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-9637ec5cee-9b43a8e23c.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a6a751c8e8-3d0ab19e86.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-d434962aa8-6b8f610edd.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-14caa9b138-8548fa5186.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-94fcb26dde-6db5a980dc.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a0677885ef-f8a817c680.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-45ffb9784d-e9a5b2a880.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-5fb66f8587-92f9571b12.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a81a287738-70da644765.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-43da05b78e-02a32d5874.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-14d76edcfd-c2a88cd474.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a3e627bacc-f443e90809.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-ae226d9d59-eaddf3e8e8.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-7a8d8f57d0-3864114e59.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b32699f058-7b391ef7ac.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-61df4d7b64-6b9d8d4cfc.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-e480e9b62f-69538aee2e.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-5907b13de1-074fb48b06.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-16eec646f1-aa2fcb2012.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-33efb9cced-663e44e3cf.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-24770dcb08-e47b35999e.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-c9ac08731b-af300c9f69.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-cb11e3c0a9-cc9a1a3711.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-2409ff17c6-1ea5a9e261.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-1d0e50d4ee-fc8707d853.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-6b9abdfab5-33deaadc59.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-fddfa95582-12e4bd2e80.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-1ffd3b8df9-bda79e77b7.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-6541fd4bbc-58b600b13a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-85bd9a8a5d-f9f5941c34.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-85fccd2fc2-f2d640905a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-add95500f4-d160534d85.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a804f85079-82602504cb.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-7ae306cf66-4d6f3f2c3e.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-71cb5e59c3-eb143f8eaa.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-f8326bbf93-46284248e1.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-7cccebb8a4-dbd6f0fffe.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-5065ede6af-13f12021e2.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-73b010d600-5eaaf67e95.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-67600d4798-ff09717787.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-0f2b758380-7d9fa0e238.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-9903ef4845-8eac62b3ca.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-271e5a5e38-b103bae074.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-0f285a0747-e7f664e4f0.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-ae68804760-f8712c14a9.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-370277e7b9-e30bbb57d9.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-7f30e3651b-580852af2a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-9bcab9f43c-fa1d920080.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-c1d9120cb3-1d25c56b98.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-33d2a60443-2c24177990.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-f6210eb9d4-5c5c71feed.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-4025cfe0de-673f8d41ce.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-5ec4f6e948-3eae5b72d5.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-32a5cf67f8-4913bcd2a3.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-f578739b7d-f4449f7ed9.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-0576da5b7a-06529f8455.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-6a3fa72c22-6a004037b7.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-99addf2929-f9c7ae366a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-2b4857722d-ce6d29d27d.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-8c098b2ab6-7a693c3bed.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-dc472419c8-0a6c7e198b.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a1603eabf1-23ea6a0367.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-1d36de2f77-c146cd73c8.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-0214ff6091-c454174037.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-990534d3c6-e52d76fe7c.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-d0e0fb7c5e-6214f6dd09.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-99523e7a79-2836340162.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-aaa488bb32-efce978c47.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-92fe4546c3-3c1c6060c4.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-8b46c08876-09b88a9dbd.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-76e7a26a6f-0169bd839a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-95d77d3a86-192363641c.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-031b9114e6-d5ac1f8295.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-63257dccbf-8c2ac916f5.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-0fc7ca4625-f328eb9462.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-c11e8a967c-028e695d21.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-770d06cd7b-81a613bb78.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b9b5f6e769-09cd757583.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-86a74f95fe-2fa12cd643.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-f11377c7fb-0f488378dc.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-fda5b33d77-ba133eb9e7.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-7e0547ea93-80e78b88fa.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-7998b9b123-a437a72c56.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a71cf463ac-90908fa5cf.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-9a5fdc85c6-edb179298d.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-2c9d50916a-fb17568452.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-257672160b-02dcd4ae12.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-ee1798cd51-f6b38175e0.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-6220fd8ba5-3136aeb329.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-7dfe7f95e0-0852f76359.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-c5652f6e73-c12859b0e6.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-5d7e5196a9-c3ce312b0c.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-d5a2087ae4-22f639b623.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-bafdd721d3-b49a31b1df.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-0556fd279d-b44943c81e.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-c7f972f75e-29fdcc4b47.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b828d4775a-dad440bb75.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-fd1b47ae6e-c297c55598.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-eb7452de8a-492e0dd1ca.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-fd578ac656-076fd33129.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-0ea6a21880-098e2f5d77.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-e5471baa84-2010167ed9.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-544c28ce91-dd1c476986.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-5d0f60c323-9bbe53a43b.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a38f70b8c9-97d1ccd894.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-65493880ce-ba8472e676.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-f7dcb29fe9-81e06c9287.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-2a7b5c1986-db70df1c64.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a33bf84cbe-1f88a63268.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-e9384066d5-e51caaa2c6.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-6b7955e5cf-aa8ca155b9.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a1b6d041bd-7e119f208f.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-3eb24c650c-7b78968835.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-d6e1f11d1f-92d4530103.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-aecb77362e-fb2c2bfe48.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-07e2a9e497-ede0e54cf7.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-42dc762bfe-25a2249812.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-689c7c8b1c-0aa10c23f6.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-4a6712d329-a9658b0ec0.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b8d46bdfcb-e2e41144a1.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-8406890028-f1e4835a4c.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-4f87aaaf22-1b0860c36f.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-5d1a261fdf-5d928be9b2.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-e6addbdebe-eda55dd1bd.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-e15d568255-607be1e399.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-5fdaca6e91-292109a109.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-77246fe6f3-d9e37d3343.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-0fcf3bd051-bef61e46f0.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b0376923f3-11f284a992.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b0cf16e823-251967dd6f.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-1995c4dea7-487e4299d5.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-212460aae2-213a3329e8.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-128553e54e-69f54ff85b.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-9190c95d3b-b9b965715d.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-8d235fbb24-9a3d8f6365.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-8af315b8b4-22d2e70266.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-85853c2207-54cf0f55a1.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a07bae8c72-03c4f5008f.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-ebf3250a6f-420ecc80f3.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-9c0aff4319-df4ce80c35.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-9def2a27c3-d0516c122a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-5c31b7a8a3-9b9ef33794.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-0ee685e321-7005a221bc.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-fffc149c15-7b5e538a48.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-dc72e961d5-2cfd7c24d4.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a2f95120ca-9fa212cf73.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-9e0e85b265-5642eaf2ee.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-7fa7490ce9-63e529557e.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-7cda5f36bb-876b82c99f.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-3a9c216cc3-327d67fc11.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-edaf0d51e9-424b40bd0f.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-fd5f4f082b-8888451ddb.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-7ed01f6b16-c4ee77af00.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-c7e21c5a70-571cd7364c.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-cb84c914fc-2ba43bbc94.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-f4862106c9-ed8b5276c3.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-f6c45e41c2-f0f2df9709.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-1cb7884cc4-ab8e700392.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-88cae29ba4-82d751bb13.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a63cba126d-a60e888fa8.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b48effb3d2-ff9e18a38e.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-0cc1d966e6-28e9719268.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-cd0abcb5cd-0aa3e43325.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-85390a69fc-66b1bb54c0.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-eda373d8d2-e346eada0e.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-1d0506f38c-4284164fb5.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-037c177b67-8604b82058.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-cb7da03d37-319ce1d5fb.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-86bb2e3e59-f03fd06001.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-5995382693-2ffa19b242.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-cb8f4fd05d-43b6c54460.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-53b13bf755-cceb2174c7.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-9cf8e91952-4d0935e5bc.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-ab86245dc8-199c7457d7.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-e817e26ce7-18fa54e531.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-cbf723c998-c511fcce3b.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-30a06a6175-0035aca166.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-3d92bf6cd8-4e9b02bca6.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-d734fcd949-00db6a470f.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a79511dd28-2050337eff.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b69ce169bb-d08ff7b8e8.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-6f151f2890-49728dc461.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-9c1a626a78-78bf3cd65f.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-5985e2a8dd-6bb24e648a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-e304309d4c-695c8049f3.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-6590c8d42e-4906624b45.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-e7c311dfcc-b347180bb0.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-3f8806d2ab-2b8cb9dc24.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-bdf466d2f6-0d5035621a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-9c95c30cbe-67452d3f6a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-08c16f82a8-29e866b210.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-f9b6cfd623-76204cd1f4.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-8f84d69dea-0ce6e3dda7.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-0ae883016c-426df18240.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-6c4cd4eb81-771a652364.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-bf596da0cf-66860a2a48.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-97bc56415e-73d62c4ba0.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a52d3f2fac-23e0519383.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-46772f2f81-4583163785.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-bab0600d51-420d315e53.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-484cbd78a7-ce1ca36561.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-c353a946dd-1d14b13d48.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-afc6c8c94a-966446f461.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a2d597b844-cb60c2aac7.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-734a504eca-ca4b868aca.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-ba3fac937d-93f98d53ac.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b549aa48fd-ccf17b6311.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-592e29da3b-41501a26fe.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-fe78e702e8-b42974d9ce.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-1bf6084fc3-503bc24ba2.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-7505dfa0b9-a738f939c9.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-ae235eefcf-0c9dcec196.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-33e58a754e-92fb6616bc.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-995eb65d7c-565a2b8f51.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-dbff246cc6-d53072b7c3.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-6169461036-924f3afa1c.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-dd9fd00fb9-3adf5da344.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-3df9a7b76f-ad0e51baca.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-fb3146f9df-8189f5668a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-e6c9194715-48b9f1b617.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-ab04f7ab28-f0591850ba.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-90663a17f0-99062ae7a7.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-36360a80e2-8e063a1fe7.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-522236be56-c8751fed39.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-5d67cedbc4-76233e40f7.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-63088cd21f-30b3d0d785.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-2466fc15cf-0fadf417f7.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-f94eaded73-efe989bbc4.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-4037d09df2-9d23cf2189.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-5d3be2f34d-6160dc769d.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-9f7ec0be8e-50ed8f0b4d.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-84cda1e2c8-99764a735f.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-7c2e705b8d-a0aec20e3e.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-585129868e-ff41068680.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-c469d8c070-717a766f22.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-30ce975c1d-7dbffc09ec.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-65b0af26d2-32dd54f409.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-299d394201-b89448e3ad.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-fff07cb210-9dfa56ff8f.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-ccb5d772fe-b8b97a856e.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-3eccabbf67-5b43b600b4.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b867ac8e67-6933e37eba.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-00261e4fdb-1ac58b9960.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-626a27a747-bde954c541.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-215a7c1a76-812eae6816.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-827ddb4cc7-547afafcf9.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-5a54fe8939-0973e755c7.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a54d243a64-354f7b9a6a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-57a372b2e4-ddce0a1a56.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-83d83b8025-33f10f8818.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-4bd7dc72f5-8361ce18d0.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-5c51681ffc-9a696847ae.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-810374ff17-139f6ca780.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-769f315e32-1bca6aaa4f.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-d76ec40789-e6dc48faba.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-783ec8a6af-6f194b7b55.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-c4173ebc0a-a0bfb0747a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-71842057f2-9cdf09945d.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-98116cbd4f-70c00786b1.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-137638a9ba-a1bfb2e2c7.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b2fece2263-8bd1e751c8.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-1c7c99fdf3-b11f8a0625.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-ac79cb5adb-b01af82b48.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-854b5fa58b-cc28bc64fd.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-0e5f123061-03550d7c96.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-7e758514ee-ae03a57a56.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-cd8cd1f3c3-8b637b4025.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a85488a37e-4d743a3032.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-c07d7d3e4d-3e350e82e5.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-fa87db3ca8-f999145d9d.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-f5c72a17db-2bbcac1485.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-9cb949c3c9-b87dcbdbcf.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-5b9a0e3631-0e562ab4e1.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-74ac302f99-85e407fd59.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-6db2bef0c3-4b70672909.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-4a7a7c8620-2127b4f21c.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-e5abb1cf08-b26e475a80.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-46b23a32e2-1de867674b.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b5a3cc24de-504cc3904e.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b1fed580cd-b4bda3276c.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-518f6cd9cb-6aebd9af12.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-da2b30f8df-3169281d8d.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-32a63568fa-516a3e3274.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-8226440685-481fe4cc86.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-9c9f22ff69-705942945f.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-ffb5f39962-0e1f7df7ad.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-9d66a76eac-feb6f89345.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-6096fef60b-e6be3e1de9.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-ace5794058-a8f0671bf5.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-832b48cf8a-0c8207d117.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-eefbb5d2bf-dd909ec283.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a242c5434f-f91300e42c.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b6a29c52a1-8f18a39bbe.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-5b6c952a9d-acac11aff9.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-341f4b714c-adfe7363a1.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-4f07e42f50-2c0c8bc4f6.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a910c6fa36-fda38b0125.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-9b8913759a-895c6cad80.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b68489db53-697c5584ba.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-24ba355b3e-67aad5697f.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-d58ee7af2d-930a669ccd.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-7c4a6bfc9d-084bea4aa7.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-1fc6957228-3fa2946815.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-f023c0c6a8-9d8c20d878.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-826e9bb7d9-d4aaa2d541.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-86d29e07bc-20be87d200.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a953531af6-b182171459.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-2af494c036-f27c5e9559.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-23ea0d81cb-bf7749e1fc.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b65ecd5be2-ee357ca17c.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-5343a994ff-2453953ece.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-7047eb66c3-e3a08f9db1.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-55d23ed12a-8cf137aa1c.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-862993fb83-4ee7271495.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-cef43827a8-486672a08d.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-9073357e2d-f26bb3ac2e.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-f64d384a41-8fbfcd5f9b.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-390f70ab56-2150868759.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-2c2297680a-9e1013ec31.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-2555c85fd1-f9e3a39e02.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-75c4cd2858-388aca600c.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b35d50fe62-304fc5929a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-6481ce1940-b5942227da.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-48aee6bd0b-067ac01db2.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-1abf70e045-abf60b6372.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-069ca25da7-823f933a04.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-6d4353f1b2-42b3811e6b.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-c279c36b2c-4231c4cbf3.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-21235f147a-0b67bf6b18.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-2f15758bee-539afa4093.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-9e46c5fe37-84a9d934d2.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-76eeec0626-1483f01dcf.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-555abd4598-8645e0ce3a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a1d8b8c93e-a4b7cd1faf.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-0cde29a0be-424a8efbea.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-aa9edd555c-801914e51d.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-34444d1ae1-66a67ba7cd.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-7932e5e181-b1005cd4c9.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-094988bf40-170194636c.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a1a757bbc1-68aa4248ec.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-41e6a4f195-6b5be8c319.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-09b94f853e-727748e346.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-2183c8365e-c38a42e37f.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-fcecb5408a-f8e07f6787.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-1113738b96-949a5c4241.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-acffc71ba7-9cd7ad7454.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-2d3e52b7c7-9e9b5bc65a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-bb60bca08e-b9b9f1d1d9.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-cac44ad998-f4d97e9e25.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-92d4e42e8a-f791b858ab.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a1a259fa09-a403537be9.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-5bef3197d5-a4575a4164.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-5a57f48b9d-2dc433f262.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-58987fbcba-57c0e2268a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-9ef66dbedb-ca79da9f22.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-87d0abebbd-f4137c2b14.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-55c9659db4-c929cd45d6.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-cd3b6eed4c-9bcfe6d02a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-acf6fece97-5f5d7f5541.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-38813bf05d-0ff9a53854.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-0b9b16363f-e08a27cb28.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-356d97e9e5-88460c1b38.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b00e2096ac-ce521f14f4.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-d1c9e014d5-d50637e0fc.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-25cc288498-5a46d78c0a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b2de2e88e4-c03bf0144a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-c45a0d75b0-78310e41a6.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-ea7905c708-02ce6b7576.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-da2b537ca0-fc25fc57d5.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-50ef8a47cd-10ca87cb5c.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-ec36d7eeae-9678f060ae.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-33a8ec78e0-65dd61fd35.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-624ad54571-40ccdcbda0.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-216699c527-0ea845fbac.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-1ca6dce86a-32ff56cc71.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-0e375abbc6-9301178901.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-ce5b4db377-81a61cf28a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-cdfafc8524-cfdc524cd4.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-3809c28897-93dd6ec7fe.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b8a8c4e542-08c866f076.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-1df7a59ae0-2e90211643.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-13a462679f-a974d55e75.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-1dbd2a2612-09d279b4d4.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-dea8e450a4-c3349687cd.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-707aee9d11-cbbcb7a3e9.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-e819c2391e-b35044e4f5.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-594e905155-8b7ce32b45.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-2a345ac1f8-083c7e50ba.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-89ffcc73f3-338e31e295.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-0d54eec195-23f7d032a0.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-f3532cd044-7d4fdf93d1.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-5704568dd7-727c42cac7.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b6fc40231f-649d76224d.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-7c8f04987b-7c9f7b4f4d.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-3578a46ae9-4e7107a137.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a8f782dcb6-6ffc713aad.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-92e44d6b03-b149fd397b.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-432f847537-40f49c62d4.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-2e3f81784b-4f48271a95.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-5c756ff9d6-d4ac87cdde.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-16137d857d-a23ae49ce9.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-07f1aa1991-bf0c3c785e.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-3f9250bf08-e753a21e2b.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-fde79afea8-821b28c6ca.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-876e57f811-e916d4ce2a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-28eb4b1a40-2aa2dfbe73.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-33e919090b-f525f4478e.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-9cd8f16131-82718211e9.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-804e967b89-09b5bae8b8.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-9e19f05e9c-9dad4cb0b4.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-79f99e9302-e211bb89ee.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-4021883927-7803afd684.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-071f7c75e8-4a4479f10e.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-e859593797-d3fa549fa6.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-5551e02f10-33f00a0de7.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-73ade334f2-c7bfd63d25.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-dd91ee4555-ad8da4273c.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-c2d6207fee-30513ff01f.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a57d8fea1d-86dc2371e6.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-87deefd27e-5e9b97303a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-f7f0405699-547edfa90a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a2c0ef770f-870682f712.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-1cccb9959b-28fa5a6339.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-699b26f45b-a3c4cc3ed2.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-615eaad332-70eec7457e.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-c3782281a0-c494809ae4.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-f4a0bc55aa-c0827911cd.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a8d49b9bcc-87ff805051.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-136c5976e9-8b385fad73.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-3b577ae1da-0799188873.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-d053416883-25c896751b.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-fa40176295-c9d180da10.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b4fdfc0ac3-8a4bc44b00.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-75f1c6f457-40cfa7ec39.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b02e4fc92d-eeef898e07.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-eb5e879ae1-81576ff982.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-135367ac77-98b21ddb12.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-c2beb5febd-bed7387037.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-e1d8bca1f7-348881f026.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-c45fcf8d45-0bbaafda78.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-1c0d0ed4f4-bd34db837e.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-7490e247db-c941738046.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-8d8ea06085-5616b5079d.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-14432f4d25-1995c3e9d1.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b287c6a2c2-355a97e743.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-74636bcd44-a21d52f0af.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-4e53989f2e-963c288a9a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-bf569fa1a1-88d91fec9a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-cf501d1dfb-8ba1132e32.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-5ede85ea0d-b3ae4ddf91.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-80a3c343e7-ae39899523.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-cc1bdfa96d-bcb00708b0.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-f6cf09f3a0-f32aa2198f.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-94d80df4b6-d65efdf196.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-25bab3b411-396f3f0db4.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-230251c2d7-afb039d7eb.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b934f2fd16-b17648568a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-8a7d162cd8-183aefde78.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-fedd8c132e-8596988e7f.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-8af74f90de-d7e459c2c8.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-5e262191e8-9967a93887.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-9a8af9e4f9-ee792468c1.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-fe71c694e5-62249c8af4.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-18275c3fb1-f9d4574fba.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-927749748c-538af7fd0e.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-6410d25fad-ab75e2a21a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-0cae7109ea-8388961487.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-4f79c58f63-adf1369eff.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-ebbc1caf00-303bb21706.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-d74ab2abf4-4beba71e2c.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-841f08a964-929653a242.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-8ff960b2be-1c9841ac16.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-c7dbf4d1c7-d00f35bc04.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-96f91ecef6-0a885b641e.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-acabf183dc-80182e7ec5.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-4dec71d7c3-17da41edb4.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-c0cf68b1a0-2805e9dcd3.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-5ba513ff58-3514555561.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-24ee9c1168-7b1583eb6a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-fcffff75aa-85c586ddf4.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-08c5381b9b-7c3cb8a9fe.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b41b18233c-a315ed603b.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-2a86310512-77484bc566.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-cb9bcde906-8ce7fce3e3.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-9ec23b4981-64b61ac31a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-d63e260a38-ea6d5abb8e.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a9acc3bd34-7b0db205f3.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-559b126167-ce775af04f.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-eb0b66bcc2-6ecc9dfb56.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-69d57c8b22-4548fafac5.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-52f28b605b-a9dfa5bda5.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-87ba13848e-d2ab9c74bf.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-ea0448ab2c-984ed4edea.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b633f5c21a-1bcb20dc42.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-4d67f96f64-4a99bd7685.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-eb353125fd-d931d38fb8.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-465d3e5a6d-b94c013140.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-540ce76de4-0c70479c2f.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-7dfbca1859-7a85679b01.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-1c9adfdaea-b4f68be878.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-380ed344e5-abb2f98ada.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-40b42efcf5-f55e0e6797.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-de62185ebd-0ab8f2ca0e.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-f517435967-231d0147a1.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-581297198e-a391aa7cbd.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-e4631af928-5339004f43.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-2d01993219-9f94d3331c.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-97898f8fa1-055a9bfa95.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-25fd287c67-977e63a5d7.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-d2548dc243-a08aefad18.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-4c661e662c-d3829262a1.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-4715c3e54f-24c2e5c5de.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a0d496d82d-a66ff97a62.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-bfea2f93f6-a248f07337.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-9e8c4c616f-82067fd6d9.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-890d586407-68d850ee53.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-7a6ba41924-721e0cc838.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-e3eab9b0c2-2e84cdc0dc.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-4d50b4cef1-8000524126.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-809ea78496-20aba9b438.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-c8ea1e988e-c4b99cc385.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-62af3f34ce-0e87f3e975.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-0bb45f1862-9b2ca8945b.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-43478da176-a3017993dd.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-06652cf3c2-80a2f2fddb.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a0c12f48b1-fcefb068a9.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-010abef62c-6c440625b8.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-f7b9eebc33-8e637f29dd.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-768a0ffdd6-95d4a42b7c.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-784e173a25-b01332ff47.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-31fbc5d332-e9f8aeaef5.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-3cd3bae20c-349371f3b7.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-684ddea3ee-ccbe64bf1c.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-8c4fd83c0f-12b7370617.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-1b4ad90257-990cc44862.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-8b1b9ed48a-387404bb3b.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-c18202bd72-6432771704.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b25a5ba785-ef94cd85d2.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-8ba906110c-76a7b71974.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-8e141dab66-9e15780be4.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-efbfacfc5a-c1ec75e480.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-222b494d1d-6201bd1ff4.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-9d515aaa2f-5736037e99.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-7b16e1d845-cabe0b39c5.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-f30c93a64d-d2a4b7a841.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-938707861f-6b67b3caff.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-f7559738fe-2411381f2c.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-773347fa4a-79185ee586.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-32dd252ab5-aceed44db0.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-ee0e4ab0f5-c1ec9f29e4.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-6131690b7f-c4223f146e.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-8db754f37b-100e7c6b7d.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-1322483b84-df848c4ee8.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-1b893e20e6-ab90233e0b.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-0556cc04fd-355d810bbd.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-2ba85c356c-4a48a0d042.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-c71135f12e-34b67e31d5.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-709e7086a7-e5070624d3.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-5f690a648d-e053ec5902.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-5a02cb339b-6e74a0d116.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-9ef5d2f0bc-cc6b992549.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-0b1d4033fa-ade116e2e7.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-166c4d3f82-964ee5d500.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-c8bf24d386-80eae2f95d.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a10fecbb8b-09117ace42.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-f8ffc5032f-6413e2741e.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-ffb0f287a4-546bde7567.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-491fcfdfa1-288bc9b0a7.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b2d57b1f70-7f350719aa.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-5984512055-05b47d493c.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-d7580b47bf-632996cc9f.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-7a28efc85a-30e1c7d405.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-d7d1ae59ef-ed0f4f3cef.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-559011ecdd-874676ba9c.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-fb38b335d2-d8ca914657.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b090fca497-4ec26e29b3.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-fe7d9fe9e1-d656465a67.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-973947605f-87572952cc.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b00a410948-43c162bb6a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-7d666f2862-6354a07373.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-486def7540-b6c7df562a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-89f66e0434-eab6cd884f.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-df327e1b91-8230494ebc.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-fbead6a332-7e5b41fade.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-2b15052a9c-b095c90de7.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-116bf85ef5-f981917d22.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-003ab43898-08f2c293a2.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-146da1c508-b650d7db27.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a958707b7a-9a657861f5.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-739fcdb8bc-b1a6eec7dd.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-2d106ff969-e7f4f56c8c.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-fe1afeef9a-e771967f6d.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-0128161629-444179c9f0.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-38441e83c7-a0c58e0d72.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-fb293c7fdc-bb17e958a0.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b076e0e95a-6d1e6bc069.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-da47904279-96dcf0651a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-94189c2a36-97e7120c6b.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-6b57dc81a1-4cb81b825c.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-85f45594b2-a3eafe08d8.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-8ae0d97c80-2fd1eccb83.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-8e58fb0983-21faf80a1d.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-c202250dce-6c1f4447fe.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-0b967f8cc8-136f5ae775.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-f74b251b64-56f189f5d5.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-0632c4cd07-a4bb3596ae.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-34ff671f48-51f75fc728.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-58e767d30f-06b225daf3.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-d43f7e0bba-aafe12e6b5.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-942e641ac8-55468503b7.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-45f8d08f03-ee08183e11.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-c234878e3e-5212838595.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-4554fb7fef-1bcc765688.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-34fefc6a9a-8fbd824665.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-0f7afba8a7-0dbba12f95.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-c3d2c83559-b856f18180.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-63cb1cb81e-fa416148ff.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-db5a9040e0-fa366cf5de.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b763b30ad9-d622a6842b.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-c87a080159-18d79af9f4.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-6f862fef70-de829d0591.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-4a1e55c8a5-716a6c04a7.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-26e320aed8-9dd6d47e1c.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-144853a441-78a090d129.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-0be11d0fa3-fe92e38689.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-78cd6a9fc9-34d18a6e23.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-5f9ffde276-80b3268144.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-25b06201a6-887e865fdb.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-ed1ab24924-406f65f2d4.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-9152bb8f1c-4f81e92fec.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-609e806f08-c2c2234c53.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-1b4cda3523-6a891d6107.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-18d4506fb8-72daf5382f.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-1536dc6476-68a53b47c8.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a41a10efdd-8973006392.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-cabf3b5680-35097aecb0.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-572fb3930c-ff971c7cfb.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-0c8ab2c947-657c45f3c8.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-063c70e476-bb463339a4.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-3014738ee6-90e0958934.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-3c4fbccd02-a68cecd8ba.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-cf88a9e47d-1af869e615.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-89d31ea296-1f38b1a744.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-23c58e4d76-8a818dc6c0.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-90d9094cb0-464181f2fa.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-5353413b98-6904a1ee45.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-2f5d40f872-7cc6701b92.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-e0127278a4-cfd10b0c7e.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-647a18681c-d68dc3b6a6.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-74f9417dcf-2ce7a157d9.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-48ef2ce207-8a1b4a036f.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a2745b3ce3-c0adb8afaf.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-783ae66a66-51c5c8f80f.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-2e411532af-87ec21b584.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-f05e2bceb1-b79c2c21cc.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-f88a59082f-8f8e81ae39.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a8fac409db-faa9820ad0.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-785608b834-b8710cd4bc.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-0294f2defd-91bd9e8cce.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-6a63c3572d-14c1d00848.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-1399900f2a-8a121bc719.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-07ac74d821-21c0765a11.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-df46bc942a-d941251384.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-70afcb430b-e83a35001d.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-65ebfc8b64-7c3a08ce70.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-f1e31c1b90-43a5608712.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-0cd200ce30-1e79bfe118.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-1c6b135059-f9e4170f2e.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-8dcd79ccb3-4aa4323686.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-de0532045f-c093746c6a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-d6d7b793d5-9c2c790877.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-6bf15065cd-6ab160aacb.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-8c42e18d71-fba41b927a.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-bba8151aa9-dcc549d890.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-1d1be8b403-bcd014c024.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-fb44609f02-7aea616134.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-9af175184b-ad09aa76ba.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-4a031709f7-4034715cbe.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-fbcf41454a-ca28bc7196.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-07a9d5a1c7-7e8dc22889.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-99fe305834-4bdb24b1ef.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-8cbf11e2a0-6cf35fb0b2.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b4eb10cddc-61b5485acb.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-ec98877c9a-5cd1a82221.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-b073dd7fd1-c4485eb8b5.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/inline-svg-a2d1559614-a17c1e3f02.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/1215d28fc1-empty-state-emoji-picker-light-DE6CXOrn-bf31188615.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/c186002b14-empty-state-emoji-picker-dark-BRNi5o56-f3c5491333.svg",
+      "reason": "external references are not fetched"
+    },
+    {
+      "file": "svg/7bd46a26a4-meeting-jitsi-light-grxNxauu-d2f6629f25.svg",
+      "reason": "external references are not fetched"
+    }
+  ],
+  "incompleteLocalReferences": [],
+  "xmlParseErrors": [],
+  "note": "Extraction and file integrity are verified separately from visual fidelity. Unchecked rendering is not treated as a pass."
+}

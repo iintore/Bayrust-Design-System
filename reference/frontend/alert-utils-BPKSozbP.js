@@ -1,0 +1,5 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="eb8c27fa-103b-5e17-af27-30e2c0229e57")}catch(e){}}();
+import{t as e}from"./shortcuts-CslcL67B.js";function t(t,n,i=n){let{primaryAction:a,secondaryAction:o,dismissAction:s,...c}=t,l=a===void 0&&o===void 0;return{...c,primaryAction:a?{...a,variant:a.variant??`primary`,shortcut:e.primary,action:r(a.action,n)}:void 0,secondaryAction:o?{...o,shortcut:e.secondary,action:r(o.action,n)}:void 0,dismissAction:{...s,title:s?.title??`Cancel`,variant:l?`primary`:`secondary`,shortcut:l?[...e.primary,e.escape]:e.escape,action:r(s?.action,i)}}}function n(e){return{label:`To confirm, type "${e}" below.`,placeholder:e,validator:t=>t.trim()===e.trim()}}function r(e,t){return async(...n)=>{t(),await e?.(...n)}}export{n,t};
+//# sourceMappingURL=alert-utils-BPKSozbP.js.map
+//# debugId=eb8c27fa-103b-5e17-af27-30e2c0229e57

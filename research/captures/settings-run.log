@@ -1,0 +1,56 @@
+00-account → {
+  capture: 42,
+  url: 'http://localhost:4317/settings-window.html',
+  inlineSvgs: 6,
+  symbols: 0,
+  downloadedOriginals: 36,
+  failedDownloads: 0
+}
+01-general → {
+  capture: 43,
+  url: 'http://localhost:4317/settings-window.html',
+  inlineSvgs: 14,
+  symbols: 0,
+  downloadedOriginals: 36,
+  failedDownloads: 0
+}
+02-launcher → {
+  capture: 44,
+  url: 'http://localhost:4317/settings-window.html',
+  inlineSvgs: 26,
+  symbols: 0,
+  downloadedOriginals: 41,
+  failedDownloads: 0
+}
+03-shortcuts → {
+  capture: 45,
+  url: 'http://localhost:4317/settings-window.html',
+  inlineSvgs: 47,
+  symbols: 0,
+  downloadedOriginals: 72,
+  failedDownloads: 0
+}
+04-keyboard → {
+  capture: 46,
+  url: 'http://localhost:4317/settings-window.html',
+  inlineSvgs: 15,
+  symbols: 0,
+  downloadedOriginals: 36,
+  failedDownloads: 0
+}
+05-cloud-sync → {
+  capture: 47,
+  url: 'http://localhost:4317/settings-window.html',
+  inlineSvgs: 10,
+  symbols: 0,
+  downloadedOriginals: 37,
+  failedDownloads: 0
+}
+06-advanced → {
+  capture: 48,
+  url: 'http://localhost:4317/settings-window.html',
+  inlineSvgs: 11,
+  symbols: 0,
+  downloadedOriginals: 36,
+  failedDownloads: 0
+}

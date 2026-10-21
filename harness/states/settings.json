@@ -1,0 +1,628 @@
+{
+ "name": "settings",
+ "viewport": {
+  "width": 800,
+  "height": 786
+ },
+ "states": [
+  {
+   "id": "00-account",
+   "label": "Settings \u2014 Account (Pro trial)",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Bayrust User",
+     "wait": 2500
+    }
+   ]
+  },
+  {
+   "id": "01-general",
+   "label": "Settings \u2014 General",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": []
+  },
+  {
+   "id": "02-launcher",
+   "label": "Settings \u2014 Launcher",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Launcher",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "03-shortcuts",
+   "label": "Settings \u2014 Shortcuts",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Shortcuts",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "04-keyboard",
+   "label": "Settings \u2014 Keyboard",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Keyboard",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "05-cloud-sync",
+   "label": "Settings \u2014 Cloud Sync",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Cloud Sync",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "06-advanced",
+   "label": "Settings \u2014 Advanced",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Advanced",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "07-organizations",
+   "label": "Settings \u2014 Organizations",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Organizations",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "08-about",
+   "label": "Settings \u2014 About",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "About",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "09-ai",
+   "label": "Settings \u2014 AI",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "AI",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "09a-ai-models",
+   "label": "Settings \u2014 AI \u203a Models & Providers",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "AI",
+     "wait": 2000
+    },
+    {
+     "click": "Models & Providers",
+     "wait": 2500
+    }
+   ]
+  },
+  {
+   "id": "09b-ai-agents",
+   "label": "Settings \u2014 AI \u203a Agents",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "AI",
+     "wait": 2000
+    },
+    {
+     "click": "Agents",
+     "wait": 2500
+    }
+   ]
+  },
+  {
+   "id": "09c-ai-projects",
+   "label": "Settings \u2014 AI \u203a Projects",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "AI",
+     "wait": 2000
+    },
+    {
+     "click": "Projects",
+     "wait": 2500
+    }
+   ]
+  },
+  {
+   "id": "09d-ai-commands",
+   "label": "Settings \u2014 AI \u203a AI Commands",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "AI",
+     "wait": 2000
+    },
+    {
+     "click": "AI Commands",
+     "wait": 2500
+    }
+   ]
+  },
+  {
+   "id": "09e-ai-extensions",
+   "label": "Settings \u2014 AI \u203a AI Extensions",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "AI",
+     "wait": 2000
+    },
+    {
+     "click": "AI Extensions",
+     "wait": 2500
+    }
+   ]
+  },
+  {
+   "id": "09f-ai-skills",
+   "label": "Settings \u2014 AI \u203a Skills",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "AI",
+     "wait": 2000
+    },
+    {
+     "click": "Skills",
+     "wait": 2500
+    }
+   ]
+  },
+  {
+   "id": "09g-ai-automations",
+   "label": "Settings \u2014 AI \u203a Automations",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "AI",
+     "wait": 2000
+    },
+    {
+     "click": "Automations",
+     "wait": 2500
+    }
+   ]
+  },
+  {
+   "id": "09h-ai-profile",
+   "label": "Settings \u2014 AI \u203a Profile",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "AI",
+     "wait": 2000
+    },
+    {
+     "click": "Profile",
+     "wait": 2500
+    }
+   ]
+  },
+  {
+   "id": "10-apple-shortcuts",
+   "label": "Settings \u2014 Apple Shortcuts",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Apple Shortcuts",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "11-applications",
+   "label": "Settings \u2014 Applications",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Applications",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "12-browser",
+   "label": "Settings \u2014 Browser",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Browser",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "13-calculator",
+   "label": "Settings \u2014 Calculator",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Calculator",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "14-calendar",
+   "label": "Settings \u2014 Calendar",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Calendar",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "15-clipboard-history",
+   "label": "Settings \u2014 Clipboard History",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Clipboard History",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "16-contacts",
+   "label": "Settings \u2014 Contacts",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Contacts",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "17-developer",
+   "label": "Settings \u2014 Developer",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Developer",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "18-dictation",
+   "label": "Settings \u2014 Dictation",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Dictation",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "19-dictionary",
+   "label": "Settings \u2014 Dictionary",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Dictionary",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "20-emoji-symbols",
+   "label": "Settings \u2014 Emoji & Symbols",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Emoji & Symbols",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "21-file-search",
+   "label": "Settings \u2014 File Search",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "File Search",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "22-mcp",
+   "label": "Settings \u2014 MCP",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "MCP",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "23-navigation",
+   "label": "Settings \u2014 Navigation",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Navigation",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "24-quicklinks",
+   "label": "Settings \u2014 Quicklinks",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Quicklinks",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "25-raycast",
+   "label": "Settings \u2014 Raycast",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Raycast",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "26-raycast-focus",
+   "label": "Settings \u2014 Raycast Focus",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Raycast Focus",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "27-raycast-for-teams",
+   "label": "Settings \u2014 Raycast for Teams",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Raycast for Teams",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "28-raycast-notes",
+   "label": "Settings \u2014 Raycast Notes",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Raycast Notes",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "29-raycast-settings",
+   "label": "Settings \u2014 Raycast Settings",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Raycast Settings",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "30-screen-awareness",
+   "label": "Settings \u2014 Screen Awareness",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Screen Awareness",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "31-screenshots",
+   "label": "Settings \u2014 Screenshots",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Screenshots",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "32-script-commands",
+   "label": "Settings \u2014 Script Commands",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Script Commands",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "33-snippets",
+   "label": "Settings \u2014 Snippets",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Snippets",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "34-system-actions",
+   "label": "Settings \u2014 System Actions",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "System Actions",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "35-system-settings",
+   "label": "Settings \u2014 System Settings",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "System Settings",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "36-translator",
+   "label": "Settings \u2014 Translator",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Translator",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "37-typing-practice",
+   "label": "Settings \u2014 Typing Practice",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Typing Practice",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "38-window-management",
+   "label": "Settings \u2014 Window Management",
+   "url": "/settings-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "Window Management",
+     "wait": 2000
+    }
+   ]
+  },
+  {
+   "id": "fs-01-general",
+   "label": "Settings \u2014 full screen (General)",
+   "url": "/settings-window.html",
+   "viewport": {
+    "width": 1710,
+    "height": 1107
+   },
+   "wait": 5000
+  },
+  {
+   "id": "fs-02-ai",
+   "label": "Settings \u2014 full screen (AI)",
+   "url": "/settings-window.html",
+   "viewport": {
+    "width": 1710,
+    "height": 1107
+   },
+   "wait": 5000,
+   "actions": [
+    {
+     "click": "AI",
+     "wait": 2000
+    }
+   ]
+  }
+ ],
+ "measured": "Real Raycast Settings window on this Mac (CGWindowList): 800x786",
+ "chrome": "standard"
+}

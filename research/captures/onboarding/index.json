@@ -1,0 +1,386 @@
+[
+ {
+  "id": "classic-00-migration",
+  "label": "Onboarding (classic user) — migration",
+  "url": "http://localhost:4317/welcome-window.html?step=migration&userType=classic",
+  "viewport": {
+   "width": 1280,
+   "height": 760
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "userDefaults.get",
+   "settings.getInternalExtensionSettings",
+   "extensionHost.getAllExtensions",
+   "settings.getContentZoom",
+   "raycast.webViewStateChanged",
+   "raycast.consumeWelcomeResumeStep",
+   "analytics.track",
+   "system.getV2MigrationStatus",
+   "onboarding.getSuggestedExtensions",
+   "system.getClassicMigrationStatus",
+   "system.getImportSettingsDataStatus",
+   "permissions.checkPermission",
+   "settings.getCloudSyncSettings",
+   "settings.getGeneralSettings",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "auth.getToken"
+  ]
+ },
+ {
+  "id": "simplified-01-welcome",
+  "label": "Onboarding (simplified) — welcome",
+  "url": "http://localhost:4317/welcome-window.html?variant=simplified&account=trial",
+  "viewport": {
+   "width": 1280,
+   "height": 760
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "userDefaults.get",
+   "settings.getInternalExtensionSettings",
+   "extensionHost.getAllExtensions",
+   "settings.getContentZoom",
+   "raycast.webViewStateChanged",
+   "raycast.consumeWelcomeResumeStep",
+   "analytics.track",
+   "system.getV2MigrationStatus",
+   "onboarding.getSuggestedExtensions",
+   "system.getClassicMigrationStatus",
+   "system.getImportSettingsDataStatus",
+   "permissions.checkPermission",
+   "settings.getCloudSyncSettings",
+   "settings.getGeneralSettings",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "auth.getToken"
+  ]
+ },
+ {
+  "id": "simplified-02-features",
+  "label": "Onboarding (simplified) — features",
+  "url": "http://localhost:4317/welcome-window.html?variant=simplified&account=trial",
+  "viewport": {
+   "width": 1280,
+   "height": 760
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "userDefaults.get",
+   "settings.getInternalExtensionSettings",
+   "extensionHost.getAllExtensions",
+   "settings.getContentZoom",
+   "raycast.webViewStateChanged",
+   "raycast.consumeWelcomeResumeStep",
+   "analytics.track",
+   "system.getV2MigrationStatus",
+   "onboarding.getSuggestedExtensions",
+   "system.getClassicMigrationStatus",
+   "system.getImportSettingsDataStatus",
+   "permissions.checkPermission",
+   "settings.getCloudSyncSettings",
+   "settings.getGeneralSettings",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "auth.getToken",
+   "raycast.acceptWelcomeTos"
+  ]
+ },
+ {
+  "id": "simplified-03-pro",
+  "label": "Onboarding (simplified) — pro",
+  "url": "http://localhost:4317/welcome-window.html?variant=simplified&account=trial",
+  "viewport": {
+   "width": 1280,
+   "height": 760
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "userDefaults.get",
+   "settings.getInternalExtensionSettings",
+   "extensionHost.getAllExtensions",
+   "settings.getContentZoom",
+   "raycast.webViewStateChanged",
+   "raycast.consumeWelcomeResumeStep",
+   "analytics.track",
+   "system.getV2MigrationStatus",
+   "onboarding.getSuggestedExtensions",
+   "system.getClassicMigrationStatus",
+   "system.getImportSettingsDataStatus",
+   "permissions.checkPermission",
+   "settings.getCloudSyncSettings",
+   "settings.getGeneralSettings",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "auth.getToken",
+   "raycast.acceptWelcomeTos"
+  ]
+ },
+ {
+  "id": "simplified-04-launch",
+  "label": "Onboarding (simplified) — launch",
+  "url": "http://localhost:4317/welcome-window.html?variant=simplified&account=trial",
+  "viewport": {
+   "width": 1280,
+   "height": 760
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "userDefaults.get",
+   "settings.getInternalExtensionSettings",
+   "extensionHost.getAllExtensions",
+   "settings.getContentZoom",
+   "raycast.webViewStateChanged",
+   "raycast.consumeWelcomeResumeStep",
+   "analytics.track",
+   "system.getV2MigrationStatus",
+   "onboarding.getSuggestedExtensions",
+   "system.getClassicMigrationStatus",
+   "system.getImportSettingsDataStatus",
+   "permissions.checkPermission",
+   "settings.getCloudSyncSettings",
+   "settings.getGeneralSettings",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "auth.getToken",
+   "raycast.acceptWelcomeTos"
+  ]
+ },
+ {
+  "id": "standard-01-welcome",
+  "label": "Onboarding (standard) — welcome",
+  "url": "http://localhost:4317/welcome-window.html?variant=standard",
+  "viewport": {
+   "width": 1280,
+   "height": 760
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "userDefaults.get",
+   "settings.getInternalExtensionSettings",
+   "extensionHost.getAllExtensions",
+   "settings.getContentZoom",
+   "raycast.webViewStateChanged",
+   "raycast.consumeWelcomeResumeStep",
+   "analytics.track",
+   "system.getV2MigrationStatus",
+   "onboarding.getSuggestedExtensions",
+   "system.getClassicMigrationStatus",
+   "system.getImportSettingsDataStatus",
+   "permissions.checkPermission",
+   "settings.getCloudSyncSettings",
+   "settings.getGeneralSettings",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "auth.getToken"
+  ]
+ },
+ {
+  "id": "standard-02-features",
+  "label": "Onboarding (standard) — features",
+  "url": "http://localhost:4317/welcome-window.html?step=features",
+  "viewport": {
+   "width": 1280,
+   "height": 760
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "userDefaults.get",
+   "settings.getInternalExtensionSettings",
+   "extensionHost.getAllExtensions",
+   "settings.getContentZoom",
+   "raycast.webViewStateChanged",
+   "raycast.consumeWelcomeResumeStep",
+   "analytics.track",
+   "system.getV2MigrationStatus",
+   "onboarding.getSuggestedExtensions",
+   "system.getClassicMigrationStatus",
+   "system.getImportSettingsDataStatus",
+   "permissions.checkPermission",
+   "settings.getCloudSyncSettings",
+   "settings.getGeneralSettings",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "auth.getToken"
+  ]
+ },
+ {
+  "id": "standard-03-ai",
+  "label": "Onboarding (standard) — ai",
+  "url": "http://localhost:4317/welcome-window.html?step=ai",
+  "viewport": {
+   "width": 1280,
+   "height": 760
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "userDefaults.get",
+   "settings.getInternalExtensionSettings",
+   "extensionHost.getAllExtensions",
+   "settings.getContentZoom",
+   "raycast.webViewStateChanged",
+   "raycast.consumeWelcomeResumeStep",
+   "analytics.track",
+   "system.getV2MigrationStatus",
+   "onboarding.getSuggestedExtensions",
+   "system.getClassicMigrationStatus",
+   "system.getImportSettingsDataStatus",
+   "permissions.checkPermission",
+   "settings.getCloudSyncSettings",
+   "settings.getGeneralSettings",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "auth.getToken"
+  ]
+ },
+ {
+  "id": "standard-04-permissions",
+  "label": "Onboarding (standard) — permissions",
+  "url": "http://localhost:4317/welcome-window.html?step=permissions",
+  "viewport": {
+   "width": 1280,
+   "height": 760
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "userDefaults.get",
+   "settings.getInternalExtensionSettings",
+   "extensionHost.getAllExtensions",
+   "settings.getContentZoom",
+   "raycast.webViewStateChanged",
+   "raycast.consumeWelcomeResumeStep",
+   "analytics.track",
+   "system.getV2MigrationStatus",
+   "onboarding.getSuggestedExtensions",
+   "system.getClassicMigrationStatus",
+   "system.getImportSettingsDataStatus",
+   "permissions.checkPermission",
+   "settings.getCloudSyncSettings",
+   "settings.getGeneralSettings",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "auth.getToken"
+  ]
+ },
+ {
+  "id": "standard-05-cloud-sync",
+  "label": "Onboarding (standard) — cloud-sync",
+  "url": "http://localhost:4317/welcome-window.html?step=cloud-sync",
+  "viewport": {
+   "width": 1280,
+   "height": 760
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "userDefaults.get",
+   "settings.getInternalExtensionSettings",
+   "extensionHost.getAllExtensions",
+   "settings.getContentZoom",
+   "raycast.webViewStateChanged",
+   "raycast.consumeWelcomeResumeStep",
+   "analytics.track",
+   "settings.getCloudSyncSettings",
+   "system.getV2MigrationStatus",
+   "onboarding.getSuggestedExtensions",
+   "system.getClassicMigrationStatus",
+   "system.getImportSettingsDataStatus",
+   "permissions.checkPermission",
+   "settings.getGeneralSettings",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "auth.getToken"
+  ]
+ },
+ {
+  "id": "standard-06-extensions",
+  "label": "Onboarding (standard) — extensions",
+  "url": "http://localhost:4317/welcome-window.html?step=extensions",
+  "viewport": {
+   "width": 1280,
+   "height": 760
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "userDefaults.get",
+   "settings.getInternalExtensionSettings",
+   "extensionHost.getAllExtensions",
+   "settings.getContentZoom",
+   "raycast.webViewStateChanged",
+   "raycast.consumeWelcomeResumeStep",
+   "analytics.track",
+   "system.getV2MigrationStatus",
+   "onboarding.getSuggestedExtensions",
+   "system.getClassicMigrationStatus",
+   "system.getImportSettingsDataStatus",
+   "permissions.checkPermission",
+   "settings.getCloudSyncSettings",
+   "settings.getGeneralSettings",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "auth.getToken"
+  ]
+ },
+ {
+  "id": "standard-07-contact",
+  "label": "Onboarding (standard) — contact",
+  "url": "http://localhost:4317/welcome-window.html?step=contact",
+  "viewport": {
+   "width": 1280,
+   "height": 760
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "userDefaults.get",
+   "settings.getInternalExtensionSettings",
+   "extensionHost.getAllExtensions",
+   "settings.getContentZoom",
+   "raycast.webViewStateChanged",
+   "raycast.consumeWelcomeResumeStep",
+   "analytics.track",
+   "system.getV2MigrationStatus",
+   "onboarding.getSuggestedExtensions",
+   "system.getClassicMigrationStatus",
+   "system.getImportSettingsDataStatus",
+   "permissions.checkPermission",
+   "settings.getCloudSyncSettings",
+   "settings.getGeneralSettings",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "auth.getToken"
+  ]
+ },
+ {
+  "id": "standard-08-launch",
+  "label": "Onboarding (standard) — launch",
+  "url": "http://localhost:4317/welcome-window.html?step=launch",
+  "viewport": {
+   "width": 1280,
+   "height": 760
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "userDefaults.get",
+   "settings.getInternalExtensionSettings",
+   "extensionHost.getAllExtensions",
+   "settings.getContentZoom",
+   "raycast.webViewStateChanged",
+   "raycast.consumeWelcomeResumeStep",
+   "analytics.track",
+   "onboarding.complete",
+   "hotkey.toggleRecording",
+   "hotkey.symbolicHotkeyStatus",
+   "system.getV2MigrationStatus",
+   "onboarding.getSuggestedExtensions",
+   "system.getClassicMigrationStatus",
+   "system.getImportSettingsDataStatus",
+   "permissions.checkPermission",
+   "settings.getCloudSyncSettings",
+   "settings.getGeneralSettings",
+   "raycast.completeOnboarding",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "auth.getToken"
+  ]
+ }
+]

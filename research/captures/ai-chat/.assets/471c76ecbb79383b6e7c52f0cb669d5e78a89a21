@@ -1,0 +1,1 @@
+.chat-composer-add-button__button_ca46d>svg{will-change:transform;transition:transform .15s ease-out}.chat-composer-add-button__button_ca46d[data-state=open]>svg{transform:rotate(45deg)scale(1.15)}

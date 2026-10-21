@@ -1,0 +1,5 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="ef0fab19-37e3-5d6b-887a-064a35f51159")}catch(e){}}();
+import{t as e}from"./local-storage-C_uFdbNF.js";var t=`handoff-`;function n(n,r){let i=r?.storageKey??`${t}${n}`,a=r?.urlParam??i,o=e.getStorageId(i);return{send(t){e.set(i,t)},consume(){let t=new URL(window.location.href),n=t.searchParams.get(a);if(n){t.searchParams.delete(a),window.history.replaceState({},document.title,t.toString());try{let t=JSON.parse(decodeURIComponent(n));return e.remove(i),t}catch{}}let r=e.get(i,null);return r!==null&&e.remove(i),r},hasPending(){return new URL(window.location.href).searchParams.has(a)||e.getRaw(i)!==null},subscribe(t){let n=n=>{if(n.key!==o||!n.newValue)return;let r=e.get(i,null);r!==null&&(e.remove(i),t(r))};return window.addEventListener(`storage`,n),()=>window.removeEventListener(`storage`,n)}}}export{n as t};
+//# sourceMappingURL=window-handoff-fMu7u2Zy.js.map
+//# debugId=ef0fab19-37e3-5d6b-887a-064a35f51159

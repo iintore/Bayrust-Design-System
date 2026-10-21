@@ -1,0 +1,161 @@
+{
+ "name": "organisms",
+ "items": [
+  {
+   "id": "launcher-search-bar",
+   "label": "Launcher search bar",
+   "url": "/main-window.html",
+   "viewport": [
+    750,
+    475
+   ],
+   "selector": "header[class*='navigation-bar-ui__root']"
+  },
+  {
+   "id": "root-search-list",
+   "label": "Root search list",
+   "url": "/main-window.html",
+   "viewport": [
+    750,
+    475
+   ],
+   "selector": "main[class*='base-view__content']"
+  },
+  {
+   "id": "action-bar",
+   "label": "Action bar (footer)",
+   "url": "/main-window.html",
+   "viewport": [
+    750,
+    475
+   ],
+   "selector": "footer[class*='action-bar-ui__root']"
+  },
+  {
+   "id": "calculator-card",
+   "label": "Inline calculator result",
+   "url": "/main-window.html",
+   "viewport": [
+    750,
+    475
+   ],
+   "steps": [
+    {
+     "keys": "24*7+12"
+    },
+    {
+     "wait": 1500
+    }
+   ],
+   "selector": "[class*='split-command-item__outerWrapper']"
+  },
+  {
+   "id": "emoji-grid",
+   "label": "Emoji & Symbols grid",
+   "url": "/main-window.html",
+   "viewport": [
+    750,
+    475
+   ],
+   "steps": [
+    {
+     "keys": "emoji"
+    },
+    {
+     "wait": 1200
+    },
+    {
+     "key": "return"
+    },
+    {
+     "wait": 2500
+    }
+   ],
+   "selector": "#main-window-root"
+  },
+  {
+   "id": "snippet-form",
+   "label": "Create Snippet form",
+   "url": "/main-window.html",
+   "viewport": [
+    750,
+    475
+   ],
+   "steps": [
+    {
+     "keys": "create snippet"
+    },
+    {
+     "wait": 1200
+    },
+    {
+     "key": "return"
+    },
+    {
+     "wait": 2500
+    }
+   ],
+   "selector": "#main-window-root"
+  },
+  {
+   "id": "settings-sidebar",
+   "label": "Settings sidebar",
+   "url": "/settings-window.html",
+   "viewport": [
+    1000,
+    700
+   ],
+   "selector": "[class*='sidebar']"
+  },
+  {
+   "id": "ai-chat-composer",
+   "label": "AI Chat composer",
+   "url": "/ai-chat-window.html",
+   "viewport": [
+    750,
+    600
+   ],
+   "selector": "[class*='composer'][class*='root'], [class*='chat-composer']"
+  },
+  {
+   "id": "ai-chat-sidebar",
+   "label": "AI Chat sidebar",
+   "url": "/ai-chat-window.html",
+   "viewport": [
+    750,
+    600
+   ],
+   "selector": "[class*='sidebar']"
+  },
+  {
+   "id": "onboarding-navigation",
+   "label": "Onboarding navigation",
+   "url": "/welcome-window.html?step=features",
+   "viewport": [
+    1280,
+    760
+   ],
+   "selector": "[class*='navigation__root']"
+  },
+  {
+   "id": "onboarding-feature-grid",
+   "label": "Onboarding feature cards",
+   "url": "/welcome-window.html?step=features",
+   "viewport": [
+    1280,
+    760
+   ],
+   "selector": "[class*='features-step__scrollArea']"
+  },
+  {
+   "id": "permission-rows",
+   "label": "Onboarding permission rows",
+   "url": "/welcome-window.html?step=permissions",
+   "viewport": [
+    1280,
+    760
+   ],
+   "selector": "[class*='permissions-step__permissionsList']"
+  }
+ ]
+}

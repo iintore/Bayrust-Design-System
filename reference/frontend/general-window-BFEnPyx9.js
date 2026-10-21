@@ -1,0 +1,5 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="5d8c366a-6236-5ee9-87b4-f1c8f3f7d94c")}catch(e){}}();
+import{n as e}from"./logger-DNVmeXhU.js";import{u as t}from"./register-query-client-CHYpWjSJ.js";import{t as n}from"./services-CI1JjB8Y.js";import{t as r}from"./open-settings-LwJrVgcp.js";var i={...t,shouldCloseWindow:async()=>!0,openSettings:async e=>{await r({to:e.to,params:e.routeParams,search:e.search})},runningApplicationsUpdate:async t=>{e.debug(`api`,`Running applications updated`),n.systemAppsStore.actions.updateRunningApplications(t.applications),n.systemAppsStore.actions.updateshowAppIsRunningIndicators(t.showIndicators)},frontmostAppUpdate:async e=>{n.systemAppsStore.actions.setFrontmostApp(e)},menuBarOwningAppUpdate:async e=>{n.systemAppsStore.actions.setMenuBarOwningApp(e)}};export{i as t};
+//# sourceMappingURL=general-window-BFEnPyx9.js.map
+//# debugId=5d8c366a-6236-5ee9-87b4-f1c8f3f7d94c

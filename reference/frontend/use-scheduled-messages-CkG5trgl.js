@@ -1,0 +1,5 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="c629d715-4cea-5655-9458-06d2eb581637")}catch(e){}}();
+import{o as e}from"./chunk-CMxvf4Kt.js";import{n as t}from"./logger-DNVmeXhU.js";import{n}from"./time-BgPLLP_H.js";import{t as r}from"./services-CI1JjB8Y.js";var i=e(n(),1);function a({enabled:e=!0}={}){let[n,a]=i.useState(void 0),[o,s]=i.useState(e);return i.useEffect(()=>{if(!e){s(!1),a(void 0);return}let n=!1,i=async()=>{try{let e=await r.ipc.backend.ai.getScheduledMessages();n||a(e)}catch(e){t.error(`ai-chat`,`Failed to load scheduled messages`,{error:e,submit:`never`})}finally{n||s(!1)}};s(!0),i();let o=r.ipcNotification.ai.subscribeScheduledMessagesUpdated(()=>{i()});return()=>{n=!0,o()}},[e]),{isLoading:o,scheduledMessages:n}}export{a as t};
+//# sourceMappingURL=use-scheduled-messages-CkG5trgl.js.map
+//# debugId=c629d715-4cea-5655-9458-06d2eb581637

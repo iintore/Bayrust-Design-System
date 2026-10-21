@@ -1,0 +1,1157 @@
+{
+ "about-settings-view-os_mxIBL.css": {
+  "state": [
+   "download_error",
+   "download_success",
+   "downloading",
+   "focus",
+   "idle",
+   "pending",
+   "update_unavailable"
+  ]
+ },
+ "action-bar-ui-BSiWPHD2.css": {
+  "animated": [
+   "true"
+  ],
+  "state": [
+   "open"
+  ]
+ },
+ "action-button-Dsr_4e-d.css": {
+  "hover-variant": [
+   "outset"
+  ],
+  "is-icon-only": [
+   "true"
+  ],
+  "state": [
+   "open"
+  ]
+ },
+ "activity-group-thxKtblB.css": {
+  "open": [
+   "true"
+  ]
+ },
+ "activity-indicator-CRauTNew.css": {
+  "is-determinate": [
+   "false",
+   "true"
+  ],
+  "variant": [
+   "failure",
+   "pending",
+   "success",
+   "warning"
+  ]
+ },
+ "ai-chat-playground-view-FKWQDi3h.css": {
+  "composer-geometry": [
+   "compact"
+  ],
+  "playground-annotation": [
+   "note"
+  ]
+ },
+ "ai-chat-trace-view-BodXHIi-.css": {
+  "category": [
+   "assistant",
+   "degradation",
+   "image-generation",
+   "input",
+   "remote-tool",
+   "retry",
+   "state",
+   "tool"
+  ],
+  "lane": [
+   "input",
+   "model",
+   "state",
+   "tools"
+  ],
+  "run-role": [
+   "subagent"
+  ],
+  "status": [
+   "cancelled",
+   "failed",
+   "pending",
+   "waiting",
+   "waiting-for-input",
+   "warning"
+  ],
+  "tone": [
+   "error"
+  ]
+ },
+ "ai-credits-meter-ERnZxnDd.css": {
+  "animates": [
+   "true"
+  ],
+  "level": [
+   "empty",
+   "low"
+  ]
+ },
+ "ai-models-settings-view-CDU9avbz.css": {
+  "collapsed": [
+   "true"
+  ],
+  "disabled": [
+   "true"
+  ],
+  "has-top-padding": [
+   "true"
+  ],
+  "last": [
+   "true"
+  ],
+  "local-models-only": [
+   "true"
+  ],
+  "locked": [
+   "true"
+  ],
+  "status": [
+   "failure",
+   "success"
+  ],
+  "supported": [
+   "false"
+  ],
+  "tone": [
+   "connected",
+   "error",
+   "warning"
+  ],
+  "variant": [
+   "ghost"
+  ]
+ },
+ "ai-settings-view-BVOZd9KW.css": {
+  "state": [
+   "open"
+  ]
+ },
+ "ai-workspace-view-BL0GtoVs.css": {
+  "direction": [
+   "column"
+  ],
+  "group-bottom-padding": [
+   "2",
+   "4"
+  ],
+  "open": [
+   "false"
+  ],
+  "sidebar-drop-target": [
+   "true"
+  ],
+  "status": [
+   "added",
+   "deleted",
+   "failed",
+   "running"
+  ]
+ },
+ "argument-list-77efpdHq.css": {
+  "checked": [
+   "true"
+  ],
+  "composer-geometry": [
+   "expanded-control-row",
+   "expanded-overlay"
+  ],
+  "fade-left": [
+   "true"
+  ],
+  "fade-right": [
+   "true"
+  ],
+  "mask-settled": [
+   "true"
+  ],
+  "state": [
+   "open"
+  ]
+ },
+ "badge-BF6Tq1sW.css": {
+  "color": [
+   "blue",
+   "gray",
+   "green",
+   "orange",
+   "red",
+   "yellow"
+  ],
+  "size": [
+   "large",
+   "medium",
+   "small"
+  ],
+  "variant": [
+   "default",
+   "standout"
+  ]
+ },
+ "base-button-CUGcJ4rl.css": {
+  "color": [
+   "accent",
+   "blue",
+   "default",
+   "green",
+   "magenta",
+   "orange",
+   "purple",
+   "red",
+   "secondary",
+   "yellow"
+  ],
+  "size": [
+   "large",
+   "medium",
+   "mini",
+   "small"
+  ],
+  "state": [
+   "focus",
+   "hover",
+   "open",
+   "pressed"
+  ],
+  "variant": [
+   "default",
+   "destructive",
+   "ghost",
+   "link",
+   "secondary",
+   "standout"
+  ]
+ },
+ "boxed-emoji-BiaBouVV.css": {
+  "state": [
+   "selected"
+  ]
+ },
+ "button-primitive-DsIGu-kv.css": {
+  "size": [
+   "large",
+   "medium",
+   "mini",
+   "small"
+  ],
+  "variant": [
+   "link"
+  ]
+ },
+ "button-radio-group-primitive-C3QbKPwl.css": {
+  "size": [
+   "medium",
+   "small"
+  ],
+  "variant": [
+   "icon"
+  ]
+ },
+ "calendar-utils-CSQASyNL.css": {
+  "size": [
+   "large",
+   "medium",
+   "small"
+  ]
+ },
+ "chat-composer-add-button-BXm6J0x1.css": {
+  "state": [
+   "open"
+  ]
+ },
+ "chat-layout-B9n7TGP9.css": {
+  "chat-hover-suppressed": [
+   "true"
+  ],
+  "is-showing-number-hotkey-hint": [
+   "false",
+   "true"
+  ]
+ },
+ "command-hotkey-input-BcVTlzp-.css": {
+  "state": [
+   "open"
+  ]
+ },
+ "command-list-item-accessory-B46jdVvu.css": {
+  "appearance": [
+   "borderless"
+  ],
+  "layout": [
+   "overlay"
+  ],
+  "size": [
+   "compact",
+   "default",
+   "icon",
+   "large",
+   "medium",
+   "small"
+  ],
+  "state": [
+   "loading",
+   "open"
+  ]
+ },
+ "command-panel-B6jUjrBi.css": {
+  "variant": [
+   "subtle"
+  ]
+ },
+ "context-window-breakdown-CqvwoUEj.css": {
+  "aspect": [
+   "portrait",
+   "square",
+   "wide"
+  ],
+  "color": [
+   "blue",
+   "free",
+   "green",
+   "magenta",
+   "orange",
+   "purple",
+   "red",
+   "unattributed",
+   "yellow"
+  ],
+  "composer-editor-bottom-inset": [
+   "tight-before-control-row"
+  ],
+  "composer-editor-top-inset": [
+   "attachment-adjacent"
+  ],
+  "composer-expanded": [
+   "true"
+  ],
+  "composer-geometry": [
+   "expanded-control-row",
+   "expanded-overlay"
+  ],
+  "has-natural-size": [
+   "false"
+  ],
+  "loaded": [
+   "true"
+  ],
+  "open": [
+   "true"
+  ],
+  "show-bottom-separator": [
+   "true"
+  ],
+  "show-top-separator": [
+   "true"
+  ],
+  "status": [
+   "failed",
+   "uploading"
+  ],
+  "variant": [
+   "document",
+   "image",
+   "text"
+  ]
+ },
+ "css-C58pR_1e.css": {
+  "raycast-selectable-region": [
+   "true"
+  ]
+ },
+ "data-list-DRZk4s_x.css": {
+  "direction": [
+   "column",
+   "row"
+  ],
+  "layout": [
+   "narrow",
+   "wide"
+  ]
+ },
+ "dictation-microphone-settings-view-Dy9M3wl6.css": {
+  "collapsed": [
+   "true"
+  ],
+  "dragging": [
+   "true"
+  ]
+ },
+ "dictation-settings-view-SPPoz45U.css": {
+  "active": [
+   "true"
+  ],
+  "future": [
+   "true"
+  ],
+  "level": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ]
+ },
+ "dropdown-button-DbnJEzow.css": {
+  "size": [
+   "default",
+   "small"
+  ],
+  "state": [
+   "open"
+  ],
+  "variant": [
+   "bare",
+   "default",
+   "ghost",
+   "macos-nav",
+   "settings-header"
+  ]
+ },
+ "emoji-popover-layout-BJg_pLw7.css": {
+  "state": [
+   "selected"
+  ]
+ },
+ "empty-state-default-sUeom7-T.css": {
+  "aspect": [
+   "portrait",
+   "square",
+   "wide"
+  ],
+  "clickable": [
+   "true"
+  ],
+  "dictating": [
+   "true"
+  ],
+  "disabled": [
+   "true"
+  ],
+  "fade-bottom": [
+   "true"
+  ],
+  "fade-top": [
+   "true"
+  ],
+  "find-decoration": [
+   "active",
+   "match"
+  ],
+  "find-hit": [
+   "active",
+   "match",
+   "partial"
+  ],
+  "loaded": [
+   "true"
+  ],
+  "separated": [
+   "true"
+  ],
+  "shell-mode": [
+   "true"
+  ],
+  "state": [
+   "open"
+  ],
+  "subdued": [
+   "true"
+  ]
+ },
+ "feedback-window-CryxMGEs.css": {
+  "dragging": [
+   "true"
+  ],
+  "show": [
+   "true"
+  ]
+ },
+ "gradient-border-Bpyr1HOt.css": {
+  "animated": [
+   "true"
+  ],
+  "type": [
+   "conic",
+   "linear"
+  ]
+ },
+ "icon-button-DqhNeQCw.css": {
+  "size": [
+   "medium",
+   "mini",
+   "small"
+  ]
+ },
+ "input-field-CL6h9QaG.css": {
+  "is-leading": [
+   "true"
+  ],
+  "is-trailing": [
+   "true"
+  ],
+  "size": [
+   "default",
+   "small"
+  ],
+  "state": [
+   "focus",
+   "open"
+  ],
+  "variant": [
+   "error",
+   "success"
+  ]
+ },
+ "keyboard-shortcut-recorder-C6EeGSZW.css": {
+  "prev-variant": [
+   "conflict"
+  ],
+  "variant": [
+   "conflict",
+   "hint",
+   "saved"
+  ]
+ },
+ "launcher-settings-view-D4bk6VnB.css": {
+  "dragging": [
+   "true"
+  ]
+ },
+ "link-popover-EztlpIEA.css": {
+  "find-bar-visible": [
+   "true"
+  ],
+  "is-determinate": [
+   "false"
+  ],
+  "list-kind": [
+   "bullet",
+   "ordered",
+   "task",
+   "toggle"
+  ],
+  "loading": [
+   "true"
+  ],
+  "selected": [
+   "true"
+  ],
+  "sized": [
+   "true"
+  ]
+ },
+ "logo-C48ej8Lo.css": {
+  "flavor": [
+   "Development",
+   "Internal",
+   "Production"
+  ]
+ },
+ "macos-BLhQOF0x.css": {
+  "state": [
+   "open"
+  ]
+ },
+ "main-window-D86HuOHt.css": {
+  "auto-quit-enabled": [
+   "true"
+  ],
+  "background-type": [
+   "blur"
+  ],
+  "clock": [
+   "12-hour",
+   "24-hour"
+  ],
+  "error": [
+   "true"
+  ],
+  "has-day-after": [
+   "true"
+  ],
+  "has-day-before": [
+   "true"
+  ],
+  "has-error": [
+   "true"
+  ],
+  "hovered": [
+   "false",
+   "true"
+  ],
+  "interactive": [
+   "true"
+  ],
+  "is-hidden": [
+   "true"
+  ],
+  "is-range": [
+   "true"
+  ],
+  "is-revealing": [
+   "false",
+   "true"
+  ],
+  "is-space": [
+   "true"
+  ],
+  "is-truncated": [
+   "true"
+  ],
+  "list-kind": [
+   "task"
+  ],
+  "muted": [
+   "true"
+  ],
+  "offset": [
+   "false"
+  ],
+  "open": [
+   "true"
+  ],
+  "secured": [
+   "true"
+  ],
+  "should-show-dismiss-button": [
+   "false",
+   "true"
+  ],
+  "should-wrap": [
+   "true"
+  ],
+  "show-hint": [
+   "true"
+  ],
+  "size": [
+   "large",
+   "small"
+  ],
+  "state": [
+   "error",
+   "open",
+   "selected"
+  ],
+  "status": [
+   "error",
+   "running"
+  ],
+  "toast-variant": [
+   "failure",
+   "pending",
+   "success",
+   "warning"
+  ],
+  "tone": [
+   "error",
+   "success"
+  ],
+  "variant": [
+   "default",
+   "failure",
+   "filled",
+   "ghost",
+   "outlined",
+   "pending",
+   "success",
+   "warning",
+   "with-border"
+  ],
+  "with-offset-top": [
+   "true"
+  ]
+ },
+ "menu-Ds6cjqzc.css": {
+  "size": [
+   "medium",
+   "small"
+  ],
+  "state": [
+   "focus",
+   "hover",
+   "off",
+   "on",
+   "open",
+   "pressed"
+  ]
+ },
+ "node-extension-settings-view-BVqHvFoA.css": {
+  "inline": [
+   "true"
+  ]
+ },
+ "notes-window-CzTVBJW4.css": {
+  "active": [
+   "true"
+  ],
+  "notes-editor-restoring-scroll": [
+   "true"
+  ],
+  "open": [
+   "true"
+  ],
+  "show": [
+   "true"
+  ],
+  "state": [
+   "selected"
+  ],
+  "visible": [
+   "true"
+  ]
+ },
+ "number-badge-jw363DdV.css": {
+  "color": [
+   "accent",
+   "default"
+  ],
+  "size": [
+   "large",
+   "small"
+  ]
+ },
+ "popover-MDqywrCo.css": {
+  "state": [
+   "closed",
+   "open"
+  ],
+  "variant": [
+   "default",
+   "error"
+  ]
+ },
+ "quick-ai-footer-DWhcXo4Q.css": {
+  "state": [
+   "open"
+  ]
+ },
+ "raycast-account-settings-view-Da2Ogqh0.css": {
+  "inline": [
+   "true"
+  ],
+  "loaded": [
+   "false"
+  ]
+ },
+ "screen-awareness-highlight-DZPqkSl-.css": {
+  "control": [
+   "close",
+   "maximize"
+  ],
+  "state": [
+   "open"
+  ]
+ },
+ "scroll-area-BDchHjnZ.css": {
+  "can-scroll": [
+   "true"
+  ],
+  "orientation": [
+   "horizontal",
+   "vertical"
+  ],
+  "scroll-area-dragging": [
+   "true"
+  ],
+  "should-fade": [
+   "true"
+  ],
+  "state": [
+   "hidden",
+   "visible"
+  ]
+ },
+ "search-input-CiPd1X7i.css": {
+  "variant": [
+   "settings-header",
+   "settings-sidebar"
+  ]
+ },
+ "settings-ui-C-zCRim3.css": {
+  "align": [
+   "center",
+   "start"
+  ],
+  "enabled": [
+   "false"
+  ],
+  "has-padding-bottom": [
+   "false"
+  ],
+  "has-padding-top": [
+   "false"
+  ],
+  "inline": [
+   "true"
+  ],
+  "spacing": [
+   "roomy"
+  ],
+  "variant": [
+   "default"
+  ]
+ },
+ "settings-window-Zdi-C75E.css": {
+  "active": [
+   "false",
+   "true"
+  ],
+  "hide-icon-border": [
+   "true"
+  ],
+  "is-searching": [
+   "true"
+  ],
+  "is-showing-number-hotkey-hint": [
+   "false",
+   "true"
+  ],
+  "navigable-list-item-active": [
+   "true"
+  ],
+  "position": [
+   "bottom",
+   "left",
+   "right",
+   "top"
+  ],
+  "static": [
+   "true"
+  ],
+  "status": [
+   "active",
+   "failure",
+   "success"
+  ]
+ },
+ "shortcut-A4v8HVbK.css": {
+  "size": [
+   "medium",
+   "small"
+  ],
+  "variant": [
+   "default",
+   "error",
+   "framed",
+   "prominent",
+   "success"
+  ]
+ },
+ "shortcuts-settings-view-Bkcz1g36.css": {
+  "collapsed": [
+   "false",
+   "true"
+  ],
+  "last": [
+   "true"
+  ],
+  "nested": [
+   "true"
+  ]
+ },
+ "sidebar-background-DIHIrSup.css": {
+  "variant": [
+   "overlay"
+  ]
+ },
+ "standard-extension-command-item-CJSAShYk.css": {
+  "collapsed": [
+   "true"
+  ],
+  "disabled": [
+   "true"
+  ],
+  "expanded": [
+   "true"
+  ],
+  "last-in-group": [
+   "true"
+  ],
+  "size": [
+   "small"
+  ]
+ },
+ "standard-list-item-DXKtvMq1.css": {
+  "color": [
+   "accent",
+   "blue",
+   "default",
+   "green",
+   "magenta",
+   "orange",
+   "purple",
+   "red",
+   "yellow"
+  ],
+  "is-overflowing": [
+   "true"
+  ],
+  "is-showing-number-hotkey-hint": [
+   "false",
+   "true"
+  ],
+  "size": [
+   "large",
+   "medium",
+   "multiline",
+   "small"
+  ],
+  "state": [
+   "selected"
+  ]
+ },
+ "subagent-status-item-DSmYB6tJ.css": {
+  "status": [
+   "added",
+   "backgrounded",
+   "deleted",
+   "failed",
+   "modified",
+   "renamed",
+   "waiting",
+   "working"
+  ]
+ },
+ "switch-Bd6O9ImU.css": {
+  "size": [
+   "large",
+   "medium"
+  ]
+ },
+ "textarea-DxXgAy_K.css": {
+  "state": [
+   "error"
+  ]
+ },
+ "theme-icon-DCbFr7jZ.css": {
+  "name": [
+   "moon",
+   "sun"
+  ],
+  "size": [
+   "medium",
+   "small"
+  ]
+ },
+ "theme-studio-window-C-jpYoY-.css": {
+  "is-editing": [
+   "true"
+  ],
+  "overlayed": [
+   "false",
+   "true"
+  ],
+  "state": [
+   "open",
+   "selected"
+  ]
+ },
+ "token-input-field-e3a5Nkpn.css": {
+  "state": [
+   "open",
+   "selected"
+  ]
+ },
+ "toolbar-background-NZ6LvZUU.css": {
+  "edge": [
+   "bottom"
+  ],
+  "force-visible": [
+   "false",
+   "true"
+  ],
+  "visible-on-window-blur": [
+   "true"
+  ],
+  "window-mode": [
+   "floating",
+   "regular"
+  ]
+ },
+ "top-up-credits-dialog-C9PxXYQF.css": {
+  "checked": [
+   "true"
+  ],
+  "selected": [
+   "true"
+  ]
+ },
+ "usage-provider-selector-DJufkiIq.css": {
+  "presentation": [
+   "dialog"
+  ]
+ },
+ "use-ai-chat-router-D89LNsGs.css": {
+  "side": [
+   "right"
+  ],
+  "sidebar-drop-target": [
+   "true"
+  ],
+  "sidebar-drop-target-first": [
+   "true"
+  ],
+  "variant": [
+   "inline"
+  ]
+ },
+ "use-command-preview-DtKq318G.css": {
+  "chat-interaction-draft-inactive": [
+   "true"
+  ],
+  "chat-interaction-draft-selected": [
+   "true"
+  ],
+  "scroll-panel": [
+   "true"
+  ]
+ },
+ "use-send-to-fresh-draft-CvemqlLS.css": {
+  "expanded": [
+   "true"
+  ],
+  "sidebar-chat-dragging": [
+   "true"
+  ],
+  "sidebar-drop-target": [
+   "true"
+  ],
+  "sidebar-drop-target-first": [
+   "true"
+  ],
+  "sidebar-drop-target-last": [
+   "true"
+  ],
+  "visible": [
+   "false"
+  ]
+ },
+ "welcome-window-CrdvSN9_.css": {
+  "bw": [
+   "true"
+  ],
+  "direction": [
+   "right"
+  ],
+  "pressed": [
+   "true"
+  ],
+  "state": [
+   "open"
+  ],
+  "unmounting": [
+   "true"
+  ]
+ },
+ "window-management-settings-view-BnjmGeeU.css": {
+  "selected": [
+   "true"
+  ]
+ },
+ "window-shell-hosts-BW4uWY7z.css": {
+  "active": [
+   "true"
+  ],
+  "box": [
+   "center",
+   "end",
+   "start"
+  ],
+  "edge": [
+   "bottom",
+   "left",
+   "right",
+   "top"
+  ],
+  "expanded": [
+   "true"
+  ],
+  "hidden": [
+   "true"
+  ],
+  "is-in-native-view": [
+   "false",
+   "true"
+  ],
+  "layout": [
+   "bar",
+   "horizontal",
+   "rail",
+   "sidebar",
+   "vertical"
+  ],
+  "muted": [
+   "true"
+  ],
+  "orientation": [
+   "horizontal",
+   "vertical"
+  ],
+  "part": [
+   "artist",
+   "condition",
+   "end",
+   "numeric",
+   "weekday"
+  ],
+  "runs-on-click": [
+   "true"
+  ],
+  "severity": [
+   "error",
+   "normal",
+   "warning"
+  ],
+  "size": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "large",
+   "medium",
+   "min"
+  ],
+  "state": [
+   "hovered",
+   "open",
+   "pinned"
+  ],
+  "status": [
+   "paused",
+   "tentative"
+  ],
+  "variant": [
+   "failure",
+   "success",
+   "warning"
+  ],
+  "window-hovered": [
+   "true"
+  ]
+ },
+ "workspace-sidebar-process-badge-B9t-zj2M.css": {
+  "chat-hover-suppressed": [
+   "true"
+  ],
+  "is-showing-number-hotkey-hint": [
+   "false",
+   "true"
+  ],
+  "status": [
+   "draft",
+   "running",
+   "update"
+  ],
+  "type": [
+   "added",
+   "removed"
+  ]
+ }
+}

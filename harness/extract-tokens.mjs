@@ -1,0 +1,76 @@
+// Resolves every CSS custom property declared by the shipped stylesheets, in Raycast Dark and Raycast Light,
+// from a bootstrapped Raycast window. Writes design-system/tokens/{raycast.tokens.json,tokens.css,tokens-raw.json}.
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { chromium } from 'playwright-core';
+const here = path.dirname(fileURLToPath(import.meta.url));
+const out = path.resolve(here, '../design-system/tokens');
+const browser = await chromium.launch({ channel: 'chrome', headless: true });
+const result = {};
+for (const appearance of ['dark', 'light']) {
+  const ctx = await browser.newContext({ locale: 'en-RW', viewport: { width: 1280, height: 760 }, deviceScaleFactor: 2, colorScheme: appearance });
+  const page = await ctx.newPage();
+  await page.goto(`http://localhost:4317/settings-window.html?appearance=${appearance}`);
+  await page.waitForTimeout(4000);
+  result[appearance] = await page.evaluate(() => {
+    const root = document.documentElement;
+    const declared = {};
+    for (const sheet of document.styleSheets) {
+      let rules; try { rules = sheet.cssRules; } catch { continue; }
+      const walk = (list) => { for (const r of list) { if (r.cssRules) walk(r.cssRules); if (r.style) for (const p of r.style) if (p.startsWith('--')) (declared[p] ??= new Set()).add(r.selectorText || r.conditionText || ''); } };
+      walk(rules);
+    }
+    for (const p of root.style) if (p.startsWith('--')) (declared[p] ??= new Set()).add('html[style] (runtime theme)');
+    const probe = document.createElement('div'); root.appendChild(probe);
+    const cs = getComputedStyle(root);
+    const tokens = {};
+    for (const [name, sels] of Object.entries(declared)) {
+      const raw = cs.getPropertyValue(name).trim();
+      let resolved = raw;
+      // Substitute var() references first, so each token resolves through a property of its own type
+      // (a shadow or a border through `color` would come back as the inherited text colour).
+      const subst = (v, d = 0) => (d > 10 ? v : v.replace(/var\((--[\w-]+)(?:,\s*([^()]*(?:\([^()]*\))?[^()]*))?\)/g, (m, n, fb) => subst(cs.getPropertyValue(n).trim() || fb || '', d + 1)));
+      const flat = subst(raw);
+      if (flat && CSS.supports('color', flat)) {
+        probe.style.color = flat; resolved = getComputedStyle(probe).color; probe.style.color = '';
+      } else if (/round\(|calc\(/.test(flat) && CSS.supports('width', flat)) {
+        probe.style.width = flat; const w = getComputedStyle(probe).width; if (w !== 'auto') resolved = w; probe.style.width = '';
+      } else if (/px/.test(flat) && CSS.supports('box-shadow', flat)) {
+        probe.style.boxShadow = flat; resolved = getComputedStyle(probe).boxShadow; probe.style.boxShadow = '';
+      } else if (flat !== raw) resolved = flat;
+      tokens[name] = { value: raw, resolved, declaredIn: [...sels] };
+    }
+    probe.remove();
+    return { htmlAttributes: Object.fromEntries([...root.attributes].map(a => [a.name, a.value])), tokens };
+  });
+  await ctx.close();
+}
+await browser.close();
+await fs.writeFile(path.join(out, 'tokens-raw.json'), JSON.stringify(result, null, 1));
+
+// W3C-style token file grouped by family; values are the resolved runtime values per theme.
+const group = (n) => {
+  const s = n.slice(2);
+  if (/^(bg|bg-secondary|fg|accent|selection|loader|red|orange|yellow|green|blue|purple|magenta)(-\d+)?$/.test(s)) return 'color.palette';
+  if (s.startsWith('color-text')) return 'color.text';
+  if (s.startsWith('color-border')) return 'color.border';
+  if (s.startsWith('color-surface') || s.startsWith('color-panel') || s.startsWith('color-window')) return 'color.surface';
+  if (/-(on-tint|contrast|transparent)/.test(s) || s.startsWith('color-token')) return 'color.semantic';
+  if (s.startsWith('color')) return 'color.other';
+  if (s.startsWith('space')) return 'space'; if (s.startsWith('radius')) return 'radius';
+  if (s.startsWith('font')) return 'typography'; if (s.startsWith('icon')) return 'icon-size';
+  if (s.startsWith('blur')) return 'blur'; if (s.startsWith('shadow')) return 'shadow';
+  if (s.startsWith('easing') || s.includes('transition')) return 'motion';
+  if (s.includes('window')) return 'window'; return 'other';
+};
+const tokens = {};
+for (const [name, d] of Object.entries(result.dark.tokens)) {
+  const g = group(name); const l = result.light.tokens[name];
+  (tokens[g] ??= {})[name.slice(2)] = { $value: d.resolved, $extensions: { raycast: { cssVar: name, source: d.value, dark: d.resolved, light: l?.resolved ?? null, declaredIn: d.declaredIn } } };
+}
+await fs.writeFile(path.join(out, 'raycast.tokens.json'), JSON.stringify(tokens, null, 1));
+const css = (theme) => Object.entries(result[theme].tokens).filter(([, v]) => v.resolved).map(([k, v]) => `  ${k}: ${v.resolved};`).join('\n');
+await fs.writeFile(path.join(out, 'tokens.css'), `/* Bayrust (Raycast 2.8.2) — resolved design tokens (generated by harness/extract-tokens.mjs from the shipped frontend). */\n[data-theme="raycast-dark"] {\n${css('dark')}\n}\n[data-theme="raycast-light"] {\n${css('light')}\n}\n`);
+console.log(Object.fromEntries(Object.entries(tokens).map(([g, v]) => [g, Object.keys(v).length])));
+console.log('dark attrs', result.dark.htmlAttributes, '\nlight attrs', result.light.htmlAttributes);

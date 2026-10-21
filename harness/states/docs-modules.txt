@@ -1,0 +1,16 @@
+standard-list-item list search-field-ui search-input navigation-bar-ui action-bar-ui menu popover select dropdown-button
+button-radio-group-primitive column-count-radio-group column-count-grid checkbox switch textarea input-field-primitive token-input-field token-primitive token
+form-layout settings-ui data-list dictation-activity-graph feature-card pro-gate-banner migration-progress navigation grid emoji-grid-item
+file-picker-primitive zoom-controls horizontal-rule headings paragraph link code flat-list empty-state-primitive empty-state-image root-search-view
+shortcut keyboard-shortcut visual-shortcut step-glow toggle-icon-button activity-indicator spinner icon-badge theme-icon social-buttons
+welcome-account-button raycast-account-settings-view audio-level-waveform dictation-hud hud-primitive settings-navigation-header settings-sidebar-search
+settings-window-view chat-history-sidebar sidebar-shell sidebar-chat-item sidebar-section-header chat-top-bar-mac chat-composer notes-window-top-bar notes-window-bottom-bar
+notes-editor command-alias-input command-hotkey-input extension-commands base-extension-command-item application-command-item split-command-item
+calculator-command-item theme-studio-preview theme-studio-window-view markdown node-tag-item badge base-badge base-button button-primitive icon-button typography
+launch-hotkey-trigger primary-actions root-search-nav-hint scroll-area progressive-blur gradient-border buttons actions welcome-window-view
+pro-walkthrough walkthrough-subscribe-button feature-card large-features-step permissions-step cloud-sync-step extensions-step contact-step launch-step
+ai-step welcome-step migration-step pro-step features-step native-client-feedback-view fallback-commands-section file-search-view create-snippet-view
+quicklink-form-view snippet-editor quicklink-editor text-editor store-accept-tos-view pro-gating-view window-management-animation
+apple-shortcuts-status cloud-sync-settings-view keyboard-settings-section general-settings-view about-settings-view logo launcher-logo boxed-emoji
+command-list-item-accessory navigation-select manage-fallback-commands-button
+ai-onboarding-sequence master-detail-layout

@@ -1,0 +1,5 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="3a097226-963c-56ab-a365-cc850c5cec7b")}catch(e){}}();
+import{o as e}from"./chunk-CMxvf4Kt.js";import{n as t}from"./time-BgPLLP_H.js";import{t as n}from"./src-6_EuYEmh.js";import{m as r}from"./react-BjVg6IT3.js";import{f as i}from"./turn-projection-D22Kzzj1.js";var a=e(t(),1),o={activity:`Starting…`,pendingInteractions:[],toolCallCount:0};function s(e){let t=r(),[s,c]=a.useState(null);return a.useEffect(()=>{let n=t.runs.attach(e,{priority:`visible`});return c(n),()=>{c(null),n.release()}},[e,t]),n(()=>{if(s===null||s.runId!==e)return{card:o,live:!1};let t=s.projection,n=t.itemCount();for(let e=0;e<n;e+=1)t.itemVersion(e);let r=s.status.get();return{card:i(t.peekBody()),live:r===`live`||r===`replaying`||r===`attaching`}},[e,s])}export{s as t};
+//# sourceMappingURL=use-child-run-card-CRAuqbRf.js.map
+//# debugId=3a097226-963c-56ab-a365-cc850c5cec7b

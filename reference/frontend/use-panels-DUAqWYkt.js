@@ -1,0 +1,5 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="9746ba3e-3c7f-5a89-8a98-382b6e502db7")}catch(e){}}();
+import{o as e}from"./chunk-CMxvf4Kt.js";import{n as t}from"./time-BgPLLP_H.js";import{E as n}from"./icon-CKbK2z_d.js";import{o as r}from"./react-B_wTDDwr.js";import{o as i}from"./alert-store-DE6kVJ-t.js";import{d as a,p as o}from"./shortcut-tWD_Kfmz.js";var s=e(t(),1);function c(e,{onClose:t}={}){let c=n(t),l=i()!==null,u=[...e.map(e=>e.isOpen),l],d=r(u),f=s.useRef(u),p=u.join(`,`),m=u.every(e=>!e),h=s.useRef(m),g=s.useRef(null),_=t!==void 0;s.useEffect(()=>{let e=d.current,t=f.current;e.some((e,n)=>e&&!t[n])&&o(new a),h.current!==m&&(h.current=m,m?_?c():g.current?.focus():g.current=document.activeElement instanceof HTMLElement?document.activeElement:null),f.current=e},[d,p,m,c,_])}export{c as t};
+//# sourceMappingURL=use-panels-DUAqWYkt.js.map
+//# debugId=9746ba3e-3c7f-5a89-8a98-382b6e502db7

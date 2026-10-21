@@ -1,0 +1,5 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="7a9ea604-010a-5d84-bb2b-abf5e1ffd3e8")}catch(e){}}();
+import{t as e}from"./services-CI1JjB8Y.js";import{t}from"./ai-extension-R40i_hUJ.js";import{V as n}from"./internal-extensions-DTEJ6vg9.js";async function r(t){let n=await e.ipc.backend.settings.openCatalog(t);if(n.nextCursor===void 0)return n;let r=[...n.extensions],i=n.nextCursor;for(;i!==void 0;){let t=await e.ipc.backend.settings.openCatalogPage({sessionId:n.sessionId,cursor:i});r.push(...t.extensions),i=t.nextCursor}return{...n,extensions:r,nextCursor:void 0}}function i(e){return!e}var a=n.commands.create.id;function o(e){return e===a}var s=t.commands.openAiChat.id;function c(e){return e===s}export{r as i,o as n,i as r,c as t};
+//# sourceMappingURL=pro-gating-badge-DCCILERQ.js.map
+//# debugId=7a9ea604-010a-5d84-bb2b-abf5e1ffd3e8

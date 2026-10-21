@@ -1,0 +1,104 @@
+01-root → {
+  capture: 15,
+  url: 'http://localhost:4317/main-window.html',
+  inlineSvgs: 14,
+  symbols: 0,
+  downloadedOriginals: 19,
+  failedDownloads: 0
+}
+02-search-clip → {
+  capture: 16,
+  url: 'http://localhost:4317/main-window.html',
+  inlineSvgs: 12,
+  symbols: 0,
+  downloadedOriginals: 69,
+  failedDownloads: 0
+}
+03-calculator → {
+  capture: 17,
+  url: 'http://localhost:4317/main-window.html',
+  inlineSvgs: 13,
+  symbols: 0,
+  downloadedOriginals: 29,
+  failedDownloads: 0
+}
+04-actions → {
+  capture: 18,
+  url: 'http://localhost:4317/main-window.html',
+  inlineSvgs: 14,
+  symbols: 0,
+  downloadedOriginals: 19,
+  failedDownloads: 0
+}
+05-search-window → {
+  capture: 19,
+  url: 'http://localhost:4317/main-window.html',
+  inlineSvgs: 11,
+  symbols: 0,
+  downloadedOriginals: 61,
+  failedDownloads: 0
+}
+06-clipboard-history → {
+  capture: 20,
+  url: 'http://localhost:4317/main-window.html',
+  inlineSvgs: 17,
+  symbols: 0,
+  downloadedOriginals: 69,
+  failedDownloads: 0
+}
+07-emoji → {
+  capture: 21,
+  url: 'http://localhost:4317/main-window.html',
+  inlineSvgs: 17,
+  symbols: 0,
+  downloadedOriginals: 126,
+  failedDownloads: 0
+}
+08-store → {
+  capture: 22,
+  url: 'http://localhost:4317/main-window.html',
+  inlineSvgs: 13,
+  symbols: 0,
+  downloadedOriginals: 70,
+  failedDownloads: 0
+}
+09-search-files → {
+  capture: 23,
+  url: 'http://localhost:4317/main-window.html',
+  inlineSvgs: 18,
+  symbols: 0,
+  downloadedOriginals: 70,
+  failedDownloads: 0
+}
+10-quick-ai → {
+  capture: 24,
+  url: 'http://localhost:4317/main-window.html',
+  inlineSvgs: 13,
+  symbols: 0,
+  downloadedOriginals: 63,
+  failedDownloads: 0
+}
+11-create-snippet → {
+  capture: 25,
+  url: 'http://localhost:4317/main-window.html',
+  inlineSvgs: 22,
+  symbols: 0,
+  downloadedOriginals: 66,
+  failedDownloads: 0
+}
+12-create-quicklink → {
+  capture: 26,
+  url: 'http://localhost:4317/main-window.html',
+  inlineSvgs: 19,
+  symbols: 0,
+  downloadedOriginals: 67,
+  failedDownloads: 0
+}
+13-no-results → {
+  capture: 27,
+  url: 'http://localhost:4317/main-window.html',
+  inlineSvgs: 12,
+  symbols: 0,
+  downloadedOriginals: 25,
+  failedDownloads: 0
+}

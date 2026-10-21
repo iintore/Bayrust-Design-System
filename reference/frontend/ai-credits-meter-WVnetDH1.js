@@ -1,0 +1,5 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="f5915086-6403-5809-ac39-20a331c64e32")}catch(e){}}();
+import{O as e}from"./icon-CKbK2z_d.js";import{c as t,f as n}from"./ai-credits-K7A1SrXs.js";var r={track:`ai-credits-meter__track_ed1e7`,fill:`ai-credits-meter__fill_32b60`},i=e();function a({remainingCredits:e,totalCredits:a,animatesFill:o=!0}){let s=Math.max(e,0),c=Math.max(a,0),l=n(s,c),u=c>0?l/c:0;return(0,i.jsx)(`div`,{className:r.track,"data-level":t(s,c),role:`progressbar`,"aria-label":`AI credits used`,"aria-valuemin":0,"aria-valuemax":c,"aria-valuenow":l,children:(0,i.jsx)(`div`,{className:r.fill,"data-animates":o,style:{width:`${u*100}%`}})})}a.displayName=`AiCreditsMeter`;export{a as t};
+//# sourceMappingURL=ai-credits-meter-WVnetDH1.js.map
+//# debugId=f5915086-6403-5809-ac39-20a331c64e32

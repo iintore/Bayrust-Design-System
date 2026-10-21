@@ -1,0 +1,5 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="6fd7707f-fb75-5b2c-8b35-07a588b9550c")}catch(e){}}();
+import{t as e}from"./composer-action-handoff-CdhmkiMR.js";import{n as t}from"./trace-export-BJ5ZRrXo.js";var n=`Investigate the attached AI Chat trace and determine what went wrong. Identify the root cause and the responsible code path, then recommend the smallest concrete fix. Pay particular attention to failed runs, provider errors, tool calls, retries, cancellations, incomplete journals, and child runs. Cite the relevant run IDs and trace events in your analysis.`;async function r(r,i){let a=await t(r);i(),e({type:`attach-files`,filePaths:[a]}),e({type:`replace-text`,text:n,send:!1})}export{n as TRACE_INVESTIGATION_PROMPT,r as startTraceInvestigation};
+//# sourceMappingURL=trace-investigation-X-IcgpTY.js.map
+//# debugId=6fd7707f-fb75-5b2c-8b35-07a588b9550c

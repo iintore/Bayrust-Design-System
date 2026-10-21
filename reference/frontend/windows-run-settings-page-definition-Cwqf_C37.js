@@ -1,0 +1,5 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="07fb136b-1ca2-5192-b5df-a8c93da04588")}catch(e){}}();
+import{p as e}from"./internal-extensions-DTEJ6vg9.js";import{i as t,r as n,t as r}from"./settings-page-definition-utils-DSmvOQ1l.js";import{t as i}from"./settings-targets-kBx_Z7eI.js";var a={runCommands:`run-commands`,shell:`shell`},o={groups:{runCommands:i({id:a.runCommands,title:`Run Commands`})},rows:{shell:i({description:`Shell used by Run in Shell actions.`,id:a.shell,keywords:[`command prompt`,`git bash`,`powershell`,`terminal`,`wsl`],title:`Shell`})}},s=r(e,{id:`windows-run`,keywords:[`run command`,`shell`,`terminal`],searchEntries:n([t(o.rows.shell,`row`,{search:{row:a.shell}})])});export{a as n,s as r,o as t};
+//# sourceMappingURL=windows-run-settings-page-definition-Cwqf_C37.js.map
+//# debugId=07fb136b-1ca2-5192-b5df-a8c93da04588

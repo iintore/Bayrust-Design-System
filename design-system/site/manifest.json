@@ -1,0 +1,7366 @@
+{
+ "source": "/Applications/Raycast.app 2.8.2 \u2014 Contents/Resources/macos-app_RaycastDesktopApp.bundle/Contents/Resources/frontend",
+ "sprite": "icons-6KTo-RgN.svg",
+ "symbols": [
+  {
+   "id": "action",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "action-1px",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "add-person",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "ai-agent",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "ai-automation",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "ai-chat",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "ai-project-folder",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "ai-screen-awareness",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "ai-skills",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "airplane",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "airplane-filled",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "airplane-landing",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "airplane-takeoff",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "airpods",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "alarm",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "alarm-ringing",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "align-centre",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "align-left",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "align-right",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "american-football",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "anchor",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "annotate-window",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "app-window",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "app-window-active",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "app-window-grid-2x2",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "app-window-grid-3x3",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "app-window-list",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "app-window-sidebar-hide-1px",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "app-window-sidebar-hide-20",
+   "viewBox": "0 0 20 20"
+  },
+  {
+   "id": "app-window-sidebar-left",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "app-window-sidebar-right",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "app-window-sidebar-show-1px",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "app-window-sidebar-show-20",
+   "viewBox": "0 0 20 20"
+  },
+  {
+   "id": "archive",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "arrow-circle-clockwise",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "arrow-circle-counterclockwise",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "arrow-clockwise",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "arrow-counter-clockwise",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "arrow-counter-clockwise-1px",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "arrow-down",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "arrow-down-20",
+   "viewBox": "0 0 20 20"
+  },
+  {
+   "id": "arrow-down-circle",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "arrow-down-circle-filled",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "arrow-left",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "arrow-left-circle",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "arrow-left-circle-filled",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "arrow-left-right",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "arrow-ne",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "arrow-return",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "arrow-right",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "arrow-right-circle",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "arrow-right-circle-filled",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "arrow-right-sidebar",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "arrow-up",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "arrow-up-circle",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "arrow-up-circle-filled",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "arrow-up-down",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "arrow-up-thick-20",
+   "viewBox": "0 0 20 20"
+  },
+  {
+   "id": "arrows-compress-width",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "arrows-compress-width-20",
+   "viewBox": "0 0 20 20"
+  },
+  {
+   "id": "arrows-contract",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "arrows-expand",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "arrows-expand-width",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "arrows-expand-width-20",
+   "viewBox": "0 0 20 20"
+  },
+  {
+   "id": "arrows-left-right",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "at-symbol",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "auto-model",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "band-aid",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "bank-note",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "bar-chart",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "bar-code",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "barrier",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "bath-tub",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "battery",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "battery-charging",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "battery-disabled",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "bell",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "bell-disabled",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "bike",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "binoculars",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "bird",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "blank-document",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "bluetooth",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "boat",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "bold",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "bolt",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "bolt-disabled",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "book",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "bookmark",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "box",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brain",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "branch",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "branch-to-child",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "branch-to-parent",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "branched",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-alibaba",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-angularjs",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-anthropic",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-apple",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-arduino",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-aws",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-azure",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-azure-foundry",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-babel",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-backbonejs",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-baseten",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-bash",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-blackforestlabs",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-blender",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-bluesky",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-bootstrap",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-c",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-claude",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-clojure",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-clojurescript",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-copilot",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-cplusplus",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-csharp",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-css3",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-cursor",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-d3js",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-dart",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-deepseek",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-django",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-docker",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-dotnet",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-dotnetcore",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-drupal",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-electron",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-eleventy",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-emacs",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-ember",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-express",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-figma",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-firebase",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-flask",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-flutter",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-gatsby",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-git",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-github",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-github-copilot",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-gitlab",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-glaze",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-gnu",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-go",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-google",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-groovy",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-grunt",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-gulp",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-handlebars",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-html5",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-hugo",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-instagram",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-java",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-javascript",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-jira",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-jquery",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-kotlin",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-kubernetes",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-laravel",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-latex",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-less",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-linkedin",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-magento",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-markdown",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-mastodon",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-matlab",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-maya",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-mcp",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-meta",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-meteor",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-midjourney",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-minimax",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-mistral",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-moonshotai",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-mysql",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-nextjs",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-nodejs",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-npm",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-nuxtjs",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-objc",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-ollama",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-openai",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-opengl",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-openrouter",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-perl",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-perplexity",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-php",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-postgresql",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-processing",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-python",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-pytorch",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-qwen",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-r",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-rails",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-raspberrypi",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-react",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-reddit",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-redux",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-ruby",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-rust",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-salesforce",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-sass",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-scala",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-sketch",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-slack",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-smithery",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-spring",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-stabilityai",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-svelte",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-swift",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-symfony",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-tensorflow",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-thinkingmachines",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-threads",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-threejs",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-typescript",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-unity",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-venice",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-vercel",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-vim",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-visualstudio",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-vscode",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-vuejs",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-webflow",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-windows",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-wordpress",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-x",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-xai",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-xamarin",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-xcode",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-youtube",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brand-zai",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "brush",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "bug",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "building",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "bullet-points",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "bullet-points-1px",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "bulls-eye",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "bulls-eye-missed",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "buoy",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "calculator",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "calendar",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "camera",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "capture-full-screen",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "car",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "cards-stacked",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "cart",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "cd",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "center",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "check",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "check-circle",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "check-double",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "check-list",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "check-rosette",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "checkmark",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "checkmark-20",
+   "viewBox": "0 0 20 20"
+  },
+  {
+   "id": "chess-piece",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "chevron-down",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "chevron-down-small",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "chevron-left",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "chevron-left-1px",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "chevron-left-20",
+   "viewBox": "0 0 20 20"
+  },
+  {
+   "id": "chevron-left-small",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "chevron-right",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "chevron-right-1px",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "chevron-right-20",
+   "viewBox": "0 0 20 20"
+  },
+  {
+   "id": "chevron-right-small",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "chevron-up",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "chevron-up-down",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "chevron-up-small",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "circle",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "circle-disabled",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "circle-ellipsis",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "circle-filled",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "circle-progress-100",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "circle-progress",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "circle-progress-25",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "circle-progress-50",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "circle-progress-75",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "clear-formatting",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "clock",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "cloud",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "cloud-lightning",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "cloud-rain",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "cloud-snow",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "cloud-sun",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "code",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "code-block",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "cog",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "cog-1px",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "coin",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "coins",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "command-symbol",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "command-symbol-20",
+   "viewBox": "0 0 20 20"
+  },
+  {
+   "id": "compaction",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "compass",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "computer-chip",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "contrast",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "copy-clipboard",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "copy-clipboard-1px",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "credit-card",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "cricket-ball",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "crop",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "crown",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "crypto",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "dashed-border",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "delete-document",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "desktop",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "devices",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "disposable-chat",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "dna",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "docs-stacked",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "docs-stacked-1px",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "docs-stacked-20",
+   "viewBox": "0 0 20 20"
+  },
+  {
+   "id": "dot",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "download",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "drag-handle",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "droplets",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "duplicate",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "edit-shape",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "eject",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "ellipsis",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "ellipsis-20",
+   "viewBox": "0 0 20 20"
+  },
+  {
+   "id": "ellipsis-vertical",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "ellipsis-vertical-20",
+   "viewBox": "0 0 20 20"
+  },
+  {
+   "id": "emoji",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "emoji-sad",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "envelope",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "eraser",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "exclamationmark",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "exclamationmark-2",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "exclamationmark-3",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "eye",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "eye-disabled",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "eye-dropper",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "female",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "film-strip",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "filter",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "find",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "finder",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "fingerprint",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "flag",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "folder",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "footprints",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "forward",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "forward-filled",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "fountain-tip",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "full-signal",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "game-controller",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "gauge",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "geopin",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "germ",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "gift",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "git-branch",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "glasses",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "globe-01",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "globe-02",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "globe-03",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "goal",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "hammer",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "hard-drive",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "hard-drive-x-mark",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "hashtag",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "heading",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "headphones",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "heart",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "heart-disabled",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "heartbeat",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "highlight",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "hourglass",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "house",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "humidity",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "image",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "important-01",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "important-02",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "important-03",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "info-01",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "info-01-1px",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "info-02",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "italics",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "key",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "keyboard",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "layers",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "leaderboard",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "leaf",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "light-bulb",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "light-bulb-off",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "line-chart",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "link",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "livestream-01",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "livestream-02",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "livestream-disabled-01",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "lock",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "lock-disabled",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "lock-unlocked",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "logout",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "lorry",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "lowercase",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "macbook",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "magnifying-glass",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "magnifying-glass-1px",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "magnifying-glass-20",
+   "viewBox": "0 0 20 20"
+  },
+  {
+   "id": "magnifying-glass-minus",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "magnifying-glass-one",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "magnifying-glass-plus",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "male",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "map",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "mask",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "maximize",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "medical-support",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "megaphone",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "memory-stick",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "menu",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "menu-20",
+   "viewBox": "0 0 20 20"
+  },
+  {
+   "id": "menu-small",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "microphone",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "microphone-20",
+   "viewBox": "0 0 20 20"
+  },
+  {
+   "id": "microphone-disabled",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "minimize",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "minus",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "minus-circle",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "minus-circle-filled",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "mobile",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "monitor",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "moon",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "moon-1px",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "moon-down",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "moon-up",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "moonrise",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "mountain",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "mouse",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "move",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "mug",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "mug-steam",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "multiply",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "music",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "network",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "new-document",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "new-document-1px",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "new-folder",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "new-folder-1px",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "new-folder-20",
+   "viewBox": "0 0 20 20"
+  },
+  {
+   "id": "number-00",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-01",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-02",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-03",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-04",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-05",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-06",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-07",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-08",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-09",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-10",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-11",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-12",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-13",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-14",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-15",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-16",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-17",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-18",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-19",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-20",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-21",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-22",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-23",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-24",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-25",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-26",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-27",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-28",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-29",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-30",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-31",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-32",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-33",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-34",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-35",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-36",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-37",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-38",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-39",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-40",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-41",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-42",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-43",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-44",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-45",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-46",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-47",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-48",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-49",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-50",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-51",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-52",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-53",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-54",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-55",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-56",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-57",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-58",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-59",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-60",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-61",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-62",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-63",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-64",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-65",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-66",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-67",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-68",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-69",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-70",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-71",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-72",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-73",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-74",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-75",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-76",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-77",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-78",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-79",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-80",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-81",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-82",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-83",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-84",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-85",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-86",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-87",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-88",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-89",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-90",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-91",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-92",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-93",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-94",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-95",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-96",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-97",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-98",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-99",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "number-list",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "open-in-window",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "open-in-window-20",
+   "viewBox": "0 0 20 20"
+  },
+  {
+   "id": "paperclip",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "paperclip-20",
+   "viewBox": "0 0 20 20"
+  },
+  {
+   "id": "paragraph",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "patch",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "pause",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "pause-filled",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "pencil",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "pencil-square",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "pencil-square-1px",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "pencil-square-20",
+   "viewBox": "0 0 20 20"
+  },
+  {
+   "id": "person",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "person-circle",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "person-lines",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "phone",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "phone-ringing",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "pie-chart",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "pill",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "pin",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "pin-disabled",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "play",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "play-filled",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "plug",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "plus",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "plus-1px",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "plus-20",
+   "viewBox": "0 0 20 20"
+  },
+  {
+   "id": "plus-circle",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "plus-circle-filled",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "plus-minus-divide-multiply",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "plus-square",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "plus-top-right-square",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "power",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "print",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "question-mark",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "question-mark-circle",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "quick-ai",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "quicklink",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "quotation-marks",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "quote-block",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "racket",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "raindrop",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "raycast-logo-neg",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "raycast-logo-pos",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "raycast-notes",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "reasoning-16-0",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "reasoning-16-1",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "reasoning-16-2",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "reasoning-16-3",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "reasoning-16-4",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "reasoning-auto",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "receipt",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "redo",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "remove-person",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "repeat",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "replace",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "replace-one",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "reply",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "rewind",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "rewind-filled",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "rocket",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "rosette",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "rotate-anti-clockwise",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "rotate-clockwise",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "rss",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "ruler",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "save-document",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "save-windows",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "save-windows-1px",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "screenshot-search",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "settings-slider",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "settings-slider-1px",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "settings-slider-20",
+   "viewBox": "0 0 20 20"
+  },
+  {
+   "id": "shield-01",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "shield-02",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "shield-03",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "shield-04",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "short-paragraph",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "shuffle",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "signal-0",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "signal-1",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "signal-1-3",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "signal-2",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "signal-2-3",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "signal-3",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "signal-3-3",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "snippets",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "snowflake",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "soccer-ball",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "speaker",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "speaker-down",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "speaker-high",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "speaker-low",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "speaker-off",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "speaker-on",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "speaker-up",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "speech-bubble",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "speech-bubble-20",
+   "viewBox": "0 0 20 20"
+  },
+  {
+   "id": "speech-bubble-active",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "speech-bubble-important",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "square-ellipsis",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "stacked-bars-1",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "stacked-bars-2",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "stacked-bars-3",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "stacked-bars-4",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "star",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "star-circle",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "star-disabled",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "star-filled",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "stars",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "stars-square",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "stop",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "stop-20",
+   "viewBox": "0 0 20 20"
+  },
+  {
+   "id": "stop-filled",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "stopwatch",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "store",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "strike-through",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "sun",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "sun-1px",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "sunrise",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "swatch",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "switch",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "syringe",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "tack",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "tack-20",
+   "viewBox": "0 0 20 20"
+  },
+  {
+   "id": "tack-disabled",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "tag",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "temperature",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "tennis-ball",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "terminal",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "text",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "text-cursor",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "text-input",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "text-selection",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "thumbs-down",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "thumbs-down-filled",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "thumbs-up",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "thumbs-up-filled",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "ticket",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "torch",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "train",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "trash",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "tray",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "tree",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "trophy",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "two-people",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "umbrella",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "underline",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "undo",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "upload",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "uppercase",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "video",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "video-disabled",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "wallet",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "wand",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "warning",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "waveform",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "weights",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "wifi",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "wifi-disabled",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "wind-0",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "wind-1",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "wind",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "wind-2",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "window-bottom-center",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "window-bottom-left",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "window-bottom-right",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "window-center",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "window-layout",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "window-middle-left",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "window-middle-right",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "window-top-center",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "window-top-left",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "window-top-right",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "window-watch",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "windsock",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "wrench",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "wrench-disabled",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "wrench-screwdriver",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "wrist-watch",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "x-mark-circle",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "x-mark-circle-filled",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "x-mark-circle-half-dash",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "x-mark-top-right-square",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "xmark",
+   "viewBox": "0 0 16 16"
+  },
+  {
+   "id": "xmark-20",
+   "viewBox": "0 0 20 20"
+  }
+ ],
+ "assets": [
+  {
+   "file": "InterVariable-Italic.woff2",
+   "name": "InterVariable-Italic.woff2",
+   "family": "Fonts",
+   "type": "woff2",
+   "bytes": 380904
+  },
+  {
+   "file": "InterVariable.woff2",
+   "name": "InterVariable.woff2",
+   "family": "Fonts",
+   "type": "woff2",
+   "bytes": 345588
+  },
+  {
+   "file": "JetBrainsMono-Regular.woff2",
+   "name": "JetBrainsMono-Regular.woff2",
+   "family": "Fonts",
+   "type": "woff2",
+   "bytes": 92164
+  },
+  {
+   "file": "abstract-background-B6jC_xhM.png",
+   "name": "abstract-background",
+   "family": "Other",
+   "type": "png",
+   "bytes": 337336
+  },
+  {
+   "file": "ai-C6Corsn6.png",
+   "name": "ai",
+   "family": "Other",
+   "type": "png",
+   "bytes": 417740
+  },
+  {
+   "file": "ai-CZjZVoTi.png",
+   "name": "ai",
+   "family": "Other",
+   "type": "png",
+   "bytes": 340550
+  },
+  {
+   "file": "ai-chat-DD6TaUIj.png",
+   "name": "ai-chat",
+   "family": "AI",
+   "type": "png",
+   "bytes": 85065
+  },
+  {
+   "file": "ai-chat-ZNkkqJzw.png",
+   "name": "ai-chat",
+   "family": "AI",
+   "type": "png",
+   "bytes": 300799
+  },
+  {
+   "file": "ai-commands-C-jmNiDQ.png",
+   "name": "ai-commands",
+   "family": "AI",
+   "type": "png",
+   "bytes": 187520
+  },
+  {
+   "file": "ai-commands-CKKzqFxb.png",
+   "name": "ai-commands",
+   "family": "AI",
+   "type": "png",
+   "bytes": 55984
+  },
+  {
+   "file": "ai-dark-DvLwihM8.png",
+   "name": "ai-dark",
+   "family": "AI",
+   "type": "png",
+   "bytes": 161153
+  },
+  {
+   "file": "ai-light-BYHdMF07.png",
+   "name": "ai-light",
+   "family": "AI",
+   "type": "png",
+   "bytes": 170935
+  },
+  {
+   "file": "ai-paywall-dark-CzXVHZO8.png",
+   "name": "ai-paywall-dark",
+   "family": "AI",
+   "type": "png",
+   "bytes": 357862
+  },
+  {
+   "file": "ai-paywall-dark-windows-BMzoyE2Q.png",
+   "name": "ai-paywall-dark-windows",
+   "family": "AI",
+   "type": "png",
+   "bytes": 356786
+  },
+  {
+   "file": "ai-paywall-light-DwjugM0N.png",
+   "name": "ai-paywall-light",
+   "family": "AI",
+   "type": "png",
+   "bytes": 299782
+  },
+  {
+   "file": "ai-paywall-light-windows-CxcCjuty.png",
+   "name": "ai-paywall-light-windows",
+   "family": "AI",
+   "type": "png",
+   "bytes": 304810
+  },
+  {
+   "file": "ai-subscriptions-dark@2x-DZL4Neo0.png",
+   "name": "ai-subscriptions-dark@2x",
+   "family": "AI",
+   "type": "png",
+   "bytes": 53045
+  },
+  {
+   "file": "ai-subscriptions-light@2x-CCD9lIyI.png",
+   "name": "ai-subscriptions-light@2x",
+   "family": "AI",
+   "type": "png",
+   "bytes": 48831
+  },
+  {
+   "file": "app-1password-BFrY6Mlm.png",
+   "name": "app-1password",
+   "family": "Other",
+   "type": "png",
+   "bytes": 24753
+  },
+  {
+   "file": "app-accessibility-DTWckIeT.png",
+   "name": "app-accessibility",
+   "family": "Other",
+   "type": "png",
+   "bytes": 13493
+  },
+  {
+   "file": "app-calendar-CAlrxBYI.png",
+   "name": "app-calendar",
+   "family": "Other",
+   "type": "png",
+   "bytes": 9996
+  },
+  {
+   "file": "app-finder-B6lCSvlo.png",
+   "name": "app-finder",
+   "family": "Other",
+   "type": "png",
+   "bytes": 21747
+  },
+  {
+   "file": "app-spotify-CubYEA3i.png",
+   "name": "app-spotify",
+   "family": "Other",
+   "type": "png",
+   "bytes": 25750
+  },
+  {
+   "file": "app-vscode-VZ2lqoVs.png",
+   "name": "app-vscode",
+   "family": "Other",
+   "type": "png",
+   "bytes": 15382
+  },
+  {
+   "file": "attachment-zone-doc-light-DAGBkepD.png",
+   "name": "attachment-zone-doc-light",
+   "family": "Other",
+   "type": "png",
+   "bytes": 4967
+  },
+  {
+   "file": "attachment-zone-doc-pdf-dark-CUiTFRV7.png",
+   "name": "attachment-zone-doc-pdf-dark",
+   "family": "Other",
+   "type": "png",
+   "bytes": 4198
+  },
+  {
+   "file": "attachment-zone-doc-pdf-light-DgM-UcWk.png",
+   "name": "attachment-zone-doc-pdf-light",
+   "family": "Other",
+   "type": "png",
+   "bytes": 5082
+  },
+  {
+   "file": "awm-paywall-dark-_WywaK8c.png",
+   "name": "awm-paywall-dark",
+   "family": "Other",
+   "type": "png",
+   "bytes": 412348
+  },
+  {
+   "file": "awm-paywall-light-Cz6--n9k.png",
+   "name": "awm-paywall-light",
+   "family": "Other",
+   "type": "png",
+   "bytes": 332997
+  },
+  {
+   "file": "background-PDypTUSy.webp",
+   "name": "background",
+   "family": "Other",
+   "type": "webp",
+   "bytes": 103462
+  },
+  {
+   "file": "calculator-D4coNtIB.png",
+   "name": "calculator",
+   "family": "Other",
+   "type": "png",
+   "bytes": 395848
+  },
+  {
+   "file": "calculator-rtnQ_uCE.png",
+   "name": "calculator",
+   "family": "Other",
+   "type": "png",
+   "bytes": 700637
+  },
+  {
+   "file": "clipboard-history-BlehOYns.png",
+   "name": "clipboard-history",
+   "family": "Other",
+   "type": "png",
+   "bytes": 497577
+  },
+  {
+   "file": "clipboard-history-DUnX9xJX.png",
+   "name": "clipboard-history",
+   "family": "Other",
+   "type": "png",
+   "bytes": 860495
+  },
+  {
+   "file": "cloud-sync-D4OmmXB6.png",
+   "name": "cloud-sync",
+   "family": "Weather",
+   "type": "png",
+   "bytes": 450262
+  },
+  {
+   "file": "cloud-sync-card-D3dh2_R-.png",
+   "name": "cloud-sync-card",
+   "family": "Weather",
+   "type": "png",
+   "bytes": 357682
+  },
+  {
+   "file": "cloud-sync-visual-C56QuJCO.png",
+   "name": "cloud-sync-visual",
+   "family": "Weather",
+   "type": "png",
+   "bytes": 1908141
+  },
+  {
+   "file": "command-about-dark-COa7MaPB.png",
+   "name": "command-about-dark",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2051
+  },
+  {
+   "file": "command-about-light-Bc_FONMT.png",
+   "name": "command-about-light",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 1834
+  },
+  {
+   "file": "command-affiliate-DusVaGpb.png",
+   "name": "command-affiliate",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3551
+  },
+  {
+   "file": "command-ai-DAqrEJqF.png",
+   "name": "command-ai",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2391
+  },
+  {
+   "file": "command-ai-agent-create-DtvLvGM6.png",
+   "name": "command-ai-agent-create",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2058
+  },
+  {
+   "file": "command-ai-agent-create_large-DeFl0_IY.png",
+   "name": "command-ai-agent-create_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 4905
+  },
+  {
+   "file": "command-ai-agent-import-DHJoI3Sw.png",
+   "name": "command-ai-agent-import",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2022
+  },
+  {
+   "file": "command-ai-agent-import_large-ygrXfzKL.png",
+   "name": "command-ai-agent-import_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 4988
+  },
+  {
+   "file": "command-ai-agent-search-BEN6tgmV.png",
+   "name": "command-ai-agent-search",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2092
+  },
+  {
+   "file": "command-ai-agent-search_large-BR0C_bxO.png",
+   "name": "command-ai-agent-search_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5309
+  },
+  {
+   "file": "command-ai-automation-Cm8A9Dc9.png",
+   "name": "command-ai-automation",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2082
+  },
+  {
+   "file": "command-ai-automation_large-BmCQUPyU.png",
+   "name": "command-ai-automation_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5826
+  },
+  {
+   "file": "command-ai-chat-BSU8W46l.png",
+   "name": "command-ai-chat",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2130
+  },
+  {
+   "file": "command-ai-chat_large-1zXQJnNL.png",
+   "name": "command-ai-chat_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5174
+  },
+  {
+   "file": "command-ai-command-ask-about-website-BzHaQLxC.png",
+   "name": "command-ai-command-ask-about-website",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3617
+  },
+  {
+   "file": "command-ai-command-ask-about-website_large-CK0BvunU.png",
+   "name": "command-ai-command-ask-about-website_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 13731
+  },
+  {
+   "file": "command-ai-command-change-tone-friendly-DX-5ZeCG.png",
+   "name": "command-ai-command-change-tone-friendly",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3715
+  },
+  {
+   "file": "command-ai-command-change-tone-friendly_large-COgT0dOn.png",
+   "name": "command-ai-command-change-tone-friendly_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 14408
+  },
+  {
+   "file": "command-ai-command-change-tone-professional-CNTBlMxE.png",
+   "name": "command-ai-command-change-tone-professional",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3413
+  },
+  {
+   "file": "command-ai-command-change-tone-professional_large-DGfb_6RD.png",
+   "name": "command-ai-command-change-tone-professional_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 13616
+  },
+  {
+   "file": "command-ai-command-create-DT8DB4Jm.png",
+   "name": "command-ai-command-create",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3449
+  },
+  {
+   "file": "command-ai-command-create_large-B2ca0jjx.png",
+   "name": "command-ai-command-create_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 11909
+  },
+  {
+   "file": "command-ai-command-explain-simple-terms-LEeNsmwQ.png",
+   "name": "command-ai-command-explain-simple-terms",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3445
+  },
+  {
+   "file": "command-ai-command-explain-simple-terms_large-BE43Cvgg.png",
+   "name": "command-ai-command-explain-simple-terms_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 13754
+  },
+  {
+   "file": "command-ai-command-find-bugs-CIViua-s.png",
+   "name": "command-ai-command-find-bugs",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3407
+  },
+  {
+   "file": "command-ai-command-find-bugs_large-SAHeoJW4.png",
+   "name": "command-ai-command-find-bugs_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 13428
+  },
+  {
+   "file": "command-ai-command-fixspelling-DF-XjLOr.png",
+   "name": "command-ai-command-fixspelling",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3510
+  },
+  {
+   "file": "command-ai-command-fixspelling_large-BnhK2TIV.png",
+   "name": "command-ai-command-fixspelling_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 13935
+  },
+  {
+   "file": "command-ai-command-import-BVi0ppMB.png",
+   "name": "command-ai-command-import",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3470
+  },
+  {
+   "file": "command-ai-command-import_large-lLc03lgp.png",
+   "name": "command-ai-command-import_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 12022
+  },
+  {
+   "file": "command-ai-command-improve-writing-C1me3kGg.png",
+   "name": "command-ai-command-improve-writing",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3340
+  },
+  {
+   "file": "command-ai-command-improve-writing_large-C5u4zxuN.png",
+   "name": "command-ai-command-improve-writing_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 13261
+  },
+  {
+   "file": "command-ai-command-quick-fix-Da99xP8-.png",
+   "name": "command-ai-command-quick-fix",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2420
+  },
+  {
+   "file": "command-ai-command-quick-fix_large-CA8dZXUt.png",
+   "name": "command-ai-command-quick-fix_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 6872
+  },
+  {
+   "file": "command-ai-command-search-0-NuqTee.png",
+   "name": "command-ai-command-search",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3437
+  },
+  {
+   "file": "command-ai-command-search_large-COGcLKDa.png",
+   "name": "command-ai-command-search_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 12576
+  },
+  {
+   "file": "command-ai-command-summarize-website-CKoGWqzC.png",
+   "name": "command-ai-command-summarize-website",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3742
+  },
+  {
+   "file": "command-ai-command-summarize-website_large-DsDOJ50g.png",
+   "name": "command-ai-command-summarize-website_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 14127
+  },
+  {
+   "file": "command-ai-extension-askuserquestion-BQH-621r.png",
+   "name": "command-ai-extension-askuserquestion",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2220
+  },
+  {
+   "file": "command-ai-extension-askuserquestion_large-JHQ_wRGy.png",
+   "name": "command-ai-extension-askuserquestion_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5363
+  },
+  {
+   "file": "command-ai-extension-capture-window-full-context-Q4UV_3Hx.png",
+   "name": "command-ai-extension-capture-window-full-context",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3477
+  },
+  {
+   "file": "command-ai-extension-capture-window-full-context_large-I43WQd44.png",
+   "name": "command-ai-extension-capture-window-full-context_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 13106
+  },
+  {
+   "file": "command-ai-extension-capture-window-screenshot-BczxAY75.png",
+   "name": "command-ai-extension-capture-window-screenshot",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3814
+  },
+  {
+   "file": "command-ai-extension-capture-window-screenshot_large-jvd65JRy.png",
+   "name": "command-ai-extension-capture-window-screenshot_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 14369
+  },
+  {
+   "file": "command-ai-extension-chart-BBFF0ijG.png",
+   "name": "command-ai-extension-chart",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2437
+  },
+  {
+   "file": "command-ai-extension-chart_large-CT2DduPB.png",
+   "name": "command-ai-extension-chart_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 6863
+  },
+  {
+   "file": "command-ai-extension-compaction-DqatQPm6.png",
+   "name": "command-ai-extension-compaction",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2564
+  },
+  {
+   "file": "command-ai-extension-compaction_large-BxkSHSB9.png",
+   "name": "command-ai-extension-compaction_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 7862
+  },
+  {
+   "file": "command-ai-extension-edit-CSH0yGcE.png",
+   "name": "command-ai-extension-edit",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3255
+  },
+  {
+   "file": "command-ai-extension-edit_large-DG2ogRg2.png",
+   "name": "command-ai-extension-edit_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 13555
+  },
+  {
+   "file": "command-ai-extension-fallback-Z0aNzVxJ.png",
+   "name": "command-ai-extension-fallback",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2432
+  },
+  {
+   "file": "command-ai-extension-fallback_large-BY7zZhtM.png",
+   "name": "command-ai-extension-fallback_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 7392
+  },
+  {
+   "file": "command-ai-extension-file-explorer-Bi3OOJhT.png",
+   "name": "command-ai-extension-file-explorer",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2064
+  },
+  {
+   "file": "command-ai-extension-file-explorer_large-Gf3icyaT.png",
+   "name": "command-ai-extension-file-explorer_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5043
+  },
+  {
+   "file": "command-ai-extension-finder-dark-DtiCizei.png",
+   "name": "command-ai-extension-finder-dark",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2075
+  },
+  {
+   "file": "command-ai-extension-finder-dark_large-COUciQcI.png",
+   "name": "command-ai-extension-finder-dark_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5896
+  },
+  {
+   "file": "command-ai-extension-finder-light-CthnrKGz.png",
+   "name": "command-ai-extension-finder-light",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 1905
+  },
+  {
+   "file": "command-ai-extension-finder-light_large-DGuNNR4A.png",
+   "name": "command-ai-extension-finder-light_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 4972
+  },
+  {
+   "file": "command-ai-extension-glob-oFejRoFt.png",
+   "name": "command-ai-extension-glob",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3122
+  },
+  {
+   "file": "command-ai-extension-glob_large-MrjXYjgt.png",
+   "name": "command-ai-extension-glob_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 13043
+  },
+  {
+   "file": "command-ai-extension-grep-C9PAlDVE.png",
+   "name": "command-ai-extension-grep",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3052
+  },
+  {
+   "file": "command-ai-extension-grep_large-DtlSA04S.png",
+   "name": "command-ai-extension-grep_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 12975
+  },
+  {
+   "file": "command-ai-extension-image-generation-BBOyCM_O.png",
+   "name": "command-ai-extension-image-generation",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 1847
+  },
+  {
+   "file": "command-ai-extension-image-generation_large-Cz08m8yy.png",
+   "name": "command-ai-extension-image-generation_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 4441
+  },
+  {
+   "file": "command-ai-extension-location-DPFv4S42.png",
+   "name": "command-ai-extension-location",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2288
+  },
+  {
+   "file": "command-ai-extension-location_large-lsi0fzg-.png",
+   "name": "command-ai-extension-location_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 6804
+  },
+  {
+   "file": "command-ai-extension-memory-CQqVR3Ah.png",
+   "name": "command-ai-extension-memory",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2305
+  },
+  {
+   "file": "command-ai-extension-memory-import-B0sp0JEt.png",
+   "name": "command-ai-extension-memory-import",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2280
+  },
+  {
+   "file": "command-ai-extension-memory-import_large-Fyt-QbzT.png",
+   "name": "command-ai-extension-memory-import_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 6173
+  },
+  {
+   "file": "command-ai-extension-memory_large-BF3PlmSO.png",
+   "name": "command-ai-extension-memory_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 6865
+  },
+  {
+   "file": "command-ai-extension-readfile-CVhqvUES.png",
+   "name": "command-ai-extension-readfile",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3385
+  },
+  {
+   "file": "command-ai-extension-readfile_large-BY_VSFL1.png",
+   "name": "command-ai-extension-readfile_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 14108
+  },
+  {
+   "file": "command-ai-extension-reasoning-DFdAkzdb.png",
+   "name": "command-ai-extension-reasoning",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2305
+  },
+  {
+   "file": "command-ai-extension-reasoning_large-an9crWl6.png",
+   "name": "command-ai-extension-reasoning_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5817
+  },
+  {
+   "file": "command-ai-extension-scheduledmessage-PPdwpAUL.png",
+   "name": "command-ai-extension-scheduledmessage",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2043
+  },
+  {
+   "file": "command-ai-extension-scheduledmessage_large-BhVuB9dN.png",
+   "name": "command-ai-extension-scheduledmessage_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5831
+  },
+  {
+   "file": "command-ai-extension-screen-awareness-mac-BiiUtxnD.png",
+   "name": "command-ai-extension-screen-awareness-mac",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2583
+  },
+  {
+   "file": "command-ai-extension-screen-awareness-mac_large-C_wu6W7h.png",
+   "name": "command-ai-extension-screen-awareness-mac_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 7386
+  },
+  {
+   "file": "command-ai-extension-screen-awareness-windows-CYGx9Zs8.png",
+   "name": "command-ai-extension-screen-awareness-windows",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2528
+  },
+  {
+   "file": "command-ai-extension-screen-awareness-windows_large-Dqbnzov1.png",
+   "name": "command-ai-extension-screen-awareness-windows_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 6628
+  },
+  {
+   "file": "command-ai-extension-search_tools-DSJ6UFUQ.png",
+   "name": "command-ai-extension-search_tools",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3491
+  },
+  {
+   "file": "command-ai-extension-search_tools_large-lleT18Z_.png",
+   "name": "command-ai-extension-search_tools_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 14336
+  },
+  {
+   "file": "command-ai-extension-selectedtext-CIR14X7Y.png",
+   "name": "command-ai-extension-selectedtext",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2210
+  },
+  {
+   "file": "command-ai-extension-selectedtext_large-BCU504Q0.png",
+   "name": "command-ai-extension-selectedtext_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 6059
+  },
+  {
+   "file": "command-ai-extension-settings-B8YrEpiw.png",
+   "name": "command-ai-extension-settings",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2493
+  },
+  {
+   "file": "command-ai-extension-settings_large-GD2iAWaM.png",
+   "name": "command-ai-extension-settings_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 6381
+  },
+  {
+   "file": "command-ai-extension-skill-CPwn5erv.png",
+   "name": "command-ai-extension-skill",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2214
+  },
+  {
+   "file": "command-ai-extension-skill-settings-D7VMVMOC.png",
+   "name": "command-ai-extension-skill-settings",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2182
+  },
+  {
+   "file": "command-ai-extension-skill-settings_large-CkINiccL.png",
+   "name": "command-ai-extension-skill-settings_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5374
+  },
+  {
+   "file": "command-ai-extension-skill_large-CtKKzB9y.png",
+   "name": "command-ai-extension-skill_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5961
+  },
+  {
+   "file": "command-ai-extension-terminal-dark-D-WhmfR4.png",
+   "name": "command-ai-extension-terminal-dark",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2033
+  },
+  {
+   "file": "command-ai-extension-terminal-dark_large-E27ufhCZ.png",
+   "name": "command-ai-extension-terminal-dark_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 6869
+  },
+  {
+   "file": "command-ai-extension-terminal-light-DROujxF_.png",
+   "name": "command-ai-extension-terminal-light",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 865
+  },
+  {
+   "file": "command-ai-extension-terminal-light_large-CjHqEDvX.png",
+   "name": "command-ai-extension-terminal-light_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3227
+  },
+  {
+   "file": "command-ai-extension-weather-guub8tDS.png",
+   "name": "command-ai-extension-weather",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 1916
+  },
+  {
+   "file": "command-ai-extension-weather_large-DDPGyPUd.png",
+   "name": "command-ai-extension-weather_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 4994
+  },
+  {
+   "file": "command-ai-extension-web-BCf7Z5XB.png",
+   "name": "command-ai-extension-web",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2442
+  },
+  {
+   "file": "command-ai-extension-web_large-CY_65RYd.png",
+   "name": "command-ai-extension-web_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 6256
+  },
+  {
+   "file": "command-ai-extensions-UQ5z4m-C.png",
+   "name": "command-ai-extensions",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3749
+  },
+  {
+   "file": "command-ai-extensions_large-C9uluJzN.png",
+   "name": "command-ai-extensions_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 14149
+  },
+  {
+   "file": "command-ai-fallback-BuCicyHO.png",
+   "name": "command-ai-fallback",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2406
+  },
+  {
+   "file": "command-ai-fallback_large-CQM2jTgR.png",
+   "name": "command-ai-fallback_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 6629
+  },
+  {
+   "file": "command-ai-mcp-install-ChIF4qtA.png",
+   "name": "command-ai-mcp-install",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3522
+  },
+  {
+   "file": "command-ai-mcp-install_large-D7mUIbUH.png",
+   "name": "command-ai-mcp-install_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 12627
+  },
+  {
+   "file": "command-ai-model-BjZoKEox.png",
+   "name": "command-ai-model",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2326
+  },
+  {
+   "file": "command-ai-model_large-D3UDmOh0.png",
+   "name": "command-ai-model_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 6467
+  },
+  {
+   "file": "command-ai-profile-CIrNCyWX.png",
+   "name": "command-ai-profile",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2399
+  },
+  {
+   "file": "command-ai-profile_large-CYtxtAPQ.png",
+   "name": "command-ai-profile_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 6418
+  },
+  {
+   "file": "command-ai-projects-DZz_VMLG.png",
+   "name": "command-ai-projects",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2123
+  },
+  {
+   "file": "command-ai-projects_large-DcNOXlp-.png",
+   "name": "command-ai-projects_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5401
+  },
+  {
+   "file": "command-ai-quick-ai-BlcB9BWE.png",
+   "name": "command-ai-quick-ai",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 19301
+  },
+  {
+   "file": "command-ai-quickai_large-DBQQNwSg.png",
+   "name": "command-ai-quickai_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 6468
+  },
+  {
+   "file": "command-ai-send-element-BRHb10-H.png",
+   "name": "command-ai-send-element",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 1961
+  },
+  {
+   "file": "command-ai-send-element_large-CqBBwlL5.png",
+   "name": "command-ai-send-element_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5609
+  },
+  {
+   "file": "command-ai-send-focused-window-mac-t01MAko0.png",
+   "name": "command-ai-send-focused-window-mac",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2216
+  },
+  {
+   "file": "command-ai-send-focused-window-mac_large-COUJsncN.png",
+   "name": "command-ai-send-focused-window-mac_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5527
+  },
+  {
+   "file": "command-ai-send-focused-window-windows-CQJ3pwcE.png",
+   "name": "command-ai-send-focused-window-windows",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2207
+  },
+  {
+   "file": "command-ai-send-focused-window-windows_large-BbRMOD-8.png",
+   "name": "command-ai-send-focused-window-windows_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5547
+  },
+  {
+   "file": "command-ai-send-screen-4GB5nuPo.png",
+   "name": "command-ai-send-screen",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2334
+  },
+  {
+   "file": "command-ai-send-screen-area-Dqk9gIYD.png",
+   "name": "command-ai-send-screen-area",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2036
+  },
+  {
+   "file": "command-ai-send-screen-area_large-Ci11GY0R.png",
+   "name": "command-ai-send-screen-area_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5697
+  },
+  {
+   "file": "command-ai-send-screen_large-BQS0gbI1.png",
+   "name": "command-ai-send-screen_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5986
+  },
+  {
+   "file": "command-ai-send-selected-text-BtpwP-R_.png",
+   "name": "command-ai-send-selected-text",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2357
+  },
+  {
+   "file": "command-ai-send-selected-text_large-BVtc3xtH.png",
+   "name": "command-ai-send-selected-text_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5506
+  },
+  {
+   "file": "command-ai-send-smart-context-mac-cpJFamBv.png",
+   "name": "command-ai-send-smart-context-mac",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2435
+  },
+  {
+   "file": "command-ai-send-smart-context-mac_large-IiY3f1pE.png",
+   "name": "command-ai-send-smart-context-mac_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 6391
+  },
+  {
+   "file": "command-ai-send-smart-context-windows-073hR9aL.png",
+   "name": "command-ai-send-smart-context-windows",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2365
+  },
+  {
+   "file": "command-ai-send-smart-context-windows_large-BqyaTWQm.png",
+   "name": "command-ai-send-smart-context-windows_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 6518
+  },
+  {
+   "file": "command-ai-send-window-mac-xejB2Ier.png",
+   "name": "command-ai-send-window-mac",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 1975
+  },
+  {
+   "file": "command-ai-send-window-mac_large-aWPRsGcY.png",
+   "name": "command-ai-send-window-mac_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5667
+  },
+  {
+   "file": "command-ai-send-window-windows-F0-M_1a5.png",
+   "name": "command-ai-send-window-windows",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 1983
+  },
+  {
+   "file": "command-ai-send-window-windows_large-B0f3-joQ.png",
+   "name": "command-ai-send-window-windows_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5532
+  },
+  {
+   "file": "command-ai_large-BeuoFu8S.png",
+   "name": "command-ai_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 6447
+  },
+  {
+   "file": "command-applications-uninstall-mac-DqefN_u-.svg",
+   "name": "command-applications-uninstall-mac",
+   "family": "Command icons",
+   "type": "svg",
+   "bytes": 4310
+  },
+  {
+   "file": "command-applications-uninstall-windows-B5L7Yc85.svg",
+   "name": "command-applications-uninstall-windows",
+   "family": "Command icons",
+   "type": "svg",
+   "bytes": 3991
+  },
+  {
+   "file": "command-audio-backward-ccU58Yxk.png",
+   "name": "command-audio-backward",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2022
+  },
+  {
+   "file": "command-audio-backward_large-DAsEOb_D.png",
+   "name": "command-audio-backward_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5375
+  },
+  {
+   "file": "command-audio-forward-Bl3b8vvs.png",
+   "name": "command-audio-forward",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2029
+  },
+  {
+   "file": "command-audio-forward_large-DxRi_GiZ.png",
+   "name": "command-audio-forward_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5397
+  },
+  {
+   "file": "command-audio-play-pause-DGyeGBEb.png",
+   "name": "command-audio-play-pause",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2052
+  },
+  {
+   "file": "command-audio-play-pause_large-n2AYXhtp.png",
+   "name": "command-audio-play-pause_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5452
+  },
+  {
+   "file": "command-auto-quit-mac-DRW5-Sx1.png",
+   "name": "command-auto-quit-mac",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2791
+  },
+  {
+   "file": "command-auto-quit-mac_large-C0m_4dV7.png",
+   "name": "command-auto-quit-mac_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 9218
+  },
+  {
+   "file": "command-auto-quit-windows-CLlvmZT7.png",
+   "name": "command-auto-quit-windows",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2624
+  },
+  {
+   "file": "command-auto-quit-windows_large-CPjvweKH.png",
+   "name": "command-auto-quit-windows_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 8747
+  },
+  {
+   "file": "command-browser-download-extension-BHywhuIz.png",
+   "name": "command-browser-download-extension",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2271
+  },
+  {
+   "file": "command-capture-window-BUAPnNo6.png",
+   "name": "command-capture-window",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3806
+  },
+  {
+   "file": "command-changelog-DirUL6JX.png",
+   "name": "command-changelog",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3501
+  },
+  {
+   "file": "command-check-for-updates-DaQX0uXQ.png",
+   "name": "command-check-for-updates",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3241
+  },
+  {
+   "file": "command-confetti-BgWRokH-.png",
+   "name": "command-confetti",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2268
+  },
+  {
+   "file": "command-create-extension-BZfCmpjE.png",
+   "name": "command-create-extension",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2206
+  },
+  {
+   "file": "command-dictate-ai-V9rVfz6J.png",
+   "name": "command-dictate-ai",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2455
+  },
+  {
+   "file": "command-dictate-ai_large-DjJQA-GF.png",
+   "name": "command-dictate-ai_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 6493
+  },
+  {
+   "file": "command-dictate-text-DJgiXJsF.png",
+   "name": "command-dictate-text",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2446
+  },
+  {
+   "file": "command-dictate-text-to-note-eZgFt6W9.png",
+   "name": "command-dictate-text-to-note",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2317
+  },
+  {
+   "file": "command-dictate-text_large-DArHrXMJ.png",
+   "name": "command-dictate-text_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 6060
+  },
+  {
+   "file": "command-dictation-advanced-qhi2teqx.png",
+   "name": "command-dictation-advanced",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2214
+  },
+  {
+   "file": "command-dictation-advanced_large-Ca1QuR3q.png",
+   "name": "command-dictation-advanced_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5959
+  },
+  {
+   "file": "command-dictation-copy-last-transcription-BRlp1f3S.png",
+   "name": "command-dictation-copy-last-transcription",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2265
+  },
+  {
+   "file": "command-dictation-history-Q6C-na8Q.png",
+   "name": "command-dictation-history",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2310
+  },
+  {
+   "file": "command-dictation-history_large-DdhyyB9g.png",
+   "name": "command-dictation-history_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5841
+  },
+  {
+   "file": "command-dictation-profile-Ce846fAu.png",
+   "name": "command-dictation-profile",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2335
+  },
+  {
+   "file": "command-dictation-profile_large-BGKFZf2O.png",
+   "name": "command-dictation-profile_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 6087
+  },
+  {
+   "file": "command-dismiss-notifications-XRKKm_tY.png",
+   "name": "command-dismiss-notifications",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2047
+  },
+  {
+   "file": "command-dismiss-notifications_large-CMZnJHjZ.png",
+   "name": "command-dismiss-notifications_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5202
+  },
+  {
+   "file": "command-eject-all-disks-BfORC7fe.png",
+   "name": "command-eject-all-disks",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2130
+  },
+  {
+   "file": "command-eject-all-disks_large-Bv_8vLZ8.png",
+   "name": "command-eject-all-disks_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5461
+  },
+  {
+   "file": "command-empty-trash-CHvzKsUc.png",
+   "name": "command-empty-trash",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2029
+  },
+  {
+   "file": "command-empty-trash_large-CNHNBNlY.png",
+   "name": "command-empty-trash_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5320
+  },
+  {
+   "file": "command-export-settings-data-ilTMN3RN.png",
+   "name": "command-export-settings-data",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3229
+  },
+  {
+   "file": "command-export-settings-data_large-9SgjMedT.png",
+   "name": "command-export-settings-data_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 11717
+  },
+  {
+   "file": "command-extension-diagnostics-BEYE5bp6.svg",
+   "name": "command-extension-diagnostics",
+   "family": "Command icons",
+   "type": "svg",
+   "bytes": 1254
+  },
+  {
+   "file": "command-fallback-commands-D9oeMmfq.svg",
+   "name": "command-fallback-commands",
+   "family": "Command icons",
+   "type": "svg",
+   "bytes": 2918
+  },
+  {
+   "file": "command-flight-tracker-BHC1o3jz.png",
+   "name": "command-flight-tracker",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3885
+  },
+  {
+   "file": "command-general-dark-CxCPbf1A.png",
+   "name": "command-general-dark",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2329
+  },
+  {
+   "file": "command-general-dark_large-BxgUa5Ru.png",
+   "name": "command-general-dark_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 6412
+  },
+  {
+   "file": "command-general-light-bHlfQzyh.png",
+   "name": "command-general-light",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 1757
+  },
+  {
+   "file": "command-general-light_large-CPJ4oOT4.png",
+   "name": "command-general-light_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5053
+  },
+  {
+   "file": "command-hide-all-apps-2j1FNpKw.png",
+   "name": "command-hide-all-apps",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2195
+  },
+  {
+   "file": "command-hide-all-apps_large-BRdBz0Kl.png",
+   "name": "command-hide-all-apps_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5701
+  },
+  {
+   "file": "command-import-extension-BiEFBAHc.png",
+   "name": "command-import-extension",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2191
+  },
+  {
+   "file": "command-import-settings-data-BKfcuwBY.png",
+   "name": "command-import-settings-data",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3227
+  },
+  {
+   "file": "command-import-settings-data_large-BdJRp0yh.png",
+   "name": "command-import-settings-data_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 11679
+  },
+  {
+   "file": "command-lock-screen-BJDWP859.png",
+   "name": "command-lock-screen",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2079
+  },
+  {
+   "file": "command-lock-screen_large-Bz2lokEk.png",
+   "name": "command-lock-screen_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5459
+  },
+  {
+   "file": "command-log-out-CQ6L0Lug.png",
+   "name": "command-log-out",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2073
+  },
+  {
+   "file": "command-log-out_large-d_mHg33l.png",
+   "name": "command-log-out_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5321
+  },
+  {
+   "file": "command-manage-extensions-DWTqVdQd.png",
+   "name": "command-manage-extensions",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2264
+  },
+  {
+   "file": "command-manual-CyKK6giT.png",
+   "name": "command-manual",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3346
+  },
+  {
+   "file": "command-manual_large-0FrNnDUv.png",
+   "name": "command-manual_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 12793
+  },
+  {
+   "file": "command-notes-create-dark-e1gRcbMa.png",
+   "name": "command-notes-create-dark",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2131
+  },
+  {
+   "file": "command-notes-save-dark-BCRXCwFg.png",
+   "name": "command-notes-save-dark",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2130
+  },
+  {
+   "file": "command-notes-search-dark-whWBz0-N.png",
+   "name": "command-notes-search-dark",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2133
+  },
+  {
+   "file": "command-notes-search-dark_large-dUf2Dohr.png",
+   "name": "command-notes-search-dark_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5087
+  },
+  {
+   "file": "command-open-camera-BTGvldN3.png",
+   "name": "command-open-camera",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3228
+  },
+  {
+   "file": "command-open-camera_large-BD7HgGGA.png",
+   "name": "command-open-camera_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5613
+  },
+  {
+   "file": "command-paste-sequentially-7glZ1HEE.png",
+   "name": "command-paste-sequentially",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2519
+  },
+  {
+   "file": "command-paste-sequentially-reset-Cts-B3zA.png",
+   "name": "command-paste-sequentially-reset",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2849
+  },
+  {
+   "file": "command-paste-sequentially-reset_large-DxJS6k9h.png",
+   "name": "command-paste-sequentially-reset_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 9507
+  },
+  {
+   "file": "command-paste-sequentially_large-DEnBSFh4.png",
+   "name": "command-paste-sequentially_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 9019
+  },
+  {
+   "file": "command-pro-fYrohJZQ.png",
+   "name": "command-pro",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 58393
+  },
+  {
+   "file": "command-quicklinks-create-B3x3KoZH.png",
+   "name": "command-quicklinks-create",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2169
+  },
+  {
+   "file": "command-quicklinks-export-DmBC2WEq.png",
+   "name": "command-quicklinks-export",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2162
+  },
+  {
+   "file": "command-quicklinks-export_large-g0RvYhJM.png",
+   "name": "command-quicklinks-export_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 4998
+  },
+  {
+   "file": "command-quicklinks-import-CIdyXrSQ.png",
+   "name": "command-quicklinks-import",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2158
+  },
+  {
+   "file": "command-quicklinks-import_large-sfCGK1B3.png",
+   "name": "command-quicklinks-import_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5107
+  },
+  {
+   "file": "command-quit-all-applications-mac-CDLrxBQD.png",
+   "name": "command-quit-all-applications-mac",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2126
+  },
+  {
+   "file": "command-quit-all-applications-mac_large-mmAhKSZo.png",
+   "name": "command-quit-all-applications-mac_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 4994
+  },
+  {
+   "file": "command-quit-all-applications-windows-DKaQo9Gi.png",
+   "name": "command-quit-all-applications-windows",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2128
+  },
+  {
+   "file": "command-quit-all-applications-windows_large-dJ560ak4.png",
+   "name": "command-quit-all-applications-windows_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5163
+  },
+  {
+   "file": "command-recenter-raycast-window-DryfEiHJ.png",
+   "name": "command-recenter-raycast-window",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3548
+  },
+  {
+   "file": "command-restart-BYU_0_sN.png",
+   "name": "command-restart",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2331
+  },
+  {
+   "file": "command-restart_large-m2Krkd0_.png",
+   "name": "command-restart_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5992
+  },
+  {
+   "file": "command-run-create-DcbvyvNk.png",
+   "name": "command-run-create",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 16638
+  },
+  {
+   "file": "command-run-custom-yRskQdMY.png",
+   "name": "command-run-custom",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 16435
+  },
+  {
+   "file": "command-run-execute-DIvOUrNf.png",
+   "name": "command-run-execute",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 16532
+  },
+  {
+   "file": "command-run-search-Cuk4vUcl.png",
+   "name": "command-run-search",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 16867
+  },
+  {
+   "file": "command-script-create-DHZ_ekqw.png",
+   "name": "command-script-create",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2964
+  },
+  {
+   "file": "command-script-create_large-DsW0guhr.png",
+   "name": "command-script-create_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 10961
+  },
+  {
+   "file": "command-script-reload-C0e2idHw.png",
+   "name": "command-script-reload",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3111
+  },
+  {
+   "file": "command-script-reload_large-DghBefmZ.png",
+   "name": "command-script-reload_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 11229
+  },
+  {
+   "file": "command-script-search-CQKp4m-_.png",
+   "name": "command-script-search",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3054
+  },
+  {
+   "file": "command-script-search_large-vHl2BchC.png",
+   "name": "command-script-search_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 11180
+  },
+  {
+   "file": "command-search-menu-items-DRMs99fc.png",
+   "name": "command-search-menu-items",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2246
+  },
+  {
+   "file": "command-send-feedback-DTlCNnnm.png",
+   "name": "command-send-feedback",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3167
+  },
+  {
+   "file": "command-send-feedback-sent-C839lBZ2.png",
+   "name": "command-send-feedback-sent",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5423
+  },
+  {
+   "file": "command-send-feedback_large-D5i60l9a.png",
+   "name": "command-send-feedback_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 11549
+  },
+  {
+   "file": "command-set-sound-input-device-DOKCskl2.svg",
+   "name": "command-set-sound-input-device",
+   "family": "Command icons",
+   "type": "svg",
+   "bytes": 1280
+  },
+  {
+   "file": "command-set-sound-output-device-SDzj8DSH.svg",
+   "name": "command-set-sound-output-device",
+   "family": "Command icons",
+   "type": "svg",
+   "bytes": 1288
+  },
+  {
+   "file": "command-set-volume-0-n6NJibnJ.png",
+   "name": "command-set-volume-0",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2145
+  },
+  {
+   "file": "command-set-volume-0_large-02vd1nva.png",
+   "name": "command-set-volume-0_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5527
+  },
+  {
+   "file": "command-set-volume-100-CU8Fx_Gc.png",
+   "name": "command-set-volume-100",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2080
+  },
+  {
+   "file": "command-set-volume-100_large-13_S0z-t.png",
+   "name": "command-set-volume-100_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5559
+  },
+  {
+   "file": "command-set-volume-25-Ctm9Oqh6.png",
+   "name": "command-set-volume-25",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2034
+  },
+  {
+   "file": "command-set-volume-25_large-BbqHODQk.png",
+   "name": "command-set-volume-25_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5395
+  },
+  {
+   "file": "command-set-volume-50-QDPigKzw.png",
+   "name": "command-set-volume-50",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2044
+  },
+  {
+   "file": "command-set-volume-50_large-bO-jlX0R.png",
+   "name": "command-set-volume-50_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5412
+  },
+  {
+   "file": "command-set-volume-75-De7KwQcO.png",
+   "name": "command-set-volume-75",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2067
+  },
+  {
+   "file": "command-set-volume-75_large-Cu-YEFMp.png",
+   "name": "command-set-volume-75_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5470
+  },
+  {
+   "file": "command-settings-account-dark-D9D6wjpB.png",
+   "name": "command-settings-account-dark",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2407
+  },
+  {
+   "file": "command-settings-account-dark_large-fQ-7Omz5.png",
+   "name": "command-settings-account-dark_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 6653
+  },
+  {
+   "file": "command-settings-account-light-Bf_Evn4Z.png",
+   "name": "command-settings-account-light",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2057
+  },
+  {
+   "file": "command-settings-account-light_large-CZzKAoOq.png",
+   "name": "command-settings-account-light_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5362
+  },
+  {
+   "file": "command-settings-account-log-out-dark-AgPxR_lk.png",
+   "name": "command-settings-account-log-out-dark",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2274
+  },
+  {
+   "file": "command-settings-account-log-out-light-Dn1BulMs.png",
+   "name": "command-settings-account-log-out-light",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2077
+  },
+  {
+   "file": "command-settings-advanced-dark-BQyl94q1.png",
+   "name": "command-settings-advanced-dark",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2387
+  },
+  {
+   "file": "command-settings-advanced-dark_large-g6fZbjmZ.png",
+   "name": "command-settings-advanced-dark_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 6728
+  },
+  {
+   "file": "command-settings-advanced-light-DmMKzJ23.png",
+   "name": "command-settings-advanced-light",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 1880
+  },
+  {
+   "file": "command-settings-cloud-sync-dark-BioaQYxy.png",
+   "name": "command-settings-cloud-sync-dark",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2359
+  },
+  {
+   "file": "command-settings-cloud-sync-dark_large-BU0cekQ_.png",
+   "name": "command-settings-cloud-sync-dark_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 6289
+  },
+  {
+   "file": "command-settings-cloud-sync-light-CQRI4a-X.png",
+   "name": "command-settings-cloud-sync-light",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 1781
+  },
+  {
+   "file": "command-settings-cloud-sync-light_large-DAOTsTX2.png",
+   "name": "command-settings-cloud-sync-light_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 4891
+  },
+  {
+   "file": "command-settings-internal-Bp5RPAUT.svg",
+   "name": "command-settings-internal",
+   "family": "Command icons",
+   "type": "svg",
+   "bytes": 1898
+  },
+  {
+   "file": "command-settings-keyboard-dark-DmLffQEL.png",
+   "name": "command-settings-keyboard-dark",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2296
+  },
+  {
+   "file": "command-settings-keyboard-light-BeVc9Kl_.png",
+   "name": "command-settings-keyboard-light",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2190
+  },
+  {
+   "file": "command-settings-launcher-dark-DFThAPXj.png",
+   "name": "command-settings-launcher-dark",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2233
+  },
+  {
+   "file": "command-settings-launcher-light-BrhH9OR6.png",
+   "name": "command-settings-launcher-light",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 1642
+  },
+  {
+   "file": "command-settings-organizations-dark-paouI-Sq.png",
+   "name": "command-settings-organizations-dark",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2252
+  },
+  {
+   "file": "command-settings-organizations-dark_large-C5v7909M.png",
+   "name": "command-settings-organizations-dark_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 6131
+  },
+  {
+   "file": "command-settings-organizations-light-CGBkU5KF.png",
+   "name": "command-settings-organizations-light",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 1702
+  },
+  {
+   "file": "command-settings-organizations-light_large-u_t8Tns_.png",
+   "name": "command-settings-organizations-light_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 4642
+  },
+  {
+   "file": "command-settings-remote-dark-hN2iE20E.png",
+   "name": "command-settings-remote-dark",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3320
+  },
+  {
+   "file": "command-settings-remote-dark_large-CZvv4VaD.png",
+   "name": "command-settings-remote-dark_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 12090
+  },
+  {
+   "file": "command-settings-remote-light-BUneo33m.png",
+   "name": "command-settings-remote-light",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3164
+  },
+  {
+   "file": "command-settings-remote-light_large-BKyA8Nxj.png",
+   "name": "command-settings-remote-light_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 11838
+  },
+  {
+   "file": "command-settings-shortcuts-mac-dark-CGmS74p8.png",
+   "name": "command-settings-shortcuts-mac-dark",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2464
+  },
+  {
+   "file": "command-settings-shortcuts-mac-dark_large-BzrKYabE.png",
+   "name": "command-settings-shortcuts-mac-dark_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 6179
+  },
+  {
+   "file": "command-settings-shortcuts-mac-light-xhWVYUem.png",
+   "name": "command-settings-shortcuts-mac-light",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2049
+  },
+  {
+   "file": "command-settings-shortcuts-windows-dark-CGrKQcTh.png",
+   "name": "command-settings-shortcuts-windows-dark",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2292
+  },
+  {
+   "file": "command-share-raycast-ButbM-Fs.png",
+   "name": "command-share-raycast",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3225
+  },
+  {
+   "file": "command-show-desktop-BKYukkeu.png",
+   "name": "command-show-desktop",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2270
+  },
+  {
+   "file": "command-show-desktop_large-DCRhS44m.png",
+   "name": "command-show-desktop_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 6292
+  },
+  {
+   "file": "command-show-screen-saver-BQwGnmbw.png",
+   "name": "command-show-screen-saver",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2186
+  },
+  {
+   "file": "command-show-screen-saver_large-jXpVO5kI.png",
+   "name": "command-show-screen-saver_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 14062
+  },
+  {
+   "file": "command-shut-down-B3NmHoSi.png",
+   "name": "command-shut-down",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2308
+  },
+  {
+   "file": "command-shut-down_large-DNZD6v6U.png",
+   "name": "command-shut-down_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5964
+  },
+  {
+   "file": "command-sleep-B7Q995zL.png",
+   "name": "command-sleep",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2087
+  },
+  {
+   "file": "command-sleep-displays-DuHyHD9Z.png",
+   "name": "command-sleep-displays",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2059
+  },
+  {
+   "file": "command-sleep-displays_large-B1qKtyjX.png",
+   "name": "command-sleep-displays_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5306
+  },
+  {
+   "file": "command-sleep_large-CshucRBd.png",
+   "name": "command-sleep_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5380
+  },
+  {
+   "file": "command-snippets-create-BNnofSXZ.png",
+   "name": "command-snippets-create",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 1802
+  },
+  {
+   "file": "command-snippets-export-cxmSj53T.png",
+   "name": "command-snippets-export",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 1826
+  },
+  {
+   "file": "command-snippets-export_large-Dr3E09pq.png",
+   "name": "command-snippets-export_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 4680
+  },
+  {
+   "file": "command-snippets-import-1Q7VBjCx.png",
+   "name": "command-snippets-import",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 1828
+  },
+  {
+   "file": "command-snippets-import_large-B72eF_Og.png",
+   "name": "command-snippets-import_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 4575
+  },
+  {
+   "file": "command-store-Cb2kSTaD.png",
+   "name": "command-store",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2050
+  },
+  {
+   "file": "command-store_large-DJUbXGaW.png",
+   "name": "command-store_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 4578
+  },
+  {
+   "file": "command-switch-windows-mac-DjLtU34F.png",
+   "name": "command-switch-windows-mac",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 1977
+  },
+  {
+   "file": "command-switch-windows-windows-C-knOGD-.png",
+   "name": "command-switch-windows-windows",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 1822
+  },
+  {
+   "file": "command-theme-studio-6fOuZRGC.png",
+   "name": "command-theme-studio",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 17856
+  },
+  {
+   "file": "command-theme-studio-dark_large-BfnN3ZbL.png",
+   "name": "command-theme-studio-dark_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 6050
+  },
+  {
+   "file": "command-toggle-airplane-mode-DoUQzlqK.svg",
+   "name": "command-toggle-airplane-mode",
+   "family": "Command icons",
+   "type": "svg",
+   "bytes": 981
+  },
+  {
+   "file": "command-toggle-bluetooth-C5W4pcuW.png",
+   "name": "command-toggle-bluetooth",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2152
+  },
+  {
+   "file": "command-toggle-bluetooth_large-BlvFaJXo.png",
+   "name": "command-toggle-bluetooth_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5535
+  },
+  {
+   "file": "command-toggle-bounce-C9wgHtJ4.png",
+   "name": "command-toggle-bounce",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2225
+  },
+  {
+   "file": "command-toggle-camera-mute-BhhtxODX.svg",
+   "name": "command-toggle-camera-mute",
+   "family": "Command icons",
+   "type": "svg",
+   "bytes": 984
+  },
+  {
+   "file": "command-toggle-energy-saver-Bban-iEq.svg",
+   "name": "command-toggle-energy-saver",
+   "family": "Command icons",
+   "type": "svg",
+   "bytes": 876
+  },
+  {
+   "file": "command-toggle-hdr-2PpWs-26.svg",
+   "name": "command-toggle-hdr",
+   "family": "Command icons",
+   "type": "svg",
+   "bytes": 887
+  },
+  {
+   "file": "command-toggle-hidden-files-CgGVmxnr.png",
+   "name": "command-toggle-hidden-files",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2265
+  },
+  {
+   "file": "command-toggle-hidden-files_large-A6idPx69.png",
+   "name": "command-toggle-hidden-files_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5808
+  },
+  {
+   "file": "command-toggle-microphone-mute-gR2JUPAC.png",
+   "name": "command-toggle-microphone-mute",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 3057
+  },
+  {
+   "file": "command-toggle-microphone-mute_large-BjbEv_Pm.png",
+   "name": "command-toggle-microphone-mute_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 11709
+  },
+  {
+   "file": "command-toggle-mute_large-CB-MSL_w.png",
+   "name": "command-toggle-mute_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5542
+  },
+  {
+   "file": "command-toggle-stagemanager-BVflIU09.png",
+   "name": "command-toggle-stagemanager",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2012
+  },
+  {
+   "file": "command-toggle-stagemanager_large-BNkm8OmN.png",
+   "name": "command-toggle-stagemanager_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5102
+  },
+  {
+   "file": "command-toggle-system-appearance-C4QyhZbd.png",
+   "name": "command-toggle-system-appearance",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2160
+  },
+  {
+   "file": "command-toggle-system-appearance_large-Cea-G7d_.png",
+   "name": "command-toggle-system-appearance_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5773
+  },
+  {
+   "file": "command-transcription-style-create-B39EhzVX.png",
+   "name": "command-transcription-style-create",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 16762
+  },
+  {
+   "file": "command-transcription-style-email-gi0o55sQ.png",
+   "name": "command-transcription-style-email",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2349
+  },
+  {
+   "file": "command-transcription-style-messaging-CSOToyqu.png",
+   "name": "command-transcription-style-messaging",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2250
+  },
+  {
+   "file": "command-transcription-style-search-CNfLHA8V.png",
+   "name": "command-transcription-style-search",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 18118
+  },
+  {
+   "file": "command-trial-account-dark-DzCCm-x-.png",
+   "name": "command-trial-account-dark",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5705
+  },
+  {
+   "file": "command-trial-account-light-_wgLfYlG.png",
+   "name": "command-trial-account-light",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5132
+  },
+  {
+   "file": "command-trial-ai-Da6HpBjq.png",
+   "name": "command-trial-ai",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5479
+  },
+  {
+   "file": "command-trial-cloudsync-CVhH85Kv.png",
+   "name": "command-trial-cloudsync",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5119
+  },
+  {
+   "file": "command-trial-dictation-Dpz79J3d.png",
+   "name": "command-trial-dictation",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5305
+  },
+  {
+   "file": "command-trial-hourglass-dark-Ba-pHQEB.png",
+   "name": "command-trial-hourglass-dark",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5357
+  },
+  {
+   "file": "command-trial-hourglass-light-z65jdOUR.png",
+   "name": "command-trial-hourglass-light",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5048
+  },
+  {
+   "file": "command-trial-themes-ZK_1kv2M.png",
+   "name": "command-trial-themes",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5274
+  },
+  {
+   "file": "command-trial-translate-DenVzC1G.png",
+   "name": "command-trial-translate",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5042
+  },
+  {
+   "file": "command-trial-windowmanagement-DoP5nYcB.png",
+   "name": "command-trial-windowmanagement",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 4964
+  },
+  {
+   "file": "command-turn-olume-down_large-BcpQnX9I.png",
+   "name": "command-turn-olume-down_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5443
+  },
+  {
+   "file": "command-turn-volume-down-Bw2iubrm.png",
+   "name": "command-turn-volume-down",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2041
+  },
+  {
+   "file": "command-turn-volume-up-DrV-6Lj4.png",
+   "name": "command-turn-volume-up",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2144
+  },
+  {
+   "file": "command-turn-volume-up_large-8yDrxiJ0.png",
+   "name": "command-turn-volume-up_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5515
+  },
+  {
+   "file": "command-unhide-all-hidden-apps-mac-CirCaADA.png",
+   "name": "command-unhide-all-hidden-apps-mac",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2252
+  },
+  {
+   "file": "command-unhide-all-hidden-apps-mac_large-XJZoiULv.png",
+   "name": "command-unhide-all-hidden-apps-mac_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5722
+  },
+  {
+   "file": "command-unhide-all-hidden-apps-windows-D7xHH4VP.png",
+   "name": "command-unhide-all-hidden-apps-windows",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2243
+  },
+  {
+   "file": "command-unhide-all-hidden-apps-windows_large-DVC0rvEx.png",
+   "name": "command-unhide-all-hidden-apps-windows_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 5669
+  },
+  {
+   "file": "command-web-bing-C4IT4FVD.png",
+   "name": "command-web-bing",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 1665
+  },
+  {
+   "file": "command-web-duckduckgo-CPpC75h4.png",
+   "name": "command-web-duckduckgo",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2582
+  },
+  {
+   "file": "command-web-google-B1xzB1iT.png",
+   "name": "command-web-google",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 2209
+  },
+  {
+   "file": "command-wifi-I-cu-0oH.png",
+   "name": "command-wifi",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 4090
+  },
+  {
+   "file": "command-wifi_large-CVR6ifnh.png",
+   "name": "command-wifi_large",
+   "family": "Command icons",
+   "type": "png",
+   "bytes": 16504
+  },
+  {
+   "file": "credits-subscriptions-announcement-KdwZsTE_.mp4",
+   "name": "credits-subscriptions-announcement",
+   "family": "Video",
+   "type": "mp4",
+   "bytes": 2250962
+  },
+  {
+   "file": "custom-window-management-BustdLly.png",
+   "name": "custom-window-management",
+   "family": "Weather",
+   "type": "png",
+   "bytes": 241901
+  },
+  {
+   "file": "custom-window-management-CEqiJvQ3.png",
+   "name": "custom-window-management",
+   "family": "Weather",
+   "type": "png",
+   "bytes": 238693
+  },
+  {
+   "file": "dictation-BlyOJyee.png",
+   "name": "dictation",
+   "family": "Other",
+   "type": "png",
+   "bytes": 95548
+  },
+  {
+   "file": "dictation-Dzc8DcyJ.png",
+   "name": "dictation",
+   "family": "Other",
+   "type": "png",
+   "bytes": 210590
+  },
+  {
+   "file": "dictation-paywall-dark-C7Bu8MLi.png",
+   "name": "dictation-paywall-dark",
+   "family": "Other",
+   "type": "png",
+   "bytes": 357121
+  },
+  {
+   "file": "dictation-paywall-dark-windows-Dnnl2xMR.png",
+   "name": "dictation-paywall-dark-windows",
+   "family": "Weather",
+   "type": "png",
+   "bytes": 271953
+  },
+  {
+   "file": "dictation-paywall-light-Bwmop4S7.png",
+   "name": "dictation-paywall-light",
+   "family": "Other",
+   "type": "png",
+   "bytes": 269118
+  },
+  {
+   "file": "dictation-paywall-light-windows-CQ9fNHC8.png",
+   "name": "dictation-paywall-light-windows",
+   "family": "Weather",
+   "type": "png",
+   "bytes": 272809
+  },
+  {
+   "file": "emoji-Bo3tsfVw.png",
+   "name": "emoji",
+   "family": "Other",
+   "type": "png",
+   "bytes": 646707
+  },
+  {
+   "file": "emoji-jEAzMtYc.png",
+   "name": "emoji",
+   "family": "Other",
+   "type": "png",
+   "bytes": 805025
+  },
+  {
+   "file": "empty-state-emoji-picker-dark-BRNi5o56.svg",
+   "name": "empty-state-emoji-picker-dark",
+   "family": "Empty states",
+   "type": "svg",
+   "bytes": 88969
+  },
+  {
+   "file": "empty-state-emoji-picker-light-DE6CXOrn.svg",
+   "name": "empty-state-emoji-picker-light",
+   "family": "Empty states",
+   "type": "svg",
+   "bytes": 90085
+  },
+  {
+   "file": "error-state-empty-dark@2x-DQnt8053.png",
+   "name": "error-state-empty-dark@2x",
+   "family": "Other",
+   "type": "png",
+   "bytes": 13573
+  },
+  {
+   "file": "error-state-empty-light@2x-DwAlShx9.png",
+   "name": "error-state-empty-light@2x",
+   "family": "Other",
+   "type": "png",
+   "bytes": 14427
+  },
+  {
+   "file": "extension-applications-mac-BDInx8WQ.png",
+   "name": "extension-applications-mac",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 1872
+  },
+  {
+   "file": "extension-applications-mac_large-Bk6Sbre6.png",
+   "name": "extension-applications-mac_large",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 4400
+  },
+  {
+   "file": "extension-applications-windows-CiNr5odZ.png",
+   "name": "extension-applications-windows",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 1780
+  },
+  {
+   "file": "extension-applications-windows_large-pPSqqwSm.png",
+   "name": "extension-applications-windows_large",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 4256
+  },
+  {
+   "file": "extension-browser-Czc4a0B0.png",
+   "name": "extension-browser",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 2327
+  },
+  {
+   "file": "extension-browser_large-ZSoY-xhC.png",
+   "name": "extension-browser_large",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 6252
+  },
+  {
+   "file": "extension-calculator-BWxdIc50.png",
+   "name": "extension-calculator",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 2032
+  },
+  {
+   "file": "extension-calculator_large-CoS0jpu7.png",
+   "name": "extension-calculator_large",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 5687
+  },
+  {
+   "file": "extension-calendar-BPZWhGnf.png",
+   "name": "extension-calendar",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 2044
+  },
+  {
+   "file": "extension-calendar_large-6WCzGo_w.png",
+   "name": "extension-calendar_large",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 5820
+  },
+  {
+   "file": "extension-clipboard-history-Bwcr0QuF.png",
+   "name": "extension-clipboard-history",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 1582
+  },
+  {
+   "file": "extension-clipboard-history_large-C1lasVFn.png",
+   "name": "extension-clipboard-history_large",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 4227
+  },
+  {
+   "file": "extension-contacts-CIJjDVge.png",
+   "name": "extension-contacts",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 1983
+  },
+  {
+   "file": "extension-contacts_large-hMTGup-8.png",
+   "name": "extension-contacts_large",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 5147
+  },
+  {
+   "file": "extension-developer-Bvw3TH-o.png",
+   "name": "extension-developer",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 2103
+  },
+  {
+   "file": "extension-developer_large-B1qoNoii.png",
+   "name": "extension-developer_large",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 5425
+  },
+  {
+   "file": "extension-dictation-vIJak6vg.png",
+   "name": "extension-dictation",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 3647
+  },
+  {
+   "file": "extension-dictation_large-Bt6YezeZ.png",
+   "name": "extension-dictation_large",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 14746
+  },
+  {
+   "file": "extension-dictionary-DJCrFl0i.png",
+   "name": "extension-dictionary",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 2325
+  },
+  {
+   "file": "extension-dictionary_large-Ce2ClA5H.png",
+   "name": "extension-dictionary_large",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 6766
+  },
+  {
+   "file": "extension-emoji-picker-CkxWHzfK.png",
+   "name": "extension-emoji-picker",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 2019
+  },
+  {
+   "file": "extension-emoji-picker_large-vwaKKERV.png",
+   "name": "extension-emoji-picker_large",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 5043
+  },
+  {
+   "file": "extension-fallback-Cd9En5zT.svg",
+   "name": "extension-fallback",
+   "family": "Extension icons",
+   "type": "svg",
+   "bytes": 1080
+  },
+  {
+   "file": "extension-file-search-CTUaEB_7.png",
+   "name": "extension-file-search",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 2181
+  },
+  {
+   "file": "extension-file-search_large-C9PaA1kR.png",
+   "name": "extension-file-search_large",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 5492
+  },
+  {
+   "file": "extension-games-EV1537BD.svg",
+   "name": "extension-games",
+   "family": "Extension icons",
+   "type": "svg",
+   "bytes": 1527
+  },
+  {
+   "file": "extension-mcp-BPhpUpkU.png",
+   "name": "extension-mcp",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 2278
+  },
+  {
+   "file": "extension-mcp_large-398p-i6X.png",
+   "name": "extension-mcp_large",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 7070
+  },
+  {
+   "file": "extension-navigation-mac-BKoK8eDJ.png",
+   "name": "extension-navigation-mac",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 2256
+  },
+  {
+   "file": "extension-navigation-mac_large-D1KLrs4R.png",
+   "name": "extension-navigation-mac_large",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 5542
+  },
+  {
+   "file": "extension-navigation-windows-exzR2wSC.png",
+   "name": "extension-navigation-windows",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 2183
+  },
+  {
+   "file": "extension-navigation-windows_large-BhHh3_SD.png",
+   "name": "extension-navigation-windows_large",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 5158
+  },
+  {
+   "file": "extension-notes-OAdPX2gE.png",
+   "name": "extension-notes",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 2123
+  },
+  {
+   "file": "extension-notes_large-vndCnNAk.png",
+   "name": "extension-notes_large",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 5006
+  },
+  {
+   "file": "extension-quicklinks-jfLKE3L5.png",
+   "name": "extension-quicklinks",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 2234
+  },
+  {
+   "file": "extension-quicklinks_large-xMHqnJFn.png",
+   "name": "extension-quicklinks_large",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 5325
+  },
+  {
+   "file": "extension-raycast-core-BDfvxXsA.png",
+   "name": "extension-raycast-core",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 2341
+  },
+  {
+   "file": "extension-raycast-core_large-DoyPmD2i.png",
+   "name": "extension-raycast-core_large",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 12807
+  },
+  {
+   "file": "extension-raycast-focus-BNEdr64p.png",
+   "name": "extension-raycast-focus",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 2046
+  },
+  {
+   "file": "extension-raycast-focus_large-Xo1U_iYo.png",
+   "name": "extension-raycast-focus_large",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 5663
+  },
+  {
+   "file": "extension-raycast-system-ERsLvU6C.png",
+   "name": "extension-raycast-system",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 2188
+  },
+  {
+   "file": "extension-raycast-system_large-xn01yq4u.png",
+   "name": "extension-raycast-system_large",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 5899
+  },
+  {
+   "file": "extension-run-BGN-g-iS.png",
+   "name": "extension-run",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 18653
+  },
+  {
+   "file": "extension-screenshots-BiQiGyWL.png",
+   "name": "extension-screenshots",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 2335
+  },
+  {
+   "file": "extension-screenshots_large-D1GC6Qo2.png",
+   "name": "extension-screenshots_large",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 6760
+  },
+  {
+   "file": "extension-script-BUHMpy6i.png",
+   "name": "extension-script",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 3515
+  },
+  {
+   "file": "extension-script_large-CvS9X1Fj.png",
+   "name": "extension-script_large",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 13085
+  },
+  {
+   "file": "extension-snippets-DRr6GjEZ.png",
+   "name": "extension-snippets",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 1811
+  },
+  {
+   "file": "extension-snippets_large-D9R9hSay.png",
+   "name": "extension-snippets_large",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 4543
+  },
+  {
+   "file": "extension-system-settings-mac-CKvAWyud.png",
+   "name": "extension-system-settings-mac",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 12969
+  },
+  {
+   "file": "extension-system-settings-windows-BZnadlUr.svg",
+   "name": "extension-system-settings-windows",
+   "family": "Extension icons",
+   "type": "svg",
+   "bytes": 2381
+  },
+  {
+   "file": "extension-translator-D9TW7eu7.png",
+   "name": "extension-translator",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 2135
+  },
+  {
+   "file": "extension-translator_large-By9kPsZq.png",
+   "name": "extension-translator_large",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 5077
+  },
+  {
+   "file": "extension-typing-practice-DJieuD1h.png",
+   "name": "extension-typing-practice",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 2420
+  },
+  {
+   "file": "extension-typing-practice_large-BOz-qnEG.png",
+   "name": "extension-typing-practice_large",
+   "family": "Extension icons",
+   "type": "png",
+   "bytes": 6507
+  },
+  {
+   "file": "extension-ui-playground-V7TgHjR2.svg",
+   "name": "extension-ui-playground",
+   "family": "Extension icons",
+   "type": "svg",
+   "bytes": 1565
+  },
+  {
+   "file": "extension-window-management-mac-CL4p5DPE.svg",
+   "name": "extension-window-management-mac",
+   "family": "Extension icons",
+   "type": "svg",
+   "bytes": 931
+  },
+  {
+   "file": "extension-window-management-windows-BhzKaRp8.svg",
+   "name": "extension-window-management-windows",
+   "family": "Extension icons",
+   "type": "svg",
+   "bytes": 633
+  },
+  {
+   "file": "extension-windows-taskbar-Bkdvc8Sx.svg",
+   "name": "extension-windows-taskbar",
+   "family": "Extension icons",
+   "type": "svg",
+   "bytes": 1248
+  },
+  {
+   "file": "extensions-BXytzA0r.svg",
+   "name": "extensions",
+   "family": "Other",
+   "type": "svg",
+   "bytes": 1302
+  },
+  {
+   "file": "extreme-day-sleet-DCXhbiFA.svg",
+   "name": "extreme-day-sleet",
+   "family": "Weather",
+   "type": "svg",
+   "bytes": 5821
+  },
+  {
+   "file": "extreme-day-snow-AqUs6pRL.svg",
+   "name": "extreme-day-snow",
+   "family": "Weather",
+   "type": "svg",
+   "bytes": 5390
+  },
+  {
+   "file": "extreme-night-sleet-C-Ii8B3Q.svg",
+   "name": "extreme-night-sleet",
+   "family": "Weather",
+   "type": "svg",
+   "bytes": 5358
+  },
+  {
+   "file": "extreme-night-snow-BE-f_SxR.svg",
+   "name": "extreme-night-snow",
+   "family": "Weather",
+   "type": "svg",
+   "bytes": 4920
+  },
+  {
+   "file": "extreme-sleet-D0vq-CVL.svg",
+   "name": "extreme-sleet",
+   "family": "Weather",
+   "type": "svg",
+   "bytes": 4645
+  },
+  {
+   "file": "extreme-snow-ITcnJess.svg",
+   "name": "extreme-snow",
+   "family": "Weather",
+   "type": "svg",
+   "bytes": 4235
+  },
+  {
+   "file": "file-search-CTUwDT8K.png",
+   "name": "file-search",
+   "family": "Other",
+   "type": "png",
+   "bytes": 562049
+  },
+  {
+   "file": "file-search-DH1SnHeL.png",
+   "name": "file-search",
+   "family": "Other",
+   "type": "png",
+   "bytes": 904755
+  },
+  {
+   "file": "grain-Bw3szyYE.png",
+   "name": "grain",
+   "family": "Weather",
+   "type": "png",
+   "bytes": 317443
+  },
+  {
+   "file": "grid-item-1-dark-CwUBzXhW.jpg",
+   "name": "grid-item-1-dark",
+   "family": "Other",
+   "type": "jpg",
+   "bytes": 7736
+  },
+  {
+   "file": "grid-item-1-light-DKNVgSJO.jpg",
+   "name": "grid-item-1-light",
+   "family": "Other",
+   "type": "jpg",
+   "bytes": 9968
+  },
+  {
+   "file": "grid-item-2-dark-DvoHvLMG.jpg",
+   "name": "grid-item-2-dark",
+   "family": "Other",
+   "type": "jpg",
+   "bytes": 7459
+  },
+  {
+   "file": "grid-item-2-light-YHsKnMjH.jpg",
+   "name": "grid-item-2-light",
+   "family": "Other",
+   "type": "jpg",
+   "bytes": 9537
+  },
+  {
+   "file": "grid-item-3-dark-B1VcL1t3.jpg",
+   "name": "grid-item-3-dark",
+   "family": "Other",
+   "type": "jpg",
+   "bytes": 9423
+  },
+  {
+   "file": "grid-item-3-light--jlZ_EDs.jpg",
+   "name": "grid-item-3-light",
+   "family": "Other",
+   "type": "jpg",
+   "bytes": 11523
+  },
+  {
+   "file": "grid-item-4-dark-fUfqLbPR.jpg",
+   "name": "grid-item-4-dark",
+   "family": "Other",
+   "type": "jpg",
+   "bytes": 7660
+  },
+  {
+   "file": "grid-item-4-light-Bb6UC698.jpg",
+   "name": "grid-item-4-light",
+   "family": "Other",
+   "type": "jpg",
+   "bytes": 9287
+  },
+  {
+   "file": "grid-item-5-dark-B3jx3cyo.jpg",
+   "name": "grid-item-5-dark",
+   "family": "Other",
+   "type": "jpg",
+   "bytes": 8566
+  },
+  {
+   "file": "grid-item-5-light-0H-M-jlw.jpg",
+   "name": "grid-item-5-light",
+   "family": "Other",
+   "type": "jpg",
+   "bytes": 10457
+  },
+  {
+   "file": "launcher-B6Fc0mV6.png",
+   "name": "launcher",
+   "family": "Other",
+   "type": "png",
+   "bytes": 727793
+  },
+  {
+   "file": "launcher-BB-5ELwb.png",
+   "name": "launcher",
+   "family": "Other",
+   "type": "png",
+   "bytes": 843221
+  },
+  {
+   "file": "meeting-jitsi-light-grxNxauu.svg",
+   "name": "meeting-jitsi-light",
+   "family": "Meeting providers",
+   "type": "svg",
+   "bytes": 9829
+  },
+  {
+   "file": "meeting-skype-DOztJlIn.svg",
+   "name": "meeting-skype",
+   "family": "Meeting providers",
+   "type": "svg",
+   "bytes": 10196
+  },
+  {
+   "file": "meeting-teams-ITB68zqq.svg",
+   "name": "meeting-teams",
+   "family": "Meeting providers",
+   "type": "svg",
+   "bytes": 8436
+  },
+  {
+   "file": "newsletter-0nNDN2pK.png",
+   "name": "newsletter",
+   "family": "Other",
+   "type": "png",
+   "bytes": 22884
+  },
+  {
+   "file": "no-screen-recording-fallback-message-dark-BSy9AF7j.png",
+   "name": "no-screen-recording-fallback-message-dark",
+   "family": "Other",
+   "type": "png",
+   "bytes": 7117
+  },
+  {
+   "file": "no-screen-recording-fallback-message-light-B5Zsmngr.png",
+   "name": "no-screen-recording-fallback-message-light",
+   "family": "Other",
+   "type": "png",
+   "bytes": 7059
+  },
+  {
+   "file": "notes-BDU4rt3i.png",
+   "name": "notes",
+   "family": "Other",
+   "type": "png",
+   "bytes": 514569
+  },
+  {
+   "file": "notes-dark-1ppn6KDN.png",
+   "name": "notes-dark",
+   "family": "Other",
+   "type": "png",
+   "bytes": 159493
+  },
+  {
+   "file": "notes-light-BP-UK3RH.png",
+   "name": "notes-light",
+   "family": "Other",
+   "type": "png",
+   "bytes": 177019
+  },
+  {
+   "file": "notes-paywall-dark-BsFv_MiZ.png",
+   "name": "notes-paywall-dark",
+   "family": "Other",
+   "type": "png",
+   "bytes": 348714
+  },
+  {
+   "file": "notes-paywall-light-B1tZaTKM.png",
+   "name": "notes-paywall-light",
+   "family": "Other",
+   "type": "png",
+   "bytes": 334227
+  },
+  {
+   "file": "partly-cloudy-day-sleet-DN40_-iQ.svg",
+   "name": "partly-cloudy-day-sleet",
+   "family": "Weather",
+   "type": "svg",
+   "bytes": 5229
+  },
+  {
+   "file": "partly-cloudy-day-snow-Dd7QcW7L.svg",
+   "name": "partly-cloudy-day-snow",
+   "family": "Weather",
+   "type": "svg",
+   "bytes": 4778
+  },
+  {
+   "file": "partly-cloudy-night-sleet-D6SxjBO-.svg",
+   "name": "partly-cloudy-night-sleet",
+   "family": "Weather",
+   "type": "svg",
+   "bytes": 4752
+  },
+  {
+   "file": "partly-cloudy-night-snow-BWqExMe4.svg",
+   "name": "partly-cloudy-night-snow",
+   "family": "Weather",
+   "type": "svg",
+   "bytes": 4294
+  },
+  {
+   "file": "profile-and-memory-BYOMGNfo.png",
+   "name": "profile-and-memory",
+   "family": "Other",
+   "type": "png",
+   "bytes": 65444
+  },
+  {
+   "file": "profile-and-memory-Ba6yR9l_.png",
+   "name": "profile-and-memory",
+   "family": "Other",
+   "type": "png",
+   "bytes": 175806
+  },
+  {
+   "file": "quick-ai-BoZttSpP.png",
+   "name": "quick-ai",
+   "family": "Other",
+   "type": "png",
+   "bytes": 156267
+  },
+  {
+   "file": "quick-ai-CqN16Vnc.png",
+   "name": "quick-ai",
+   "family": "Other",
+   "type": "png",
+   "bytes": 48162
+  },
+  {
+   "file": "quicklinks-BvoBXXhc.png",
+   "name": "quicklinks",
+   "family": "Other",
+   "type": "png",
+   "bytes": 686700
+  },
+  {
+   "file": "quicklinks-DNUfI45H.png",
+   "name": "quicklinks",
+   "family": "Other",
+   "type": "png",
+   "bytes": 850576
+  },
+  {
+   "file": "raycast-ai-bg-DL-9Mf0i.png",
+   "name": "raycast-ai-bg",
+   "family": "Other",
+   "type": "png",
+   "bytes": 2314
+  },
+  {
+   "file": "raycast-ai-bg_large-KyOfMEDe.png",
+   "name": "raycast-ai-bg_large",
+   "family": "Other",
+   "type": "png",
+   "bytes": 7093
+  },
+  {
+   "file": "raycast-ai-extension-bg-s2ZZK3xh.png",
+   "name": "raycast-ai-extension-bg",
+   "family": "Other",
+   "type": "png",
+   "bytes": 2697
+  },
+  {
+   "file": "raycast-ai-extension-bg_large-Cxm2f6Tj.png",
+   "name": "raycast-ai-extension-bg_large",
+   "family": "Other",
+   "type": "png",
+   "bytes": 11509
+  },
+  {
+   "file": "raycast-app-icon-DqOyt9SX.png",
+   "name": "raycast-app-icon",
+   "family": "Other",
+   "type": "png",
+   "bytes": 50400
+  },
+  {
+   "file": "raycast-dictation-bg-B80vcJde.png",
+   "name": "raycast-dictation-bg",
+   "family": "Other",
+   "type": "png",
+   "bytes": 2107
+  },
+  {
+   "file": "raycast-ios-app-CfBNDyaI.png",
+   "name": "raycast-ios-app",
+   "family": "Other",
+   "type": "png",
+   "bytes": 10918
+  },
+  {
+   "file": "raycast-system-bg-CUkLemp_.png",
+   "name": "raycast-system-bg",
+   "family": "Other",
+   "type": "png",
+   "bytes": 2785
+  },
+  {
+   "file": "schedule-DpCo5Kp2.png",
+   "name": "schedule",
+   "family": "Other",
+   "type": "png",
+   "bytes": 671307
+  },
+  {
+   "file": "smart-context-sample-narrow-Cem1VzYe.png",
+   "name": "smart-context-sample-narrow",
+   "family": "Other",
+   "type": "png",
+   "bytes": 50406
+  },
+  {
+   "file": "smart-context-sample-wide-3j-STtM2.png",
+   "name": "smart-context-sample-wide",
+   "family": "Other",
+   "type": "png",
+   "bytes": 162177
+  },
+  {
+   "file": "snippets-DMe8SfR3.png",
+   "name": "snippets",
+   "family": "Other",
+   "type": "png",
+   "bytes": 725783
+  },
+  {
+   "file": "snippets-U-setAfD.png",
+   "name": "snippets",
+   "family": "Other",
+   "type": "png",
+   "bytes": 733929
+  },
+  {
+   "file": "stars-BP6ph43Z.svg",
+   "name": "stars",
+   "family": "Weather",
+   "type": "svg",
+   "bytes": 14832
+  },
+  {
+   "file": "store-BV2_V2RX.png",
+   "name": "store",
+   "family": "Other",
+   "type": "png",
+   "bytes": 1029332
+  },
+  {
+   "file": "store-o6D1z1JH.png",
+   "name": "store",
+   "family": "Other",
+   "type": "png",
+   "bytes": 685024
+  },
+  {
+   "file": "theme-studio-macos-1-Cn0Ek-zZ.webp",
+   "name": "theme-studio-macos-1",
+   "family": "Themes",
+   "type": "webp",
+   "bytes": 214556
+  },
+  {
+   "file": "theme-studio-macos-2-LNojP2vc.webp",
+   "name": "theme-studio-macos-2",
+   "family": "Themes",
+   "type": "webp",
+   "bytes": 245106
+  },
+  {
+   "file": "theme-studio-macos-3-DPlJyc1B.webp",
+   "name": "theme-studio-macos-3",
+   "family": "Themes",
+   "type": "webp",
+   "bytes": 237284
+  },
+  {
+   "file": "theme-studio-windows-1-8Xrorod8.webp",
+   "name": "theme-studio-windows-1",
+   "family": "Themes",
+   "type": "webp",
+   "bytes": 190786
+  },
+  {
+   "file": "theme-studio-windows-2-U8bkq28y.webp",
+   "name": "theme-studio-windows-2",
+   "family": "Themes",
+   "type": "webp",
+   "bytes": 213856
+  },
+  {
+   "file": "theme-studio-windows-3-BwQrW5ZP.webp",
+   "name": "theme-studio-windows-3",
+   "family": "Themes",
+   "type": "webp",
+   "bytes": 211102
+  },
+  {
+   "file": "themes-paywall-dark-CDmYBGTT.png",
+   "name": "themes-paywall-dark",
+   "family": "Themes",
+   "type": "png",
+   "bytes": 878502
+  },
+  {
+   "file": "themes-paywall-light-CVkf9fJK.png",
+   "name": "themes-paywall-light",
+   "family": "Themes",
+   "type": "png",
+   "bytes": 743592
+  },
+  {
+   "file": "thunderstorms-day-snow-QsnVn-uB.svg",
+   "name": "thunderstorms-day-snow",
+   "family": "Weather",
+   "type": "svg",
+   "bytes": 5317
+  },
+  {
+   "file": "thunderstorms-extreme-day-rain-dmTe089Y.svg",
+   "name": "thunderstorms-extreme-day-rain",
+   "family": "Weather",
+   "type": "svg",
+   "bytes": 4315
+  },
+  {
+   "file": "thunderstorms-extreme-day-snow-CcVHaG4z.svg",
+   "name": "thunderstorms-extreme-day-snow",
+   "family": "Weather",
+   "type": "svg",
+   "bytes": 6303
+  },
+  {
+   "file": "thunderstorms-extreme-night-snow-CpTUi4XB.svg",
+   "name": "thunderstorms-extreme-night-snow",
+   "family": "Weather",
+   "type": "svg",
+   "bytes": 5827
+  },
+  {
+   "file": "thunderstorms-extreme-snow-DX7-2x2q.svg",
+   "name": "thunderstorms-extreme-snow",
+   "family": "Weather",
+   "type": "svg",
+   "bytes": 5060
+  },
+  {
+   "file": "thunderstorms-night-snow-B9o-dUvg.svg",
+   "name": "thunderstorms-night-snow",
+   "family": "Weather",
+   "type": "svg",
+   "bytes": 4841
+  },
+  {
+   "file": "thunderstorms-snow-RauahMtt.svg",
+   "name": "thunderstorms-snow",
+   "family": "Weather",
+   "type": "svg",
+   "bytes": 4130
+  },
+  {
+   "file": "transfer-settings-MnFS-XsL.png",
+   "name": "transfer-settings",
+   "family": "Other",
+   "type": "png",
+   "bytes": 23327
+  },
+  {
+   "file": "translate-macos-DpeQ48dL.webp",
+   "name": "translate-macos",
+   "family": "Other",
+   "type": "webp",
+   "bytes": 799626
+  },
+  {
+   "file": "translate-windows-CBwvBdh6.webp",
+   "name": "translate-windows",
+   "family": "Weather",
+   "type": "webp",
+   "bytes": 806218
+  },
+  {
+   "file": "translator-BJ3jTelJ.png",
+   "name": "translator",
+   "family": "Other",
+   "type": "png",
+   "bytes": 400879
+  },
+  {
+   "file": "translator-SweezGkn.png",
+   "name": "translator",
+   "family": "Other",
+   "type": "png",
+   "bytes": 376702
+  },
+  {
+   "file": "translator-paywall-dark-ByV1agn-.png",
+   "name": "translator-paywall-dark",
+   "family": "Other",
+   "type": "png",
+   "bytes": 371526
+  },
+  {
+   "file": "translator-paywall-light-CYgBkORM.png",
+   "name": "translator-paywall-light",
+   "family": "Other",
+   "type": "png",
+   "bytes": 370017
+  },
+  {
+   "file": "wallpaper-dunes-dark-BDf-RNyz.jpg",
+   "name": "wallpaper-dunes-dark",
+   "family": "Themes",
+   "type": "jpg",
+   "bytes": 488958
+  },
+  {
+   "file": "wallpaper-dunes-light-rzlWX72Y.jpg",
+   "name": "wallpaper-dunes-light",
+   "family": "Themes",
+   "type": "jpg",
+   "bytes": 350212
+  },
+  {
+   "file": "wallpaper-mac-dark-Csjau6e1.png",
+   "name": "wallpaper-mac-dark",
+   "family": "Themes",
+   "type": "png",
+   "bytes": 58140
+  },
+  {
+   "file": "wallpaper-mac-light-CuQdJJGQ.png",
+   "name": "wallpaper-mac-light",
+   "family": "Themes",
+   "type": "png",
+   "bytes": 60104
+  },
+  {
+   "file": "wallpaper-windows-dark-BqOvY8Yf.png",
+   "name": "wallpaper-windows-dark",
+   "family": "Themes",
+   "type": "png",
+   "bytes": 58250
+  },
+  {
+   "file": "wallpaper-windows-light-Cx011zN9.png",
+   "name": "wallpaper-windows-light",
+   "family": "Themes",
+   "type": "png",
+   "bytes": 58481
+  },
+  {
+   "file": "welcome-animation-DVh7n1Mb.mp4",
+   "name": "welcome-animation",
+   "family": "Video",
+   "type": "mp4",
+   "bytes": 1859743
+  },
+  {
+   "file": "welcome-animation-end-frame-BpYJHjwW.jpg",
+   "name": "welcome-animation-end-frame",
+   "family": "Onboarding",
+   "type": "jpg",
+   "bytes": 33910
+  },
+  {
+   "file": "window-management-CrWd5wct.png",
+   "name": "window-management",
+   "family": "Weather",
+   "type": "png",
+   "bytes": 735870
+  },
+  {
+   "file": "window-manager-almost-maximize-24-WVK3bExB.svg",
+   "name": "window-manager-almost-maximize-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1568
+  },
+  {
+   "file": "window-manager-always-on-top-24-CnND2Dtk.svg",
+   "name": "window-manager-always-on-top-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 898
+  },
+  {
+   "file": "window-manager-bottom-center-sixth-24-DlLOAHBF.svg",
+   "name": "window-manager-bottom-center-sixth-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 744
+  },
+  {
+   "file": "window-manager-bottom-center-two-third-24-t6IdL3TL.svg",
+   "name": "window-manager-bottom-center-two-third-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1193
+  },
+  {
+   "file": "window-manager-bottom-half-24-S7XYIN_q.svg",
+   "name": "window-manager-bottom-half-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 757
+  },
+  {
+   "file": "window-manager-bottom-left-24-C9h6_QE5.svg",
+   "name": "window-manager-bottom-left-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 753
+  },
+  {
+   "file": "window-manager-bottom-left-sixth-24-CC2xNCQm.svg",
+   "name": "window-manager-bottom-left-sixth-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 749
+  },
+  {
+   "file": "window-manager-bottom-one-third-24-DNJP-mLC.svg",
+   "name": "window-manager-bottom-one-third-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 755
+  },
+  {
+   "file": "window-manager-bottom-right-24-BJolQsNG.svg",
+   "name": "window-manager-bottom-right-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 755
+  },
+  {
+   "file": "window-manager-bottom-right-sixth-24-D5HaeAmC.svg",
+   "name": "window-manager-bottom-right-sixth-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 750
+  },
+  {
+   "file": "window-manager-bottom-three-fourth-24-pxsMy4at.svg",
+   "name": "window-manager-bottom-three-fourth-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1019
+  },
+  {
+   "file": "window-manager-bottom-two-third-24-B04V4FRI.svg",
+   "name": "window-manager-bottom-two-third-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 756
+  },
+  {
+   "file": "window-manager-center-24-9wLs4lz4.svg",
+   "name": "window-manager-center-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 757
+  },
+  {
+   "file": "window-manager-center-half-24-Ro2DlvkD.svg",
+   "name": "window-manager-center-half-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 756
+  },
+  {
+   "file": "window-manager-center-one-third-24-CQ23Ce76.svg",
+   "name": "window-manager-center-one-third-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 756
+  },
+  {
+   "file": "window-manager-center-three-fourth-24-CsUp8WTb.svg",
+   "name": "window-manager-center-three-fourth-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 902
+  },
+  {
+   "file": "window-manager-center-two-third-24-BC_YSjHb.svg",
+   "name": "window-manager-center-two-third-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 905
+  },
+  {
+   "file": "window-manager-close-active-desktop-24-DP9vB26K.svg",
+   "name": "window-manager-close-active-desktop-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1422
+  },
+  {
+   "file": "window-manager-close-desktop-24-BF4VCcH3.svg",
+   "name": "window-manager-close-desktop-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1293
+  },
+  {
+   "file": "window-manager-command-template-24-Dc6YRDAX.svg",
+   "name": "window-manager-command-template-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1025
+  },
+  {
+   "file": "window-manager-custom-command-24-BdHZj5o-.svg",
+   "name": "window-manager-custom-command-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 2386
+  },
+  {
+   "file": "window-manager-first-fourth-24-BZK8Iltb.svg",
+   "name": "window-manager-first-fourth-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 752
+  },
+  {
+   "file": "window-manager-first-one-third-24-KV0W3mTm.svg",
+   "name": "window-manager-first-one-third-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 755
+  },
+  {
+   "file": "window-manager-first-three-fourth-24-CL1wpHS7.svg",
+   "name": "window-manager-first-three-fourth-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 894
+  },
+  {
+   "file": "window-manager-first-two-third-24-C8O6tpHF.svg",
+   "name": "window-manager-first-two-third-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 755
+  },
+  {
+   "file": "window-manager-grid-placement-24-DSBAOdKD.svg",
+   "name": "window-manager-grid-placement-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1284
+  },
+  {
+   "file": "window-manager-last-fourth-24-C_gKNmxO.svg",
+   "name": "window-manager-last-fourth-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 754
+  },
+  {
+   "file": "window-manager-last-one-third-24-DV8AfOR7.svg",
+   "name": "window-manager-last-one-third-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 752
+  },
+  {
+   "file": "window-manager-last-three-fourth-24-DkWqvY8q.svg",
+   "name": "window-manager-last-three-fourth-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 895
+  },
+  {
+   "file": "window-manager-last-two-third-24-BPrV8GFB.svg",
+   "name": "window-manager-last-two-third-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 758
+  },
+  {
+   "file": "window-manager-layout-command-24-PxTAOCRX.svg",
+   "name": "window-manager-layout-command-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1538
+  },
+  {
+   "file": "window-manager-left-half-24-CFGSPGmm.svg",
+   "name": "window-manager-left-half-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 754
+  },
+  {
+   "file": "window-manager-make-larger-24-BFj2iqUx.svg",
+   "name": "window-manager-make-larger-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 702
+  },
+  {
+   "file": "window-manager-make-smaller-24-CviU4Lfa.svg",
+   "name": "window-manager-make-smaller-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 693
+  },
+  {
+   "file": "window-manager-max-height-24-BuP_7BZx.svg",
+   "name": "window-manager-max-height-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1574
+  },
+  {
+   "file": "window-manager-max-width-24-B79PN6A-.svg",
+   "name": "window-manager-max-width-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1563
+  },
+  {
+   "file": "window-manager-maximize-24-C0XJ_ZDo.svg",
+   "name": "window-manager-maximize-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1567
+  },
+  {
+   "file": "window-manager-middle-one-third-24-BBAUJNB1.svg",
+   "name": "window-manager-middle-one-third-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 753
+  },
+  {
+   "file": "window-manager-minimize-24-BlfGDr2n.svg",
+   "name": "window-manager-minimize-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 740
+  },
+  {
+   "file": "window-manager-move-down-24-C1QNGQ-6.svg",
+   "name": "window-manager-move-down-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1094
+  },
+  {
+   "file": "window-manager-move-left-24-DKwsU8rc.svg",
+   "name": "window-manager-move-left-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1100
+  },
+  {
+   "file": "window-manager-move-right-24-C13sDVoT.svg",
+   "name": "window-manager-move-right-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1097
+  },
+  {
+   "file": "window-manager-move-to-desktop-1-24-PGP4Q0Cg.svg",
+   "name": "window-manager-move-to-desktop-1-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 2593
+  },
+  {
+   "file": "window-manager-move-to-desktop-10-24-BcxnB68c.svg",
+   "name": "window-manager-move-to-desktop-10-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 3411
+  },
+  {
+   "file": "window-manager-move-to-desktop-2-24-DjjkAOe0.svg",
+   "name": "window-manager-move-to-desktop-2-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 3276
+  },
+  {
+   "file": "window-manager-move-to-desktop-24-Cm4rDJwm.svg",
+   "name": "window-manager-move-to-desktop-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1859
+  },
+  {
+   "file": "window-manager-move-to-desktop-3-24-DDG9jqwO.svg",
+   "name": "window-manager-move-to-desktop-3-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 3080
+  },
+  {
+   "file": "window-manager-move-to-desktop-4-24-B6N0dPzo.svg",
+   "name": "window-manager-move-to-desktop-4-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 2637
+  },
+  {
+   "file": "window-manager-move-to-desktop-5-24-2b_4CIRH.svg",
+   "name": "window-manager-move-to-desktop-5-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 2693
+  },
+  {
+   "file": "window-manager-move-to-desktop-6-24-DQ7JIFYx.svg",
+   "name": "window-manager-move-to-desktop-6-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 3211
+  },
+  {
+   "file": "window-manager-move-to-desktop-7-24-DoQhiJDx.svg",
+   "name": "window-manager-move-to-desktop-7-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 2469
+  },
+  {
+   "file": "window-manager-move-to-desktop-8-24-c4Pu1f5K.svg",
+   "name": "window-manager-move-to-desktop-8-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 3027
+  },
+  {
+   "file": "window-manager-move-to-desktop-9-24-Bb4iY9cw.svg",
+   "name": "window-manager-move-to-desktop-9-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 3324
+  },
+  {
+   "file": "window-manager-move-up-24-BePWTqlj.svg",
+   "name": "window-manager-move-up-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1100
+  },
+  {
+   "file": "window-manager-move-window-24-CGwUBPfO.svg",
+   "name": "window-manager-move-window-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 809
+  },
+  {
+   "file": "window-manager-next-desktop-24-BbdjsaK_.svg",
+   "name": "window-manager-next-desktop-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1960
+  },
+  {
+   "file": "window-manager-next-display-24-BGiQbfrY.svg",
+   "name": "window-manager-next-display-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 2165
+  },
+  {
+   "file": "window-manager-open-desktop-1-24-CF2ZVWHC.svg",
+   "name": "window-manager-open-desktop-1-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1381
+  },
+  {
+   "file": "window-manager-open-desktop-10-24-Dt5JjUHs.svg",
+   "name": "window-manager-open-desktop-10-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1744
+  },
+  {
+   "file": "window-manager-open-desktop-2-24-OtQrU8hc.svg",
+   "name": "window-manager-open-desktop-2-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 2064
+  },
+  {
+   "file": "window-manager-open-desktop-24-DxjbF6CZ.svg",
+   "name": "window-manager-open-desktop-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1977
+  },
+  {
+   "file": "window-manager-open-desktop-3-24-CgpzB3PE.svg",
+   "name": "window-manager-open-desktop-3-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1868
+  },
+  {
+   "file": "window-manager-open-desktop-4-24-BEI28dAF.svg",
+   "name": "window-manager-open-desktop-4-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1425
+  },
+  {
+   "file": "window-manager-open-desktop-5-24-deX3ATIi.svg",
+   "name": "window-manager-open-desktop-5-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1481
+  },
+  {
+   "file": "window-manager-open-desktop-6-24-D3Z4WVxk.svg",
+   "name": "window-manager-open-desktop-6-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1999
+  },
+  {
+   "file": "window-manager-open-desktop-7-24-BzkDp7GK.svg",
+   "name": "window-manager-open-desktop-7-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1257
+  },
+  {
+   "file": "window-manager-open-desktop-8-24-A-aX_aaJ.svg",
+   "name": "window-manager-open-desktop-8-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1815
+  },
+  {
+   "file": "window-manager-open-desktop-9-24-h3K2xfec.svg",
+   "name": "window-manager-open-desktop-9-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 2112
+  },
+  {
+   "file": "window-manager-prev-display-24-CSIvTzzE.svg",
+   "name": "window-manager-prev-display-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1204
+  },
+  {
+   "file": "window-manager-previous-desktop-24-lpSIgq2B.svg",
+   "name": "window-manager-previous-desktop-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1962
+  },
+  {
+   "file": "window-manager-previous-display-24-CNXO8TeC.svg",
+   "name": "window-manager-previous-display-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 2191
+  },
+  {
+   "file": "window-manager-reasonable-size-24-APbLh42r.svg",
+   "name": "window-manager-reasonable-size-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 889
+  },
+  {
+   "file": "window-manager-rename-active-desktop-24-DEaS0D0P.svg",
+   "name": "window-manager-rename-active-desktop-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 998
+  },
+  {
+   "file": "window-manager-rename-desktop-24-Ds_q8Jfj.svg",
+   "name": "window-manager-rename-desktop-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 862
+  },
+  {
+   "file": "window-manager-resize-window-24-DcT5Uz6T.svg",
+   "name": "window-manager-resize-window-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 737
+  },
+  {
+   "file": "window-manager-restore-24-B3LwIUhD.svg",
+   "name": "window-manager-restore-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1220
+  },
+  {
+   "file": "window-manager-right-half-24-DFCg1-E6.svg",
+   "name": "window-manager-right-half-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 755
+  },
+  {
+   "file": "window-manager-second-fourth-24-QDuRLaWn.svg",
+   "name": "window-manager-second-fourth-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 752
+  },
+  {
+   "file": "window-manager-switch-desktops-24-BUCcyqx6.svg",
+   "name": "window-manager-switch-desktops-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1286
+  },
+  {
+   "file": "window-manager-third-fourth-24-CnNIFrX9.svg",
+   "name": "window-manager-third-fourth-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 753
+  },
+  {
+   "file": "window-manager-toggle-fullscreen-24-C8Rrc7U-.svg",
+   "name": "window-manager-toggle-fullscreen-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 711
+  },
+  {
+   "file": "window-manager-top-center-sixth-24-DXDWt2L_.svg",
+   "name": "window-manager-top-center-sixth-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 741
+  },
+  {
+   "file": "window-manager-top-center-two-third-24-DCzGV7pC.svg",
+   "name": "window-manager-top-center-two-third-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 897
+  },
+  {
+   "file": "window-manager-top-first-fourth-24-XKY5QhHK.svg",
+   "name": "window-manager-top-first-fourth-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1012
+  },
+  {
+   "file": "window-manager-top-half-24-BTttEDoh.svg",
+   "name": "window-manager-top-half-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 753
+  },
+  {
+   "file": "window-manager-top-last-fourth-24-BvaeTLK9.svg",
+   "name": "window-manager-top-last-fourth-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1023
+  },
+  {
+   "file": "window-manager-top-left-24-Cug4j2h7.svg",
+   "name": "window-manager-top-left-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 751
+  },
+  {
+   "file": "window-manager-top-left-sixth-24-wDvQKiij.svg",
+   "name": "window-manager-top-left-sixth-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 748
+  },
+  {
+   "file": "window-manager-top-one-third-24-DzJG_VuG.svg",
+   "name": "window-manager-top-one-third-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 750
+  },
+  {
+   "file": "window-manager-top-right-24-URAu2yon.svg",
+   "name": "window-manager-top-right-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 753
+  },
+  {
+   "file": "window-manager-top-right-sixth-24-DMXg7yrj.svg",
+   "name": "window-manager-top-right-sixth-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 749
+  },
+  {
+   "file": "window-manager-top-second-fourth-24-C7a622xb.svg",
+   "name": "window-manager-top-second-fourth-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1015
+  },
+  {
+   "file": "window-manager-top-third-fourth-24-Dx9Hy-5u.svg",
+   "name": "window-manager-top-third-fourth-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1023
+  },
+  {
+   "file": "window-manager-top-three-fourth-24-uQnKziLv.svg",
+   "name": "window-manager-top-three-fourth-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 1016
+  },
+  {
+   "file": "window-manager-top-two-third-24-Hc5uq-oq.svg",
+   "name": "window-manager-top-two-third-24",
+   "family": "Window Management",
+   "type": "svg",
+   "bytes": 753
+  },
+  {
+   "file": "wm-wallpaper-dark-CgNxHRgp.png",
+   "name": "wm-wallpaper-dark",
+   "family": "Other",
+   "type": "png",
+   "bytes": 93492
+  },
+  {
+   "file": "wm-wallpaper-light-DVTVPiip.png",
+   "name": "wm-wallpaper-light",
+   "family": "Other",
+   "type": "png",
+   "bytes": 133139
+  }
+ ],
+ "audio": [
+  {
+   "file": "audio/dictation/modern-failure.aif",
+   "name": "modern-failure.aif"
+  },
+  {
+   "file": "audio/dictation/modern-start.aif",
+   "name": "modern-start.aif"
+  },
+  {
+   "file": "audio/dictation/modern-success.aif",
+   "name": "modern-success.aif"
+  }
+ ]
+}

@@ -1,0 +1,5 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="802f664d-7c9e-5fe1-92ec-3378d55cbd9a")}catch(e){}}();
+import{O as e}from"./icon-CKbK2z_d.js";import{t}from"./shortcuts-CslcL67B.js";import{t as n}from"./simple-tooltip-DazwIw4O.js";import{t as r}from"./chat-composer-control-button-DYXqPCvl.js";var i={button:`chat-composer-add-button__button_ca46d`},a=e(),o=`plus-20`;function s({isOpen:e,onPointerDown:s,disabled:c,ref:l}){return(0,a.jsx)(n,{for:(0,a.jsx)(r,{ref:l,icon:o,size:`small`,className:i.button,"aria-label":`Add Context`,"data-state":e?`open`:`closed`,onPointerDown:s,disabled:c}),label:`Add Context`,shortcut:t.toggleAboutPanel})}s.displayName=`ChatComposerAddButton`;export{s as t};
+//# sourceMappingURL=chat-composer-add-button-CDkAH1e3.js.map
+//# debugId=802f664d-7c9e-5fe1-92ec-3378d55cbd9a

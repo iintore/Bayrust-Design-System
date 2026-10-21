@@ -1,0 +1,15 @@
+{
+  "name": "Raycast 2.8.2 — design-system-assets",
+  "entryUrl": "http://localhost:4317/ds/#icons",
+  "timezone": "Africa/Kigali",
+  "scope": {
+    "origin": "http://localhost:4317",
+    "pathPrefix": "/"
+  },
+  "limitations": [
+    "Shipped Raycast frontend served locally with a stubbed native host bridge; host-provided images (ipc://) are unavailable."
+  ],
+  "notes": [
+    "Source: /Applications/Raycast.app (2.8.2) macos-app_RaycastDesktopApp.bundle/Contents/Resources/frontend"
+  ]
+}

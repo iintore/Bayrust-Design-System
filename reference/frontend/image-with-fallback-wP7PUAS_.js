@@ -1,0 +1,5 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="ec0c87b9-4042-5a78-ad87-0bf068e81515")}catch(e){}}();
+import{o as e}from"./chunk-CMxvf4Kt.js";import{n as t}from"./time-BgPLLP_H.js";import{O as n}from"./icon-CKbK2z_d.js";import{d as r}from"./react-B_wTDDwr.js";var i=e(t(),1),a=n();function o({isLoading:e,src:t,fallback:n,...o}){let[s,c]=i.useState(!1);if(i.useEffect(()=>c(!1),[t]),!e&&(!t||s))return n;if(e){let{ref:e,alt:t,onLoad:n,onError:r,loading:i,decoding:s,crossOrigin:c,referrerPolicy:l,srcSet:u,sizes:d,useMap:f,...p}=o;return(0,a.jsx)(`span`,{...p})}return(0,a.jsx)(`img`,{...o,src:t,onLoad:r(o.onLoad,()=>c(!1)),onError:r(o.onError,()=>c(!0))})}o.displayName=`Image`;export{o as t};
+//# sourceMappingURL=image-with-fallback-wP7PUAS_.js.map
+//# debugId=ec0c87b9-4042-5a78-ad87-0bf068e81515

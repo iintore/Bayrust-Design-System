@@ -1,0 +1,1 @@
+.notes-upgrade-dialog__root_02f5f{gap:var(--space-12);text-align:center;padding:var(--space-4);justify-items:center;display:grid;position:relative}.notes-upgrade-dialog__closeButton_51438{top:calc(-1 * var(--space-8));left:calc(-1 * var(--space-8));position:absolute}

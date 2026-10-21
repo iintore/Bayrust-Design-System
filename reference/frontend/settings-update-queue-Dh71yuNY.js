@@ -1,0 +1,5 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="9c3d0c9b-6bac-575a-bbc5-89c98c9d7d89")}catch(e){}}();
+import{o as e}from"./chunk-CMxvf4Kt.js";import{n as t}from"./time-BgPLLP_H.js";var n=e(t(),1),r=new Map,i=new Map,a=new Map;function o(e,t){let n=(r.get(e)??Promise.resolve()).catch(()=>void 0).then(t);return r.set(e,n),n.finally(()=>{r.get(e)===n&&r.delete(e)})}function s(e){return i.get(e)?.value}function c(e){let t=n.useCallback(t=>{let n=a.get(e)??new Set;return n.add(t),a.set(e,n),()=>{n.delete(t),n.size===0&&a.delete(e)}},[e]),r=n.useCallback(()=>s(e),[e]);return n.useSyncExternalStore(t,r,r)}function l(e,t){let n=Symbol();return i.set(e,{value:t,revision:n}),u(e),()=>{i.get(e)?.revision===n&&(i.delete(e),u(e))}}function u(e){a.get(e)?.forEach(e=>e())}export{c as i,s as n,l as r,o as t};
+//# sourceMappingURL=settings-update-queue-Dh71yuNY.js.map
+//# debugId=9c3d0c9b-6bac-575a-bbc5-89c98c9d7d89

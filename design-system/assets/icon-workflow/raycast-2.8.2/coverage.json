@@ -1,0 +1,134 @@
+[
+  {
+    "capture": 0,
+    "state": "Design system \u2014 sprite icons (730)",
+    "url": "http://localhost:4317/ds/#icons",
+    "status": "rendered state verified",
+    "inlineSvgCount": 744,
+    "domSymbolCount": 0,
+    "rootCount": 1,
+    "inaccessibleFrames": 0,
+    "notes": ""
+  },
+  {
+    "capture": 1,
+    "state": "Design system \u2014 brand & app icons",
+    "url": "http://localhost:4317/ds/#brand",
+    "status": "rendered state verified",
+    "inlineSvgCount": 15,
+    "domSymbolCount": 0,
+    "rootCount": 1,
+    "inaccessibleFrames": 0,
+    "notes": ""
+  },
+  {
+    "capture": 2,
+    "state": "Design system \u2014 assets: Other",
+    "url": "http://localhost:4317/ds/#assets",
+    "status": "rendered state verified",
+    "inlineSvgCount": 14,
+    "domSymbolCount": 0,
+    "rootCount": 1,
+    "inaccessibleFrames": 0,
+    "notes": ""
+  },
+  {
+    "capture": 3,
+    "state": "Design system \u2014 assets: AI",
+    "url": "http://localhost:4317/ds/#assets",
+    "status": "rendered state verified",
+    "inlineSvgCount": 14,
+    "domSymbolCount": 0,
+    "rootCount": 1,
+    "inaccessibleFrames": 0,
+    "notes": ""
+  },
+  {
+    "capture": 4,
+    "state": "Design system \u2014 assets: Weather",
+    "url": "http://localhost:4317/ds/#assets",
+    "status": "rendered state verified",
+    "inlineSvgCount": 14,
+    "domSymbolCount": 0,
+    "rootCount": 1,
+    "inaccessibleFrames": 0,
+    "notes": ""
+  },
+  {
+    "capture": 5,
+    "state": "Design system \u2014 assets: Command icons",
+    "url": "http://localhost:4317/ds/#assets",
+    "status": "rendered state verified",
+    "inlineSvgCount": 14,
+    "domSymbolCount": 0,
+    "rootCount": 1,
+    "inaccessibleFrames": 0,
+    "notes": ""
+  },
+  {
+    "capture": 6,
+    "state": "Design system \u2014 assets: Empty states",
+    "url": "http://localhost:4317/ds/#assets",
+    "status": "rendered state verified",
+    "inlineSvgCount": 14,
+    "domSymbolCount": 0,
+    "rootCount": 1,
+    "inaccessibleFrames": 0,
+    "notes": ""
+  },
+  {
+    "capture": 7,
+    "state": "Design system \u2014 assets: Extension icons",
+    "url": "http://localhost:4317/ds/#assets",
+    "status": "rendered state verified",
+    "inlineSvgCount": 14,
+    "domSymbolCount": 0,
+    "rootCount": 1,
+    "inaccessibleFrames": 0,
+    "notes": ""
+  },
+  {
+    "capture": 8,
+    "state": "Design system \u2014 assets: Meeting providers",
+    "url": "http://localhost:4317/ds/#assets",
+    "status": "rendered state verified",
+    "inlineSvgCount": 14,
+    "domSymbolCount": 0,
+    "rootCount": 1,
+    "inaccessibleFrames": 0,
+    "notes": ""
+  },
+  {
+    "capture": 9,
+    "state": "Design system \u2014 assets: Themes",
+    "url": "http://localhost:4317/ds/#assets",
+    "status": "rendered state verified",
+    "inlineSvgCount": 14,
+    "domSymbolCount": 0,
+    "rootCount": 1,
+    "inaccessibleFrames": 0,
+    "notes": ""
+  },
+  {
+    "capture": 10,
+    "state": "Design system \u2014 assets: Onboarding",
+    "url": "http://localhost:4317/ds/#assets",
+    "status": "rendered state verified",
+    "inlineSvgCount": 14,
+    "domSymbolCount": 0,
+    "rootCount": 1,
+    "inaccessibleFrames": 0,
+    "notes": ""
+  },
+  {
+    "capture": 11,
+    "state": "Design system \u2014 assets: Window Management",
+    "url": "http://localhost:4317/ds/#assets",
+    "status": "rendered state verified",
+    "inlineSvgCount": 14,
+    "domSymbolCount": 0,
+    "rootCount": 1,
+    "inaccessibleFrames": 0,
+    "notes": ""
+  }
+]

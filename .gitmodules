@@ -1,0 +1,9 @@
+[submodule "tools/rea"]
+	path = tools/rea
+	url = https://github.com/morluto/rea
+[submodule "tools/extract-site"]
+	path = tools/extract-site
+	url = https://github.com/stephenhungg/extract-site
+[submodule "tools/web-icon-extraction-workflow"]
+	path = tools/web-icon-extraction-workflow
+	url = https://github.com/Aristote-code/web-icon-extraction-workflow

@@ -1,0 +1,278 @@
+[
+ {
+  "id": "launcher-search-bar",
+  "label": "Launcher search bar",
+  "url": "/main-window.html",
+  "viewport": [
+   750,
+   475
+  ],
+  "selector": "header[class*='navigation-bar-ui__root']",
+  "rect": {
+   "x": 0,
+   "y": 0,
+   "w": 750,
+   "h": 64,
+   "cls": "navigation-bar-ui__root_8b55c",
+   "html": 5498
+  },
+  "image": "research/organisms/launcher-search-bar.png",
+  "window": "research/organisms/launcher-search-bar--window.png"
+ },
+ {
+  "id": "root-search-list",
+  "label": "Root search list",
+  "url": "/main-window.html",
+  "viewport": [
+   750,
+   475
+  ],
+  "selector": "main[class*='base-view__content']",
+  "rect": {
+   "x": 0,
+   "y": 0,
+   "w": 750,
+   "h": 475,
+   "cls": "base-view__content_52027",
+   "html": 40732
+  },
+  "image": "research/organisms/root-search-list.png",
+  "window": "research/organisms/root-search-list--window.png"
+ },
+ {
+  "id": "action-bar",
+  "label": "Action bar (footer)",
+  "url": "/main-window.html",
+  "viewport": [
+   750,
+   475
+  ],
+  "selector": "footer[class*='action-bar-ui__root']",
+  "rect": {
+   "x": 0,
+   "y": 431,
+   "w": 750,
+   "h": 44,
+   "cls": "action-bar-ui__root_1be39",
+   "html": 2418
+  },
+  "image": "research/organisms/action-bar.png",
+  "window": "research/organisms/action-bar--window.png"
+ },
+ {
+  "id": "calculator-card",
+  "label": "Inline calculator result",
+  "url": "/main-window.html",
+  "viewport": [
+   750,
+   475
+  ],
+  "steps": [
+   {
+    "keys": "24*7+12"
+   },
+   {
+    "wait": 1500
+   }
+  ],
+  "selector": "[class*='split-command-item__outerWrapper']",
+  "rect": {
+   "x": 8,
+   "y": 88,
+   "w": 734,
+   "h": 124,
+   "cls": "list__item_3f6c9 radius__radius-10_52891 split-command-item__outerWrapper_a05b0",
+   "html": 2833
+  },
+  "image": "research/organisms/calculator-card.png",
+  "window": "research/organisms/calculator-card--window.png"
+ },
+ {
+  "id": "emoji-grid",
+  "label": "Emoji & Symbols grid",
+  "url": "/main-window.html",
+  "viewport": [
+   750,
+   475
+  ],
+  "steps": [
+   {
+    "keys": "emoji"
+   },
+   {
+    "wait": 1200
+   },
+   {
+    "key": "return"
+   },
+   {
+    "wait": 2500
+   }
+  ],
+  "selector": "#main-window-root",
+  "rect": {
+   "x": 0,
+   "y": 0,
+   "w": 750,
+   "h": 475,
+   "cls": "",
+   "html": 66199
+  },
+  "image": "research/organisms/emoji-grid.png",
+  "window": "research/organisms/emoji-grid--window.png"
+ },
+ {
+  "id": "snippet-form",
+  "label": "Create Snippet form",
+  "url": "/main-window.html",
+  "viewport": [
+   750,
+   475
+  ],
+  "steps": [
+   {
+    "keys": "create snippet"
+   },
+   {
+    "wait": 1200
+   },
+   {
+    "key": "return"
+   },
+   {
+    "wait": 2500
+   }
+  ],
+  "selector": "#main-window-root",
+  "rect": {
+   "x": 0,
+   "y": 0,
+   "w": 750,
+   "h": 475,
+   "cls": "",
+   "html": 36911
+  },
+  "image": "research/organisms/snippet-form.png",
+  "window": "research/organisms/snippet-form--window.png"
+ },
+ {
+  "id": "settings-sidebar",
+  "label": "Settings sidebar",
+  "url": "/settings-window.html",
+  "viewport": [
+   1000,
+   700
+  ],
+  "selector": "[class*='sidebar']",
+  "rect": {
+   "x": 0,
+   "y": 0,
+   "w": 232,
+   "h": 700,
+   "cls": "settings-window-view__sidebarWrapper_3467e",
+   "html": 28780
+  },
+  "image": "research/organisms/settings-sidebar.png",
+  "window": "research/organisms/settings-sidebar--window.png"
+ },
+ {
+  "id": "ai-chat-composer",
+  "label": "AI Chat composer",
+  "url": "/ai-chat-window.html",
+  "viewport": [
+   750,
+   600
+  ],
+  "selector": "[class*='composer'][class*='root'], [class*='chat-composer']",
+  "rect": {
+   "x": 280,
+   "y": 556,
+   "w": 470,
+   "h": 44,
+   "cls": "chat-composer-mac__root_9bd0a text__text_054b5 text__font-inter_5a99a text__size-13_31bc4 text__weight-400_36886 text__color-primary_37304 text__align-left_43d84",
+   "html": 2576
+  },
+  "image": "research/organisms/ai-chat-composer.png",
+  "window": "research/organisms/ai-chat-composer--window.png"
+ },
+ {
+  "id": "ai-chat-sidebar",
+  "label": "AI Chat sidebar",
+  "url": "/ai-chat-window.html",
+  "viewport": [
+   750,
+   600
+  ],
+  "selector": "[class*='sidebar']",
+  "rect": {
+   "x": 0,
+   "y": 0,
+   "w": 280,
+   "h": 600,
+   "cls": "sidebar-shell__root_ec4a1",
+   "html": 8375
+  },
+  "image": "research/organisms/ai-chat-sidebar.png",
+  "window": "research/organisms/ai-chat-sidebar--window.png"
+ },
+ {
+  "id": "onboarding-navigation",
+  "label": "Onboarding navigation",
+  "url": "/welcome-window.html?step=features",
+  "viewport": [
+   1280,
+   760
+  ],
+  "selector": "[class*='navigation__root']",
+  "rect": {
+   "x": 0,
+   "y": 704,
+   "w": 1280,
+   "h": 56,
+   "cls": "navigation__root_b6295 welcome-window-view__navigation_337af",
+   "html": 2617
+  },
+  "image": "research/organisms/onboarding-navigation.png",
+  "window": "research/organisms/onboarding-navigation--window.png"
+ },
+ {
+  "id": "onboarding-feature-grid",
+  "label": "Onboarding feature cards",
+  "url": "/welcome-window.html?step=features",
+  "viewport": [
+   1280,
+   760
+  ],
+  "selector": "[class*='features-step__scrollArea']",
+  "rect": {
+   "x": 512,
+   "y": 0,
+   "w": 768,
+   "h": 760,
+   "cls": "scroll-area__root_67249 features-step__scrollArea_bef87",
+   "html": 15789
+  },
+  "image": "research/organisms/onboarding-feature-grid.png",
+  "window": "research/organisms/onboarding-feature-grid--window.png"
+ },
+ {
+  "id": "permission-rows",
+  "label": "Onboarding permission rows",
+  "url": "/welcome-window.html?step=permissions",
+  "viewport": [
+   1280,
+   760
+  ],
+  "selector": "[class*='permissions-step__permissionsList']",
+  "rect": {
+   "x": 496,
+   "y": 0,
+   "w": 784,
+   "h": 760,
+   "cls": "permissions-step__permissionsList_3ec25",
+   "html": 4462
+  },
+  "image": "research/organisms/permission-rows.png",
+  "window": "research/organisms/permission-rows--window.png"
+ }
+]

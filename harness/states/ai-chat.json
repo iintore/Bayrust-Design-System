@@ -1,0 +1,89 @@
+{
+ "name": "ai-chat",
+ "viewport": {
+  "width": 750,
+  "height": 600
+ },
+ "states": [
+  {
+   "id": "01-new-chat",
+   "label": "AI Chat \u2014 new chat",
+   "url": "/ai-chat-window.html",
+   "wait": 5000
+  },
+  {
+   "id": "02-typing",
+   "label": "AI Chat \u2014 composing",
+   "url": "/ai-chat-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "type": "Summarize the key points of this article",
+     "wait": 1500
+    }
+   ]
+  },
+  {
+   "id": "03-mention",
+   "label": "AI Chat \u2014 @ mention menu",
+   "url": "/ai-chat-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "type": "@",
+     "wait": 1500
+    }
+   ]
+  },
+  {
+   "id": "04-slash",
+   "label": "AI Chat \u2014 / commands menu",
+   "url": "/ai-chat-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "type": "/",
+     "wait": 1500
+    }
+   ]
+  },
+  {
+   "id": "05-actions",
+   "label": "AI Chat \u2014 Action Panel",
+   "url": "/ai-chat-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "press": "Meta+k",
+     "wait": 1500
+    }
+   ]
+  },
+  {
+   "id": "fs-01-new-chat",
+   "label": "AI Chat \u2014 full screen",
+   "url": "/ai-chat-window.html",
+   "viewport": {
+    "width": 1710,
+    "height": 1107
+   },
+   "wait": 5000
+  },
+  {
+   "id": "fs-02-typing",
+   "label": "AI Chat \u2014 full screen, composing",
+   "url": "/ai-chat-window.html",
+   "viewport": {
+    "width": 1710,
+    "height": 1107
+   },
+   "wait": 5000,
+   "actions": [
+    {
+     "type": "Summarize the key points of this article",
+     "wait": 1500
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "name": "notes",
+ "viewport": {
+  "width": 396,
+  "height": 830
+ },
+ "states": [
+  {
+   "id": "01-welcome-note",
+   "label": "Notes \u2014 welcome note",
+   "url": "/notes-window.html",
+   "wait": 5000
+  },
+  {
+   "id": "02-actions",
+   "label": "Notes \u2014 Action Panel",
+   "url": "/notes-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "press": "Meta+k",
+     "wait": 1500
+    }
+   ]
+  },
+  {
+   "id": "03-browse",
+   "label": "Notes \u2014 Browse Notes (\u2318P)",
+   "url": "/notes-window.html",
+   "wait": 5000,
+   "actions": [
+    {
+     "press": "Meta+p",
+     "wait": 1500
+    }
+   ]
+  },
+  {
+   "id": "fs-01-welcome-note",
+   "label": "Notes \u2014 full screen",
+   "url": "/notes-window.html",
+   "viewport": {
+    "width": 1710,
+    "height": 1107
+   },
+   "wait": 5000
+  }
+ ],
+ "measured": "Real Raycast Notes window on this Mac: width 396; height is content-driven (raycast.resizeWindow), 830 for the welcome note"
+}

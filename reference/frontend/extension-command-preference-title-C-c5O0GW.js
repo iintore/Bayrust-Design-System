@@ -1,0 +1,5 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="83d6329c-af84-56e8-92aa-db81d4e0dd31")}catch(e){}}();
+import{O as e}from"./icon-CKbK2z_d.js";import{a as t}from"./root-search-DvpLD84_.js";import{t as n}from"./badge-Dh6uJYp3.js";var r={experimentalTitle:`extension-command-preference-title__experimentalTitle_726b9`,experimentalBadge:`extension-command-preference-title__experimentalBadge_2c506`},i=e();function a({preference:e}){let a=e.type===`checkbox`?t(e.label,`macos`):e.title;return e.experimental?(0,i.jsxs)(`span`,{className:r.experimentalTitle,children:[a,(0,i.jsx)(n,{className:r.experimentalBadge,text:`Experimental`,color:`yellow`,size:`small`})]}):a}a.displayName=`ExtensionCommandPreferenceTitle`;export{a as t};
+//# sourceMappingURL=extension-command-preference-title-C-c5O0GW.js.map
+//# debugId=83d6329c-af84-56e8-92aa-db81d4e0dd31

@@ -1,0 +1,159 @@
+[
+ {
+  "id": "00-welcome",
+  "label": "Pro Walkthrough — welcome",
+  "url": "http://localhost:4317/pro-walkthrough-window.html",
+  "viewport": {
+   "width": 1280,
+   "height": 760
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "settings.getContentZoom",
+   "raycast.webViewStateChanged",
+   "userDefaults.get",
+   "raycast.resizeWindow",
+   "settings.getInternalExtensionSettings",
+   "settings.getGeneralSettings",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "auth.getToken",
+   "analytics.track"
+  ]
+ },
+ {
+  "id": "01-ai",
+  "label": "Pro Walkthrough — Raycast AI",
+  "url": "http://localhost:4317/pro-walkthrough-window.html",
+  "viewport": {
+   "width": 1280,
+   "height": 712
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "settings.getContentZoom",
+   "raycast.webViewStateChanged",
+   "userDefaults.get",
+   "raycast.resizeWindow",
+   "settings.getInternalExtensionSettings",
+   "settings.getGeneralSettings",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "auth.getToken",
+   "analytics.track"
+  ]
+ },
+ {
+  "id": "02-dictation",
+  "label": "Pro Walkthrough — Dictation",
+  "url": "http://localhost:4317/pro-walkthrough-window.html",
+  "viewport": {
+   "width": 1280,
+   "height": 712
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "settings.getContentZoom",
+   "raycast.webViewStateChanged",
+   "userDefaults.get",
+   "raycast.resizeWindow",
+   "settings.getInternalExtensionSettings",
+   "settings.getGeneralSettings",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "auth.getToken",
+   "analytics.track",
+   "settings.getCommandSettings"
+  ]
+ },
+ {
+  "id": "03-cloud-sync",
+  "label": "Pro Walkthrough — Cloud Sync",
+  "url": "http://localhost:4317/pro-walkthrough-window.html",
+  "viewport": {
+   "width": 1280,
+   "height": 712
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "settings.getContentZoom",
+   "raycast.webViewStateChanged",
+   "userDefaults.get",
+   "raycast.resizeWindow",
+   "settings.getInternalExtensionSettings",
+   "settings.getGeneralSettings",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "auth.getToken",
+   "analytics.track",
+   "settings.getCloudSyncSettings"
+  ]
+ },
+ {
+  "id": "04-translate",
+  "label": "Pro Walkthrough — Translate",
+  "url": "http://localhost:4317/pro-walkthrough-window.html",
+  "viewport": {
+   "width": 1280,
+   "height": 712
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "settings.getContentZoom",
+   "raycast.webViewStateChanged",
+   "userDefaults.get",
+   "raycast.resizeWindow",
+   "settings.getInternalExtensionSettings",
+   "settings.getGeneralSettings",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "auth.getToken",
+   "analytics.track",
+   "settings.getCommandSettings"
+  ]
+ },
+ {
+  "id": "05-custom-themes",
+  "label": "Pro Walkthrough — Custom Themes",
+  "url": "http://localhost:4317/pro-walkthrough-window.html",
+  "viewport": {
+   "width": 1280,
+   "height": 712
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "settings.getContentZoom",
+   "raycast.webViewStateChanged",
+   "userDefaults.get",
+   "raycast.resizeWindow",
+   "settings.getInternalExtensionSettings",
+   "settings.getGeneralSettings",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "auth.getToken",
+   "analytics.track"
+  ]
+ },
+ {
+  "id": "06-window-management",
+  "label": "Pro Walkthrough — Custom Window Management",
+  "url": "http://localhost:4317/pro-walkthrough-window.html",
+  "viewport": {
+   "width": 1280,
+   "height": 712
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "settings.getContentZoom",
+   "raycast.webViewStateChanged",
+   "userDefaults.get",
+   "raycast.resizeWindow",
+   "settings.getInternalExtensionSettings",
+   "settings.getGeneralSettings",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "auth.getToken",
+   "analytics.track"
+  ]
+ }
+]

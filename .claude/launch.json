@@ -1,0 +1,7 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "raycast-harness", "runtimeExecutable": "node", "runtimeArgs": ["harness/server.mjs"], "port": 4317 },
+    { "name": "bayrust-docs", "runtimeExecutable": "npm", "runtimeArgs": ["--prefix", "design-system/docs", "run", "dev", "--", "--port", "5174", "--strictPort"], "port": 5174 }
+  ]
+}

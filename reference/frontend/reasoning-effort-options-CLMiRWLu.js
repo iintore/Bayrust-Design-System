@@ -1,0 +1,5 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="144b656e-bf11-58e0-b968-806facab5542")}catch(e){}}();
+import{o as e}from"./text-BMG-lb-T.js";var t={xhigh:`Extra High`},n={auto:`reasoning-auto`,none:`circle-disabled`,minimal:`reasoning-16-0`,low:`reasoning-16-1`,medium:`reasoning-16-2`,high:`reasoning-16-3`,xhigh:`reasoning-16-4`};function r(e){return typeof e==`string`?e:void 0}function i(e,t){return e??t??`medium`}function a(n){return t[n]??e(n)}function o(e){return n[e]??`circle`}function s(e,t){let n=t?.abilities.reasoning_effort;if(n?.supported)return e&&n.options.includes(e)?e:n.default}function c(e){let t=e?.abilities.reasoning_effort;return t?.supported?t.options.map(e=>({effort:e,isDefault:t.default===e})):[]}export{s as a,r as i,o as n,i as o,a as r,c as t};
+//# sourceMappingURL=reasoning-effort-options-CLMiRWLu.js.map
+//# debugId=144b656e-bf11-58e0-b968-806facab5542

@@ -1,0 +1,5 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="4080d0c3-5fb2-53ee-ae29-454cdae2b25a")}catch(e){}}();
+import{o as e}from"./chunk-CMxvf4Kt.js";import{n as t}from"./time-BgPLLP_H.js";var n=class{listeners=new Set;subscribe(e){return this.listeners.add(e),()=>{this.listeners.delete(e)}}notify(){this.listeners.forEach(e=>e())}},r=e(t(),1),i=new class extends n{hud=null;open(e){this.hud=e,this.notify()}close(){this.hud?.onClose&&this.hud.onClose(),this.hud=null,this.notify()}getHud(){return this.hud}},a={open:i.open.bind(i),get:i.getHud.bind(i)},o=i.close.bind(i);function s(){let e=r.useMemo(()=>i.subscribe.bind(i),[]),t=r.useMemo(()=>i.getHud.bind(i),[]);return r.useSyncExternalStore(e,t)}export{n as i,a as n,s as r,o as t};
+//# sourceMappingURL=hud-store-D8l7mVGu.js.map
+//# debugId=4080d0c3-5fb2-53ee-ae29-454cdae2b25a

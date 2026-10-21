@@ -1,0 +1,111 @@
+{
+ "name": "onboarding",
+ "viewport": {
+  "width": 1280,
+  "height": 760
+ },
+ "states": [
+  {
+   "id": "simplified-01-welcome",
+   "label": "Onboarding (simplified) \u2014 welcome",
+   "url": "/welcome-window.html?variant=simplified&account=trial",
+   "wait": 7000
+  },
+  {
+   "id": "simplified-02-features",
+   "label": "Onboarding (simplified) \u2014 features",
+   "url": "/welcome-window.html?variant=simplified&account=trial",
+   "wait": 7000,
+   "actions": [
+    {
+     "press": "Enter",
+     "wait": 2500
+    }
+   ]
+  },
+  {
+   "id": "simplified-03-pro",
+   "label": "Onboarding (simplified) \u2014 pro",
+   "url": "/welcome-window.html?variant=simplified&account=trial",
+   "wait": 7000,
+   "actions": [
+    {
+     "press": "Enter",
+     "wait": 2500
+    },
+    {
+     "press": "Enter",
+     "wait": 2500
+    }
+   ]
+  },
+  {
+   "id": "simplified-04-launch",
+   "label": "Onboarding (simplified) \u2014 launch",
+   "url": "/welcome-window.html?variant=simplified&account=trial",
+   "wait": 7000,
+   "actions": [
+    {
+     "press": "Enter",
+     "wait": 2500
+    },
+    {
+     "press": "Enter",
+     "wait": 2500
+    },
+    {
+     "click": "Maybe Later",
+     "wait": 4000
+    }
+   ]
+  },
+  {
+   "id": "standard-01-welcome",
+   "label": "Onboarding (standard) \u2014 welcome",
+   "url": "/welcome-window.html?variant=standard",
+   "wait": 7000
+  },
+  {
+   "id": "standard-02-features",
+   "label": "Onboarding (standard) \u2014 features",
+   "url": "/welcome-window.html?step=features"
+  },
+  {
+   "id": "standard-03-ai",
+   "label": "Onboarding (standard) \u2014 ai",
+   "url": "/welcome-window.html?step=ai"
+  },
+  {
+   "id": "standard-04-permissions",
+   "label": "Onboarding (standard) \u2014 permissions",
+   "url": "/welcome-window.html?step=permissions"
+  },
+  {
+   "id": "standard-05-cloud-sync",
+   "label": "Onboarding (standard) \u2014 cloud-sync",
+   "url": "/welcome-window.html?step=cloud-sync"
+  },
+  {
+   "id": "standard-06-extensions",
+   "label": "Onboarding (standard) \u2014 extensions",
+   "url": "/welcome-window.html?step=extensions"
+  },
+  {
+   "id": "standard-07-contact",
+   "label": "Onboarding (standard) \u2014 contact",
+   "url": "/welcome-window.html?step=contact"
+  },
+  {
+   "id": "standard-08-launch",
+   "label": "Onboarding (standard) \u2014 launch",
+   "url": "/welcome-window.html?step=launch",
+   "wait": 5000
+  },
+  {
+   "id": "classic-00-migration",
+   "label": "Onboarding (classic user) \u2014 migration",
+   "url": "/welcome-window.html?step=migration&userType=classic"
+  }
+ ],
+ "chrome": "standard"
+}

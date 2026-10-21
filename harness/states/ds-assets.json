@@ -1,0 +1,181 @@
+{
+ "name": "design-system-assets",
+ "viewport": {
+  "width": 1440,
+  "height": 4000
+ },
+ "states": [
+  {
+   "id": "00-icons",
+   "label": "Design system \u2014 sprite icons (730)",
+   "url": "/ds/#icons",
+   "wait": 9000
+  },
+  {
+   "id": "01-brand",
+   "label": "Design system \u2014 brand & app icons",
+   "url": "/ds/#brand",
+   "wait": 7000
+  },
+  {
+   "id": "02-assets-other",
+   "label": "Design system \u2014 assets: Other",
+   "url": "/ds/#assets",
+   "wait": 7000,
+   "actions": [
+    {
+     "click": "Other (79)",
+     "wait": 3000
+    },
+    {
+     "eval": "document.querySelector('.ds-main').scrollTo(0, 1e6)",
+     "wait": 2500
+    }
+   ]
+  },
+  {
+   "id": "03-assets-ai",
+   "label": "Design system \u2014 assets: AI",
+   "url": "/ds/#assets",
+   "wait": 7000,
+   "actions": [
+    {
+     "click": "AI (12)",
+     "wait": 3000
+    },
+    {
+     "eval": "document.querySelector('.ds-main').scrollTo(0, 1e6)",
+     "wait": 2500
+    }
+   ]
+  },
+  {
+   "id": "04-assets-weather",
+   "label": "Design system \u2014 assets: Weather",
+   "url": "/ds/#assets",
+   "wait": 7000,
+   "actions": [
+    {
+     "click": "Weather (28)",
+     "wait": 3000
+    },
+    {
+     "eval": "document.querySelector('.ds-main').scrollTo(0, 1e6)",
+     "wait": 2500
+    }
+   ]
+  },
+  {
+   "id": "05-assets-command-icons",
+   "label": "Design system \u2014 assets: Command icons",
+   "url": "/ds/#assets",
+   "wait": 7000,
+   "actions": [
+    {
+     "click": "Command icons (334)",
+     "wait": 3000
+    },
+    {
+     "eval": "document.querySelector('.ds-main').scrollTo(0, 1e6)",
+     "wait": 2500
+    }
+   ]
+  },
+  {
+   "id": "06-assets-empty-states",
+   "label": "Design system \u2014 assets: Empty states",
+   "url": "/ds/#assets",
+   "wait": 7000,
+   "actions": [
+    {
+     "click": "Empty states (2)",
+     "wait": 3000
+    },
+    {
+     "eval": "document.querySelector('.ds-main').scrollTo(0, 1e6)",
+     "wait": 2500
+    }
+   ]
+  },
+  {
+   "id": "07-assets-extension-icons",
+   "label": "Design system \u2014 assets: Extension icons",
+   "url": "/ds/#assets",
+   "wait": 7000,
+   "actions": [
+    {
+     "click": "Extension icons (59)",
+     "wait": 3000
+    },
+    {
+     "eval": "document.querySelector('.ds-main').scrollTo(0, 1e6)",
+     "wait": 2500
+    }
+   ]
+  },
+  {
+   "id": "08-assets-meeting-providers",
+   "label": "Design system \u2014 assets: Meeting providers",
+   "url": "/ds/#assets",
+   "wait": 7000,
+   "actions": [
+    {
+     "click": "Meeting providers (3)",
+     "wait": 3000
+    },
+    {
+     "eval": "document.querySelector('.ds-main').scrollTo(0, 1e6)",
+     "wait": 2500
+    }
+   ]
+  },
+  {
+   "id": "09-assets-themes",
+   "label": "Design system \u2014 assets: Themes",
+   "url": "/ds/#assets",
+   "wait": 7000,
+   "actions": [
+    {
+     "click": "Themes (14)",
+     "wait": 3000
+    },
+    {
+     "eval": "document.querySelector('.ds-main').scrollTo(0, 1e6)",
+     "wait": 2500
+    }
+   ]
+  },
+  {
+   "id": "10-assets-onboarding",
+   "label": "Design system \u2014 assets: Onboarding",
+   "url": "/ds/#assets",
+   "wait": 7000,
+   "actions": [
+    {
+     "click": "Onboarding (1)",
+     "wait": 3000
+    },
+    {
+     "eval": "document.querySelector('.ds-main').scrollTo(0, 1e6)",
+     "wait": 2500
+    }
+   ]
+  },
+  {
+   "id": "11-assets-window-management",
+   "label": "Design system \u2014 assets: Window Management",
+   "url": "/ds/#assets",
+   "wait": 7000,
+   "actions": [
+    {
+     "click": "Window Management (95)",
+     "wait": 3000
+    },
+    {
+     "eval": "document.querySelector('.ds-main').scrollTo(0, 1e6)",
+     "wait": 2500
+    }
+   ]
+  }
+ ]
+}

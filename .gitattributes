@@ -1,0 +1,6 @@
+# generated data: kept out of diffs and language stats
+design-system/docs/src/content/content.json linguist-generated -diff
+research/**/*.json linguist-generated
+design-system/docs/public/ds/** linguist-generated
+reference/frontend/** linguist-vendored
+*.xz binary

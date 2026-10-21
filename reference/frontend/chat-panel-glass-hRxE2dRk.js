@@ -1,0 +1,5 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="ccc91cb1-d791-5210-91af-1c610fe43c00")}catch(e){}}();
+import{o as e}from"./chunk-CMxvf4Kt.js";import{O as t,k as n,t as r}from"./icon-CKbK2z_d.js";import{t as i}from"./simple-tooltip-DazwIw4O.js";var a=e(n(),1),o={root:`ai-generated-disclosure__root_c45a0`},s=t(),c=`AI-generated descriptions may be inaccurate or incomplete. Review the details before allowing.`;function l({className:e}){return(0,s.jsx)(`span`,{className:(0,a.default)(o.root,e),children:(0,s.jsx)(i,{label:c,for:(0,s.jsx)(r,{name:`info-01`,width:14,height:14,color:`var(--color-text-tertiary)`})})})}l.displayName=`AiGeneratedDisclosure`;var u={root:`chat-panel-glass__root_c54be`};function d(){return(0,s.jsx)(`span`,{className:u.root,"data-liquid-glass-backdrop":!0,"aria-hidden":!0})}d.displayName=`ChatPanelGlass`;export{l as n,d as t};
+//# sourceMappingURL=chat-panel-glass-hRxE2dRk.js.map
+//# debugId=ccc91cb1-d791-5210-91af-1c610fe43c00

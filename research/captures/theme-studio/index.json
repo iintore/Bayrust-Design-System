@@ -1,0 +1,90 @@
+[
+ {
+  "id": "01-raycast-dark",
+  "label": "Theme Studio — Raycast Dark",
+  "url": "http://localhost:4317/theme-studio-window.html",
+  "viewport": {
+   "width": 1370,
+   "height": 570
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "themes.getAll",
+   "settings.getGeneralSettings",
+   "userDefaults.get",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "settings.getContentZoom",
+   "raycast.webViewStateChanged",
+   "auth.getToken",
+   "settings.getInternalExtensionSettings",
+   "settings.previewThemeBackgroundColors"
+  ]
+ },
+ {
+  "id": "02-sky",
+  "label": "Theme Studio — Sky",
+  "url": "http://localhost:4317/theme-studio-window.html",
+  "viewport": {
+   "width": 1370,
+   "height": 570
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "themes.getAll",
+   "settings.getGeneralSettings",
+   "userDefaults.get",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "settings.getContentZoom",
+   "raycast.webViewStateChanged",
+   "auth.getToken",
+   "settings.getInternalExtensionSettings",
+   "settings.previewThemeBackgroundColors"
+  ]
+ },
+ {
+  "id": "03-raycast-light",
+  "label": "Theme Studio — Raycast Light",
+  "url": "http://localhost:4317/theme-studio-window.html",
+  "viewport": {
+   "width": 1370,
+   "height": 570
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "themes.getAll",
+   "settings.getGeneralSettings",
+   "userDefaults.get",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "settings.getContentZoom",
+   "raycast.webViewStateChanged",
+   "auth.getToken",
+   "settings.getInternalExtensionSettings",
+   "settings.previewThemeBackgroundColors"
+  ]
+ },
+ {
+  "id": "fs-01-raycast-dark",
+  "label": "Theme Studio — full screen",
+  "url": "http://localhost:4317/theme-studio-window.html",
+  "viewport": {
+   "width": 1710,
+   "height": 1107
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "themes.getAll",
+   "settings.getGeneralSettings",
+   "userDefaults.get",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "settings.getContentZoom",
+   "raycast.webViewStateChanged",
+   "auth.getToken",
+   "settings.getInternalExtensionSettings",
+   "settings.previewThemeBackgroundColors"
+  ]
+ }
+]

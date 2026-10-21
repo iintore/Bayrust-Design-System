@@ -1,0 +1,1 @@
+:root:has(#ai-chat-window-root){--window-header-height:var(--ai-chat-window-header-height);--window-footer-height:var(--ai-chat-window-footer-height)}#ai-chat-window-root{flex-direction:column;height:100vh;display:flex;overflow:hidden}.theme-root[macos]:has(#ai-chat-window-root):before{background-image:none}

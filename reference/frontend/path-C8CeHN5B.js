@@ -1,0 +1,5 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="13ca7b6c-3064-5a14-b6cc-431c5cf5af6f")}catch(e){}}();
+var e=/^([a-zA-Z]:[/\\]|\\\\)/,t=/^\//;function n(n,r){return r?e.test(n):t.test(n)}function r(n){return t.test(n)||e.test(n)}function i(e){if(e.startsWith(`file://`))return e;let t=e.replace(/\\/g,`/`);return t.startsWith(`//`)?`file:${t}`:t.startsWith(`/`)?`file://${t}`:`file:///${t}`}function a(e,t){if(!t||!t.startsWith(`~`))return t;if(!e)throw Error(`Cannot expand '~' without providing homedir`);let n=t.slice(1);return`${e}${n.startsWith(`/`)?n:`/${n}`}`}function o(e,t){return t&&(t.startsWith(e)?`~${t.slice(e.length)}`:t)}function s(e,t){let n=e=>e.replace(/\/+$/,``);return n(e)===n(t)}export{o as a,n as i,a as n,i as o,r,s as t};
+//# sourceMappingURL=path-C8CeHN5B.js.map
+//# debugId=13ca7b6c-3064-5a14-b6cc-431c5cf5af6f

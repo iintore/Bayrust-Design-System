@@ -1,0 +1,1 @@
+.script-commands-settings-view__tableRow_f3fe6{gap:var(--space-8)}.script-commands-settings-view__directoryAction_c06b9{opacity:0;transition:opacity .15s ease-in-out}.script-commands-settings-view__tableRow_f3fe6:hover .script-commands-settings-view__directoryAction_c06b9{opacity:1}

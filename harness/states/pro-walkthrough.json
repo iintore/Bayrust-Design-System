@@ -1,0 +1,111 @@
+{
+ "name": "pro-walkthrough",
+ "viewport": {
+  "width": 1280,
+  "height": 760
+ },
+ "states": [
+  {
+   "id": "00-welcome",
+   "label": "Pro Walkthrough \u2014 welcome",
+   "url": "/pro-walkthrough-window.html",
+   "wait": 5000
+  },
+  {
+   "id": "01-ai",
+   "label": "Pro Walkthrough \u2014 Raycast AI",
+   "url": "/pro-walkthrough-window.html",
+   "wait": 5000,
+   "viewport": {
+    "width": 1280,
+    "height": 712
+   },
+   "actions": [
+    {
+     "click": "Raycast AI",
+     "wait": 2500
+    }
+   ]
+  },
+  {
+   "id": "02-dictation",
+   "label": "Pro Walkthrough \u2014 Dictation",
+   "url": "/pro-walkthrough-window.html",
+   "wait": 5000,
+   "viewport": {
+    "width": 1280,
+    "height": 712
+   },
+   "actions": [
+    {
+     "click": "Dictation",
+     "wait": 2500
+    }
+   ]
+  },
+  {
+   "id": "03-cloud-sync",
+   "label": "Pro Walkthrough \u2014 Cloud Sync",
+   "url": "/pro-walkthrough-window.html",
+   "wait": 5000,
+   "viewport": {
+    "width": 1280,
+    "height": 712
+   },
+   "actions": [
+    {
+     "click": "Cloud Sync",
+     "wait": 2500
+    }
+   ]
+  },
+  {
+   "id": "04-translate",
+   "label": "Pro Walkthrough \u2014 Translate",
+   "url": "/pro-walkthrough-window.html",
+   "wait": 5000,
+   "viewport": {
+    "width": 1280,
+    "height": 712
+   },
+   "actions": [
+    {
+     "click": "Translate",
+     "wait": 2500
+    }
+   ]
+  },
+  {
+   "id": "05-custom-themes",
+   "label": "Pro Walkthrough \u2014 Custom Themes",
+   "url": "/pro-walkthrough-window.html",
+   "wait": 5000,
+   "viewport": {
+    "width": 1280,
+    "height": 712
+   },
+   "actions": [
+    {
+     "click": "Custom Themes",
+     "wait": 2500
+    }
+   ]
+  },
+  {
+   "id": "06-window-management",
+   "label": "Pro Walkthrough \u2014 Custom Window Management",
+   "url": "/pro-walkthrough-window.html",
+   "wait": 5000,
+   "viewport": {
+    "width": 1280,
+    "height": 712
+   },
+   "actions": [
+    {
+     "click": "Custom Window Management",
+     "wait": 2500
+    }
+   ]
+  }
+ ]
+}

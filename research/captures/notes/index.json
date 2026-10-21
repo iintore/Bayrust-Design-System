@@ -1,0 +1,102 @@
+[
+ {
+  "id": "01-welcome-note",
+  "label": "Notes — welcome note",
+  "url": "http://localhost:4317/notes-window.html",
+  "viewport": {
+   "width": 396,
+   "height": 830
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "settings.getGeneralSettings",
+   "settings.getContentZoom",
+   "themes.getById",
+   "raycast.webViewStateChanged",
+   "userDefaults.get",
+   "notes.getWindowData",
+   "settings.getInternalExtensionSettings",
+   "notes.browse",
+   "raycast.resizeWindow",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "auth.getToken",
+   "analytics.track"
+  ]
+ },
+ {
+  "id": "02-actions",
+  "label": "Notes — Action Panel",
+  "url": "http://localhost:4317/notes-window.html",
+  "viewport": {
+   "width": 396,
+   "height": 830
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "settings.getGeneralSettings",
+   "settings.getContentZoom",
+   "themes.getById",
+   "raycast.webViewStateChanged",
+   "userDefaults.get",
+   "notes.getWindowData",
+   "settings.getInternalExtensionSettings",
+   "notes.browse",
+   "raycast.resizeWindow",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "auth.getToken",
+   "analytics.track"
+  ]
+ },
+ {
+  "id": "03-browse",
+  "label": "Notes — Browse Notes (⌘P)",
+  "url": "http://localhost:4317/notes-window.html",
+  "viewport": {
+   "width": 396,
+   "height": 830
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "settings.getGeneralSettings",
+   "settings.getContentZoom",
+   "themes.getById",
+   "raycast.webViewStateChanged",
+   "userDefaults.get",
+   "notes.getWindowData",
+   "settings.getInternalExtensionSettings",
+   "notes.browse",
+   "raycast.resizeWindow",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "auth.getToken",
+   "analytics.track"
+  ]
+ },
+ {
+  "id": "fs-01-welcome-note",
+  "label": "Notes — full screen",
+  "url": "http://localhost:4317/notes-window.html",
+  "viewport": {
+   "width": 1710,
+   "height": 1107
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "settings.getGeneralSettings",
+   "settings.getContentZoom",
+   "themes.getById",
+   "raycast.webViewStateChanged",
+   "userDefaults.get",
+   "notes.getWindowData",
+   "settings.getInternalExtensionSettings",
+   "notes.browse",
+   "raycast.resizeWindow",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "auth.getToken",
+   "analytics.track"
+  ]
+ }
+]

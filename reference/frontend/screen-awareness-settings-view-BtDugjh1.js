@@ -1,0 +1,5 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="fa6e620f-46bf-5280-a17c-c9fc491a4db8")}catch(e){}}();
+import{O as e}from"./icon-CKbK2z_d.js";import{m as t}from"./app-urls-WeGFbTvN.js";import{A as n}from"./internal-extensions-DTEJ6vg9.js";import{o as r}from"./settings-ui.namespace-DAWDtWTB.js";import{t as i}from"./use-extension-settings-search-DS_sZGBl.js";import{t as a}from"./extension-static-commands-B_kSr_Jt.js";var o=e();function s(){return i(),(0,o.jsxs)(r,{extensionId:n.id,documentationLink:t.screenAwareness,children:[(0,o.jsx)(a,{extensionId:n.id,filter:`not-ai-extensions`}),(0,o.jsx)(a,{extensionId:n.id,commandsTitle:`AI Extensions`,filter:`ai-extensions`})]})}s.displayName=`ScreenAwarenessSettingsView`;export{s as ScreenAwarenessSettingsView};
+//# sourceMappingURL=screen-awareness-settings-view-BtDugjh1.js.map
+//# debugId=fa6e620f-46bf-5280-a17c-c9fc491a4db8

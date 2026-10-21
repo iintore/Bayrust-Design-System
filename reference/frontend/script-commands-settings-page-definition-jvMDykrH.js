@@ -1,0 +1,5 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="28908ffe-fd4e-59b3-85f7-9839e70aa282")}catch(e){}}();
+import{E as e}from"./internal-extensions-DTEJ6vg9.js";import{i as t,r as n,t as r}from"./settings-page-definition-utils-DSmvOQ1l.js";import{t as i}from"./settings-targets-kBx_Z7eI.js";var a={scriptFolders:`script-folders`},o={rows:{scriptFolders:i({description:`Scripts in these folders will be discovered and available as commands.`,id:a.scriptFolders,keywords:[`directories`,`folders`],title:`Script Folders`})}},s=r(e,{id:`script-commands`,keywords:[`directories`,`folders`,`script folders`,`scripts`],searchEntries:n([t(o.rows.scriptFolders,`row`,{search:{row:a.scriptFolders}})])});export{s as n,a as r,o as t};
+//# sourceMappingURL=script-commands-settings-page-definition-jvMDykrH.js.map
+//# debugId=28908ffe-fd4e-59b3-85f7-9839e70aa282

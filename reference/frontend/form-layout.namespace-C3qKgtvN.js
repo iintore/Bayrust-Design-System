@@ -1,0 +1,5 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="e0548e20-b048-5518-813b-8204d9171a32")}catch(e){}}();
+import{o as e}from"./chunk-CMxvf4Kt.js";import{n as t}from"./time-BgPLLP_H.js";import{O as n,k as r}from"./icon-CKbK2z_d.js";t();var i=e(r(),1),a={root:`form-layout__root_7d4eb`,row:`form-layout__row_ddf08`,column:`form-layout__column_4ef20`},o=n();function s({className:e,...t}){return(0,o.jsx)(`div`,{...t,className:(0,i.default)(a.root,e)})}s.displayName=`FormLayout.Root`;function c({className:e,skipLeftColumn:t=!1,...n}){return(0,o.jsx)(`div`,{...n,className:(0,i.default)(a.row,e),"data-skip-left-column":t?``:void 0})}c.displayName=`FormLayout.Row`;function l({className:e,...t}){return(0,o.jsx)(`div`,{...t,className:(0,i.default)(a.column,e)})}l.displayName=`FormLayout.Column`;var u=s,d=c,f=l;export{u as n,d as r,f as t};
+//# sourceMappingURL=form-layout.namespace-C3qKgtvN.js.map
+//# debugId=e0548e20-b048-5518-813b-8204d9171a32

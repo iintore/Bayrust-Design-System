@@ -1,0 +1,5 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="21452466-fe50-531d-a7f6-194a8b0323c4")}catch(e){}}();
+import{o as e}from"./chunk-CMxvf4Kt.js";import{n as t}from"./time-BgPLLP_H.js";import{t as n}from"./services-CI1JjB8Y.js";import{t as r}from"./feature-flags-C_9UareM.js";var i=`NodeExtensionWorkerPrewarmingDisabled`,a=`PrimaryCalculatorEngine`;function o(e,t){return t?`rust`:r}var s=e(t(),1);function c(e){let[t,r]=s.useState(!1),[i,a]=s.useState(null);s.useEffect(()=>{let t=!1,i=n.ipcNotification.userDefaults.subscribeDefaultChanged(n=>{n.key===e&&(t=!0,a(n.value??null))});return n.ipc.backend.userDefaults.get(e).then(e=>{t||a(e),r(!0)}),i},[e]);let o=s.useCallback(t=>{a(t),t!==null&&n.ipc.backend.userDefaults.set({key:e,value:t})},[e]);return t?{ready:!0,value:i,set:o}:{ready:!1,value:null,set:o}}export{a as i,o as n,i as r,c as t};
+//# sourceMappingURL=use-user-default-CQ4NhnLL.js.map
+//# debugId=21452466-fe50-531d-a7f6-194a8b0323c4

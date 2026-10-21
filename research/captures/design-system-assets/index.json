@@ -1,0 +1,374 @@
+[
+ {
+  "id": "00-icons",
+  "label": "Design system — sprite icons (730)",
+  "url": "http://localhost:4317/ds/#icons",
+  "viewport": {
+   "width": 1440,
+   "height": 4000
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "indexer.getAllApplications",
+   "settings.getContentZoom",
+   "themes.getAll",
+   "settings.getGeneralSettings",
+   "userDefaults.get",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "diagnostics.getActiveIssues",
+   "settings.openCatalog",
+   "indexer.getIndexingParams",
+   "settings.getInternalExtensionSettings",
+   "applications.getDefault",
+   "themes.getById",
+   "auth.getToken",
+   "raycast.webViewStateChanged",
+   "settings.getHotkeyConflicts",
+   "permissions.checkPermission",
+   "hotkey.symbolicHotkeyStatus",
+   "appFlags.getAppFlags"
+  ]
+ },
+ {
+  "id": "01-brand",
+  "label": "Design system — brand & app icons",
+  "url": "http://localhost:4317/ds/#brand",
+  "viewport": {
+   "width": 1440,
+   "height": 4000
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "indexer.getAllApplications",
+   "settings.getContentZoom",
+   "themes.getAll",
+   "settings.getGeneralSettings",
+   "userDefaults.get",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "diagnostics.getActiveIssues",
+   "settings.openCatalog",
+   "indexer.getIndexingParams",
+   "settings.getInternalExtensionSettings",
+   "applications.getDefault",
+   "themes.getById",
+   "auth.getToken",
+   "raycast.webViewStateChanged",
+   "settings.getHotkeyConflicts",
+   "permissions.checkPermission",
+   "hotkey.symbolicHotkeyStatus",
+   "appFlags.getAppFlags"
+  ]
+ },
+ {
+  "id": "02-assets-other",
+  "label": "Design system — assets: Other",
+  "url": "http://localhost:4317/ds/#assets",
+  "viewport": {
+   "width": 1440,
+   "height": 4000
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "indexer.getAllApplications",
+   "settings.getContentZoom",
+   "themes.getAll",
+   "settings.getGeneralSettings",
+   "userDefaults.get",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "diagnostics.getActiveIssues",
+   "settings.openCatalog",
+   "indexer.getIndexingParams",
+   "settings.getInternalExtensionSettings",
+   "applications.getDefault",
+   "themes.getById",
+   "auth.getToken",
+   "raycast.webViewStateChanged",
+   "settings.getHotkeyConflicts",
+   "permissions.checkPermission",
+   "hotkey.symbolicHotkeyStatus",
+   "appFlags.getAppFlags"
+  ]
+ },
+ {
+  "id": "03-assets-ai",
+  "label": "Design system — assets: AI",
+  "url": "http://localhost:4317/ds/#assets",
+  "viewport": {
+   "width": 1440,
+   "height": 4000
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "indexer.getAllApplications",
+   "settings.getContentZoom",
+   "themes.getAll",
+   "settings.getGeneralSettings",
+   "userDefaults.get",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "diagnostics.getActiveIssues",
+   "settings.openCatalog",
+   "indexer.getIndexingParams",
+   "settings.getInternalExtensionSettings",
+   "applications.getDefault",
+   "themes.getById",
+   "raycast.webViewStateChanged",
+   "settings.getHotkeyConflicts",
+   "permissions.checkPermission",
+   "hotkey.symbolicHotkeyStatus",
+   "appFlags.getAppFlags",
+   "auth.getToken"
+  ]
+ },
+ {
+  "id": "04-assets-weather",
+  "label": "Design system — assets: Weather",
+  "url": "http://localhost:4317/ds/#assets",
+  "viewport": {
+   "width": 1440,
+   "height": 4000
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "indexer.getAllApplications",
+   "settings.getContentZoom",
+   "themes.getAll",
+   "settings.getGeneralSettings",
+   "userDefaults.get",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "diagnostics.getActiveIssues",
+   "settings.openCatalog",
+   "indexer.getIndexingParams",
+   "settings.getInternalExtensionSettings",
+   "applications.getDefault",
+   "themes.getById",
+   "raycast.webViewStateChanged",
+   "settings.getHotkeyConflicts",
+   "permissions.checkPermission",
+   "hotkey.symbolicHotkeyStatus",
+   "appFlags.getAppFlags",
+   "auth.getToken"
+  ]
+ },
+ {
+  "id": "05-assets-command-icons",
+  "label": "Design system — assets: Command icons",
+  "url": "http://localhost:4317/ds/#assets",
+  "viewport": {
+   "width": 1440,
+   "height": 4000
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "indexer.getAllApplications",
+   "settings.getContentZoom",
+   "themes.getAll",
+   "settings.getGeneralSettings",
+   "userDefaults.get",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "diagnostics.getActiveIssues",
+   "settings.openCatalog",
+   "indexer.getIndexingParams",
+   "settings.getInternalExtensionSettings",
+   "applications.getDefault",
+   "themes.getById",
+   "raycast.webViewStateChanged",
+   "settings.getHotkeyConflicts",
+   "permissions.checkPermission",
+   "hotkey.symbolicHotkeyStatus",
+   "appFlags.getAppFlags",
+   "auth.getToken"
+  ]
+ },
+ {
+  "id": "06-assets-empty-states",
+  "label": "Design system — assets: Empty states",
+  "url": "http://localhost:4317/ds/#assets",
+  "viewport": {
+   "width": 1440,
+   "height": 4000
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "indexer.getAllApplications",
+   "settings.getContentZoom",
+   "themes.getAll",
+   "settings.getGeneralSettings",
+   "userDefaults.get",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "diagnostics.getActiveIssues",
+   "settings.openCatalog",
+   "indexer.getIndexingParams",
+   "settings.getInternalExtensionSettings",
+   "applications.getDefault",
+   "themes.getById",
+   "auth.getToken",
+   "raycast.webViewStateChanged",
+   "settings.getHotkeyConflicts",
+   "permissions.checkPermission",
+   "hotkey.symbolicHotkeyStatus",
+   "appFlags.getAppFlags"
+  ]
+ },
+ {
+  "id": "07-assets-extension-icons",
+  "label": "Design system — assets: Extension icons",
+  "url": "http://localhost:4317/ds/#assets",
+  "viewport": {
+   "width": 1440,
+   "height": 4000
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "indexer.getAllApplications",
+   "settings.getContentZoom",
+   "themes.getAll",
+   "settings.getGeneralSettings",
+   "userDefaults.get",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "diagnostics.getActiveIssues",
+   "settings.openCatalog",
+   "indexer.getIndexingParams",
+   "settings.getInternalExtensionSettings",
+   "applications.getDefault",
+   "themes.getById",
+   "auth.getToken",
+   "raycast.webViewStateChanged",
+   "settings.getHotkeyConflicts",
+   "permissions.checkPermission",
+   "hotkey.symbolicHotkeyStatus",
+   "appFlags.getAppFlags"
+  ]
+ },
+ {
+  "id": "08-assets-meeting-providers",
+  "label": "Design system — assets: Meeting providers",
+  "url": "http://localhost:4317/ds/#assets",
+  "viewport": {
+   "width": 1440,
+   "height": 4000
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "indexer.getAllApplications",
+   "settings.getContentZoom",
+   "themes.getAll",
+   "settings.getGeneralSettings",
+   "userDefaults.get",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "diagnostics.getActiveIssues",
+   "settings.openCatalog",
+   "indexer.getIndexingParams",
+   "settings.getInternalExtensionSettings",
+   "applications.getDefault",
+   "themes.getById",
+   "auth.getToken",
+   "raycast.webViewStateChanged",
+   "settings.getHotkeyConflicts",
+   "permissions.checkPermission",
+   "hotkey.symbolicHotkeyStatus",
+   "appFlags.getAppFlags"
+  ]
+ },
+ {
+  "id": "09-assets-themes",
+  "label": "Design system — assets: Themes",
+  "url": "http://localhost:4317/ds/#assets",
+  "viewport": {
+   "width": 1440,
+   "height": 4000
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "indexer.getAllApplications",
+   "settings.getContentZoom",
+   "themes.getAll",
+   "settings.getGeneralSettings",
+   "userDefaults.get",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "diagnostics.getActiveIssues",
+   "settings.openCatalog",
+   "indexer.getIndexingParams",
+   "settings.getInternalExtensionSettings",
+   "applications.getDefault",
+   "themes.getById",
+   "auth.getToken",
+   "raycast.webViewStateChanged",
+   "settings.getHotkeyConflicts",
+   "permissions.checkPermission",
+   "hotkey.symbolicHotkeyStatus",
+   "appFlags.getAppFlags"
+  ]
+ },
+ {
+  "id": "10-assets-onboarding",
+  "label": "Design system — assets: Onboarding",
+  "url": "http://localhost:4317/ds/#assets",
+  "viewport": {
+   "width": 1440,
+   "height": 4000
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "indexer.getAllApplications",
+   "settings.getContentZoom",
+   "themes.getAll",
+   "settings.getGeneralSettings",
+   "userDefaults.get",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "diagnostics.getActiveIssues",
+   "settings.openCatalog",
+   "indexer.getIndexingParams",
+   "settings.getInternalExtensionSettings",
+   "applications.getDefault",
+   "themes.getById",
+   "auth.getToken",
+   "raycast.webViewStateChanged",
+   "settings.getHotkeyConflicts",
+   "permissions.checkPermission",
+   "hotkey.symbolicHotkeyStatus",
+   "appFlags.getAppFlags"
+  ]
+ },
+ {
+  "id": "11-assets-window-management",
+  "label": "Design system — assets: Window Management",
+  "url": "http://localhost:4317/ds/#assets",
+  "viewport": {
+   "width": 1440,
+   "height": 4000
+  },
+  "ipc": [
+   "analytics.getTelemetryTags",
+   "indexer.getAllApplications",
+   "settings.getContentZoom",
+   "themes.getAll",
+   "settings.getGeneralSettings",
+   "userDefaults.get",
+   "system.getManagedSignInPolicy",
+   "auth.getUser",
+   "diagnostics.getActiveIssues",
+   "settings.openCatalog",
+   "indexer.getIndexingParams",
+   "settings.getInternalExtensionSettings",
+   "applications.getDefault",
+   "themes.getById",
+   "raycast.webViewStateChanged",
+   "settings.getHotkeyConflicts",
+   "permissions.checkPermission",
+   "hotkey.symbolicHotkeyStatus",
+   "appFlags.getAppFlags",
+   "auth.getToken"
+  ]
+ }
+]

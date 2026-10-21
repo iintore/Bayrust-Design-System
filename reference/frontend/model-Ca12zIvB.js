@@ -1,0 +1,5 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="9d61de6b-6d1f-5d9f-bc85-79a494a466f3")}catch(e){}}();
+function e(e){return typeof e==`string`}var t=2e3;function n(e,t){e.inputTokens+=t.inputTokens??0,e.outputTokens+=t.outputTokens??0,t.cachedTokens!==void 0&&(e.cachedTokens=(e.cachedTokens??0)+t.cachedTokens),t.cacheWriteTokens!==void 0&&(e.cacheWriteTokens=(e.cacheWriteTokens??0)+t.cacheWriteTokens);let n=e=>Math.round(e*1e8)/1e8;t.inputCredits!==void 0&&(e.inputCredits=n((e.inputCredits??0)+t.inputCredits)),t.outputCredits!==void 0&&(e.outputCredits=n((e.outputCredits??0)+t.outputCredits)),t.totalCredits!==void 0&&(e.totalCredits=n((e.totalCredits??0)+t.totalCredits))}function r(){return{inputTokens:0,outputTokens:0}}export{e as i,n,r,t};
+//# sourceMappingURL=model-Ca12zIvB.js.map
+//# debugId=9d61de6b-6d1f-5d9f-bc85-79a494a466f3

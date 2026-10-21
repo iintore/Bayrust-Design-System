@@ -1,0 +1,5 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="66f8231c-42b8-5f5b-9059-023a0111b9a2")}catch(e){}}();
+import{o as e}from"./chunk-CMxvf4Kt.js";import{n as t}from"./time-BgPLLP_H.js";import{t as n}from"./services-CI1JjB8Y.js";import{n as r}from"./cloud-sync-access-BbvEpT9i.js";import{t as i}from"./useQuery-D0QmeMDi.js";import{r as a}from"./hooks-lEzFruSE.js";import{u as o}from"./cloud-sync-settings-page-definition-DcP15Nbz.js";import{n as s}from"./settings-route-utils-BevFV-oG.js";var c=e(t(),1);function l(){let e=s(),[t]=a(e=>e.user),{data:l}=i({queryKey:o,queryFn:()=>n.ipc.backend.settings.getCloudSyncSettings()}),u=r(t),d=(l?.enabled??!1)&&u,f=l!==void 0&&(!l.enabled||!u);return c.useEffect(()=>{f&&e({to:`/cloud-sync`,replace:!0})},[f,e]),d}export{l as t};
+//# sourceMappingURL=use-cloud-sync-active-guard-C__q0GNU.js.map
+//# debugId=66f8231c-42b8-5f5b-9059-023a0111b9a2

@@ -1,0 +1,5 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="bf377faa-65f0-548d-b5ae-c51155d77b36")}catch(e){}}();
+import{o as e}from"./chunk-CMxvf4Kt.js";import{n as t}from"./time-BgPLLP_H.js";import{O as n,k as r,t as i}from"./icon-CKbK2z_d.js";import{t as a}from"./base-button.namespace-CigLQP3Y.js";import{t as o}from"./spinner-qyusY7tI.js";t();var s=e(r(),1),c={root:`icon-button__root_3d5f4`,icon:`icon-button__icon_799b3`},l=n();function u({className:e,variant:t=`default`,size:n=`medium`,icon:r,isLoading:u=!1,color:d,...f}){return(0,l.jsx)(a,{...f,className:(0,s.default)(c.root,e),variant:t,size:n,children:u?(0,l.jsx)(o,{className:c.icon,"aria-hidden":!0}):(0,l.jsx)(i,{className:c.icon,name:r,color:d})})}u.displayName=`IconButton`;export{u as t};
+//# sourceMappingURL=icon-button-BbF1-aNu.js.map
+//# debugId=bf377faa-65f0-548d-b5ae-c51155d77b36
