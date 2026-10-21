@@ -207,38 +207,6 @@ export function Screens({ page }: { page: Page }) {
   );
 }
 
-/** Shipped image files (illustrations, imagery), grouped, at their own size up to the column width. */
-export function Gallery({ page }: { page: Page }) {
-  const groups = new Map<string, NonNullable<Page['gallery']>>();
-  for (const g of page.gallery ?? []) groups.set(g.group ?? '', [...(groups.get(g.group ?? '') ?? []), g]);
-  return (
-    <div className="doc-gallery-files">
-      {[...groups].map(([name, items]) => (
-        <div key={name}>
-          {name && <h3 id={'files-' + name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}>{name}</h3>}
-          <div className={'doc-files' + (name ? ' small' : '')}>
-            {items.map((g) => (
-              <figure key={g.src}>
-                <div className="doc-file-stage">
-                  {g.video ? (
-                    <video src={g.src.replace(/^\/ds\//, `${BASE}ds/`)} muted loop autoPlay playsInline />
-                  ) : (
-                    <img src={g.src.replace(/^\/ds\//, `${BASE}ds/`)} alt={g.caption} loading="lazy" style={{ maxWidth: g.w ? Math.min(g.w / (name ? 1 : 2), 100000) : undefined }} />
-                  )}
-                </div>
-                <figcaption>
-                  {g.caption}
-                  {g.w ? <span> · {g.w} × {g.h}</span> : null}
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-}
-
 /** The bundled themes, drawn from their own base colours. */
 export function ThemeTable({ page }: { page: Page }) {
   const hues = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'magenta'];

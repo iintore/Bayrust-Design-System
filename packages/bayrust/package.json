@@ -2,6 +2,16 @@
   "name": "@krackedui/bayrust",
   "version": "0.1.0",
   "description": "Bayrust design system: tokens, the shipped component styles and components, themes and icons of Bayrust 2.8.2",
+  "keywords": [
+    "design-system",
+    "design-tokens",
+    "bayrust",
+    "raycast",
+    "react",
+    "css",
+    "icons",
+    "ui"
+  ],
   "author": "Tony Lewis MANZI",
   "license": "UNLICENSED",
   "private": false,
@@ -67,7 +77,7 @@
     }
   },
   "publishConfig": {
-    "access": "restricted"
+    "access": "public"
   },
   "engines": {
     "node": ">=18"

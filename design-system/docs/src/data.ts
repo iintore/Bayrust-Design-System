@@ -98,8 +98,6 @@ export interface Page {
   windows?: { win: WindowRef; caption: string; group?: string }[];
   /** Native renders shown in the page gallery (flows, templates, logo, introduction). */
   shots?: Shot[];
-  /** Image gallery (illustrations, imagery). */
-  gallery?: (Shot & { video?: boolean })[];
   /** Bundled themes (Themes page). */
   themes?: Record<string, string>[];
   /** A gallery of values from the shipped stylesheets, rendered with them (shadows, borders, opacity, gradients). */

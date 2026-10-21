@@ -184,7 +184,7 @@ def build(ctx):
         return '\n'.join(f"- **[{brand(fl)}](/flow-{fid})**: " + ', '.join(sorted(set(v))[:12]) + (f' and {len(set(v)) - 12} more' if len(set(v)) > 12 else '') for (fl, fid), v in sorted(by.items())) + '\n'
 
     # ------------------------------------------------------------ component and pattern pages (families)
-    STATUS = {'yes': 'In Bayrust', 'variant': 'Variant', 'composed': 'Composed from Bayrust parts', 'uncaptured': 'In the code, not shown in the sandbox', 'no': 'Not in Bayrust'}
+    STATUS = {'yes': 'In Bayrust', 'variant': 'Variant', 'composed': 'Composed from Bayrust parts', 'uncaptured': 'In the code, not shown in the sandbox', 'excluded': 'In Bayrust, not published', 'no': 'Not in Bayrust'}
     by_item = {c[0]: c for c in CHECK}
     item_page = {}
 
@@ -345,15 +345,9 @@ Notes sizes its window to the note's height until it's resized by hand ("Enable 
 
 {facts['reducedMotion']} rules apply under `prefers-reduced-motion: reduce`. See [Breakpoints](/breakpoints) for the queries.
 """)
-    illus = [i for i in facts['images'] if not i['file'].startswith(('command-', 'extension-', 'app-', 'icons-')) and i['type'] in ('png', 'svg', 'webp', 'jpg') and not re.search(r'background|grain|bg[-_]', i['file'])]
-    imagery = [i for i in facts['images'] if re.search(r'background|grain|bg[-_]', i['file']) or i['type'] == 'mp4']
-    cmd_icons = [i for i in facts['images'] if i['file'].startswith(('command-', 'extension-', 'app-'))]
-    for i in facts['images']: ctx['assets'].add(i['file'])
-    F('illustrations', 'Illustrations', f'{len(illus)} illustrations shipped with the app: onboarding, paywalls, empty states, weather symbols and more.', '', 'gallery',
-      gallery=[{'src': f"/ds/assets/{i['file']}", 'caption': re.sub(r'-[A-Za-z0-9_-]{8}\.\w+$', '', i['file']), 'w': i['w'], 'h': i['h']} for i in illus])
-    F('imagery', 'Imagery', f'Backgrounds, textures and video, and {len(cmd_icons)} command and extension icons.', '', 'gallery',
-      gallery=[{'src': f"/ds/assets/{i['file']}", 'caption': re.sub(r'-[A-Za-z0-9_-]{8}\.\w+$', '', i['file']), 'w': i['w'], 'h': i['h'], 'video': i['type'] == 'mp4'} for i in imagery]
-      + [{'src': f"/ds/assets/{i['file']}", 'caption': re.sub(r'-[A-Za-z0-9_-]{8}\.\w+$', '', i['file']), 'w': i['w'], 'h': i['h'], 'group': 'Command and extension icons'} for i in cmd_icons if '_large' not in i['file']])
+    # Illustrations, Imagery and the shipped artwork are not published: the artwork is Raycast's property, and the
+    # galleries were the only thing pulling all 490 image files into the site. Only the images the component and
+    # window markup actually references are collected (build_content.localize and the stylesheet URLs).
     # ---- "in use" galleries: every value from the shipped stylesheets, rendered with those stylesheets
     GLOBAL_VARS = set(raw['dark']['tokens'])
     TX = 'text__text_054b5 text__align-left_43d84 '
@@ -512,6 +506,7 @@ Components set state as attributes, and the stylesheets style the attributes: `d
 | Variant of another component | {cnt['variant']} |
 | Composed from Bayrust parts | {cnt['composed']} |
 | In the code, not shown in the sandbox | {cnt['uncaptured']} |
+| In Bayrust, not published | {cnt['excluded']} |
 | Not in Bayrust | {cnt['no']} |
 
 Composed components aren't shipped by the app: they are built only from Bayrust's own primitives, text styles and
@@ -521,7 +516,15 @@ tokens, and each one is labelled.
     for sec in ('Getting started', 'Foundations', 'Components', 'Patterns', 'Documentation'):
         md += f'## {sec}\n\n' + md_table(['Item', 'Status', 'Bayrust', 'Note'], [r for s, r in rows if s == sec]) + '\n'
     pages['coverage'] = {'title': 'Coverage', 'lead': f'Every item of the design-system checklist ({len(CHECK)}), and what Bayrust has for it.', 'md': md}
-    pages['changelog'] = {'title': 'Changelog', 'lead': 'What these docs were built from, and when.', 'md': """## 2026-10-21 (later)
+    pages['changelog'] = {'title': 'Changelog', 'lead': 'What these docs were built from, and when.', 'md': """## 2026-10-22
+
+- Raycast's artwork is no longer published. The Illustrations and Imagery foundation pages are gone, and the site
+  carries only the images the component and window markup references. Both checklist items now read
+  "In Bayrust, not published".
+- The two shipped `.mp4` files are left out of the site and the package.
+- `@krackedui/bayrust` is public on npm, and its runtime carries code, styles, fonts and SVG only.
+
+## 2026-10-21 (later)
 
 - Components are grouped into 32 families (Button holds every kind of button, Input every kind of input…), with each checklist item a section.
 - Every preview is live: components, Bayrust's playground sections, live views and dialogs, and whole windows (flows, templates, blocks) rendered from their own markup. No screenshots remain.

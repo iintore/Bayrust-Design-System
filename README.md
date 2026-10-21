@@ -54,12 +54,16 @@ runtime state (recreated on first run) and audit output. The REA graphs are stor
 
 ## Package and hosting
 
-**Package.** `packages/bayrust` builds `@krackedui/bayrust` (see its README). It's set to publish with restricted
-access, so only members of the `@krackedui` scope can install it:
+**Package.** `packages/bayrust` builds `@krackedui/bayrust` (see its README), published publicly under the
+`@krackedui` scope. It carries code, styles, fonts and SVG icons only: Raycast's raster artwork and video are not
+published with it.
 
 ```bash
-cd packages/bayrust && npm login && npm publish
+cd packages/bayrust && npm publish
 ```
+
+Publishing needs an npm token for the `@krackedui` organization in `~/.npmrc`
+(`//registry.npmjs.org/:_authToken=…`), or `npm login` as a member of the scope.
 
 **Docs on Vercel.** `vercel.json` builds only the docs app and serves it as a static site (deep links included);
 `.vercelignore` keeps the upload to the docs folder (about 56 MB). Without the harness, each preview shows its captured
@@ -95,7 +99,7 @@ takes Bayrust's own look: the layout, type and colours of the app's internal com
 | Section | Contents |
 |---|---|
 | Getting started | Introduction, Installation, **Coverage** (all 226 checklist items and what Bayrust has for each), Changelog |
-| Foundations | 26 pages: tokens, colour, type, spacing, sizing, grid, layout, breakpoints, responsive design, icons, illustrations, imagery, logo, elevation, shadows, borders, radius, opacity, gradients, motion, animation, transitions, accessibility, themes, dark mode, interaction states |
+| Foundations | 24 pages: tokens, colour, type, spacing, sizing, grid, layout, breakpoints, responsive design, icons, logo, elevation, shadows, borders, radius, opacity, gradients, motion, animation, transitions, accessibility, themes, dark mode, interaction states |
 | Components | 32 families, A–Z (Button holds Button, Compact, Fancy, Link, Icon, Toggle, Group, Split, Floating Action, Back to Top; Input holds every kind of input…), each checklist item a section |
 | Patterns | States, overlays, drag & drop, onboarding |
 | Blocks, Templates, Flows | Live windows: each captured window's own DOM at its size, with open panels at their native frames |
@@ -104,8 +108,11 @@ Every preview is the real thing. Shipped components run live in the harness, in 
 preview is ready its captured markup stands in (it renders at once from the shipped stylesheets), so the shimmer
 skeleton only shows for an example with nothing to stand in. Live previews boot six at a time in the order they come
 into view. The Code tab shows the JSX each example is written with, read from React. Window states render from their
-captured DOM with their native panels. Nothing on the docs pages is a screenshot (only the image assets themselves, on
-Illustrations, Imagery and Logo).
+captured DOM with their native panels. Nothing on the docs pages is a screenshot (only the app-icon renditions, on Logo).
+
+**Artwork is not published.** The Illustrations and Imagery galleries are gone, and the site carries only the images
+the component and window markup actually references. The two shipped `.mp4` files are left out everywhere. On the
+Coverage checklist both items read "In Bayrust, not published".
 
 The docs' own navigation is Bayrust's component index (the playground sidebar), rendered with the shipped class names;
 `scripts/build_content.py` extracts the rules it needs from the bundle into `public/ds/native.css`, scoped to the nav.

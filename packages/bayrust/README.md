@@ -9,7 +9,11 @@ pnpm add @krackedui/bayrust
 yarn add @krackedui/bayrust
 ```
 
-Published with restricted access under `@krackedui`: log in to npm as a member of the scope first.
+Public on npm under the `@krackedui` scope: no login needed to install.
+
+**No artwork.** The package carries code, styles, fonts and SVG icons only. Raycast's raster artwork and video — the
+illustrations, backgrounds, textures, command and extension icons and the two `.mp4` files — are Raycast's property
+and are not published, so a component that draws one renders without it. Everything else is unchanged.
 
 ## Entry points
 
@@ -43,7 +47,8 @@ import { ThemeRoot, Icon, Bayrust } from '@krackedui/bayrust/react';
 
 The shipped styles and tokens apply under a theme root: `ThemeRoot`, or any element with `rootAttributes('dark' | 'light')`.
 `Bayrust` mounts the shipped component with the React it was built with; its props, event handlers included, are
-passed as given. Components that need the Mac app's host (installed apps, system data) render without that data.
+passed as given. Components that need the Mac app's host (installed apps, system data) render without that data, and
+components that draw shipped artwork render without the image.
 
 Elsewhere (Next.js and others), run `npx bayrust copy public/bayrust` once; the default assets URL, `/bayrust/`, then
 finds the runtime. A different URL: `setAssetsBase(url)` from `@krackedui/bayrust`, or `loadBayrust({ base })`.
@@ -55,4 +60,4 @@ npm run build   # dist/ from the repository (run `npm run content` in design-sys
 npm test        # packs, installs with npm, pnpm and yarn into a Vite + React app, and checks it in Chrome
 ```
 
-Raycast's code, artwork and icons are Raycast's property.
+Raycast's code, artwork and icons are Raycast's property. The artwork is not part of this package.

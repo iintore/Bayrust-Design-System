@@ -24,6 +24,8 @@ def brand(s):
 
 # previews are live; screenshots are no longer published
 if os.path.isdir(os.path.join(DS, 'shots')): shutil.rmtree(os.path.join(DS, 'shots'))
+# assets/ is collected fresh each build, so a file an earlier build referenced doesn't stay behind
+if os.path.isdir(os.path.join(DS, 'assets')): shutil.rmtree(os.path.join(DS, 'assets'))
 for d in ['assets', 'sprite', 'icons', 'appicons', 'shots', 'native']:
     os.makedirs(os.path.join(DS, d), exist_ok=True)
 
@@ -350,7 +352,11 @@ pages['installation'] = {
 @krackedui/bayrust
 ```
 
-It's published under the `@krackedui` scope with restricted access: log in to npm as a member of the scope (`npm login`) before installing.
+It's public on npm under the `@krackedui` scope: `npm install`, `pnpm add` or `yarn add` works with no login.
+
+The package carries code, styles, fonts and SVG icons only. Raycast's raster artwork and video — the illustrations,
+backgrounds, textures, command and extension icons and the two `.mp4` files — are Raycast's property and are not
+published, so a component that draws one renders without it.
 
 | Import | What it is |
 |---|---|
@@ -652,7 +658,7 @@ ctx = dict(J=J, md_table=md_table, slug=slug, brand=brand, shot=shot, localize=l
 pages2.build(ctx)
 
 FOUNDATION_ORDER = ['design-tokens', 'color', 'typography', 'spacing', 'sizing', 'grid', 'layout', 'breakpoints', 'responsive-design', 'iconography',
-                    'illustrations', 'imagery', 'logo', 'elevation', 'shadows', 'borders', 'radius', 'opacity', 'gradients', 'motion', 'animation',
+                    'logo', 'elevation', 'shadows', 'borders', 'radius', 'opacity', 'gradients', 'motion', 'animation',
                     'transitions', 'accessibility', 'themes', 'dark-mode', 'states']
 def nav_item(path): return {'title': pages[path]['title'], 'path': path}
 nav[:] = [
@@ -677,8 +683,12 @@ missing = [p for p in pages if not any(i['path'] == p for g in nav for i in g['i
 if missing: print('pages not in nav:', missing)
 
 # ---------------------------------------------------------------- assets referenced by CSS and markup
-for name in assets:
+# Video is not published: the two shipped .mp4 files are Raycast artwork, and nothing in the docs plays them.
+VIDEO = ('.mp4', '.webm', '.mov', '.m4v')
+skipped_video = sorted(n for n in assets if n.lower().endswith(VIDEO))
+for name in sorted(assets - set(skipped_video)):
     shutil.copy(os.path.join(FE, name), os.path.join(DS, 'assets', name))
+if skipped_video: print('video left out:', ', '.join(skipped_video))
 
 def pt(url):
     w, h = png_size(os.path.join(PUB, url.lstrip('/')))
@@ -692,4 +702,4 @@ for p in pages.values():
 content = {'pages': pages, 'nav': nav, 'tokens': tokens, 'icons': symbols}
 out = os.path.join(DOCS, 'src', 'content', 'content.json')
 json.dump(content, open(out, 'w'), ensure_ascii=False, indent=1)
-print(f"pages {len(pages)} · components {len(nav[2]['items'])} · patterns {len(nav[3]['items'])} · blocks {len(block_items)} · templates {len(tmpl_items)} · flows {len(flow_items)} · icons {len(symbols)} · assets {len(assets)} · shots {len(os.listdir(os.path.join(DS, 'shots')))}")
+print(f"pages {len(pages)} · components {len(nav[2]['items'])} · patterns {len(nav[3]['items'])} · blocks {len(block_items)} · templates {len(tmpl_items)} · flows {len(flow_items)} · icons {len(symbols)} · assets {len(assets) - len(skipped_video)} · shots {len(os.listdir(os.path.join(DS, 'shots')))}")
