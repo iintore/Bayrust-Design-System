@@ -33,3 +33,7 @@ research/docs/*.log
 
 # the package build output (npm run build in packages/bayrust)
 packages/bayrust/dist/
+
+# Vercel project link and its short-lived token (vercel link)
+.vercel
+.env*
