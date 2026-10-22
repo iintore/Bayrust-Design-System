@@ -80,6 +80,25 @@ write('data/classes.js', asModule('classes', sorted));
 // ---- the shipped frontend, as the component runtime (its modules import each other relatively), without video
 fs.cpSync(from('reference/frontend'), path.join(dist, 'runtime'), { recursive: true, filter: (f) => !f.endsWith('.html') && !NOT_PUBLISHED.test(f) });
 
+// ---- the runtime's own display strings carry the Bayrust name
+// The harness renames the app's visible text in the browser (harness/brand.js); the package has no such layer, so a
+// component rendered from it would show the original name. The name is rewritten here only where it stands as a
+// word of its own: the method names and component displayNames that contain it (closeMainRaycastWindow, shareRaycast,
+// RaycastAccountSettingsView) are what the loader and the host protocol resolve on, and are left exactly as built.
+const STANDALONE = /(^|[^A-Za-z0-9_$]|\\n|\\t)Raycast(?![A-Za-z0-9_$])/g;
+let renamed = 0;
+const renameIn = (dir) => {
+  for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+    const p = path.join(dir, e.name);
+    if (e.isDirectory()) { renameIn(p); continue; }
+    if (!/\.(js|css)$/.test(e.name)) continue;
+    const before = fs.readFileSync(p, 'utf8');
+    const after = before.replace(STANDALONE, (_, lead) => (renamed++, `${lead}Bayrust`));
+    if (after !== before) fs.writeFileSync(p, after);
+  }
+};
+renameIn(path.join(dist, 'runtime'));
+
 // ---- components: name → [module, export]. Named exports from the inventory, plus the parts the docs bind by
 // displayName (namespace members such as BaseButton.Root), which the loader finds by displayName.
 const components = {};
@@ -99,3 +118,4 @@ const count = (d) => fs.readdirSync(path.join(dist, d), { recursive: true }).len
 const left = fs.readdirSync(from('reference/frontend')).filter((f) => NOT_PUBLISHED.test(f)).length;
 console.log(`dist: ${icons.length} icons, ${Object.keys(sorted).length} CSS modules, ${Object.keys(components).length} components, ${Object.keys(flat).length} tokens, ${count('runtime')} runtime files`);
 console.log(`video left out: ${left} files, ${dropped} CSS declarations that pointed at them`);
+console.log(`runtime display strings renamed: ${renamed}`);

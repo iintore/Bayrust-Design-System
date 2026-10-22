@@ -1597,7 +1597,7 @@
      },
      {
       "id": "01-ai",
-      "label": "Pro Walkthrough \u2014 Raycast AI",
+      "label": "Pro Walkthrough \u2014 Bayrust AI",
       "url": "/pro-walkthrough-window.html",
       "viewport": {
        "width": 1280,
@@ -3001,7 +3001,7 @@
      },
      {
       "id": "25-bayrust",
-      "label": "Settings \u2014 Raycast",
+      "label": "Settings \u2014 Bayrust",
       "url": "/settings-window.html",
       "viewport": {
        "width": 800,
@@ -3037,7 +3037,7 @@
      },
      {
       "id": "26-bayrust-focus",
-      "label": "Settings \u2014 Raycast Focus",
+      "label": "Settings \u2014 Bayrust Focus",
       "url": "/settings-window.html",
       "viewport": {
        "width": 800,
@@ -3073,7 +3073,7 @@
      },
      {
       "id": "27-bayrust-for-teams",
-      "label": "Settings \u2014 Raycast for Teams",
+      "label": "Settings \u2014 Bayrust for Teams",
       "url": "/settings-window.html",
       "viewport": {
        "width": 800,
@@ -3109,7 +3109,7 @@
      },
      {
       "id": "28-bayrust-notes",
-      "label": "Settings \u2014 Raycast Notes",
+      "label": "Settings \u2014 Bayrust Notes",
       "url": "/settings-window.html",
       "viewport": {
        "width": 800,
@@ -3145,7 +3145,7 @@
      },
      {
       "id": "29-bayrust-settings",
-      "label": "Settings \u2014 Raycast Settings",
+      "label": "Settings \u2014 Bayrust Settings",
       "url": "/settings-window.html",
       "viewport": {
        "width": 800,
@@ -3719,7 +3719,7 @@
     "states": [
      {
       "id": "01-bayrust-dark",
-      "label": "Theme Studio \u2014 Raycast Dark",
+      "label": "Theme Studio \u2014 Bayrust Dark",
       "url": "/theme-studio-window.html",
       "viewport": {
        "width": 1370,
@@ -3769,7 +3769,7 @@
      },
      {
       "id": "03-bayrust-light",
-      "label": "Theme Studio \u2014 Raycast Light",
+      "label": "Theme Studio \u2014 Bayrust Light",
       "url": "/theme-studio-window.html",
       "viewport": {
        "width": 1370,

@@ -1,9 +1,9 @@
 {
-  "name": "Raycast 2.8.2 \u2014 design-system-assets",
+  "name": "Bayrust 2.8.2 \u2014 design-system-assets",
   "date": "2026-10-20",
   "timezone": "Africa/Kigali",
   "run": {
-    "name": "Raycast 2.8.2 \u2014 design-system-assets",
+    "name": "Bayrust 2.8.2 \u2014 design-system-assets",
     "entryUrl": "http://localhost:4317/ds/#icons",
     "timezone": "Africa/Kigali",
     "scope": {
@@ -11,10 +11,10 @@
       "pathPrefix": "/"
     },
     "limitations": [
-      "Shipped Raycast frontend served locally with a stubbed native host bridge; host-provided images (ipc://) are unavailable."
+      "Shipped Bayrust frontend served locally with a stubbed native host bridge; host-provided images (ipc://) are unavailable."
     ],
     "notes": [
-      "Source: /Applications/Raycast.app (2.8.2) macos-app_RaycastDesktopApp.bundle/Contents/Resources/frontend"
+      "Source: /Applications/Bayrust.app (2.8.2) macos-app_BayrustDesktopApp.bundle/Contents/Resources/frontend"
     ]
   },
   "entryUrl": "http://localhost:4317/ds/#icons",

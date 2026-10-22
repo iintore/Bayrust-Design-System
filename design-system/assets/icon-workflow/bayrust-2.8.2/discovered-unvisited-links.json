@@ -2386,12 +2386,12 @@
   },
   {
     "url": "http://localhost:4317/extensions/e:r:notes",
-    "text": "Raycast Notes",
+    "text": "Bayrust Notes",
     "status": "discovered; no exact URL capture (may be an alias)"
   },
   {
     "url": "http://localhost:4317/extensions/e:r:organizations",
-    "text": "Raycast for Teams",
+    "text": "Bayrust for Teams",
     "status": "discovered; no exact URL capture (may be an alias)"
   },
   {
@@ -2406,17 +2406,17 @@
   },
   {
     "url": "http://localhost:4317/extensions/e:r:raycast-core",
-    "text": "Raycast",
+    "text": "Bayrust",
     "status": "discovered; no exact URL capture (may be an alias)"
   },
   {
     "url": "http://localhost:4317/extensions/e:r:raycast-focus",
-    "text": "Raycast Focus",
+    "text": "Bayrust Focus",
     "status": "discovered; no exact URL capture (may be an alias)"
   },
   {
     "url": "http://localhost:4317/extensions/e:r:raycast-settings",
-    "text": "Raycast Settings",
+    "text": "Bayrust Settings",
     "status": "discovered; no exact URL capture (may be an alias)"
   },
   {

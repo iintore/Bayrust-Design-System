@@ -1,5 +1,5 @@
-// Generates site/index.html: a Raycast window bootstrap (the shipped settings-window entry, so theme and
-// stores are initialized by Raycast's own code) + every shipped stylesheet + the design-system app.
+// Generates site/index.html: a window bootstrap (the shipped settings-window entry, so theme and
+// stores are initialized by the shipped code) + every shipped stylesheet + the design-system app.
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
