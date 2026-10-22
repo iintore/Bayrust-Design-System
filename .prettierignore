@@ -1,0 +1,13 @@
+# Raycast's shipped frontend and everything generated from it stays byte-for-byte as built
+reference/
+research/
+tools/
+design-system/assets/
+design-system/docs/dist/
+design-system/docs/public/
+design-system/site/manifest.json
+design-system/site/motion.json
+design-system/site/flows.json
+design-system/docs/src/content/
+packages/bayrust/dist/
+node_modules/
