@@ -429,7 +429,7 @@
    ]
   },
   {
-   "id": "25-raycast",
+   "id": "25-bayrust",
    "label": "Settings \u2014 Raycast",
    "url": "/settings-window.html",
    "wait": 5000,
@@ -441,7 +441,7 @@
    ]
   },
   {
-   "id": "26-raycast-focus",
+   "id": "26-bayrust-focus",
    "label": "Settings \u2014 Raycast Focus",
    "url": "/settings-window.html",
    "wait": 5000,
@@ -453,7 +453,7 @@
    ]
   },
   {
-   "id": "27-raycast-for-teams",
+   "id": "27-bayrust-for-teams",
    "label": "Settings \u2014 Raycast for Teams",
    "url": "/settings-window.html",
    "wait": 5000,
@@ -465,7 +465,7 @@
    ]
   },
   {
-   "id": "28-raycast-notes",
+   "id": "28-bayrust-notes",
    "label": "Settings \u2014 Raycast Notes",
    "url": "/settings-window.html",
    "wait": 5000,
@@ -477,7 +477,7 @@
    ]
   },
   {
-   "id": "29-raycast-settings",
+   "id": "29-bayrust-settings",
    "label": "Settings \u2014 Raycast Settings",
    "url": "/settings-window.html",
    "wait": 5000,

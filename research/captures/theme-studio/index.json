@@ -1,6 +1,6 @@
 [
  {
-  "id": "01-raycast-dark",
+  "id": "01-bayrust-dark",
   "label": "Theme Studio — Raycast Dark",
   "url": "http://localhost:4317/theme-studio-window.html",
   "viewport": {
@@ -44,7 +44,7 @@
   ]
  },
  {
-  "id": "03-raycast-light",
+  "id": "03-bayrust-light",
   "label": "Theme Studio — Raycast Light",
   "url": "http://localhost:4317/theme-studio-window.html",
   "viewport": {
@@ -66,7 +66,7 @@
   ]
  },
  {
-  "id": "fs-01-raycast-dark",
+  "id": "fs-01-bayrust-dark",
   "label": "Theme Studio — full screen",
   "url": "http://localhost:4317/theme-studio-window.html",
   "viewport": {

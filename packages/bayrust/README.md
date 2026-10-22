@@ -59,4 +59,3 @@ npm run build   # dist/ from the repository (run `npm run content` in design-sys
 npm test        # packs, installs with npm, pnpm and yarn into a Vite + React app, and checks it in Chrome
 ```
 
-Raycast's code, artwork and icons are Raycast's property. The artwork is not part of this package.

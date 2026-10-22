@@ -6,7 +6,7 @@
  },
  "states": [
   {
-   "id": "01-raycast-dark",
+   "id": "01-bayrust-dark",
    "label": "Theme Studio \u2014 Raycast Dark",
    "url": "/theme-studio-window.html",
    "wait": 5000
@@ -24,7 +24,7 @@
    ]
   },
   {
-   "id": "03-raycast-light",
+   "id": "03-bayrust-light",
    "label": "Theme Studio \u2014 Raycast Light",
    "url": "/theme-studio-window.html",
    "wait": 5000,
@@ -36,7 +36,7 @@
    ]
   },
   {
-   "id": "fs-01-raycast-dark",
+   "id": "fs-01-bayrust-dark",
    "label": "Theme Studio \u2014 full screen",
    "url": "/theme-studio-window.html",
    "viewport": {

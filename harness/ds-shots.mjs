@@ -11,7 +11,7 @@ page.on('console', m => { if (m.type() === 'error' && !m.text().includes('404'))
 page.on('pageerror', e => errors.push('PAGEERROR ' + String(e).slice(0, 200)));
 await page.goto('http://localhost:4317/ds/#overview');
 await page.waitForSelector('.ds-nav', { timeout: 30000 });
-if (light) { await page.click('text=Raycast Light'); await page.waitForTimeout(800); }
+if (light) { await page.click('text=Bayrust Light'); await page.waitForTimeout(800); }
 await fs.mkdir('../research/ds-shots', { recursive: true });
 for (const id of ids) {
   await page.evaluate((id) => { location.hash = id; }, id);

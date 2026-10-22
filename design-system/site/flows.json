@@ -3000,7 +3000,7 @@
       "panels": []
      },
      {
-      "id": "25-raycast",
+      "id": "25-bayrust",
       "label": "Settings \u2014 Raycast",
       "url": "/settings-window.html",
       "viewport": {
@@ -3031,12 +3031,12 @@
        "ai.getPricing",
        "ai.getCreditsBalance"
       ],
-      "image": "research/captures/settings/webkit/25-raycast.png",
+      "image": "research/captures/settings/webkit/25-bayrust.png",
       "engine": "webkit",
       "panels": []
      },
      {
-      "id": "26-raycast-focus",
+      "id": "26-bayrust-focus",
       "label": "Settings \u2014 Raycast Focus",
       "url": "/settings-window.html",
       "viewport": {
@@ -3067,12 +3067,12 @@
        "ai.getPricing",
        "ai.getCreditsBalance"
       ],
-      "image": "research/captures/settings/webkit/26-raycast-focus.png",
+      "image": "research/captures/settings/webkit/26-bayrust-focus.png",
       "engine": "webkit",
       "panels": []
      },
      {
-      "id": "27-raycast-for-teams",
+      "id": "27-bayrust-for-teams",
       "label": "Settings \u2014 Raycast for Teams",
       "url": "/settings-window.html",
       "viewport": {
@@ -3103,12 +3103,12 @@
        "ai.getPricing",
        "ai.getCreditsBalance"
       ],
-      "image": "research/captures/settings/webkit/27-raycast-for-teams.png",
+      "image": "research/captures/settings/webkit/27-bayrust-for-teams.png",
       "engine": "webkit",
       "panels": []
      },
      {
-      "id": "28-raycast-notes",
+      "id": "28-bayrust-notes",
       "label": "Settings \u2014 Raycast Notes",
       "url": "/settings-window.html",
       "viewport": {
@@ -3139,12 +3139,12 @@
        "ai.getPricing",
        "ai.getCreditsBalance"
       ],
-      "image": "research/captures/settings/webkit/28-raycast-notes.png",
+      "image": "research/captures/settings/webkit/28-bayrust-notes.png",
       "engine": "webkit",
       "panels": []
      },
      {
-      "id": "29-raycast-settings",
+      "id": "29-bayrust-settings",
       "label": "Settings \u2014 Raycast Settings",
       "url": "/settings-window.html",
       "viewport": {
@@ -3175,7 +3175,7 @@
        "ai.getPricing",
        "ai.getCreditsBalance"
       ],
-      "image": "research/captures/settings/webkit/29-raycast-settings.png",
+      "image": "research/captures/settings/webkit/29-bayrust-settings.png",
       "engine": "webkit",
       "panels": []
      },
@@ -3718,7 +3718,7 @@
     "prefix": "",
     "states": [
      {
-      "id": "01-raycast-dark",
+      "id": "01-bayrust-dark",
       "label": "Theme Studio \u2014 Raycast Dark",
       "url": "/theme-studio-window.html",
       "viewport": {
@@ -3738,7 +3738,7 @@
        "settings.getInternalExtensionSettings",
        "settings.previewThemeBackgroundColors"
       ],
-      "image": "research/captures/theme-studio/webkit/01-raycast-dark.png",
+      "image": "research/captures/theme-studio/webkit/01-bayrust-dark.png",
       "engine": "webkit",
       "panels": []
      },
@@ -3768,7 +3768,7 @@
       "panels": []
      },
      {
-      "id": "03-raycast-light",
+      "id": "03-bayrust-light",
       "label": "Theme Studio \u2014 Raycast Light",
       "url": "/theme-studio-window.html",
       "viewport": {
@@ -3788,14 +3788,14 @@
        "settings.getInternalExtensionSettings",
        "settings.previewThemeBackgroundColors"
       ],
-      "image": "research/captures/theme-studio/webkit/03-raycast-light--composite.png",
+      "image": "research/captures/theme-studio/webkit/03-bayrust-light--composite.png",
       "engine": "webkit",
       "panels": [
-       "03-raycast-light--tooltip.png"
+       "03-bayrust-light--tooltip.png"
       ]
      },
      {
-      "id": "fs-01-raycast-dark",
+      "id": "fs-01-bayrust-dark",
       "label": "Theme Studio \u2014 full screen",
       "url": "/theme-studio-window.html",
       "viewport": {
@@ -3815,7 +3815,7 @@
        "settings.getInternalExtensionSettings",
        "settings.previewThemeBackgroundColors"
       ],
-      "image": "research/captures/theme-studio/webkit/fs-01-raycast-dark.png",
+      "image": "research/captures/theme-studio/webkit/fs-01-bayrust-dark.png",
       "engine": "webkit",
       "panels": []
      }

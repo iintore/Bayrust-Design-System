@@ -43,13 +43,13 @@ write('css/theme.css', fs.readFileSync(path.join(ds, 'theme.css'), 'utf8'));
 write('css/bayrust.css', '/* Bayrust 2.8.2: the shipped component styles, then the theme base colours and the glass fallback. */\n@import "./components.css";\n@import "./theme.css";\n');
 
 // ---- tokens: W3C-style JSON, CSS, and a typed module keyed by CSS variable
-const tokens = JSON.parse(read('design-system/tokens/raycast.tokens.json'));
+const tokens = JSON.parse(read('design-system/tokens/bayrust.tokens.json'));
 write('tokens/tokens.json', JSON.stringify(tokens, null, 1));
 write('tokens/tokens.css', read('design-system/tokens/tokens.css'));
 const flat = {};
 for (const [group, entries] of Object.entries(tokens)) {
   for (const [name, t] of Object.entries(entries)) {
-    const x = t.$extensions?.raycast ?? {};
+    const x = t.$extensions?.bayrust ?? {};
     flat[x.cssVar ?? `--${name}`] = { group, value: t.$value, dark: x.dark ?? t.$value, light: x.light ?? t.$value };
   }
 }

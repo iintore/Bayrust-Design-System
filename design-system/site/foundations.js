@@ -1,5 +1,5 @@
 // Foundations: every value below is a shipped CSS custom property, rendered live through var(--token)
-// and annotated with its resolved Bayrust Dark / Bayrust Light values from tokens/raycast.tokens.json.
+// and annotated with its resolved Bayrust Dark / Bayrust Light values from tokens/bayrust.tokens.json.
 import { h, json, React } from './runtime.js';
 
 const flat = (tokens) => Object.fromEntries(Object.values(tokens).flatMap((g) => Object.entries(g)));
@@ -70,7 +70,7 @@ function Color({ data, t }) {
       {
         t,
         title: 'Theme palette',
-        note: 'Each theme defines 13 base colors (bundled-raycast-dark / bundled-raycast-light). Every base color is expanded into alpha steps with rgb(from var(--x) r g b / n%).',
+        note: 'Each theme defines 13 base colors, one bundled set per appearance. Every base color is expanded into alpha steps with rgb(from var(--x) r g b / n%).',
       },
       h(
         'div',

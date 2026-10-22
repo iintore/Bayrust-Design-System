@@ -95,9 +95,9 @@ for (const state of spec.states.filter(s => !only || only.test(s.id))) {
   });
   await fs.writeFile(path.join(outDir, `${id}.json`), JSON.stringify({ id, label: state.label, viewport, ...snapshot }, null, 1));
   const capture = await ctx.createIconCapture(tab, iconRunDir, { run: {
-    name: `Raycast 2.8.2 — ${spec.name}`, entryUrl: base + spec.states[0].url, timezone: 'Africa/Kigali',
+    name: `Bayrust 2.8.2 — ${spec.name}`, entryUrl: base + spec.states[0].url, timezone: 'Africa/Kigali',
     scope: { origin: base, pathPrefix: '/' },
-    limitations: ['Shipped Raycast frontend served locally with a stubbed native host bridge; host-provided images (ipc://) are unavailable.'],
+    limitations: ['Shipped frontend served locally with a stubbed native host bridge; host-provided images (ipc://) are unavailable.'],
     notes: ['Source: /Applications/Raycast.app (2.8.2) macos-app_RaycastDesktopApp.bundle/Contents/Resources/frontend'],
   } });
   const r = await capture(state.label, { status: 'rendered state verified', notes: state.notes || '' });

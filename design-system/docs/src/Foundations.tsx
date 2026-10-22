@@ -215,7 +215,7 @@ export function ThemeTable({ page }: { page: Page }) {
       {(page.themes ?? []).map((t) => (
         <figure key={t.id} className="doc-theme-card">
           <div className="doc-theme-stage" style={{ background: `linear-gradient(to bottom, ${t.background}, ${t.backgroundSecondary})`, color: t.foreground }}>
-            <span className="doc-theme-name">{t.name.replace('Raycast', 'Bayrust')}</span>
+            <span className="doc-theme-name">{t.name}</span>
             <span className="doc-theme-sel" style={{ background: t.selection, opacity: 0.2 }} />
             <span className="doc-theme-hues">
               {hues.map((h) => (

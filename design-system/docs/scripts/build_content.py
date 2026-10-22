@@ -173,8 +173,8 @@ def png_size(path):
     return int.from_bytes(b[16:20], 'big'), int.from_bytes(b[20:24], 'big')
 
 # ---------------------------------------------------------------- tokens
-tok = J('design-system', 'tokens', 'raycast.tokens.json')
-def ext(t): return t['$extensions']['raycast']
+tok = J('design-system', 'tokens', 'bayrust.tokens.json')
+def ext(t): return t['$extensions']['bayrust']
 def usage(e):
     src = e['source']
     return f"Source `{src}` · declared in `{', '.join(e['declaredIn'][:2])}`" if src not in (e['dark'], e['light']) else f"Declared in `{', '.join(e['declaredIn'][:2])}`"
@@ -464,7 +464,7 @@ node harness/server.mjs
 | `http://localhost:4317/theme-studio-window.html` | Theme Studio, 1370 × 570 |
 | `http://localhost:4317/feedback-window.html` | Send Feedback, 420 × 714 |
 
-Add `?brand=raycast` to any window to turn the Bayrust rename off.
+Add `?brand=original` to any window to turn the Bayrust rename off.
 
 ## The docs
 
@@ -650,7 +650,7 @@ TEMPLATES = [
     ('settings', 'Settings', 'Sidebar and page, 800 × 786 by default, or the full screen.', [('settings', '01-general', 'Default, 800 × 786'), ('settings', 'fs-01-general', 'Full screen, 1710 × 1107'), ('settings', 'fs-02-ai', 'Full screen, AI page')]),
     ('ai-chat', 'AI Chat', 'Chat with sidebar and composer, 750 × 600 by default, or the full screen.', [('ai-chat', '01-new-chat', 'Default, 750 × 600'), ('ai-chat', 'fs-01-new-chat', 'Full screen, 1710 × 1107'), ('ai-chat', 'fs-02-typing', 'Full screen, typing')]),
     ('notes', 'Notes', 'A single note, 396 wide with the height of the note, or the full screen.', [('notes', '01-welcome-note', 'Default, 396 × 830'), ('notes', 'fs-01-welcome-note', 'Full screen, 1710 × 1107')]),
-    ('theme-studio', 'Theme Studio', 'Theme list, editor and preview, 1370 × 570, or the full screen.', [('theme-studio', '01-raycast-dark', 'Default, 1370 × 570'), ('theme-studio', 'fs-01-raycast-dark', 'Full screen, 1710 × 1107')]),
+    ('theme-studio', 'Theme Studio', 'Theme list, editor and preview, 1370 × 570, or the full screen.', [('theme-studio', '01-bayrust-dark', 'Default, 1370 × 570'), ('theme-studio', 'fs-01-bayrust-dark', 'Full screen, 1710 × 1107')]),
     ('feedback', 'Send Feedback', 'A single form, 420 × 714, or the full screen.', [('feedback', '01-empty', 'Default, 420 × 714'), ('feedback', 'fs-01-empty', 'Full screen, 1710 × 1107')]),
     ('pro-walkthrough', 'Pro walkthrough', 'Welcome page at 1280 × 760, feature pages at 1280 × 712.', [('pro-walkthrough', '00-welcome', 'Welcome, 1280 × 760'), ('pro-walkthrough', '02-dictation', 'Feature page')]),
 ]

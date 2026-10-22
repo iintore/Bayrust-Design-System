@@ -8,7 +8,7 @@ const ctx = await browser.newContext({ locale: 'en-RW', viewport: { width: 1440,
 const page = await ctx.newPage();
 await page.goto(`http://localhost:4317/ds/#${id}`);
 await page.waitForSelector('.ds-nav', { timeout: 30000 });
-if (light) { await page.click('text=Raycast Light'); }
+if (light) { await page.click('text=Bayrust Light'); }
 await page.waitForTimeout(3500);
 const h = await page.evaluate(() => document.querySelector('.ds-main').scrollHeight);
 await page.setViewportSize({ width: 1440, height: Math.min(h + 40, 16000) });

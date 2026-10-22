@@ -1,8 +1,8 @@
 // Display-layer rename: the app is shown as "Bayrust". Rewrites only what a person reads — text nodes and
 // user-facing attributes — so code, IPC method names (raycast.*), URL schemes and CSS classes are untouched.
-// Disable with ?brand=raycast.
+// Disable with ?brand=original.
 (() => {
-  if (new URLSearchParams(location.search).get('brand') === 'raycast') return;
+  if (new URLSearchParams(location.search).get('brand') === 'original') return;
   const swap = (s) => s.replace(/Raycast/g, 'Bayrust').replace(/RAYCAST/g, 'BAYRUST');
   const ATTRS = ['placeholder', 'title', 'aria-label', 'alt', 'aria-description', 'data-tooltip'];
   const fixText = (n) => { if (n.nodeValue && /Raycast|RAYCAST/.test(n.nodeValue)) n.nodeValue = swap(n.nodeValue); };

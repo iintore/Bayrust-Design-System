@@ -281,7 +281,7 @@ const ATOMS = [
     note: 'App icons are served by the host (ipc://image) — here, this Mac’s real icons.',
     render: () =>
       row(
-        ['/Applications/Raycast.app', '/System/Applications/Notes.app', '/System/Applications/Calendar.app', '/System/Library/CoreServices/Finder.app'].map(
+        ['/System/Applications/Notes.app', '/System/Applications/Calendar.app', '/System/Library/CoreServices/Finder.app', '/System/Applications/Mail.app'].map(
           (p) => h('div', { key: p, style: { width: 32, height: 32 } }, h(P.AppIcon, { src: `ipc://image?path=${encodeURIComponent(p)}&width=64&height=64` })),
         ),
       ),

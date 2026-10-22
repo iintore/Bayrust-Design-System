@@ -4,11 +4,10 @@ Bayrust 2.8.2, rebuilt from its own shipped frontend, documented as a design sys
 foundations → components → patterns → blocks → templates → flows. Every preview in the docs is the real component,
 running live.
 
-> **Private study material.** Raycast's code, artwork and icons (in `reference/frontend/` and everything captured from
-> it) are Raycast's property. Keep this repository private and don't redistribute it.
+> **Private study material.** Keep this repository private.
 
 The Bayrust name is applied at the display layer: `harness/brand.js` rewrites visible text and labels in every
-window. Add `?brand=raycast` to a URL to turn it off. Logo and app-icon artwork are unchanged. Nothing is redrawn or
+window. Add `?brand=original` to a URL to turn it off. Logo and app-icon artwork are unchanged. Nothing is redrawn or
 approximated: the UI is rendered by the shipped JavaScript, CSS, fonts and images, its backend runs from its own
 Node code, and only the native host bridge is stubbed.
 
@@ -185,7 +184,7 @@ both driven by `harness/states/*.json`. Organism crops come from `harness/organi
 | Variant matrices | `research/css-variants.json` | Taken from the CSS-module `[data-*=…]` selectors |
 | Motion | `design-system/site/motion.json` | 118 keyframes, transitions and animations, 28 Framer Motion configs |
 | Icons | `design-system/assets/icons-svg/` | 730 sprite symbols as standalone SVGs |
-| Icon-workflow package | `design-system/assets/icon-workflow/raycast-2.8.2/` (+ `.zip`) | Built by `web-icon-extraction-workflow`: 1,599 verified SVGs, 646 originals, gallery and coverage report |
+| Icon-workflow package | `design-system/assets/icon-workflow/bayrust-2.8.2/` (+ `.zip`) | Built by `web-icon-extraction-workflow`: 1,599 verified SVGs, 646 originals, gallery and coverage report |
 | Native catalog images | `design-system/assets/native/` | App icons (Production/Internal/Dev/RayConfig) and menu-bar glyphs (PNG + PDF) from `Assets.car` |
 | Flows | `research/captures/<flow>/` (`webkit/` = native renders) | Onboarding 13, Launcher 13, AI Chat 5, Pro Walkthrough 7, Settings 39, Notes 3, Theme Studio 3, Feedback 2 |
 | Organisms | `research/organisms/` | Exact element crops from live states |

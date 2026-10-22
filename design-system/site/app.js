@@ -13,7 +13,7 @@ const text = await mod('text-dqPlQ8gN.js');
 export const t = (variant, opts) => text.i(variant, opts); // the app's named text styles, e.g. t('heading1')
 
 const data = {
-  tokens: await json('/ds-data/design-system/tokens/raycast.tokens.json'),
+  tokens: await json('/ds-data/design-system/tokens/bayrust.tokens.json'),
   props: await json('/ds-data/research/component-props.json'),
   manifest: await json('/ds/manifest.json'),
 };

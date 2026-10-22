@@ -274,7 +274,7 @@ def build(ctx):
     # ------------------------------------------------------------ new foundation pages
     F = ctx['fpage']
     fam = collections.Counter(); ex1 = {}
-    tj = J('design-system', 'tokens', 'raycast.tokens.json')
+    tj = J('design-system', 'tokens', 'bayrust.tokens.json')
     for g, v in tj.items(): fam[g] = len(v); ex1[g] = next(iter(v))
     F('design-tokens', 'Design tokens', f"{sum(fam.values())} CSS variables, resolved for Bayrust Dark and Bayrust Light.", """## How tokens work
 
@@ -291,7 +291,7 @@ Every value in the interface is a CSS variable. Some are fixed (`--radius-8: 8px
 
 | File | Contents |
 |---|---|
-| `design-system/tokens/raycast.tokens.json` | W3C-style tokens by family, with the source declaration and the Dark and Light values |
+| `design-system/tokens/bayrust.tokens.json` | W3C-style tokens by family, with the source declaration and the Dark and Light values |
 | `design-system/tokens/tokens.css` | The resolved values as CSS, one block per theme |
 | `design-system/tokens/tokens-raw.json` | Every variable with its declaration, resolved value and declaring selectors |
 """)
