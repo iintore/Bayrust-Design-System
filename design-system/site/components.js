@@ -409,7 +409,7 @@ const MOLECULES = [
         ['default', 'ghost', 'bare', 'macos-nav', 'settings-header'].map((v) =>
           row(
             h('span', { className: `ds-label ${t('small-mono-text', { color: 'tertiary' })}` }, v),
-            ['default', 'small'].map((s) => h(P.DropdownButton, { key: s, variant: v, size: s, text: 'Raycast Dark', icon: 'moon' })),
+            ['default', 'small'].map((s) => h(P.DropdownButton, { key: s, variant: v, size: s, text: 'Bayrust Dark', icon: 'moon' })),
             h(P.DropdownButton, { variant: v, placeholder: 'Select…' }),
           ),
         ),
@@ -427,8 +427,8 @@ const MOLECULES = [
               value,
               onValueChange: set,
               options: [
-                { value: 'dark', label: 'Raycast Dark' },
-                { value: 'light', label: 'Raycast Light' },
+                { value: 'dark', label: 'Bayrust Dark' },
+                { value: 'light', label: 'Bayrust Light' },
               ],
             }),
           ),

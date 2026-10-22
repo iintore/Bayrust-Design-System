@@ -1,4 +1,4 @@
-// Access to Raycast's own runtime: React (via the shipped JSX runtime and react-dom/client chunks),
+// Access to Bayrust's own runtime: React (via the shipped JSX runtime and react-dom/client chunks),
 // component lookup by displayName, and the shared stores. Everything resolves to shipped modules.
 const ic = await import('/icon-CKbK2z_d.js');
 const ch = await import('/chunk-CMxvf4Kt.js');

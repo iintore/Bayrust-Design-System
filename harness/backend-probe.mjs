@@ -1,4 +1,4 @@
-// Boots a sandboxed copy of Raycast's shipped backend (HOME = harness/sandbox-home) and logs its traffic.
+// Boots a sandboxed copy of Bayrust's shipped backend (HOME = harness/sandbox-home) and logs its traffic.
 import { spawn } from 'node:child_process';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';

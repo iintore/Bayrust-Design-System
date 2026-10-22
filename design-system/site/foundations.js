@@ -1,5 +1,5 @@
 // Foundations: every value below is a shipped CSS custom property, rendered live through var(--token)
-// and annotated with its resolved Raycast Dark / Raycast Light values from tokens/raycast.tokens.json.
+// and annotated with its resolved Bayrust Dark / Bayrust Light values from tokens/raycast.tokens.json.
 import { h, json, React } from './runtime.js';
 
 const flat = (tokens) => Object.fromEntries(Object.values(tokens).flatMap((g) => Object.entries(g)));

@@ -11,9 +11,9 @@ yarn add @krackedui/bayrust
 
 Public on npm under the `@krackedui` scope: no login needed to install.
 
-**No artwork.** The package carries code, styles, fonts and SVG icons only. Raycast's raster artwork and video — the
-illustrations, backgrounds, textures, command and extension icons and the two `.mp4` files — are Raycast's property
-and are not published, so a component that draws one renders without it. Everything else is unchanged.
+**Images included, video not.** The components load their own images at runtime, so the package carries them: icons,
+empty states, backgrounds and illustrations render as they do in the app. The two shipped `.mp4` files are the only
+thing left out.
 
 ## Entry points
 
@@ -47,8 +47,7 @@ import { ThemeRoot, Icon, Bayrust } from '@krackedui/bayrust/react';
 
 The shipped styles and tokens apply under a theme root: `ThemeRoot`, or any element with `rootAttributes('dark' | 'light')`.
 `Bayrust` mounts the shipped component with the React it was built with; its props, event handlers included, are
-passed as given. Components that need the Mac app's host (installed apps, system data) render without that data, and
-components that draw shipped artwork render without the image.
+passed as given. Components that need the Mac app's host (installed apps, system data) render without that data.
 
 Elsewhere (Next.js and others), run `npx bayrust copy public/bayrust` once; the default assets URL, `/bayrust/`, then
 finds the runtime. A different URL: `setAssetsBase(url)` from `@krackedui/bayrust`, or `loadBayrust({ base })`.

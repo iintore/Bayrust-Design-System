@@ -9,7 +9,7 @@ export function overview({ data, t }) {
       Section,
       {
         t,
-        note: 'Every color, size, icon, image, animation and component on these pages is rendered by the app’s own shipped code and stylesheets (Bayrust 2.8.2, built from /Applications/Raycast.app), running in a local harness with its real backend in a sandbox. Nothing is redrawn or approximated; where a layer is native (window vibrancy, Liquid Glass), it is called out and documented from real-window captures.',
+        note: 'Every color, size, icon, image, animation and component on these pages is rendered by the app’s own shipped code and stylesheets (Bayrust 2.8.2, built from the shipped macOS app), running in a local harness with its real backend in a sandbox. Nothing is redrawn or approximated; where a layer is native (window vibrancy, Liquid Glass), it is called out and documented from real-window captures.',
       },
       h(
         'div',

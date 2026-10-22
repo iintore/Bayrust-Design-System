@@ -1,4 +1,4 @@
-// Iconography & brand: the shipped sprite rendered through Raycast's Icon component, every shipped image
+// Iconography & brand: the shipped sprite rendered through Bayrust's Icon component, every shipped image
 // asset by family, native Assets.car exports, the Logo component, fonts and sounds.
 import { h, React, component } from './runtime.js';
 import { Section } from './foundations.js';

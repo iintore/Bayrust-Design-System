@@ -1,4 +1,4 @@
-// Templates: the shipped window shells at their native sizes, live from the harness (Raycast's own code).
+// Templates: the shipped window shells at their native sizes, live from the harness (Bayrust's own code).
 import { h } from './runtime.js';
 import { Section } from './foundations.js';
 

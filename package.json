@@ -2,7 +2,7 @@
   "name": "bayrust-design-system",
   "private": true,
   "version": "2.8.2",
-  "description": "Bayrust design system: Raycast 2.8.2 rebuilt from its shipped frontend, with a live harness and documentation site",
+  "description": "Bayrust design system: 2.8.2 rebuilt from its shipped frontend, with a live harness and documentation site",
   "author": "Tony Lewis MANZI",
   "type": "module",
   "scripts": {

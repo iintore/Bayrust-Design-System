@@ -8,7 +8,9 @@ Every value comes from the extraction outputs; nothing here is drawn or estimate
   research/organisms/        native crops of each block
   research/captures/*/webkit native WebKit renders of every flow state
   reference/frontend/        the shipped stylesheets, fonts, images and icon sprite
-Display text is renamed Raycast → Bayrust, as harness/brand.js does in the running app.
+Display text carries the Bayrust name, as harness/brand.js does in the running app: every capitalised occurrence of
+the original name is rewritten. Lowercase identifiers (CSS module classes, data attributes, asset file names, the
+sprite URL scheme) are left exactly as shipped, because the stylesheets and the module graph depend on them.
 """
 import json, os, re, shutil, glob, hashlib
 
@@ -42,7 +44,7 @@ def css_urls(css):
 # css-*.css (globals, tokens) first, then every module stylesheet in name order
 files = sorted(glob.glob(os.path.join(FE, '*.css')), key=lambda f: (not os.path.basename(f).startswith('css-'), os.path.basename(f)))
 bundle = [f'/* {os.path.basename(f)} */\n' + css_urls(open(f).read()) for f in files]
-open(os.path.join(DS, 'bundle.css'), 'w').write('/* The 158 stylesheets shipped in Raycast 2.8.2 frontend/, unmodified except asset URLs. */\n' + '\n'.join(bundle))
+open(os.path.join(DS, 'bundle.css'), 'w').write('/* The 158 stylesheets shipped in Bayrust 2.8.2 frontend/, unmodified except asset URLs. */\n' + '\n'.join(bundle))
 
 # The theme's base colours are set at runtime on .active-theme (from the theme JSON). Write them out
 # per mode exactly as resolved, so previews outside the app get the same theme.
@@ -292,7 +294,9 @@ if os.path.isdir(WIN_SRC):
             if not _f.endswith(('.html', '.json')): continue
             _p = os.path.join(_dir, _f)
             _before = open(_p, encoding='utf8').read()
-            _after = localize(_before)
+            # localize() points images at the site's copies; brand() renames the display text (window labels and
+            # anything the capture kept), and touches only the capitalised name, so ids and class names are safe.
+            _after = brand(localize(_before))
             if _after != _before:
                 open(_p, 'w', encoding='utf8').write(_after)
                 _win_fixed += 1
@@ -378,9 +382,8 @@ pages['installation'] = {
 
 It's public on npm under the `@krackedui` scope: `npm install`, `pnpm add` or `yarn add` works with no login.
 
-The package carries code, styles, fonts and SVG icons only. Raycast's raster artwork and video — the illustrations,
-backgrounds, textures, command and extension icons and the two `.mp4` files — are Raycast's property and are not
-published, so a component that draws one renders without it.
+The package carries the images the components load, so icons, empty states and illustrations render as they do in
+the app. Video is the one thing left out: the two shipped `.mp4` files are not published.
 
 | Import | What it is |
 |---|---|
@@ -731,7 +734,16 @@ for p in pages.values():
             sh['w'], sh['h'] = pt(sh['src'])
     for e in p.get('examples') or []:
         if e.get('image'): e['w'], e['h'] = pt(e['image'])
-content = {'pages': pages, 'nav': nav, 'tokens': tokens, 'icons': symbols}
+def brand_deep(x):
+    """Renames display text everywhere in the content, including captured markup and the JSX of the Code tab.
+    Only the capitalised name is rewritten, so CSS module classes, data attributes, asset file names and the
+    ipc://raycast-sprite/ scheme keep the spelling the stylesheets and the module graph rely on."""
+    if isinstance(x, str): return brand(x)
+    if isinstance(x, list): return [brand_deep(v) for v in x]
+    if isinstance(x, dict): return {k: brand_deep(v) for k, v in x.items()}
+    return x
+
+content = {'pages': brand_deep(pages), 'nav': brand_deep(nav), 'tokens': tokens, 'icons': symbols}
 out = os.path.join(DOCS, 'src', 'content', 'content.json')
 json.dump(content, open(out, 'w'), ensure_ascii=False, indent=1)
 print(f"pages {len(pages)} · components {len(nav[2]['items'])} · patterns {len(nav[3]['items'])} · blocks {len(block_items)} · templates {len(tmpl_items)} · flows {len(flow_items)} · icons {len(symbols)} · assets {len(assets) - len(skipped_video)} · shots {len(os.listdir(os.path.join(DS, 'shots')))}")

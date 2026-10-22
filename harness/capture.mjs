@@ -1,4 +1,4 @@
-// Captures states of the shipped Raycast frontend (served by server.mjs) at native window size @2x.
+// Captures states of the shipped Bayrust frontend (served by server.mjs) at native window size @2x.
 // For each state: PNG, rendered DOM, computed CSS custom properties, IPC methods used, and an
 // icon-extraction capture produced by tools/web-icon-extraction-workflow/workflow/capture.js (unmodified).
 // Usage: node capture.mjs states/onboarding.json

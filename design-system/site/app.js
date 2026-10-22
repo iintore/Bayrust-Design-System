@@ -1,4 +1,4 @@
-// Raycast Design System — rendered with Raycast's own runtime, components, stylesheets and assets.
+// Bayrust Design System — rendered with Bayrust's own runtime, components, stylesheets and assets.
 import { h, ReactDOM, React, mod, services, json } from './runtime.js';
 import { foundations } from './foundations.js';
 import { iconography } from './iconography.js';
@@ -10,7 +10,7 @@ import { componentIndex } from './component-index.js';
 import { overview } from './overview.js';
 
 const text = await mod('text-dqPlQ8gN.js');
-export const t = (variant, opts) => text.i(variant, opts); // Raycast's named text styles, e.g. t('heading1')
+export const t = (variant, opts) => text.i(variant, opts); // the app's named text styles, e.g. t('heading1')
 
 const data = {
   tokens: await json('/ds-data/design-system/tokens/raycast.tokens.json'),
@@ -122,7 +122,7 @@ function App() {
   );
 }
 
-// Raycast's WindowShell provides ServiceContext, AppearanceContext and the toast/alert/HUD hosts.
+// Bayrust's WindowShell provides ServiceContext, AppearanceContext and the toast/alert/HUD hosts.
 const WindowShell = (await mod('window-shell-B9r2-F80.js')).t;
 const root = ReactDOM.createRoot(document.getElementById('ds-root'));
 const params = new URLSearchParams(location.search);

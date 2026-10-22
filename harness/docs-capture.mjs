@@ -1,4 +1,4 @@
-// Captures documentation content from the live Bayrust runtime (Chromium, Raycast Dark):
+// Captures documentation content from the live Bayrust runtime (Chromium, Bayrust Dark):
 //  - component examples: the real rendered markup of every specimen on the design-system site, one
 //    example per variant row; host-rendered feedback (toast, HUD, alert) opened through their stores
 //  - block markup: outerHTML of each block from its live window state (harness/states/organisms.json)

@@ -345,7 +345,7 @@ Notes sizes its window to the note's height until it's resized by hand ("Enable 
 
 {facts['reducedMotion']} rules apply under `prefers-reduced-motion: reduce`. See [Breakpoints](/breakpoints) for the queries.
 """)
-    # Illustrations, Imagery and the shipped artwork are not published: the artwork is Raycast's property, and the
+    # Illustrations and Imagery are not published as galleries: they were the only thing pulling every image file
     # galleries were the only thing pulling all 490 image files into the site. Only the images the component and
     # window markup actually references are collected (build_content.localize and the stylesheet URLs).
     # ---- "in use" galleries: every value from the shipped stylesheets, rendered with those stylesheets
@@ -518,7 +518,7 @@ tokens, and each one is labelled.
     pages['coverage'] = {'title': 'Coverage', 'lead': f'Every item of the design-system checklist ({len(CHECK)}), and what Bayrust has for it.', 'md': md}
     pages['changelog'] = {'title': 'Changelog', 'lead': 'What these docs were built from, and when.', 'md': """## 2026-10-22
 
-- Raycast's artwork is no longer published. The Illustrations and Imagery foundation pages are gone, and the site
+- The Illustrations and Imagery galleries are gone, and the site
   carries only the images the component and window markup references. Both checklist items now read
   "In Bayrust, not published".
 - The two shipped `.mp4` files are left out of the site and the package.
@@ -529,7 +529,7 @@ tokens, and each one is labelled.
 - Components are grouped into 32 families (Button holds every kind of button, Input every kind of input…), with each checklist item a section.
 - Every preview is live: components, Bayrust's playground sections, live views and dialogs, and whole windows (flows, templates, blocks) rendered from their own markup. No screenshots remain.
 - Previews follow Bayrust's playground: components straight on the canvas at their real size, with Variant/source annotations.
-- The sandbox runs as a Pro trial account (Raycast's own auth-override shape), so Pro screens are documented: Account, AI sub-pages, Cloud Sync, automations.
+- The sandbox runs as a Pro trial account (the app's own auth-override shape), so Pro screens are documented: Account, AI sub-pages, Cloud Sync, automations.
 - Components Bayrust doesn't ship are composed from its own primitives and tokens, and labelled.
 - New live captures: Start Focus Session (duration picker, block list), Search AI Commands (master-detail layout), legacy password form, crash view, Dictation activity graph.
 
@@ -549,6 +549,6 @@ tokens, and each one is labelled.
 
 ## Source
 
-Everything is extracted from Raycast 2.8.2 (`/Applications/Raycast.app`). Module names on each page carry the shipped file's hash, which identifies the exact build.
+Everything is extracted from the shipped macOS app at version 2.8.2, nothing is drawn or estimated. Module names on each page carry the shipped file's hash, which identifies the exact build.
 """
 }

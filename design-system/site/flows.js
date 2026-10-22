@@ -1,4 +1,4 @@
-// Flows: ordered state captures of the shipped UI. Images are native WebKit renders (Raycast's engine, with
+// Flows: ordered state captures of the shipped UI. Images are native WebKit renders (Bayrust's engine, with
 // -apple-visual-effect glass and native child panels composited at their computed frames) where available.
 import { h, json } from './runtime.js';
 import { Section } from './foundations.js';
