@@ -262,8 +262,19 @@ def one_copy(html):
     parts = re.split(r'\n(?=<)', html)
     return parts[0] if len(parts) > 1 and all(p.strip() == parts[0].strip() for p in parts) else html
 
+# The captures were taken against the running harness, so some image URLs are absolute to it
+# (http://localhost:4317/<file>). Those 404 wherever the harness is not running — the deployed docs included —
+# so they are rewritten to the site's own copy of the file.
+HARNESS_URL = re.compile(r'https?://(?:localhost|127\.0\.0\.1)(?::\d+)?/([A-Za-z0-9@._-]+\.(?:png|jpe?g|webp|gif|avif|svg))')
+
 def localize(html):
-    """Collects the frontend images the captured markup references into public/ds/assets."""
+    """Points the captured markup's images at public/ds/assets, and collects the files it references."""
+    def to_local(m):
+        name = m.group(1)
+        if not os.path.exists(os.path.join(FE, name)): return m.group(0)
+        assets.add(name)
+        return f'/ds/assets/{name}'
+    html = HARNESS_URL.sub(to_local, html)
     for name in re.findall(r'/ds/assets/([^"&\')\s]+)', html):
         if os.path.exists(os.path.join(FE, name)): assets.add(name)
     return html
@@ -272,7 +283,20 @@ def localize(html):
 # ---------------------------------------------------------------- live windows (harness/docs-windows.mjs)
 WIN_SRC = os.path.join(ROOT, 'research', 'docs', 'windows')
 if os.path.isdir(os.path.join(DS, 'windows')): shutil.rmtree(os.path.join(DS, 'windows'))
-if os.path.isdir(WIN_SRC): shutil.copytree(WIN_SRC, os.path.join(DS, 'windows'))
+if os.path.isdir(WIN_SRC):
+    shutil.copytree(WIN_SRC, os.path.join(DS, 'windows'))
+    # these are copied as files, so they never pass through localize(): point their images at the site's own copies
+    _win_fixed = 0
+    for _dir, _, _files in os.walk(os.path.join(DS, 'windows')):
+        for _f in _files:
+            if not _f.endswith(('.html', '.json')): continue
+            _p = os.path.join(_dir, _f)
+            _before = open(_p, encoding='utf8').read()
+            _after = localize(_before)
+            if _after != _before:
+                open(_p, 'w', encoding='utf8').write(_after)
+                _win_fixed += 1
+    if _win_fixed: print(f'window captures pointed at the harness, rewritten: {_win_fixed} files')
 # States whose capture is identical to an earlier state of the same flow didn't reach the screen they're named after
 # (the capture never advanced); they're left out rather than shown under the wrong name. Typing in the compact
 # launcher expands it to the full search, so that pair is equal by design.
@@ -682,8 +706,16 @@ for path, p in pages.items():
 missing = [p for p in pages if not any(i['path'] == p for g in nav for i in g['items'])]
 if missing: print('pages not in nav:', missing)
 
-# ---------------------------------------------------------------- assets referenced by CSS and markup
-# Video is not published: the two shipped .mp4 files are Raycast artwork, and nothing in the docs plays them.
+# ---------------------------------------------------------------- assets referenced by CSS, markup and the shipped code
+# The components load their own images at runtime (`new URL('command-x.png', import.meta.url)`), so an image named
+# anywhere in the shipped JS or CSS is one a live preview can ask for: 484 of the 490 shipped images are. Collecting
+# only what the captured markup references leaves those previews with broken images, so the rule is what the code
+# can load. The Illustrations and Imagery galleries stay gone; this is about components rendering, not browsing art.
+for p_ in glob.glob(os.path.join(FE, '*.js')) + glob.glob(os.path.join(FE, '*.css')):
+    for name in re.findall(r'[A-Za-z0-9@._-]+\.(?:png|jpe?g|webp|gif|avif)', open(p_, encoding='utf8', errors='ignore').read()):
+        if os.path.exists(os.path.join(FE, name)): assets.add(name)
+
+# Video is still not published: the two shipped .mp4 files are the app vendor's and nothing in the docs plays them.
 VIDEO = ('.mp4', '.webm', '.mov', '.m4v')
 skipped_video = sorted(n for n in assets if n.lower().endswith(VIDEO))
 for name in sorted(assets - set(skipped_video)):
