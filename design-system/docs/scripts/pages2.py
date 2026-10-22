@@ -355,7 +355,8 @@ Notes sizes its window to the note's height until it's resized by hand ("Enable 
     seen = _c.OrderedDict()
     for i in sorted(facts['images'], key=lambda i: i['file']):
         if not i['file'].startswith(('command-', 'extension-', 'app-')) or i['type'] != 'png': continue
-        base = re.sub(r'(_large)?-[A-Za-z0-9_-]{8}\.png$', '', i['file'])
+        # the file is published under the Bayrust name, so the name shown here matches it
+        base = re.sub(r'(_large)?-[A-Za-z0-9_-]{8}\.png$', '', i['file']).replace('raycast', 'bayrust')
         large = '_large' in i['file']
         e = seen.setdefault(base, {'name': base, 'small': None, 'large': None})
         e['large' if large else 'small'] = {'file': i['file'], 'w': i['w'], 'h': i['h']}

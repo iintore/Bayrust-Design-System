@@ -277,9 +277,16 @@ SAMPLE_SWAP = {
     'smart-context-sample-narrow-Cem1VzYe.png': 'grid-item-2-dark-DvoHvLMG.jpg',
 }
 
+# Image files whose own name carries the old app name. They are published under the Bayrust name and every
+# reference is rewritten to match; the shipped frontend keeps its own file names, as it keeps everything else.
+ASSET_RENAME = {f: f.replace('raycast', 'bayrust') for f in os.listdir(FE)
+                if 'raycast' in f and re.search(r'\.(png|jpe?g|webp|gif|avif|svg)$', f)}
+
 def localize(html):
     """Points the captured markup's images at public/ds/assets, and collects the files it references."""
     for old_name, new_name in SAMPLE_SWAP.items():
+        html = html.replace(old_name, new_name)
+    for old_name, new_name in ASSET_RENAME.items():
         html = html.replace(old_name, new_name)
     def to_local(m):
         name = m.group(1)
@@ -734,7 +741,7 @@ skipped_video = sorted(n for n in assets if n.lower().endswith(VIDEO))
 # the design-file screenshots are swapped out of every specimen above, so they are not published either
 skipped_video += [n for n in assets if n in SAMPLE_SWAP]
 for name in sorted(assets - set(skipped_video)):
-    shutil.copy(os.path.join(FE, name), os.path.join(DS, 'assets', name))
+    shutil.copy(os.path.join(FE, name), os.path.join(DS, 'assets', ASSET_RENAME.get(name, name)))
 if skipped_video: print('left out:', ', '.join(skipped_video))
 
 def pt(url):
@@ -748,6 +755,7 @@ for p in pages.values():
         if e.get('image'): e['w'], e['h'] = pt(e['image'])
 def swap_samples(s):
     for old_name, new_name in SAMPLE_SWAP.items(): s = s.replace(old_name, new_name)
+    for old_name, new_name in ASSET_RENAME.items(): s = s.replace(old_name, new_name)
     return s
 
 def brand_deep(x):

@@ -99,6 +99,23 @@ const renameIn = (dir) => {
 };
 renameIn(path.join(dist, 'runtime'));
 
+// ---- image files whose own name carries the old app name
+// They are published under the Bayrust name, and every reference to them in the runtime's code and styles is
+// rewritten to match, so `new URL('extension-bayrust-core-….png', import.meta.url)` still resolves.
+const runtimeDir = path.join(dist, 'runtime');
+const renamedAssets = fs.readdirSync(runtimeDir).filter((f) => /raycast/.test(f) && /\.(png|jpe?g|webp|gif|avif|svg)$/i.test(f));
+for (const f of renamedAssets) fs.renameSync(path.join(runtimeDir, f), path.join(runtimeDir, f.replace(/raycast/g, 'bayrust')));
+if (renamedAssets.length) {
+  for (const f of fs.readdirSync(runtimeDir)) {
+    if (!/\.(js|css)$/.test(f)) continue;
+    const p = path.join(runtimeDir, f);
+    const before = fs.readFileSync(p, 'utf8');
+    let after = before;
+    for (const a of renamedAssets) after = after.split(a).join(a.replace(/raycast/g, 'bayrust'));
+    if (after !== before) fs.writeFileSync(p, after);
+  }
+}
+
 // ---- components: name → [module, export]. Named exports from the inventory, plus the parts the docs bind by
 // displayName (namespace members such as BaseButton.Root), which the loader finds by displayName.
 const components = {};
@@ -118,4 +135,4 @@ const count = (d) => fs.readdirSync(path.join(dist, d), { recursive: true }).len
 const left = fs.readdirSync(from('reference/frontend')).filter((f) => NOT_PUBLISHED.test(f)).length;
 console.log(`dist: ${icons.length} icons, ${Object.keys(sorted).length} CSS modules, ${Object.keys(components).length} components, ${Object.keys(flat).length} tokens, ${count('runtime')} runtime files`);
 console.log(`video left out: ${left} files, ${dropped} CSS declarations that pointed at them`);
-console.log(`runtime display strings renamed: ${renamed}`);
+console.log(`runtime display strings renamed: ${renamed}; image files renamed: ${renamedAssets.length}`);
