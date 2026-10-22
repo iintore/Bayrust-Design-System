@@ -51,11 +51,16 @@ function contextFrame(body: string, elWidth: number, elHeight: number | null | u
   return `${marker}<div class="pv-frame${panel}" style="width:${width}px;${height ? `height:${height}px;` : ''}flex:none">${inner}</div>`;
 }
 
+// Captured markup is a still of the component, not the component: no React runs behind it. Its inputs would
+// still take focus and accept typing, and nothing would respond — the launcher's placeholder, which the app hides
+// from script, stayed under whatever you typed. `inert` makes these documents what they are, a picture built from
+// DOM: visible and scrollable, but not focusable or editable. The live previews (LiveSpecimen, in the harness) are
+// real components and stay interactive.
 function documentFor(html: string, theme: string, width?: number | null, height?: number | null, ctx?: SpecimenContext | null, panel?: boolean) {
   const body = asset(html);
   let inner = width && ctx ? contextFrame(body, width, height, ctx) : width ? `<div class="pv-frame" style="width:${width}px;${height ? `height:${height}px;` : ''}flex:none;position:relative">${body}</div>` : body;
   if (panel && !inner.includes('pv-panel')) inner = `<div class="pv-panel">${inner}</div>`;
-  return `<!doctype html><html ${ROOT(theme)}><head>${HEAD}</head><body><div class="pv">${inner}</div></body></html>`;
+  return `<!doctype html><html ${ROOT(theme)}><head>${HEAD}</head><body inert><div class="pv">${inner}</div></body></html>`;
 }
 
 /** Measures a preview document and keeps its frame the size of its content. */
@@ -137,7 +142,7 @@ export function WindowPreview({ win, crop, caption }: { win: WindowRef; crop?: s
     const attrs = Object.entries(data.attrs).filter(([k]) => !['dark', 'light', 'class', 'style'].includes(k)).map(([k, v]) => `${k}="${v}"`).join(' ');
     const cls = (data.attrs.class ?? '').replace(/\bno-background\b/, '');
     const style = (data.attrs.style ?? '').replace(/"/g, '&quot;');
-    return `<!doctype html><html ${attrs} ${theme} class="${cls}" style="${style}"><head><meta charset="utf-8"><link rel="stylesheet" href="${BASE}ds/bundle.css"><link rel="stylesheet" href="${BASE}ds/theme.css"><style>html{background:var(--color-window-base)}</style></head><body>${asset(data.html)}</body></html>`;
+    return `<!doctype html><html ${attrs} ${theme} class="${cls}" style="${style}"><head><meta charset="utf-8"><link rel="stylesheet" href="${BASE}ds/bundle.css"><link rel="stylesheet" href="${BASE}ds/theme.css"><style>html{background:var(--color-window-base)}</style></head><body inert>${asset(data.html)}</body></html>`;
   }, [data, theme]);
   useEffect(() => {
     const el = frame.current;
@@ -181,7 +186,7 @@ export function WindowPreview({ win, crop, caption }: { win: WindowRef; crop?: s
 
 /** A native child panel (action panel, menu, popover) at its frame, rendered from its own document. */
 function Panel({ p, theme }: { p: { x: number; y: number; w: number; h: number; html: string }; theme: string }) {
-  const doc = `<!doctype html><html ${ROOT(theme)}><head>${HEAD.replace(/padding:\d+px;/, 'padding:0;')}</head><body>${asset(p.html)}</body></html>`;
+  const doc = `<!doctype html><html ${ROOT(theme)}><head>${HEAD.replace(/padding:\d+px;/, 'padding:0;')}</head><body inert>${asset(p.html)}</body></html>`;
   return <iframe className="doc-panel" title="Panel" srcDoc={doc} style={{ position: 'absolute', left: p.x, top: p.y, width: p.w, height: p.h, border: 0 }} />;
 }
 

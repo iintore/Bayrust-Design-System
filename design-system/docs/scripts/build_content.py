@@ -269,8 +269,18 @@ def one_copy(html):
 # so they are rewritten to the site's own copy of the file.
 HARNESS_URL = re.compile(r'https?://(?:localhost|127\.0\.0\.1)(?::\d+)?/([A-Za-z0-9@._-]+\.(?:png|jpe?g|webp|gif|avif|svg))')
 
+# The app's playground draws its Image specimens from a sample asset that is a screenshot of an internal design
+# file, tab names and layer tree included. It says nothing about the Image component and it is not ours to publish,
+# so the specimens use one of the shipped abstract images instead. Same component, same markup, different sample.
+SAMPLE_SWAP = {
+    'smart-context-sample-wide-3j-STtM2.png': 'grid-item-1-dark-CwUBzXhW.jpg',
+    'smart-context-sample-narrow-Cem1VzYe.png': 'grid-item-2-dark-DvoHvLMG.jpg',
+}
+
 def localize(html):
     """Points the captured markup's images at public/ds/assets, and collects the files it references."""
+    for old_name, new_name in SAMPLE_SWAP.items():
+        html = html.replace(old_name, new_name)
     def to_local(m):
         name = m.group(1)
         if not os.path.exists(os.path.join(FE, name)): return m.group(0)
@@ -721,9 +731,11 @@ for p_ in glob.glob(os.path.join(FE, '*.js')) + glob.glob(os.path.join(FE, '*.cs
 # Video is still not published: the two shipped .mp4 files are the app vendor's and nothing in the docs plays them.
 VIDEO = ('.mp4', '.webm', '.mov', '.m4v')
 skipped_video = sorted(n for n in assets if n.lower().endswith(VIDEO))
+# the design-file screenshots are swapped out of every specimen above, so they are not published either
+skipped_video += [n for n in assets if n in SAMPLE_SWAP]
 for name in sorted(assets - set(skipped_video)):
     shutil.copy(os.path.join(FE, name), os.path.join(DS, 'assets', name))
-if skipped_video: print('video left out:', ', '.join(skipped_video))
+if skipped_video: print('left out:', ', '.join(skipped_video))
 
 def pt(url):
     w, h = png_size(os.path.join(PUB, url.lstrip('/')))
@@ -734,11 +746,15 @@ for p in pages.values():
             sh['w'], sh['h'] = pt(sh['src'])
     for e in p.get('examples') or []:
         if e.get('image'): e['w'], e['h'] = pt(e['image'])
+def swap_samples(s):
+    for old_name, new_name in SAMPLE_SWAP.items(): s = s.replace(old_name, new_name)
+    return s
+
 def brand_deep(x):
     """Renames display text everywhere in the content, including captured markup and the JSX of the Code tab.
     Only the capitalised name is rewritten, so CSS module classes, data attributes, asset file names and the
     ipc://raycast-sprite/ scheme keep the spelling the stylesheets and the module graph rely on."""
-    if isinstance(x, str): return brand(x)
+    if isinstance(x, str): return swap_samples(brand(x))
     if isinstance(x, list): return [brand_deep(v) for v in x]
     if isinstance(x, dict): return {k: brand_deep(v) for k, v in x.items()}
     return x
