@@ -6,6 +6,11 @@
   "outputDirectory": "design-system/docs/dist",
   "redirects": [
     {
+      "source": "/command-icons",
+      "destination": "/product-icons",
+      "permanent": false
+    },
+    {
       "source": "/illustrations",
       "destination": "/iconography",
       "permanent": false

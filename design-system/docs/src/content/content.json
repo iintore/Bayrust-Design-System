@@ -9974,14 +9974,17 @@
    "lead": "How the interface adapts: Interface Size, window modes, full screen and resizable windows.",
    "md": "## Interface Size\n\nSettings › General › Interface Size sets `--zoom` on the root, and every space, icon and font-size token scales with it, rounded to whole pixels.\n\n| Option | --zoom |\n|---|---|\n| Default | 1 |\n| Large | 1.1 |\n| Larger | 1.2 |\n\nThe step is 0.1 and the maximum 1.2. AI Chat and Notes have their own content zoom (`ZoomControls`, Reset / − / %).\n\n## Window modes\n\nThe launcher opens **Default** (750 × 475, results shown) or **Compact** (the 64 pt search bar alone, expanding as you type). See [Launcher](/templates-launcher).\n\n## Full screen\n\nWindows with traffic lights (Settings, AI Chat, Notes, Theme Studio, Send Feedback) can fill the screen. Their content stretches; tokens stay the same. Each template page shows the full-screen render.\n\n## Content-driven height\n\nNotes sizes its window to the note's height until it's resized by hand (\"Enable Window Auto-Sizing\" restores it).\n\n## Reduced motion\n\n38 rules apply under `prefers-reduced-motion: reduce`. See [Breakpoints](/breakpoints) for the queries.\n"
   },
-  "command-icons": {
-   "title": "Command icons",
-   "lead": "226 command, extension and app icons shipped with the app, at 44 and 108 points.",
-   "md": "## What these are\n\nEach command, extension and app ships an icon: a rounded square with a gradient and a glyph, drawn as artwork\nrather than composed from the icon set on [Iconography](/iconography). They are raster, at two sizes — 44 points\nfor lists and menus, 108 for larger surfaces.\n\n## Using one\n\nClick an icon to copy its path. From the package the same files sit under the runtime the Vite plugin serves:\n\n```tsx\n<img src=\"/bayrust/runtime/command-ai-chat-BSU8W46l.png\" width={44} height={44} alt=\"\" />\n```\n\nThe file name carries the build hash, so it changes when the app is rebuilt; copy it from here rather than\ntyping it.\n",
+  "product-icons": {
+   "title": "Product icons",
+   "lead": "226 product icons: 193 commands, 27 extensions and 6 apps, at 44 and 108 points.",
+   "md": "## What these are\n\nEvery command, extension and app has an icon of its own: a rounded square with a gradient and a glyph, drawn as\nartwork. They are the product icons, as distinct from the interface icons on [Iconography](/iconography), which are\nmonochrome and take their colour from the text around them. These are raster, at two sizes — 44 points for lists and\nmenus, 108 for larger surfaces.\n\n## Using one\n\nClick an icon to copy its path. From the package the same files sit under the runtime the Vite plugin serves:\n\n```tsx\n<img src=\"/bayrust/runtime/command-ai-chat-BSU8W46l.png\" width={44} height={44} alt=\"\" />\n```\n\nThe file name carries the build hash, so it changes when the app is rebuilt; copy it from here rather than\ntyping it.\n",
    "kind": "appicons",
    "appicons": [
     {
-     "name": "app-1password",
+     "name": "1Password",
+     "slug": "app-1password",
+     "kind": "App",
+     "appearance": null,
      "small": {
       "file": "app-1password-BFrY6Mlm.png",
       "w": 128,
@@ -9990,7 +9993,10 @@
      "large": null
     },
     {
-     "name": "app-accessibility",
+     "name": "Accessibility",
+     "slug": "app-accessibility",
+     "kind": "App",
+     "appearance": null,
      "small": {
       "file": "app-accessibility-DTWckIeT.png",
       "w": 160,
@@ -9999,7 +10005,10 @@
      "large": null
     },
     {
-     "name": "app-calendar",
+     "name": "Calendar",
+     "slug": "app-calendar",
+     "kind": "App",
+     "appearance": null,
      "small": {
       "file": "app-calendar-CAlrxBYI.png",
       "w": 160,
@@ -10008,7 +10017,10 @@
      "large": null
     },
     {
-     "name": "app-finder",
+     "name": "Finder",
+     "slug": "app-finder",
+     "kind": "App",
+     "appearance": null,
      "small": {
       "file": "app-finder-B6lCSvlo.png",
       "w": 160,
@@ -10017,7 +10029,10 @@
      "large": null
     },
     {
-     "name": "app-spotify",
+     "name": "Spotify",
+     "slug": "app-spotify",
+     "kind": "App",
+     "appearance": null,
      "small": {
       "file": "app-spotify-CubYEA3i.png",
       "w": 128,
@@ -10026,7 +10041,10 @@
      "large": null
     },
     {
-     "name": "app-vscode",
+     "name": "VS Code",
+     "slug": "app-vscode",
+     "kind": "App",
+     "appearance": null,
      "small": {
       "file": "app-vscode-VZ2lqoVs.png",
       "w": 128,
@@ -10035,7 +10053,10 @@
      "large": null
     },
     {
-     "name": "command-about-dark",
+     "name": "About",
+     "slug": "command-about-dark",
+     "kind": "Command",
+     "appearance": "Dark",
      "small": {
       "file": "command-about-dark-COa7MaPB.png",
       "w": 44,
@@ -10044,7 +10065,10 @@
      "large": null
     },
     {
-     "name": "command-about-light",
+     "name": "About",
+     "slug": "command-about-light",
+     "kind": "Command",
+     "appearance": "Light",
      "small": {
       "file": "command-about-light-Bc_FONMT.png",
       "w": 44,
@@ -10053,7 +10077,10 @@
      "large": null
     },
     {
-     "name": "command-affiliate",
+     "name": "Affiliate",
+     "slug": "command-affiliate",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-affiliate-DusVaGpb.png",
       "w": 44,
@@ -10062,7 +10089,10 @@
      "large": null
     },
     {
-     "name": "command-ai",
+     "name": "AI",
+     "slug": "command-ai",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-DAqrEJqF.png",
       "w": 44,
@@ -10075,7 +10105,10 @@
      }
     },
     {
-     "name": "command-ai-agent-create",
+     "name": "AI Agent Create",
+     "slug": "command-ai-agent-create",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-agent-create-DtvLvGM6.png",
       "w": 44,
@@ -10088,7 +10121,10 @@
      }
     },
     {
-     "name": "command-ai-agent-import",
+     "name": "AI Agent Import",
+     "slug": "command-ai-agent-import",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-agent-import-DHJoI3Sw.png",
       "w": 44,
@@ -10101,7 +10137,10 @@
      }
     },
     {
-     "name": "command-ai-agent-search",
+     "name": "AI Agent Search",
+     "slug": "command-ai-agent-search",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-agent-search-BEN6tgmV.png",
       "w": 44,
@@ -10114,7 +10153,10 @@
      }
     },
     {
-     "name": "command-ai-automation",
+     "name": "AI Automation",
+     "slug": "command-ai-automation",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-automation-Cm8A9Dc9.png",
       "w": 44,
@@ -10127,7 +10169,10 @@
      }
     },
     {
-     "name": "command-ai-chat",
+     "name": "AI Chat",
+     "slug": "command-ai-chat",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-chat-BSU8W46l.png",
       "w": 44,
@@ -10140,7 +10185,10 @@
      }
     },
     {
-     "name": "command-ai-command-ask-about-website",
+     "name": "AI Command Ask About Website",
+     "slug": "command-ai-command-ask-about-website",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-command-ask-about-website-BzHaQLxC.png",
       "w": 44,
@@ -10153,7 +10201,10 @@
      }
     },
     {
-     "name": "command-ai-command-change-tone-friendly",
+     "name": "AI Command Change Tone Friendly",
+     "slug": "command-ai-command-change-tone-friendly",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-command-change-tone-friendly-DX-5ZeCG.png",
       "w": 44,
@@ -10166,7 +10217,10 @@
      }
     },
     {
-     "name": "command-ai-command-change-tone-professional",
+     "name": "AI Command Change Tone Professional",
+     "slug": "command-ai-command-change-tone-professional",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-command-change-tone-professional-CNTBlMxE.png",
       "w": 44,
@@ -10179,7 +10233,10 @@
      }
     },
     {
-     "name": "command-ai-command-create",
+     "name": "AI Command Create",
+     "slug": "command-ai-command-create",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-command-create-DT8DB4Jm.png",
       "w": 44,
@@ -10192,7 +10249,10 @@
      }
     },
     {
-     "name": "command-ai-command-explain-simple-terms",
+     "name": "AI Command Explain Simple Terms",
+     "slug": "command-ai-command-explain-simple-terms",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-command-explain-simple-terms-LEeNsmwQ.png",
       "w": 44,
@@ -10205,7 +10265,10 @@
      }
     },
     {
-     "name": "command-ai-command-find-bugs",
+     "name": "AI Command Find Bugs",
+     "slug": "command-ai-command-find-bugs",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-command-find-bugs-CIViua-s.png",
       "w": 44,
@@ -10218,7 +10281,10 @@
      }
     },
     {
-     "name": "command-ai-command-fixspelling",
+     "name": "AI Command Fixspelling",
+     "slug": "command-ai-command-fixspelling",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-command-fixspelling-DF-XjLOr.png",
       "w": 44,
@@ -10231,7 +10297,10 @@
      }
     },
     {
-     "name": "command-ai-command-import",
+     "name": "AI Command Import",
+     "slug": "command-ai-command-import",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-command-import-BVi0ppMB.png",
       "w": 44,
@@ -10244,7 +10313,10 @@
      }
     },
     {
-     "name": "command-ai-command-improve-writing",
+     "name": "AI Command Improve Writing",
+     "slug": "command-ai-command-improve-writing",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-command-improve-writing-C1me3kGg.png",
       "w": 44,
@@ -10257,7 +10329,10 @@
      }
     },
     {
-     "name": "command-ai-command-quick-fix",
+     "name": "AI Command Quick Fix",
+     "slug": "command-ai-command-quick-fix",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-command-quick-fix-Da99xP8-.png",
       "w": 44,
@@ -10270,7 +10345,10 @@
      }
     },
     {
-     "name": "command-ai-command-search",
+     "name": "AI Command Search",
+     "slug": "command-ai-command-search",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-command-search-0-NuqTee.png",
       "w": 44,
@@ -10283,7 +10361,10 @@
      }
     },
     {
-     "name": "command-ai-command-summarize-website",
+     "name": "AI Command Summarize Website",
+     "slug": "command-ai-command-summarize-website",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-command-summarize-website-CKoGWqzC.png",
       "w": 44,
@@ -10296,7 +10377,10 @@
      }
     },
     {
-     "name": "command-ai-extension-askuserquestion",
+     "name": "AI Extension Askuserquestion",
+     "slug": "command-ai-extension-askuserquestion",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-extension-askuserquestion-BQH-621r.png",
       "w": 44,
@@ -10309,7 +10393,10 @@
      }
     },
     {
-     "name": "command-ai-extension-capture-window-full-context",
+     "name": "AI Extension Capture Window Full Context",
+     "slug": "command-ai-extension-capture-window-full-context",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-extension-capture-window-full-context-Q4UV_3Hx.png",
       "w": 44,
@@ -10322,7 +10409,10 @@
      }
     },
     {
-     "name": "command-ai-extension-capture-window-screenshot",
+     "name": "AI Extension Capture Window Screenshot",
+     "slug": "command-ai-extension-capture-window-screenshot",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-extension-capture-window-screenshot-BczxAY75.png",
       "w": 44,
@@ -10335,7 +10425,10 @@
      }
     },
     {
-     "name": "command-ai-extension-chart",
+     "name": "AI Extension Chart",
+     "slug": "command-ai-extension-chart",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-extension-chart-BBFF0ijG.png",
       "w": 44,
@@ -10348,7 +10441,10 @@
      }
     },
     {
-     "name": "command-ai-extension-compaction",
+     "name": "AI Extension Compaction",
+     "slug": "command-ai-extension-compaction",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-extension-compaction-DqatQPm6.png",
       "w": 44,
@@ -10361,7 +10457,10 @@
      }
     },
     {
-     "name": "command-ai-extension-edit",
+     "name": "AI Extension Edit",
+     "slug": "command-ai-extension-edit",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-extension-edit-CSH0yGcE.png",
       "w": 44,
@@ -10374,7 +10473,10 @@
      }
     },
     {
-     "name": "command-ai-extension-fallback",
+     "name": "AI Extension Fallback",
+     "slug": "command-ai-extension-fallback",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-extension-fallback-Z0aNzVxJ.png",
       "w": 44,
@@ -10387,7 +10489,10 @@
      }
     },
     {
-     "name": "command-ai-extension-file-explorer",
+     "name": "AI Extension File Explorer",
+     "slug": "command-ai-extension-file-explorer",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-extension-file-explorer-Bi3OOJhT.png",
       "w": 44,
@@ -10400,7 +10505,10 @@
      }
     },
     {
-     "name": "command-ai-extension-finder-dark",
+     "name": "AI Extension Finder",
+     "slug": "command-ai-extension-finder-dark",
+     "kind": "Command",
+     "appearance": "Dark",
      "small": {
       "file": "command-ai-extension-finder-dark-DtiCizei.png",
       "w": 44,
@@ -10413,7 +10521,10 @@
      }
     },
     {
-     "name": "command-ai-extension-finder-light",
+     "name": "AI Extension Finder",
+     "slug": "command-ai-extension-finder-light",
+     "kind": "Command",
+     "appearance": "Light",
      "small": {
       "file": "command-ai-extension-finder-light-CthnrKGz.png",
       "w": 44,
@@ -10426,7 +10537,10 @@
      }
     },
     {
-     "name": "command-ai-extension-glob",
+     "name": "AI Extension Glob",
+     "slug": "command-ai-extension-glob",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-extension-glob-oFejRoFt.png",
       "w": 44,
@@ -10439,7 +10553,10 @@
      }
     },
     {
-     "name": "command-ai-extension-grep",
+     "name": "AI Extension Grep",
+     "slug": "command-ai-extension-grep",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-extension-grep-C9PAlDVE.png",
       "w": 44,
@@ -10452,7 +10569,10 @@
      }
     },
     {
-     "name": "command-ai-extension-image-generation",
+     "name": "AI Extension Image Generation",
+     "slug": "command-ai-extension-image-generation",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-extension-image-generation-BBOyCM_O.png",
       "w": 44,
@@ -10465,7 +10585,10 @@
      }
     },
     {
-     "name": "command-ai-extension-location",
+     "name": "AI Extension Location",
+     "slug": "command-ai-extension-location",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-extension-location-DPFv4S42.png",
       "w": 44,
@@ -10478,7 +10601,10 @@
      }
     },
     {
-     "name": "command-ai-extension-memory",
+     "name": "AI Extension Memory",
+     "slug": "command-ai-extension-memory",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-extension-memory-CQqVR3Ah.png",
       "w": 44,
@@ -10491,7 +10617,10 @@
      }
     },
     {
-     "name": "command-ai-extension-memory-import",
+     "name": "AI Extension Memory Import",
+     "slug": "command-ai-extension-memory-import",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-extension-memory-import-B0sp0JEt.png",
       "w": 44,
@@ -10504,7 +10633,10 @@
      }
     },
     {
-     "name": "command-ai-extension-readfile",
+     "name": "AI Extension Readfile",
+     "slug": "command-ai-extension-readfile",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-extension-readfile-CVhqvUES.png",
       "w": 44,
@@ -10517,7 +10649,10 @@
      }
     },
     {
-     "name": "command-ai-extension-reasoning",
+     "name": "AI Extension Reasoning",
+     "slug": "command-ai-extension-reasoning",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-extension-reasoning-DFdAkzdb.png",
       "w": 44,
@@ -10530,7 +10665,10 @@
      }
     },
     {
-     "name": "command-ai-extension-scheduledmessage",
+     "name": "AI Extension Scheduledmessage",
+     "slug": "command-ai-extension-scheduledmessage",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-extension-scheduledmessage-PPdwpAUL.png",
       "w": 44,
@@ -10543,7 +10681,10 @@
      }
     },
     {
-     "name": "command-ai-extension-screen-awareness-mac",
+     "name": "AI Extension Screen Awareness Mac",
+     "slug": "command-ai-extension-screen-awareness-mac",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-extension-screen-awareness-mac-BiiUtxnD.png",
       "w": 44,
@@ -10556,7 +10697,10 @@
      }
     },
     {
-     "name": "command-ai-extension-screen-awareness-windows",
+     "name": "AI Extension Screen Awareness Windows",
+     "slug": "command-ai-extension-screen-awareness-windows",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-extension-screen-awareness-windows-CYGx9Zs8.png",
       "w": 44,
@@ -10569,7 +10713,10 @@
      }
     },
     {
-     "name": "command-ai-extension-search_tools",
+     "name": "AI Extension Search_tools",
+     "slug": "command-ai-extension-search_tools",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-extension-search_tools-DSJ6UFUQ.png",
       "w": 44,
@@ -10582,7 +10729,10 @@
      }
     },
     {
-     "name": "command-ai-extension-selectedtext",
+     "name": "AI Extension Selectedtext",
+     "slug": "command-ai-extension-selectedtext",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-extension-selectedtext-CIR14X7Y.png",
       "w": 44,
@@ -10595,7 +10745,10 @@
      }
     },
     {
-     "name": "command-ai-extension-settings",
+     "name": "AI Extension Settings",
+     "slug": "command-ai-extension-settings",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-extension-settings-B8YrEpiw.png",
       "w": 44,
@@ -10608,7 +10761,10 @@
      }
     },
     {
-     "name": "command-ai-extension-skill",
+     "name": "AI Extension Skill",
+     "slug": "command-ai-extension-skill",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-extension-skill-CPwn5erv.png",
       "w": 44,
@@ -10621,7 +10777,10 @@
      }
     },
     {
-     "name": "command-ai-extension-skill-settings",
+     "name": "AI Extension Skill Settings",
+     "slug": "command-ai-extension-skill-settings",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-extension-skill-settings-D7VMVMOC.png",
       "w": 44,
@@ -10634,7 +10793,10 @@
      }
     },
     {
-     "name": "command-ai-extension-terminal-dark",
+     "name": "AI Extension Terminal",
+     "slug": "command-ai-extension-terminal-dark",
+     "kind": "Command",
+     "appearance": "Dark",
      "small": {
       "file": "command-ai-extension-terminal-dark-D-WhmfR4.png",
       "w": 44,
@@ -10647,7 +10809,10 @@
      }
     },
     {
-     "name": "command-ai-extension-terminal-light",
+     "name": "AI Extension Terminal",
+     "slug": "command-ai-extension-terminal-light",
+     "kind": "Command",
+     "appearance": "Light",
      "small": {
       "file": "command-ai-extension-terminal-light-DROujxF_.png",
       "w": 44,
@@ -10660,7 +10825,10 @@
      }
     },
     {
-     "name": "command-ai-extension-weather",
+     "name": "AI Extension Weather",
+     "slug": "command-ai-extension-weather",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-extension-weather-guub8tDS.png",
       "w": 44,
@@ -10673,7 +10841,10 @@
      }
     },
     {
-     "name": "command-ai-extension-web",
+     "name": "AI Extension Web",
+     "slug": "command-ai-extension-web",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-extension-web-BCf7Z5XB.png",
       "w": 44,
@@ -10686,7 +10857,10 @@
      }
     },
     {
-     "name": "command-ai-extensions",
+     "name": "AI Extensions",
+     "slug": "command-ai-extensions",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-extensions-UQ5z4m-C.png",
       "w": 44,
@@ -10699,7 +10873,10 @@
      }
     },
     {
-     "name": "command-ai-fallback",
+     "name": "AI Fallback",
+     "slug": "command-ai-fallback",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-fallback-BuCicyHO.png",
       "w": 44,
@@ -10712,7 +10889,10 @@
      }
     },
     {
-     "name": "command-ai-mcp-install",
+     "name": "AI MCP Install",
+     "slug": "command-ai-mcp-install",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-mcp-install-ChIF4qtA.png",
       "w": 44,
@@ -10725,7 +10905,10 @@
      }
     },
     {
-     "name": "command-ai-model",
+     "name": "AI Model",
+     "slug": "command-ai-model",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-model-BjZoKEox.png",
       "w": 44,
@@ -10738,7 +10921,10 @@
      }
     },
     {
-     "name": "command-ai-profile",
+     "name": "AI Profile",
+     "slug": "command-ai-profile",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-profile-CIrNCyWX.png",
       "w": 44,
@@ -10751,7 +10937,10 @@
      }
     },
     {
-     "name": "command-ai-projects",
+     "name": "AI Projects",
+     "slug": "command-ai-projects",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-projects-DZz_VMLG.png",
       "w": 44,
@@ -10764,7 +10953,10 @@
      }
     },
     {
-     "name": "command-ai-quick-ai",
+     "name": "AI Quick AI",
+     "slug": "command-ai-quick-ai",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-quick-ai-BlcB9BWE.png",
       "w": 220,
@@ -10773,7 +10965,10 @@
      "large": null
     },
     {
-     "name": "command-ai-quickai",
+     "name": "AI Quickai",
+     "slug": "command-ai-quickai",
+     "kind": "Command",
+     "appearance": null,
      "small": null,
      "large": {
       "file": "command-ai-quickai_large-DBQQNwSg.png",
@@ -10782,7 +10977,10 @@
      }
     },
     {
-     "name": "command-ai-send-element",
+     "name": "AI Send Element",
+     "slug": "command-ai-send-element",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-send-element-BRHb10-H.png",
       "w": 44,
@@ -10795,7 +10993,10 @@
      }
     },
     {
-     "name": "command-ai-send-focused-window-mac",
+     "name": "AI Send Focused Window Mac",
+     "slug": "command-ai-send-focused-window-mac",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-send-focused-window-mac-t01MAko0.png",
       "w": 44,
@@ -10808,7 +11009,10 @@
      }
     },
     {
-     "name": "command-ai-send-focused-window-windows",
+     "name": "AI Send Focused Window Windows",
+     "slug": "command-ai-send-focused-window-windows",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-send-focused-window-windows-CQJ3pwcE.png",
       "w": 44,
@@ -10821,7 +11025,10 @@
      }
     },
     {
-     "name": "command-ai-send-screen",
+     "name": "AI Send Screen",
+     "slug": "command-ai-send-screen",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-send-screen-4GB5nuPo.png",
       "w": 44,
@@ -10834,7 +11041,10 @@
      }
     },
     {
-     "name": "command-ai-send-screen-area",
+     "name": "AI Send Screen Area",
+     "slug": "command-ai-send-screen-area",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-send-screen-area-Dqk9gIYD.png",
       "w": 44,
@@ -10847,7 +11057,10 @@
      }
     },
     {
-     "name": "command-ai-send-selected-text",
+     "name": "AI Send Selected Text",
+     "slug": "command-ai-send-selected-text",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-send-selected-text-BtpwP-R_.png",
       "w": 44,
@@ -10860,7 +11073,10 @@
      }
     },
     {
-     "name": "command-ai-send-smart-context-mac",
+     "name": "AI Send Smart Context Mac",
+     "slug": "command-ai-send-smart-context-mac",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-send-smart-context-mac-cpJFamBv.png",
       "w": 44,
@@ -10873,7 +11089,10 @@
      }
     },
     {
-     "name": "command-ai-send-smart-context-windows",
+     "name": "AI Send Smart Context Windows",
+     "slug": "command-ai-send-smart-context-windows",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-send-smart-context-windows-073hR9aL.png",
       "w": 44,
@@ -10886,7 +11105,10 @@
      }
     },
     {
-     "name": "command-ai-send-window-mac",
+     "name": "AI Send Window Mac",
+     "slug": "command-ai-send-window-mac",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-send-window-mac-xejB2Ier.png",
       "w": 44,
@@ -10899,7 +11121,10 @@
      }
     },
     {
-     "name": "command-ai-send-window-windows",
+     "name": "AI Send Window Windows",
+     "slug": "command-ai-send-window-windows",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-ai-send-window-windows-F0-M_1a5.png",
       "w": 44,
@@ -10912,7 +11137,10 @@
      }
     },
     {
-     "name": "command-audio-backward",
+     "name": "Audio Backward",
+     "slug": "command-audio-backward",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-audio-backward-ccU58Yxk.png",
       "w": 44,
@@ -10925,7 +11153,10 @@
      }
     },
     {
-     "name": "command-audio-forward",
+     "name": "Audio Forward",
+     "slug": "command-audio-forward",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-audio-forward-Bl3b8vvs.png",
       "w": 44,
@@ -10938,7 +11169,10 @@
      }
     },
     {
-     "name": "command-audio-play-pause",
+     "name": "Audio Play Pause",
+     "slug": "command-audio-play-pause",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-audio-play-pause-DGyeGBEb.png",
       "w": 44,
@@ -10951,7 +11185,10 @@
      }
     },
     {
-     "name": "command-auto-quit-mac",
+     "name": "Auto Quit Mac",
+     "slug": "command-auto-quit-mac",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-auto-quit-mac-DRW5-Sx1.png",
       "w": 44,
@@ -10964,7 +11201,10 @@
      }
     },
     {
-     "name": "command-auto-quit-windows",
+     "name": "Auto Quit Windows",
+     "slug": "command-auto-quit-windows",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-auto-quit-windows-CLlvmZT7.png",
       "w": 44,
@@ -10977,7 +11217,10 @@
      }
     },
     {
-     "name": "command-browser-download-extension",
+     "name": "Browser Download Extension",
+     "slug": "command-browser-download-extension",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-browser-download-extension-BHywhuIz.png",
       "w": 44,
@@ -10986,7 +11229,10 @@
      "large": null
     },
     {
-     "name": "command-capture-window",
+     "name": "Capture Window",
+     "slug": "command-capture-window",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-capture-window-BUAPnNo6.png",
       "w": 44,
@@ -10995,7 +11241,10 @@
      "large": null
     },
     {
-     "name": "command-changelog",
+     "name": "Changelog",
+     "slug": "command-changelog",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-changelog-DirUL6JX.png",
       "w": 44,
@@ -11004,7 +11253,10 @@
      "large": null
     },
     {
-     "name": "command-check-for-updates",
+     "name": "Check For Updates",
+     "slug": "command-check-for-updates",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-check-for-updates-DaQX0uXQ.png",
       "w": 44,
@@ -11013,7 +11265,10 @@
      "large": null
     },
     {
-     "name": "command-confetti",
+     "name": "Confetti",
+     "slug": "command-confetti",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-confetti-BgWRokH-.png",
       "w": 44,
@@ -11022,7 +11277,10 @@
      "large": null
     },
     {
-     "name": "command-create-extension",
+     "name": "Create Extension",
+     "slug": "command-create-extension",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-create-extension-BZfCmpjE.png",
       "w": 44,
@@ -11031,7 +11289,10 @@
      "large": null
     },
     {
-     "name": "command-dictate-ai",
+     "name": "Dictate AI",
+     "slug": "command-dictate-ai",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-dictate-ai-V9rVfz6J.png",
       "w": 44,
@@ -11044,7 +11305,10 @@
      }
     },
     {
-     "name": "command-dictate-text",
+     "name": "Dictate Text",
+     "slug": "command-dictate-text",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-dictate-text-DJgiXJsF.png",
       "w": 44,
@@ -11057,7 +11321,10 @@
      }
     },
     {
-     "name": "command-dictate-text-to-note",
+     "name": "Dictate Text To Note",
+     "slug": "command-dictate-text-to-note",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-dictate-text-to-note-eZgFt6W9.png",
       "w": 44,
@@ -11066,7 +11333,10 @@
      "large": null
     },
     {
-     "name": "command-dictation-advanced",
+     "name": "Dictation Advanced",
+     "slug": "command-dictation-advanced",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-dictation-advanced-qhi2teqx.png",
       "w": 44,
@@ -11079,7 +11349,10 @@
      }
     },
     {
-     "name": "command-dictation-copy-last-transcription",
+     "name": "Dictation Copy Last Transcription",
+     "slug": "command-dictation-copy-last-transcription",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-dictation-copy-last-transcription-BRlp1f3S.png",
       "w": 44,
@@ -11088,7 +11361,10 @@
      "large": null
     },
     {
-     "name": "command-dictation-history",
+     "name": "Dictation History",
+     "slug": "command-dictation-history",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-dictation-history-Q6C-na8Q.png",
       "w": 44,
@@ -11101,7 +11377,10 @@
      }
     },
     {
-     "name": "command-dictation-profile",
+     "name": "Dictation Profile",
+     "slug": "command-dictation-profile",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-dictation-profile-Ce846fAu.png",
       "w": 44,
@@ -11114,7 +11393,10 @@
      }
     },
     {
-     "name": "command-dismiss-notifications",
+     "name": "Dismiss Notifications",
+     "slug": "command-dismiss-notifications",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-dismiss-notifications-XRKKm_tY.png",
       "w": 44,
@@ -11127,7 +11409,10 @@
      }
     },
     {
-     "name": "command-eject-all-disks",
+     "name": "Eject All Disks",
+     "slug": "command-eject-all-disks",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-eject-all-disks-BfORC7fe.png",
       "w": 44,
@@ -11140,7 +11425,10 @@
      }
     },
     {
-     "name": "command-empty-trash",
+     "name": "Empty Trash",
+     "slug": "command-empty-trash",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-empty-trash-CHvzKsUc.png",
       "w": 44,
@@ -11153,7 +11441,10 @@
      }
     },
     {
-     "name": "command-export-settings-data",
+     "name": "Export Settings Data",
+     "slug": "command-export-settings-data",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-export-settings-data-ilTMN3RN.png",
       "w": 44,
@@ -11166,7 +11457,10 @@
      }
     },
     {
-     "name": "command-flight-tracker",
+     "name": "Flight Tracker",
+     "slug": "command-flight-tracker",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-flight-tracker-BHC1o3jz.png",
       "w": 44,
@@ -11175,7 +11469,10 @@
      "large": null
     },
     {
-     "name": "command-general-dark",
+     "name": "General",
+     "slug": "command-general-dark",
+     "kind": "Command",
+     "appearance": "Dark",
      "small": {
       "file": "command-general-dark-CxCPbf1A.png",
       "w": 44,
@@ -11188,7 +11485,10 @@
      }
     },
     {
-     "name": "command-general-light",
+     "name": "General",
+     "slug": "command-general-light",
+     "kind": "Command",
+     "appearance": "Light",
      "small": {
       "file": "command-general-light-bHlfQzyh.png",
       "w": 44,
@@ -11201,7 +11501,10 @@
      }
     },
     {
-     "name": "command-hide-all-apps",
+     "name": "Hide All Apps",
+     "slug": "command-hide-all-apps",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-hide-all-apps-2j1FNpKw.png",
       "w": 44,
@@ -11214,7 +11517,10 @@
      }
     },
     {
-     "name": "command-import-extension",
+     "name": "Import Extension",
+     "slug": "command-import-extension",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-import-extension-BiEFBAHc.png",
       "w": 44,
@@ -11223,7 +11529,10 @@
      "large": null
     },
     {
-     "name": "command-import-settings-data",
+     "name": "Import Settings Data",
+     "slug": "command-import-settings-data",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-import-settings-data-BKfcuwBY.png",
       "w": 44,
@@ -11236,7 +11545,10 @@
      }
     },
     {
-     "name": "command-lock-screen",
+     "name": "Lock Screen",
+     "slug": "command-lock-screen",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-lock-screen-BJDWP859.png",
       "w": 44,
@@ -11249,7 +11561,10 @@
      }
     },
     {
-     "name": "command-log-out",
+     "name": "Log Out",
+     "slug": "command-log-out",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-log-out-CQ6L0Lug.png",
       "w": 44,
@@ -11262,7 +11577,10 @@
      }
     },
     {
-     "name": "command-manage-extensions",
+     "name": "Manage Extensions",
+     "slug": "command-manage-extensions",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-manage-extensions-DWTqVdQd.png",
       "w": 44,
@@ -11271,7 +11589,10 @@
      "large": null
     },
     {
-     "name": "command-manual",
+     "name": "Manual",
+     "slug": "command-manual",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-manual-CyKK6giT.png",
       "w": 44,
@@ -11284,7 +11605,10 @@
      }
     },
     {
-     "name": "command-notes-create-dark",
+     "name": "Notes Create",
+     "slug": "command-notes-create-dark",
+     "kind": "Command",
+     "appearance": "Dark",
      "small": {
       "file": "command-notes-create-dark-e1gRcbMa.png",
       "w": 44,
@@ -11293,7 +11617,10 @@
      "large": null
     },
     {
-     "name": "command-notes-save-dark",
+     "name": "Notes Save",
+     "slug": "command-notes-save-dark",
+     "kind": "Command",
+     "appearance": "Dark",
      "small": {
       "file": "command-notes-save-dark-BCRXCwFg.png",
       "w": 44,
@@ -11302,7 +11629,10 @@
      "large": null
     },
     {
-     "name": "command-notes-search-dark",
+     "name": "Notes Search",
+     "slug": "command-notes-search-dark",
+     "kind": "Command",
+     "appearance": "Dark",
      "small": {
       "file": "command-notes-search-dark-whWBz0-N.png",
       "w": 44,
@@ -11315,7 +11645,10 @@
      }
     },
     {
-     "name": "command-open-camera",
+     "name": "Open Camera",
+     "slug": "command-open-camera",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-open-camera-BTGvldN3.png",
       "w": 44,
@@ -11328,7 +11661,10 @@
      }
     },
     {
-     "name": "command-paste-sequentially",
+     "name": "Paste Sequentially",
+     "slug": "command-paste-sequentially",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-paste-sequentially-7glZ1HEE.png",
       "w": 44,
@@ -11341,7 +11677,10 @@
      }
     },
     {
-     "name": "command-paste-sequentially-reset",
+     "name": "Paste Sequentially Reset",
+     "slug": "command-paste-sequentially-reset",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-paste-sequentially-reset-Cts-B3zA.png",
       "w": 44,
@@ -11354,7 +11693,10 @@
      }
     },
     {
-     "name": "command-pro",
+     "name": "Pro",
+     "slug": "command-pro",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-pro-fYrohJZQ.png",
       "w": 256,
@@ -11363,7 +11705,10 @@
      "large": null
     },
     {
-     "name": "command-quicklinks-create",
+     "name": "Quicklinks Create",
+     "slug": "command-quicklinks-create",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-quicklinks-create-B3x3KoZH.png",
       "w": 44,
@@ -11372,7 +11717,10 @@
      "large": null
     },
     {
-     "name": "command-quicklinks-export",
+     "name": "Quicklinks Export",
+     "slug": "command-quicklinks-export",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-quicklinks-export-DmBC2WEq.png",
       "w": 44,
@@ -11385,7 +11733,10 @@
      }
     },
     {
-     "name": "command-quicklinks-import",
+     "name": "Quicklinks Import",
+     "slug": "command-quicklinks-import",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-quicklinks-import-CIdyXrSQ.png",
       "w": 44,
@@ -11398,7 +11749,10 @@
      }
     },
     {
-     "name": "command-quit-all-applications-mac",
+     "name": "Quit All Applications Mac",
+     "slug": "command-quit-all-applications-mac",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-quit-all-applications-mac-CDLrxBQD.png",
       "w": 44,
@@ -11411,7 +11765,10 @@
      }
     },
     {
-     "name": "command-quit-all-applications-windows",
+     "name": "Quit All Applications Windows",
+     "slug": "command-quit-all-applications-windows",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-quit-all-applications-windows-DKaQo9Gi.png",
       "w": 44,
@@ -11424,7 +11781,10 @@
      }
     },
     {
-     "name": "command-recenter-bayrust-window",
+     "name": "Recenter Bayrust Window",
+     "slug": "command-recenter-bayrust-window",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-recenter-bayrust-window-DryfEiHJ.png",
       "w": 44,
@@ -11433,7 +11793,10 @@
      "large": null
     },
     {
-     "name": "command-restart",
+     "name": "Restart",
+     "slug": "command-restart",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-restart-BYU_0_sN.png",
       "w": 44,
@@ -11446,7 +11809,10 @@
      }
     },
     {
-     "name": "command-run-create",
+     "name": "Run Create",
+     "slug": "command-run-create",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-run-create-DcbvyvNk.png",
       "w": 256,
@@ -11455,7 +11821,10 @@
      "large": null
     },
     {
-     "name": "command-run-custom",
+     "name": "Run Custom",
+     "slug": "command-run-custom",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-run-custom-yRskQdMY.png",
       "w": 256,
@@ -11464,7 +11833,10 @@
      "large": null
     },
     {
-     "name": "command-run-execute",
+     "name": "Run Execute",
+     "slug": "command-run-execute",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-run-execute-DIvOUrNf.png",
       "w": 256,
@@ -11473,7 +11845,10 @@
      "large": null
     },
     {
-     "name": "command-run-search",
+     "name": "Run Search",
+     "slug": "command-run-search",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-run-search-Cuk4vUcl.png",
       "w": 256,
@@ -11482,7 +11857,10 @@
      "large": null
     },
     {
-     "name": "command-script-create",
+     "name": "Script Create",
+     "slug": "command-script-create",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-script-create-DHZ_ekqw.png",
       "w": 44,
@@ -11495,7 +11873,10 @@
      }
     },
     {
-     "name": "command-script-reload",
+     "name": "Script Reload",
+     "slug": "command-script-reload",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-script-reload-C0e2idHw.png",
       "w": 44,
@@ -11508,7 +11889,10 @@
      }
     },
     {
-     "name": "command-script-search",
+     "name": "Script Search",
+     "slug": "command-script-search",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-script-search-CQKp4m-_.png",
       "w": 44,
@@ -11521,7 +11905,10 @@
      }
     },
     {
-     "name": "command-search-menu-items",
+     "name": "Search Menu Items",
+     "slug": "command-search-menu-items",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-search-menu-items-DRMs99fc.png",
       "w": 44,
@@ -11530,7 +11917,10 @@
      "large": null
     },
     {
-     "name": "command-send-feedback",
+     "name": "Send Feedback",
+     "slug": "command-send-feedback",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-send-feedback-DTlCNnnm.png",
       "w": 44,
@@ -11543,7 +11933,10 @@
      }
     },
     {
-     "name": "command-send-feedback-sent",
+     "name": "Send Feedback Sent",
+     "slug": "command-send-feedback-sent",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-send-feedback-sent-C839lBZ2.png",
       "w": 108,
@@ -11552,7 +11945,10 @@
      "large": null
     },
     {
-     "name": "command-set-volume-0",
+     "name": "Set Volume 0",
+     "slug": "command-set-volume-0",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-set-volume-0-n6NJibnJ.png",
       "w": 44,
@@ -11565,7 +11961,10 @@
      }
     },
     {
-     "name": "command-set-volume-100",
+     "name": "Set Volume 100",
+     "slug": "command-set-volume-100",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-set-volume-100-CU8Fx_Gc.png",
       "w": 44,
@@ -11578,7 +11977,10 @@
      }
     },
     {
-     "name": "command-set-volume-25",
+     "name": "Set Volume 25",
+     "slug": "command-set-volume-25",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-set-volume-25-Ctm9Oqh6.png",
       "w": 44,
@@ -11591,7 +11993,10 @@
      }
     },
     {
-     "name": "command-set-volume-50",
+     "name": "Set Volume 50",
+     "slug": "command-set-volume-50",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-set-volume-50-QDPigKzw.png",
       "w": 44,
@@ -11604,7 +12009,10 @@
      }
     },
     {
-     "name": "command-set-volume-75",
+     "name": "Set Volume 75",
+     "slug": "command-set-volume-75",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-set-volume-75-De7KwQcO.png",
       "w": 44,
@@ -11617,7 +12025,10 @@
      }
     },
     {
-     "name": "command-settings-account-dark",
+     "name": "Settings Account",
+     "slug": "command-settings-account-dark",
+     "kind": "Command",
+     "appearance": "Dark",
      "small": {
       "file": "command-settings-account-dark-D9D6wjpB.png",
       "w": 44,
@@ -11630,7 +12041,10 @@
      }
     },
     {
-     "name": "command-settings-account-light",
+     "name": "Settings Account",
+     "slug": "command-settings-account-light",
+     "kind": "Command",
+     "appearance": "Light",
      "small": {
       "file": "command-settings-account-light-Bf_Evn4Z.png",
       "w": 44,
@@ -11643,7 +12057,10 @@
      }
     },
     {
-     "name": "command-settings-account-log-out-dark",
+     "name": "Settings Account Log Out",
+     "slug": "command-settings-account-log-out-dark",
+     "kind": "Command",
+     "appearance": "Dark",
      "small": {
       "file": "command-settings-account-log-out-dark-AgPxR_lk.png",
       "w": 44,
@@ -11652,7 +12069,10 @@
      "large": null
     },
     {
-     "name": "command-settings-account-log-out-light",
+     "name": "Settings Account Log Out",
+     "slug": "command-settings-account-log-out-light",
+     "kind": "Command",
+     "appearance": "Light",
      "small": {
       "file": "command-settings-account-log-out-light-Dn1BulMs.png",
       "w": 44,
@@ -11661,7 +12081,10 @@
      "large": null
     },
     {
-     "name": "command-settings-advanced-dark",
+     "name": "Settings Advanced",
+     "slug": "command-settings-advanced-dark",
+     "kind": "Command",
+     "appearance": "Dark",
      "small": {
       "file": "command-settings-advanced-dark-BQyl94q1.png",
       "w": 44,
@@ -11674,7 +12097,10 @@
      }
     },
     {
-     "name": "command-settings-advanced-light",
+     "name": "Settings Advanced",
+     "slug": "command-settings-advanced-light",
+     "kind": "Command",
+     "appearance": "Light",
      "small": {
       "file": "command-settings-advanced-light-DmMKzJ23.png",
       "w": 44,
@@ -11683,7 +12109,10 @@
      "large": null
     },
     {
-     "name": "command-settings-cloud-sync-dark",
+     "name": "Settings Cloud Sync",
+     "slug": "command-settings-cloud-sync-dark",
+     "kind": "Command",
+     "appearance": "Dark",
      "small": {
       "file": "command-settings-cloud-sync-dark-BioaQYxy.png",
       "w": 44,
@@ -11696,7 +12125,10 @@
      }
     },
     {
-     "name": "command-settings-cloud-sync-light",
+     "name": "Settings Cloud Sync",
+     "slug": "command-settings-cloud-sync-light",
+     "kind": "Command",
+     "appearance": "Light",
      "small": {
       "file": "command-settings-cloud-sync-light-CQRI4a-X.png",
       "w": 44,
@@ -11709,7 +12141,10 @@
      }
     },
     {
-     "name": "command-settings-keyboard-dark",
+     "name": "Settings Keyboard",
+     "slug": "command-settings-keyboard-dark",
+     "kind": "Command",
+     "appearance": "Dark",
      "small": {
       "file": "command-settings-keyboard-dark-DmLffQEL.png",
       "w": 44,
@@ -11718,7 +12153,10 @@
      "large": null
     },
     {
-     "name": "command-settings-keyboard-light",
+     "name": "Settings Keyboard",
+     "slug": "command-settings-keyboard-light",
+     "kind": "Command",
+     "appearance": "Light",
      "small": {
       "file": "command-settings-keyboard-light-BeVc9Kl_.png",
       "w": 44,
@@ -11727,7 +12165,10 @@
      "large": null
     },
     {
-     "name": "command-settings-launcher-dark",
+     "name": "Settings Launcher",
+     "slug": "command-settings-launcher-dark",
+     "kind": "Command",
+     "appearance": "Dark",
      "small": {
       "file": "command-settings-launcher-dark-DFThAPXj.png",
       "w": 44,
@@ -11736,7 +12177,10 @@
      "large": null
     },
     {
-     "name": "command-settings-launcher-light",
+     "name": "Settings Launcher",
+     "slug": "command-settings-launcher-light",
+     "kind": "Command",
+     "appearance": "Light",
      "small": {
       "file": "command-settings-launcher-light-BrhH9OR6.png",
       "w": 44,
@@ -11745,7 +12189,10 @@
      "large": null
     },
     {
-     "name": "command-settings-organizations-dark",
+     "name": "Settings Organizations",
+     "slug": "command-settings-organizations-dark",
+     "kind": "Command",
+     "appearance": "Dark",
      "small": {
       "file": "command-settings-organizations-dark-paouI-Sq.png",
       "w": 44,
@@ -11758,7 +12205,10 @@
      }
     },
     {
-     "name": "command-settings-organizations-light",
+     "name": "Settings Organizations",
+     "slug": "command-settings-organizations-light",
+     "kind": "Command",
+     "appearance": "Light",
      "small": {
       "file": "command-settings-organizations-light-CGBkU5KF.png",
       "w": 44,
@@ -11771,7 +12221,10 @@
      }
     },
     {
-     "name": "command-settings-remote-dark",
+     "name": "Settings Remote",
+     "slug": "command-settings-remote-dark",
+     "kind": "Command",
+     "appearance": "Dark",
      "small": {
       "file": "command-settings-remote-dark-hN2iE20E.png",
       "w": 44,
@@ -11784,7 +12237,10 @@
      }
     },
     {
-     "name": "command-settings-remote-light",
+     "name": "Settings Remote",
+     "slug": "command-settings-remote-light",
+     "kind": "Command",
+     "appearance": "Light",
      "small": {
       "file": "command-settings-remote-light-BUneo33m.png",
       "w": 44,
@@ -11797,7 +12253,10 @@
      }
     },
     {
-     "name": "command-settings-shortcuts-mac-dark",
+     "name": "Settings Shortcuts Mac",
+     "slug": "command-settings-shortcuts-mac-dark",
+     "kind": "Command",
+     "appearance": "Dark",
      "small": {
       "file": "command-settings-shortcuts-mac-dark-CGmS74p8.png",
       "w": 44,
@@ -11810,7 +12269,10 @@
      }
     },
     {
-     "name": "command-settings-shortcuts-mac-light",
+     "name": "Settings Shortcuts Mac",
+     "slug": "command-settings-shortcuts-mac-light",
+     "kind": "Command",
+     "appearance": "Light",
      "small": {
       "file": "command-settings-shortcuts-mac-light-xhWVYUem.png",
       "w": 44,
@@ -11819,7 +12281,10 @@
      "large": null
     },
     {
-     "name": "command-settings-shortcuts-windows-dark",
+     "name": "Settings Shortcuts Windows",
+     "slug": "command-settings-shortcuts-windows-dark",
+     "kind": "Command",
+     "appearance": "Dark",
      "small": {
       "file": "command-settings-shortcuts-windows-dark-CGrKQcTh.png",
       "w": 44,
@@ -11828,7 +12293,10 @@
      "large": null
     },
     {
-     "name": "command-share-bayrust",
+     "name": "Share Bayrust",
+     "slug": "command-share-bayrust",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-share-bayrust-ButbM-Fs.png",
       "w": 44,
@@ -11837,7 +12305,10 @@
      "large": null
     },
     {
-     "name": "command-show-desktop",
+     "name": "Show Desktop",
+     "slug": "command-show-desktop",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-show-desktop-BKYukkeu.png",
       "w": 44,
@@ -11850,7 +12321,10 @@
      }
     },
     {
-     "name": "command-show-screen-saver",
+     "name": "Show Screen Saver",
+     "slug": "command-show-screen-saver",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-show-screen-saver-BQwGnmbw.png",
       "w": 44,
@@ -11863,7 +12337,10 @@
      }
     },
     {
-     "name": "command-shut-down",
+     "name": "Shut Down",
+     "slug": "command-shut-down",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-shut-down-B3NmHoSi.png",
       "w": 44,
@@ -11876,7 +12353,10 @@
      }
     },
     {
-     "name": "command-sleep",
+     "name": "Sleep",
+     "slug": "command-sleep",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-sleep-B7Q995zL.png",
       "w": 44,
@@ -11889,7 +12369,10 @@
      }
     },
     {
-     "name": "command-sleep-displays",
+     "name": "Sleep Displays",
+     "slug": "command-sleep-displays",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-sleep-displays-DuHyHD9Z.png",
       "w": 44,
@@ -11902,7 +12385,10 @@
      }
     },
     {
-     "name": "command-snippets-create",
+     "name": "Snippets Create",
+     "slug": "command-snippets-create",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-snippets-create-BNnofSXZ.png",
       "w": 44,
@@ -11911,7 +12397,10 @@
      "large": null
     },
     {
-     "name": "command-snippets-export",
+     "name": "Snippets Export",
+     "slug": "command-snippets-export",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-snippets-export-cxmSj53T.png",
       "w": 44,
@@ -11924,7 +12413,10 @@
      }
     },
     {
-     "name": "command-snippets-import",
+     "name": "Snippets Import",
+     "slug": "command-snippets-import",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-snippets-import-1Q7VBjCx.png",
       "w": 44,
@@ -11937,7 +12429,10 @@
      }
     },
     {
-     "name": "command-store",
+     "name": "Store",
+     "slug": "command-store",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-store-Cb2kSTaD.png",
       "w": 44,
@@ -11950,7 +12445,10 @@
      }
     },
     {
-     "name": "command-switch-windows-mac",
+     "name": "Switch Windows Mac",
+     "slug": "command-switch-windows-mac",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-switch-windows-mac-DjLtU34F.png",
       "w": 44,
@@ -11959,7 +12457,10 @@
      "large": null
     },
     {
-     "name": "command-switch-windows-windows",
+     "name": "Switch Windows Windows",
+     "slug": "command-switch-windows-windows",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-switch-windows-windows-C-knOGD-.png",
       "w": 44,
@@ -11968,7 +12469,10 @@
      "large": null
     },
     {
-     "name": "command-theme-studio",
+     "name": "Theme Studio",
+     "slug": "command-theme-studio",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-theme-studio-6fOuZRGC.png",
       "w": 220,
@@ -11977,7 +12481,10 @@
      "large": null
     },
     {
-     "name": "command-theme-studio-dark",
+     "name": "Theme Studio",
+     "slug": "command-theme-studio-dark",
+     "kind": "Command",
+     "appearance": "Dark",
      "small": null,
      "large": {
       "file": "command-theme-studio-dark_large-BfnN3ZbL.png",
@@ -11986,7 +12493,10 @@
      }
     },
     {
-     "name": "command-toggle-bluetooth",
+     "name": "Toggle Bluetooth",
+     "slug": "command-toggle-bluetooth",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-toggle-bluetooth-C5W4pcuW.png",
       "w": 44,
@@ -11999,7 +12509,10 @@
      }
     },
     {
-     "name": "command-toggle-bounce",
+     "name": "Toggle Bounce",
+     "slug": "command-toggle-bounce",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-toggle-bounce-C9wgHtJ4.png",
       "w": 44,
@@ -12008,7 +12521,10 @@
      "large": null
     },
     {
-     "name": "command-toggle-hidden-files",
+     "name": "Toggle Hidden Files",
+     "slug": "command-toggle-hidden-files",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-toggle-hidden-files-CgGVmxnr.png",
       "w": 44,
@@ -12021,7 +12537,10 @@
      }
     },
     {
-     "name": "command-toggle-microphone-mute",
+     "name": "Toggle Microphone Mute",
+     "slug": "command-toggle-microphone-mute",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-toggle-microphone-mute-gR2JUPAC.png",
       "w": 44,
@@ -12034,7 +12553,10 @@
      }
     },
     {
-     "name": "command-toggle-mute",
+     "name": "Toggle Mute",
+     "slug": "command-toggle-mute",
+     "kind": "Command",
+     "appearance": null,
      "small": null,
      "large": {
       "file": "command-toggle-mute_large-CB-MSL_w.png",
@@ -12043,7 +12565,10 @@
      }
     },
     {
-     "name": "command-toggle-stagemanager",
+     "name": "Toggle Stagemanager",
+     "slug": "command-toggle-stagemanager",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-toggle-stagemanager-BVflIU09.png",
       "w": 44,
@@ -12056,7 +12581,10 @@
      }
     },
     {
-     "name": "command-toggle-system-appearance",
+     "name": "Toggle System Appearance",
+     "slug": "command-toggle-system-appearance",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-toggle-system-appearance-C4QyhZbd.png",
       "w": 44,
@@ -12069,7 +12597,10 @@
      }
     },
     {
-     "name": "command-transcription-style-create",
+     "name": "Transcription Style Create",
+     "slug": "command-transcription-style-create",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-transcription-style-create-B39EhzVX.png",
       "w": 220,
@@ -12078,7 +12609,10 @@
      "large": null
     },
     {
-     "name": "command-transcription-style-email",
+     "name": "Transcription Style Email",
+     "slug": "command-transcription-style-email",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-transcription-style-email-gi0o55sQ.png",
       "w": 44,
@@ -12087,7 +12621,10 @@
      "large": null
     },
     {
-     "name": "command-transcription-style-messaging",
+     "name": "Transcription Style Messaging",
+     "slug": "command-transcription-style-messaging",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-transcription-style-messaging-CSOToyqu.png",
       "w": 44,
@@ -12096,7 +12633,10 @@
      "large": null
     },
     {
-     "name": "command-transcription-style-search",
+     "name": "Transcription Style Search",
+     "slug": "command-transcription-style-search",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-transcription-style-search-CNfLHA8V.png",
       "w": 220,
@@ -12105,7 +12645,10 @@
      "large": null
     },
     {
-     "name": "command-trial-account-dark",
+     "name": "Trial Account",
+     "slug": "command-trial-account-dark",
+     "kind": "Command",
+     "appearance": "Dark",
      "small": {
       "file": "command-trial-account-dark-DzCCm-x-.png",
       "w": 52,
@@ -12114,7 +12657,10 @@
      "large": null
     },
     {
-     "name": "command-trial-account-light",
+     "name": "Trial Account",
+     "slug": "command-trial-account-light",
+     "kind": "Command",
+     "appearance": "Light",
      "small": {
       "file": "command-trial-account-light-_wgLfYlG.png",
       "w": 52,
@@ -12123,7 +12669,10 @@
      "large": null
     },
     {
-     "name": "command-trial-ai",
+     "name": "Trial AI",
+     "slug": "command-trial-ai",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-trial-ai-Da6HpBjq.png",
       "w": 54,
@@ -12132,7 +12681,10 @@
      "large": null
     },
     {
-     "name": "command-trial-cloudsync",
+     "name": "Trial Cloudsync",
+     "slug": "command-trial-cloudsync",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-trial-cloudsync-CVhH85Kv.png",
       "w": 54,
@@ -12141,7 +12693,10 @@
      "large": null
     },
     {
-     "name": "command-trial-dictation",
+     "name": "Trial Dictation",
+     "slug": "command-trial-dictation",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-trial-dictation-Dpz79J3d.png",
       "w": 54,
@@ -12150,7 +12705,10 @@
      "large": null
     },
     {
-     "name": "command-trial-hourglass-dark",
+     "name": "Trial Hourglass",
+     "slug": "command-trial-hourglass-dark",
+     "kind": "Command",
+     "appearance": "Dark",
      "small": {
       "file": "command-trial-hourglass-dark-Ba-pHQEB.png",
       "w": 52,
@@ -12159,7 +12717,10 @@
      "large": null
     },
     {
-     "name": "command-trial-hourglass-light",
+     "name": "Trial Hourglass",
+     "slug": "command-trial-hourglass-light",
+     "kind": "Command",
+     "appearance": "Light",
      "small": {
       "file": "command-trial-hourglass-light-z65jdOUR.png",
       "w": 52,
@@ -12168,7 +12729,10 @@
      "large": null
     },
     {
-     "name": "command-trial-themes",
+     "name": "Trial Themes",
+     "slug": "command-trial-themes",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-trial-themes-ZK_1kv2M.png",
       "w": 54,
@@ -12177,7 +12741,10 @@
      "large": null
     },
     {
-     "name": "command-trial-translate",
+     "name": "Trial Translate",
+     "slug": "command-trial-translate",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-trial-translate-DenVzC1G.png",
       "w": 54,
@@ -12186,7 +12753,10 @@
      "large": null
     },
     {
-     "name": "command-trial-windowmanagement",
+     "name": "Trial Windowmanagement",
+     "slug": "command-trial-windowmanagement",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-trial-windowmanagement-DoP5nYcB.png",
       "w": 54,
@@ -12195,7 +12765,10 @@
      "large": null
     },
     {
-     "name": "command-turn-olume-down",
+     "name": "Turn Olume Down",
+     "slug": "command-turn-olume-down",
+     "kind": "Command",
+     "appearance": null,
      "small": null,
      "large": {
       "file": "command-turn-olume-down_large-BcpQnX9I.png",
@@ -12204,7 +12777,10 @@
      }
     },
     {
-     "name": "command-turn-volume-down",
+     "name": "Turn Volume Down",
+     "slug": "command-turn-volume-down",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-turn-volume-down-Bw2iubrm.png",
       "w": 44,
@@ -12213,7 +12789,10 @@
      "large": null
     },
     {
-     "name": "command-turn-volume-up",
+     "name": "Turn Volume Up",
+     "slug": "command-turn-volume-up",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-turn-volume-up-DrV-6Lj4.png",
       "w": 44,
@@ -12226,7 +12805,10 @@
      }
     },
     {
-     "name": "command-unhide-all-hidden-apps-mac",
+     "name": "Unhide All Hidden Apps Mac",
+     "slug": "command-unhide-all-hidden-apps-mac",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-unhide-all-hidden-apps-mac-CirCaADA.png",
       "w": 44,
@@ -12239,7 +12821,10 @@
      }
     },
     {
-     "name": "command-unhide-all-hidden-apps-windows",
+     "name": "Unhide All Hidden Apps Windows",
+     "slug": "command-unhide-all-hidden-apps-windows",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-unhide-all-hidden-apps-windows-D7xHH4VP.png",
       "w": 44,
@@ -12252,7 +12837,10 @@
      }
     },
     {
-     "name": "command-web-bing",
+     "name": "Web Bing",
+     "slug": "command-web-bing",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-web-bing-C4IT4FVD.png",
       "w": 44,
@@ -12261,7 +12849,10 @@
      "large": null
     },
     {
-     "name": "command-web-duckduckgo",
+     "name": "Web Duckduckgo",
+     "slug": "command-web-duckduckgo",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-web-duckduckgo-CPpC75h4.png",
       "w": 48,
@@ -12270,7 +12861,10 @@
      "large": null
     },
     {
-     "name": "command-web-google",
+     "name": "Web Google",
+     "slug": "command-web-google",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-web-google-B1xzB1iT.png",
       "w": 48,
@@ -12279,7 +12873,10 @@
      "large": null
     },
     {
-     "name": "command-wifi",
+     "name": "Wi-Fi",
+     "slug": "command-wifi",
+     "kind": "Command",
+     "appearance": null,
      "small": {
       "file": "command-wifi-I-cu-0oH.png",
       "w": 44,
@@ -12292,7 +12889,10 @@
      }
     },
     {
-     "name": "extension-applications-mac",
+     "name": "Applications Mac",
+     "slug": "extension-applications-mac",
+     "kind": "Extension",
+     "appearance": null,
      "small": {
       "file": "extension-applications-mac-BDInx8WQ.png",
       "w": 44,
@@ -12305,7 +12905,10 @@
      }
     },
     {
-     "name": "extension-applications-windows",
+     "name": "Applications Windows",
+     "slug": "extension-applications-windows",
+     "kind": "Extension",
+     "appearance": null,
      "small": {
       "file": "extension-applications-windows-CiNr5odZ.png",
       "w": 44,
@@ -12318,7 +12921,10 @@
      }
     },
     {
-     "name": "extension-browser",
+     "name": "Browser",
+     "slug": "extension-browser",
+     "kind": "Extension",
+     "appearance": null,
      "small": {
       "file": "extension-browser-Czc4a0B0.png",
       "w": 44,
@@ -12331,7 +12937,10 @@
      }
     },
     {
-     "name": "extension-calculator",
+     "name": "Calculator",
+     "slug": "extension-calculator",
+     "kind": "Extension",
+     "appearance": null,
      "small": {
       "file": "extension-calculator-BWxdIc50.png",
       "w": 44,
@@ -12344,7 +12953,10 @@
      }
     },
     {
-     "name": "extension-calendar",
+     "name": "Calendar",
+     "slug": "extension-calendar",
+     "kind": "Extension",
+     "appearance": null,
      "small": {
       "file": "extension-calendar-BPZWhGnf.png",
       "w": 44,
@@ -12357,7 +12969,10 @@
      }
     },
     {
-     "name": "extension-clipboard-history",
+     "name": "Clipboard History",
+     "slug": "extension-clipboard-history",
+     "kind": "Extension",
+     "appearance": null,
      "small": {
       "file": "extension-clipboard-history-Bwcr0QuF.png",
       "w": 44,
@@ -12370,7 +12985,10 @@
      }
     },
     {
-     "name": "extension-contacts",
+     "name": "Contacts",
+     "slug": "extension-contacts",
+     "kind": "Extension",
+     "appearance": null,
      "small": {
       "file": "extension-contacts-CIJjDVge.png",
       "w": 44,
@@ -12383,7 +13001,10 @@
      }
     },
     {
-     "name": "extension-developer",
+     "name": "Developer",
+     "slug": "extension-developer",
+     "kind": "Extension",
+     "appearance": null,
      "small": {
       "file": "extension-developer-Bvw3TH-o.png",
       "w": 44,
@@ -12396,7 +13017,10 @@
      }
     },
     {
-     "name": "extension-dictation",
+     "name": "Dictation",
+     "slug": "extension-dictation",
+     "kind": "Extension",
+     "appearance": null,
      "small": {
       "file": "extension-dictation-vIJak6vg.png",
       "w": 44,
@@ -12409,7 +13033,10 @@
      }
     },
     {
-     "name": "extension-dictionary",
+     "name": "Dictionary",
+     "slug": "extension-dictionary",
+     "kind": "Extension",
+     "appearance": null,
      "small": {
       "file": "extension-dictionary-DJCrFl0i.png",
       "w": 44,
@@ -12422,7 +13049,10 @@
      }
     },
     {
-     "name": "extension-emoji-picker",
+     "name": "Emoji Picker",
+     "slug": "extension-emoji-picker",
+     "kind": "Extension",
+     "appearance": null,
      "small": {
       "file": "extension-emoji-picker-CkxWHzfK.png",
       "w": 44,
@@ -12435,7 +13065,10 @@
      }
     },
     {
-     "name": "extension-file-search",
+     "name": "File Search",
+     "slug": "extension-file-search",
+     "kind": "Extension",
+     "appearance": null,
      "small": {
       "file": "extension-file-search-CTUaEB_7.png",
       "w": 44,
@@ -12448,7 +13081,10 @@
      }
     },
     {
-     "name": "extension-mcp",
+     "name": "MCP",
+     "slug": "extension-mcp",
+     "kind": "Extension",
+     "appearance": null,
      "small": {
       "file": "extension-mcp-BPhpUpkU.png",
       "w": 44,
@@ -12461,7 +13097,10 @@
      }
     },
     {
-     "name": "extension-navigation-mac",
+     "name": "Navigation Mac",
+     "slug": "extension-navigation-mac",
+     "kind": "Extension",
+     "appearance": null,
      "small": {
       "file": "extension-navigation-mac-BKoK8eDJ.png",
       "w": 44,
@@ -12474,7 +13113,10 @@
      }
     },
     {
-     "name": "extension-navigation-windows",
+     "name": "Navigation Windows",
+     "slug": "extension-navigation-windows",
+     "kind": "Extension",
+     "appearance": null,
      "small": {
       "file": "extension-navigation-windows-exzR2wSC.png",
       "w": 44,
@@ -12487,7 +13129,10 @@
      }
     },
     {
-     "name": "extension-notes",
+     "name": "Notes",
+     "slug": "extension-notes",
+     "kind": "Extension",
+     "appearance": null,
      "small": {
       "file": "extension-notes-OAdPX2gE.png",
       "w": 44,
@@ -12500,7 +13145,10 @@
      }
     },
     {
-     "name": "extension-quicklinks",
+     "name": "Quicklinks",
+     "slug": "extension-quicklinks",
+     "kind": "Extension",
+     "appearance": null,
      "small": {
       "file": "extension-quicklinks-jfLKE3L5.png",
       "w": 44,
@@ -12513,7 +13161,10 @@
      }
     },
     {
-     "name": "extension-bayrust-core",
+     "name": "Bayrust Core",
+     "slug": "extension-bayrust-core",
+     "kind": "Extension",
+     "appearance": null,
      "small": {
       "file": "extension-bayrust-core-BDfvxXsA.png",
       "w": 44,
@@ -12526,7 +13177,10 @@
      }
     },
     {
-     "name": "extension-bayrust-focus",
+     "name": "Bayrust Focus",
+     "slug": "extension-bayrust-focus",
+     "kind": "Extension",
+     "appearance": null,
      "small": {
       "file": "extension-bayrust-focus-BNEdr64p.png",
       "w": 44,
@@ -12539,7 +13193,10 @@
      }
     },
     {
-     "name": "extension-bayrust-system",
+     "name": "Bayrust System",
+     "slug": "extension-bayrust-system",
+     "kind": "Extension",
+     "appearance": null,
      "small": {
       "file": "extension-bayrust-system-ERsLvU6C.png",
       "w": 44,
@@ -12552,7 +13209,10 @@
      }
     },
     {
-     "name": "extension-run",
+     "name": "Run",
+     "slug": "extension-run",
+     "kind": "Extension",
+     "appearance": null,
      "small": {
       "file": "extension-run-BGN-g-iS.png",
       "w": 256,
@@ -12561,7 +13221,10 @@
      "large": null
     },
     {
-     "name": "extension-screenshots",
+     "name": "Screenshots",
+     "slug": "extension-screenshots",
+     "kind": "Extension",
+     "appearance": null,
      "small": {
       "file": "extension-screenshots-BiQiGyWL.png",
       "w": 44,
@@ -12574,7 +13237,10 @@
      }
     },
     {
-     "name": "extension-script",
+     "name": "Script",
+     "slug": "extension-script",
+     "kind": "Extension",
+     "appearance": null,
      "small": {
       "file": "extension-script-BUHMpy6i.png",
       "w": 44,
@@ -12587,7 +13253,10 @@
      }
     },
     {
-     "name": "extension-snippets",
+     "name": "Snippets",
+     "slug": "extension-snippets",
+     "kind": "Extension",
+     "appearance": null,
      "small": {
       "file": "extension-snippets-DRr6GjEZ.png",
       "w": 44,
@@ -12600,7 +13269,10 @@
      }
     },
     {
-     "name": "extension-system-settings-mac",
+     "name": "System Settings Mac",
+     "slug": "extension-system-settings-mac",
+     "kind": "Extension",
+     "appearance": null,
      "small": {
       "file": "extension-system-settings-mac-CKvAWyud.png",
       "w": 144,
@@ -12609,7 +13281,10 @@
      "large": null
     },
     {
-     "name": "extension-translator",
+     "name": "Translator",
+     "slug": "extension-translator",
+     "kind": "Extension",
+     "appearance": null,
      "small": {
       "file": "extension-translator-D9TW7eu7.png",
       "w": 44,
@@ -12622,7 +13297,10 @@
      }
     },
     {
-     "name": "extension-typing-practice",
+     "name": "Typing Practice",
+     "slug": "extension-typing-practice",
+     "kind": "Extension",
+     "appearance": null,
      "small": {
       "file": "extension-typing-practice-DJieuD1h.png",
       "w": 44,
@@ -12852,7 +13530,7 @@
   "coverage": {
    "title": "Coverage",
    "lead": "Every item of the design-system checklist (226), and what Bayrust has for it.",
-   "md": "## Summary\n\n| Status | Items |\n|---|---|\n| In Bayrust | 159 |\n| Variant of another component | 11 |\n| Composed from Bayrust parts | 41 |\n| In the code, not shown in the sandbox | 9 |\n| In Bayrust, not published | 1 |\n| Not in Bayrust | 5 |\n\nComposed components aren't shipped by the app: they are built only from Bayrust's own primitives, text styles and\ntokens, and each one is labelled.\n\n## Getting started\n\n| Item | Status | Bayrust | Note |\n|---|---|---|---|\n| [Introduction](/introduction) | In Bayrust | — |  |\n| [Getting Started](/introduction) | In Bayrust | — | The Getting started section: Introduction, Installation and Coverage. |\n| [Installation](/installation) | In Bayrust | — | Running the live app and the docs locally. |\n| Design Principles | Not in Bayrust | — | The app ships no written design principles; none are invented here. |\n\n## Foundations\n\n| Item | Status | Bayrust | Note |\n|---|---|---|---|\n| [Design Tokens](/design-tokens) | In Bayrust | — |  |\n| [Colors](/color) | In Bayrust | — |  |\n| [Typography](/typography) | In Bayrust | — |  |\n| [Spacing](/spacing) | In Bayrust | — |  |\n| [Sizing](/sizing) | In Bayrust | — |  |\n| [Grid System](/c-layout#grid) | In Bayrust | `Grid.Root` | The grid view used by Emoji & Symbols, Clipboard History and Search Files. |\n| [Layout](/layout) | In Bayrust | — |  |\n| [Breakpoints](/breakpoints) | In Bayrust | — |  |\n| [Responsive Design](/responsive-design) | In Bayrust | — |  |\n| [Icons](/iconography) | In Bayrust | `Icon` |  |\n| Illustrations | In Bayrust, not published | `EmptyStateImage` | The 219 shipped illustrations are the app vendor’s artwork and are not published with the design system. `EmptyStateImage` ships; the artwork it draws does not. |\n| [Imagery](/command-icons) | In Bayrust | — | The command, extension and app icons are documented on their own page. The backgrounds, textures and the two videos are not published. |\n| [Elevation](/elevation) | In Bayrust | — |  |\n| [Shadows](/shadows) | In Bayrust | — |  |\n| [Borders](/borders) | In Bayrust | — |  |\n| [Border Radius](/radius) | In Bayrust | — |  |\n| [Opacity](/opacity) | In Bayrust | — |  |\n| [Gradients](/gradients) | In Bayrust | `GradientBorder` |  |\n| [Motion](/motion) | In Bayrust | — |  |\n| [Animation](/animation) | In Bayrust | — |  |\n| [Transitions](/transitions) | In Bayrust | — |  |\n| [Accessibility](/accessibility) | In Bayrust | — |  |\n| [Themes](/themes) | In Bayrust | — |  |\n| [Dark Mode](/dark-mode) | In Bayrust | — |  |\n\n## Components\n\n| Item | Status | Bayrust | Note |\n|---|---|---|---|\n| [Button](/button#button) | In Bayrust | `Button` |  |\n| [Button Group](/button#button-group) | Variant | — | Buttons are grouped by their container: the onboarding action group and the action bar’s primary actions. |\n| [Split Button](/button#split-button) | Composed from Bayrust parts | — |  |\n| [Compact Button](/button#compact-button) | Variant | `Button` | `Button` at `size=\"mini\"` or `\"small\"`. |\n| [Fancy Button](/button#fancy-button) | Variant | `Button`, `GradientBorder` | `Button` with `variant=\"standout\"`, drawn with a gradient border. |\n| [Link Button](/button#link-button) | Variant | `Button` | `Button` with `variant=\"link\"`. |\n| [Icon Button](/button#icon-button) | In Bayrust | `IconButton` |  |\n| [Floating Action Button](/button#floating-action-button) | Composed from Bayrust parts | — |  |\n| [Toggle Button](/button#toggle-button) | In Bayrust | `ToggleIconButton` |  |\n| [Avatar](/avatar#avatar) | In Bayrust | `Avatar` |  |\n| [Avatar Group](/avatar#avatar-group) | Composed from Bayrust parts | — |  |\n| [Avatar Group Compact](/avatar#avatar-group-compact) | Composed from Bayrust parts | — |  |\n| [Badge](/badge#badge) | In Bayrust | `Badge` |  |\n| [Status Badge](/badge#status-badge) | In Bayrust | `NumberBadge` |  |\n| [Tag](/badge#tag) | In Bayrust | `TagIcon` | Tokens in the search bar and tags on list items. |\n| [Chip](/badge#chip) | In Bayrust | `ChatAttachmentChip`, `ChatMentionPill`, `ChatComposerContextPill` |  |\n| [Banner](/alert#banner) | In Bayrust | `ProGateBanner`, `RecentlyDeletedChatBanner` |  |\n| [Card](/card#card) | In Bayrust | `FeatureCard` |  |\n| [Data Table](/table#data-table) | In Bayrust | `SettingsUI.Table`, `SettingsUI.TableRow` |  |\n| [Table](/table#table) | In Bayrust | `MarkdownTable` | Markdown tables in chat and notes. |\n| [Divider](/divider#divider) | In Bayrust | — |  |\n| [Keyboard Shortcut (Kbd)](/keyboard-shortcut#keyboard-shortcut-kbd) | In Bayrust | `Shortcut`, `KeyboardShortcut`, `VisualShortcut` |  |\n| [Progress Bar](/progress#progress-bar) | In Bayrust | `MigrationProgress`, `AiCreditsMeter` |  |\n| [Progress Circle](/progress#progress-circle) | In Bayrust | `ActivityIndicator` | `ActivityIndicator` with `variant=\"determinate\"`. |\n| [Progress Steps](/progress#progress-steps) | In Bayrust | — | The step dots of the onboarding navigation. |\n| [Rating](/badge#rating) | Composed from Bayrust parts | — |  |\n| [Skeleton](/loading#skeleton) | In Bayrust | `ShimmerText`, `ShimmerBlock`, `SkeletonText` | Loading text shimmers while an activity runs. |\n| [Spinner](/loading#spinner) | In Bayrust | `Spinner` |  |\n| [Loading Indicator](/loading#loading-indicator) | In Bayrust | `ActivityIndicator` |  |\n| [Empty State](/empty-state#empty-state) | In Bayrust | `EmptyState`, `EmptyStateImage` |  |\n| [Alert](/alert#alert) | In Bayrust | — | Inline messages. Bayrust’s component named `Alert` is a dialog: see Alert Dialog. |\n| [Alert Dialog](/dialog#alert-dialog) | In Bayrust | `Alert` |  |\n| [Notification](/alert#notification) | In Bayrust | `Hud.Root` | The HUD shown after an action. |\n| [Toast](/alert#toast) | In Bayrust | `Toast` |  |\n| [Tooltip](/tooltip-popover#tooltip) | In Bayrust | `ErrorTooltip` |  |\n| [Popover](/tooltip-popover#popover) | In Bayrust | `Popover` |  |\n| [Modal](/dialog#modal) | In Bayrust | `Dialog`, `DialogPrimitive.Panel` | Dialogs open as native child windows. |\n| [Dialog](/dialog#dialog) | In Bayrust | `Dialog`, `DialogPrimitive.Panel` |  |\n| [Drawer](/dialog#drawer) | Composed from Bayrust parts | — |  |\n| [Bottom Sheet](/dialog#bottom-sheet) | Composed from Bayrust parts | — |  |\n| [Checkbox](/checkbox#checkbox) | In Bayrust | `Checkbox` |  |\n| [Checkbox Group](/checkbox#checkbox-group) | Composed from Bayrust parts | — |  |\n| [Color Picker](/color-picker-slider#color-picker) | In Bayrust | `ColorPicker`, `ColorEditor`, `ColorSlider`, `ColorSwatch` |  |\n| [Date Picker](/date-time#date-picker) | In Bayrust | `DatePicker` |  |\n| [Date Range Picker](/date-time#date-range-picker) | Composed from Bayrust parts | — |  |\n| [Time Picker](/date-time#time-picker) | In Bayrust | `DurationPicker`, `DurationMenu` | A duration picker: Start Focus Session › Duration. |\n| [Date & Time Picker](/date-time#date-time-picker) | Composed from Bayrust parts | — | The shipped DatePicker takes `type=\"date\"` only. |\n| [Digit Input](/input#digit-input) | Composed from Bayrust parts | — |  |\n| [OTP Input](/input#otp-input) | Composed from Bayrust parts | — |  |\n| [File Upload](/file-upload#file-upload) | In Bayrust | `FilePickerPrimitive.Root` |  |\n| [Drag & Drop Upload](/file-upload#drag-drop-upload) | In Bayrust | `ChatDropzoneOverlay` |  |\n| [Form](/form#form) | In Bayrust | — |  |\n| [Form Field](/form#form-field) | In Bayrust | `FormLabel` |  |\n| [Form Group](/form#form-group) | In Bayrust | — |  |\n| [Form Validation](/input#form-validation) | In Bayrust | `InputField` | Fields take `variant=\"error\"` / `\"success\"`; `Textarea` takes `data-state=\"error\"`. |\n| [Hint](/input#hint) | In Bayrust | `RootSearchNavHint` |  |\n| [Helper Text](/input#helper-text) | In Bayrust | — | Descriptions under setting titles. |\n| [Input](/input#input) | In Bayrust | `InputField` |  |\n| [Input Group](/input#input-group) | In Bayrust | — |  |\n| [Search Input](/input#search-input) | In Bayrust | `SearchInput` |  |\n| [Password Input](/input#password-input) | In Bayrust | `LegacyDatabasePasswordView` | Shown when a legacy encrypted database needs its password. |\n| [Number Input](/input#number-input) | Variant | `ZoomControls` | The shipped stepper (`ZoomControls`: reset, −, value, +), used for AI and Notes zoom. |\n| [Label](/input#label) | In Bayrust | `FormLabel` |  |\n| [Radio](/radio-segmented-control#radio) | Variant | `ButtonRadioGroupPrimitive.Item` | Single choices are made in radio button groups. |\n| [Radio Group](/radio-segmented-control#radio-group) | In Bayrust | `ButtonRadioGroupPrimitive.Root`, `ColumnCountRadioGroup.Root` |  |\n| [Select](/select#select) | In Bayrust | `Select` |  |\n| [Multi Select](/select#multi-select) | In Bayrust | `MultiSelect` |  |\n| [Combobox](/select#combobox) | In Bayrust | `DynamicPlaceholderAutocomplete` |  |\n| [Autocomplete](/select#autocomplete) | In Bayrust | `DynamicPlaceholderAutocomplete` |  |\n| [Slider](/color-picker-slider#slider) | In Bayrust | `ColorSlider` | Hue, saturation and lightness in the colour picker. |\n| [Range Slider](/color-picker-slider#range-slider) | Composed from Bayrust parts | — |  |\n| [Switch](/switch#switch) | In Bayrust | `Toggle` |  |\n| [Textarea](/textarea-rich-text#textarea) | In Bayrust | `Textarea` |  |\n| [Rich Text Editor](/textarea-rich-text#rich-text-editor) | In Bayrust | — | The Notes editor. |\n| [Accordion](/c-layout#accordion) | In Bayrust | `CollapsibleContent` |  |\n| [Breadcrumb](/navigation#breadcrumb) | Composed from Bayrust parts | — |  |\n| [Segmented Control](/radio-segmented-control#segmented-control) | In Bayrust | `ButtonRadioGroupPrimitive.Root` |  |\n| [Tabs](/navigation#tabs) | Composed from Bayrust parts | — |  |\n| [Tab Menu Horizontal](/navigation#tab-menu-horizontal) | Variant | `ButtonRadioGroupPrimitive.Root` | The shipped segmented control. |\n| [Tab Menu Vertical](/navigation#tab-menu-vertical) | Variant | — | The Settings sidebar switches between pages. |\n| [Navigation Menu](/navigation#navigation-menu) | In Bayrust | — | The dropdown in a view’s navigation bar. |\n| [Sidebar](/navigation#sidebar) | In Bayrust | — |  |\n| [Top Navigation](/navigation#top-navigation) | In Bayrust | — |  |\n| [Bottom Navigation](/navigation#bottom-navigation) | Composed from Bayrust parts | — |  |\n| [App Bar](/navigation#app-bar) | In Bayrust | — |  |\n| [Header](/navigation#header) | In Bayrust | — |  |\n| [Footer](/navigation#footer) | In Bayrust | — |  |\n| [Menu](/menu#menu) | In Bayrust | — |  |\n| [Dropdown Menu](/select#dropdown-menu) | In Bayrust | `DropdownButton` |  |\n| [Context Menu](/menu#context-menu) | In Bayrust | — | The Action Panel (⌘K), opened from any item. |\n| [Mega Menu](/menu#mega-menu) | Composed from Bayrust parts | — |  |\n| [Pagination](/navigation#pagination) | Composed from Bayrust parts | — |  |\n| [Stepper](/progress#stepper) | In Bayrust | — | Onboarding navigation: back, step dots, next. |\n| [Steps](/progress#steps) | In Bayrust | — |  |\n| [Timeline](/list#timeline) | Composed from Bayrust parts | — |  |\n| [Tree View](/list#tree-view) | Composed from Bayrust parts | — |  |\n| [List](/list#list) | In Bayrust | `List.Root`, `List.Item`, `List.SectionHeader` |  |\n| [List Item](/list#list-item) | In Bayrust | `StandardListItem.Root`, `List.Item` |  |\n| [Description List](/table#description-list) | In Bayrust | `DataList.Root`, `DataList.Item` |  |\n| [Command Menu](/menu#command-menu) | In Bayrust | — |  |\n| [Command Palette](/menu#command-palette) | In Bayrust | — | The launcher itself. |\n| [Search](/search-filter#search) | In Bayrust | `SearchInput` |  |\n| [Search Results](/search-filter#search-results) | In Bayrust | — |  |\n| [Filter](/search-filter#filter) | In Bayrust | — | The filter dropdown in Clipboard History’s search bar. |\n| [Filter Bar](/search-filter#filter-bar) | Variant | — | Filters sit in the search bar. |\n| [Sort Control](/search-filter#sort-control) | In the code, not shown in the sandbox | `ModelSortSelect` | Sorting in AI › Models. |\n| [Toolbar](/toolbar#toolbar) | In Bayrust | `Toolbar` | A row of actions: along the launcher’s bottom edge (the selected item, its primary action and Actions ⌘K) and under each AI Chat answer. |\n| [Carousel](/media#carousel) | In the code, not shown in the sandbox | `StackCarousel` | Bayrust’s only carousel switches between the component stack, the call stack and diagnostics in the extension crash view, which needs a crashing extension and so never opens in the sandbox. |\n| [Image Gallery](/media#image-gallery) | In Bayrust | — |  |\n| [Lightbox](/media#lightbox) | Composed from Bayrust parts | — |  |\n| [Aspect Ratio](/media#aspect-ratio) | Composed from Bayrust parts | — |  |\n| [Scroll Area](/c-layout#scroll-area) | In Bayrust | `ScrollArea.Root` |  |\n| [Separator](/divider#separator) | In Bayrust | — |  |\n| [Collapsible](/c-layout#collapsible) | In Bayrust | `CollapsibleContent` |  |\n| [Resizable Panels](/c-layout#resizable-panels) | In Bayrust | `MasterDetailLayout.Root`, `MasterDetailLayout.Master`, `MasterDetailLayout.Detail` | List and detail side by side: Search AI Commands, Snippets, Quicklinks, Store, File Search, Clipboard History. The detail takes `size`. |\n| [Split View](/c-layout#split-view) | In Bayrust | `MasterDetailLayout.Root` | List and detail in the launcher; sidebar and page in Settings and AI Chat. |\n| [Container](/c-layout#container) | Composed from Bayrust parts | — |  |\n| [Stack](/c-layout#stack) | Composed from Bayrust parts | — |  |\n| [Grid](/c-layout#grid) | In Bayrust | `Grid.Root`, `Grid.Item` |  |\n| [Flex](/c-layout#flex) | Composed from Bayrust parts | — |  |\n| [Spacer](/c-layout#spacer) | Composed from Bayrust parts | — |  |\n| [Surface](/c-layout#surface) | Variant | — | Surface colours are tokens (`--color-surface-*`). |\n| [Panel](/c-layout#panel) | In Bayrust | — |  |\n| [Section](/c-layout#section) | In Bayrust | — |  |\n| [Page Header](/c-layout#page-header) | In Bayrust | — |  |\n| [Stat Card](/card#stat-card) | In Bayrust | — |  |\n| [KPI Card](/card#kpi-card) | Composed from Bayrust parts | — |  |\n| [Charts](/charts#charts) | In Bayrust | `DictationActivityGraph`, `AudioLevelWaveform` |  |\n| [Bar Chart](/charts#bar-chart) | In Bayrust | `DictationActivityGraph` | Dictation activity, Settings › Dictation. |\n| [Line Chart](/charts#line-chart) | Composed from Bayrust parts | — |  |\n| [Area Chart](/charts#area-chart) | Composed from Bayrust parts | — |  |\n| [Pie Chart](/charts#pie-chart) | Composed from Bayrust parts | — |  |\n| [Donut Chart](/charts#donut-chart) | Composed from Bayrust parts | — |  |\n| [Scatter Chart](/charts#scatter-chart) | Composed from Bayrust parts | — |  |\n| [Sparkline](/charts#sparkline) | Composed from Bayrust parts | — |  |\n| [Data Visualization](/charts#data-visualization) | In Bayrust | `DictationActivityGraph`, `AudioLevelWaveform` |  |\n| [Calendar](/date-time#calendar) | In the code, not shown in the sandbox | `Calendar` | Rendered only inside `ClockFlyout` (with its agenda), which none of the captured macOS windows opens. |\n| [Event Calendar](/date-time#event-calendar) | In the code, not shown in the sandbox | `MyScheduleView` | Needs calendar access. |\n| [Map](/media#map) | In the code, not shown in the sandbox | `FlightMap` | Shown by the flight tracker with live flight data. |\n| [Media Player](/media#media-player) | In the code, not shown in the sandbox | `MediaView` | Rendered only inside `MenuBarItemFlyout`, which none of the captured macOS windows opens. |\n| [Video Player](/media#video-player) | In the code, not shown in the sandbox | `VideoFilePreview` | File previews need a selected file. |\n| [Audio Player](/media#audio-player) | In the code, not shown in the sandbox | `AudioFilePreview` | File previews need a selected file. |\n| [Image](/media#image) | In Bayrust | — |  |\n| [Video](/media#video) | In Bayrust | — |  |\n| [Link](/c-typography#link) | In Bayrust | — |  |\n| [Text](/c-typography#text) | In Bayrust | — |  |\n| [Heading](/c-typography#heading) | In Bayrust | — |  |\n| [Paragraph](/c-typography#paragraph) | In Bayrust | — |  |\n| [Code Block](/c-typography#code-block) | In Bayrust | — |  |\n| [Inline Code](/c-typography#inline-code) | In Bayrust | — |  |\n| [Blockquote](/c-typography#blockquote) | In Bayrust | — |  |\n| [Table of Contents](/navigation#table-of-contents) | Composed from Bayrust parts | — |  |\n| [Copy to Clipboard](/alert#copy-to-clipboard) | In Bayrust | `Hud.Root` | Copy actions confirm with the HUD. |\n| [QR Code](/media#qr-code) | Not in Bayrust | — |  |\n| [User Profile](/avatar#user-profile) | In Bayrust | — | Settings › Account. |\n| [User Menu](/avatar#user-menu) | In Bayrust | — |  |\n| [Login](/form#login) | In Bayrust | `SignInView`, `SignInComponent` | Sign-in happens in the browser; the app shows the entry points. |\n| [Registration](/form#registration) | Composed from Bayrust parts | — |  |\n| [Password Reset](/form#password-reset) | Composed from Bayrust parts | — |  |\n| [Verification](/form#verification) | Composed from Bayrust parts | — |  |\n\n## Patterns\n\n| Item | Status | Bayrust | Note |\n|---|---|---|---|\n| [Error State](/states#error-state) | In Bayrust | `ErrorState` |  |\n| [Success State](/states#success-state) | In Bayrust | — |  |\n| [Warning State](/states#warning-state) | In Bayrust | — |  |\n| [Loading State](/states#loading-state) | In Bayrust | — |  |\n| [Disabled State](/states#disabled-state) | In Bayrust | — |  |\n| [Hover State](/states#hover-state) | In Bayrust | — |  |\n| [Focus State](/states#focus-state) | In Bayrust | — |  |\n| [Active State](/states#active-state) | In Bayrust | — |  |\n| [Selected State](/states#selected-state) | In Bayrust | — |  |\n| [Read-only State](/states#read-only-state) | In Bayrust | — | Notes shows a read-only banner (`NotesReadOnlyBanner`). |\n| [Drag & Drop](/drag-drop#drag-drop) | In Bayrust | `ChatDropzoneOverlay` |  |\n| [Drag Handle](/c-layout#drag-handle) | Composed from Bayrust parts | — |  |\n| [Resize Handle](/c-layout#resize-handle) | Composed from Bayrust parts | — |  |\n| [Back to Top](/button#back-to-top) | Composed from Bayrust parts | — |  |\n| [Scroll Indicator](/drag-drop#scroll-indicator) | In Bayrust | `ProgressiveBlur`, `ScrollArea.Root` | Scroll fades and progressive blur at the edges of scroll areas. |\n| [Floating Panel](/overlays#floating-panel) | In Bayrust | — | Native child panels: the Action Panel, menus, popovers. |\n| [Confirmation Dialog](/overlays#confirmation-dialog) | In Bayrust | `Alert` |  |\n| [Cookie Banner](/alert#cookie-banner) | Composed from Bayrust parts | — |  |\n| [Onboarding](/onboarding#onboarding) | In Bayrust | — |  |\n| [Guided Tour](/onboarding#guided-tour) | In the code, not shown in the sandbox | `CoachMark` | Bayrust’s guided tour is the Pro walkthrough (see the Pro walkthrough flow). Its coach mark only flashes for a moment inside the animated demos, so no captured state holds it. |\n| [Spotlight](/overlays#spotlight) | Variant | — | Screen Awareness highlights a region of the screen the way a spotlight does. |\n| [Walkthrough](/onboarding#walkthrough) | In Bayrust | — |  |\n\n## Documentation\n\n| Item | Status | Bayrust | Note |\n|---|---|---|---|\n| Component Anatomy | In Bayrust | — | Every component page lists its parts (CSS module parts and sub-components). |\n| Component Variants | In Bayrust | — | From the CSS `data-*` selectors and Bayrust’s own playground variants. |\n| Component Properties | In Bayrust | — | Props recovered from the shipped bundle. |\n| Component States | In Bayrust | — | State selectors (`data-state`, `data-selected`, …) per component. |\n| Component Behavior | In Bayrust | — | Bayrust’s playground notes, where it has them. |\n| Component Usage Guidelines | In Bayrust | — | Where each component appears in the app. |\n| Component Do’s & Don’ts | Not in Bayrust | — | The app ships no do’s and don’ts. |\n| Component Accessibility Guidelines | In Bayrust | — | Roles and labels found in each component’s markup. |\n| [Component Responsive Behavior](/responsive-design) | In Bayrust | — | All components scale with Interface Size. |\n| Component Content Guidelines | Not in Bayrust | — | The app ships no content guidelines. |\n| [Component Interaction Patterns](/states) | In Bayrust | — |  |\n| Component Code Examples | In Bayrust | — | The Code tab of every example. |\n| Component API Documentation | In Bayrust | — | API reference on every component page. |\n| [Component Versioning](/changelog) | In Bayrust | — | Every page names its source module from 2.8.2. |\n| Contribution Guidelines | Not in Bayrust | — |  |\n| [Changelog](/changelog) | In Bayrust | — |  |\n\n"
+   "md": "## Summary\n\n| Status | Items |\n|---|---|\n| In Bayrust | 159 |\n| Variant of another component | 11 |\n| Composed from Bayrust parts | 41 |\n| In the code, not shown in the sandbox | 9 |\n| In Bayrust, not published | 1 |\n| Not in Bayrust | 5 |\n\nComposed components aren't shipped by the app: they are built only from Bayrust's own primitives, text styles and\ntokens, and each one is labelled.\n\n## Getting started\n\n| Item | Status | Bayrust | Note |\n|---|---|---|---|\n| [Introduction](/introduction) | In Bayrust | — |  |\n| [Getting Started](/introduction) | In Bayrust | — | The Getting started section: Introduction, Installation and Coverage. |\n| [Installation](/installation) | In Bayrust | — | Running the live app and the docs locally. |\n| Design Principles | Not in Bayrust | — | The app ships no written design principles; none are invented here. |\n\n## Foundations\n\n| Item | Status | Bayrust | Note |\n|---|---|---|---|\n| [Design Tokens](/design-tokens) | In Bayrust | — |  |\n| [Colors](/color) | In Bayrust | — |  |\n| [Typography](/typography) | In Bayrust | — |  |\n| [Spacing](/spacing) | In Bayrust | — |  |\n| [Sizing](/sizing) | In Bayrust | — |  |\n| [Grid System](/c-layout#grid) | In Bayrust | `Grid.Root` | The grid view used by Emoji & Symbols, Clipboard History and Search Files. |\n| [Layout](/layout) | In Bayrust | — |  |\n| [Breakpoints](/breakpoints) | In Bayrust | — |  |\n| [Responsive Design](/responsive-design) | In Bayrust | — |  |\n| [Icons](/iconography) | In Bayrust | `Icon` |  |\n| Illustrations | In Bayrust, not published | `EmptyStateImage` | The 219 shipped illustrations are the app vendor’s artwork and are not published with the design system. `EmptyStateImage` ships; the artwork it draws does not. |\n| [Imagery](/product-icons) | In Bayrust | — | The command, extension and app icons are documented on their own page. The backgrounds, textures and the two videos are not published. |\n| [Elevation](/elevation) | In Bayrust | — |  |\n| [Shadows](/shadows) | In Bayrust | — |  |\n| [Borders](/borders) | In Bayrust | — |  |\n| [Border Radius](/radius) | In Bayrust | — |  |\n| [Opacity](/opacity) | In Bayrust | — |  |\n| [Gradients](/gradients) | In Bayrust | `GradientBorder` |  |\n| [Motion](/motion) | In Bayrust | — |  |\n| [Animation](/animation) | In Bayrust | — |  |\n| [Transitions](/transitions) | In Bayrust | — |  |\n| [Accessibility](/accessibility) | In Bayrust | — |  |\n| [Themes](/themes) | In Bayrust | — |  |\n| [Dark Mode](/dark-mode) | In Bayrust | — |  |\n\n## Components\n\n| Item | Status | Bayrust | Note |\n|---|---|---|---|\n| [Button](/button#button) | In Bayrust | `Button` |  |\n| [Button Group](/button#button-group) | Variant | — | Buttons are grouped by their container: the onboarding action group and the action bar’s primary actions. |\n| [Split Button](/button#split-button) | Composed from Bayrust parts | — |  |\n| [Compact Button](/button#compact-button) | Variant | `Button` | `Button` at `size=\"mini\"` or `\"small\"`. |\n| [Fancy Button](/button#fancy-button) | Variant | `Button`, `GradientBorder` | `Button` with `variant=\"standout\"`, drawn with a gradient border. |\n| [Link Button](/button#link-button) | Variant | `Button` | `Button` with `variant=\"link\"`. |\n| [Icon Button](/button#icon-button) | In Bayrust | `IconButton` |  |\n| [Floating Action Button](/button#floating-action-button) | Composed from Bayrust parts | — |  |\n| [Toggle Button](/button#toggle-button) | In Bayrust | `ToggleIconButton` |  |\n| [Avatar](/avatar#avatar) | In Bayrust | `Avatar` |  |\n| [Avatar Group](/avatar#avatar-group) | Composed from Bayrust parts | — |  |\n| [Avatar Group Compact](/avatar#avatar-group-compact) | Composed from Bayrust parts | — |  |\n| [Badge](/badge#badge) | In Bayrust | `Badge` |  |\n| [Status Badge](/badge#status-badge) | In Bayrust | `NumberBadge` |  |\n| [Tag](/badge#tag) | In Bayrust | `TagIcon` | Tokens in the search bar and tags on list items. |\n| [Chip](/badge#chip) | In Bayrust | `ChatAttachmentChip`, `ChatMentionPill`, `ChatComposerContextPill` |  |\n| [Banner](/alert#banner) | In Bayrust | `ProGateBanner`, `RecentlyDeletedChatBanner` |  |\n| [Card](/card#card) | In Bayrust | `FeatureCard` |  |\n| [Data Table](/table#data-table) | In Bayrust | `SettingsUI.Table`, `SettingsUI.TableRow` |  |\n| [Table](/table#table) | In Bayrust | `MarkdownTable` | Markdown tables in chat and notes. |\n| [Divider](/divider#divider) | In Bayrust | — |  |\n| [Keyboard Shortcut (Kbd)](/keyboard-shortcut#keyboard-shortcut-kbd) | In Bayrust | `Shortcut`, `KeyboardShortcut`, `VisualShortcut` |  |\n| [Progress Bar](/progress#progress-bar) | In Bayrust | `MigrationProgress`, `AiCreditsMeter` |  |\n| [Progress Circle](/progress#progress-circle) | In Bayrust | `ActivityIndicator` | `ActivityIndicator` with `variant=\"determinate\"`. |\n| [Progress Steps](/progress#progress-steps) | In Bayrust | — | The step dots of the onboarding navigation. |\n| [Rating](/badge#rating) | Composed from Bayrust parts | — |  |\n| [Skeleton](/loading#skeleton) | In Bayrust | `ShimmerText`, `ShimmerBlock`, `SkeletonText` | Loading text shimmers while an activity runs. |\n| [Spinner](/loading#spinner) | In Bayrust | `Spinner` |  |\n| [Loading Indicator](/loading#loading-indicator) | In Bayrust | `ActivityIndicator` |  |\n| [Empty State](/empty-state#empty-state) | In Bayrust | `EmptyState`, `EmptyStateImage` |  |\n| [Alert](/alert#alert) | In Bayrust | — | Inline messages. Bayrust’s component named `Alert` is a dialog: see Alert Dialog. |\n| [Alert Dialog](/dialog#alert-dialog) | In Bayrust | `Alert` |  |\n| [Notification](/alert#notification) | In Bayrust | `Hud.Root` | The HUD shown after an action. |\n| [Toast](/alert#toast) | In Bayrust | `Toast` |  |\n| [Tooltip](/tooltip-popover#tooltip) | In Bayrust | `ErrorTooltip` |  |\n| [Popover](/tooltip-popover#popover) | In Bayrust | `Popover` |  |\n| [Modal](/dialog#modal) | In Bayrust | `Dialog`, `DialogPrimitive.Panel` | Dialogs open as native child windows. |\n| [Dialog](/dialog#dialog) | In Bayrust | `Dialog`, `DialogPrimitive.Panel` |  |\n| [Drawer](/dialog#drawer) | Composed from Bayrust parts | — |  |\n| [Bottom Sheet](/dialog#bottom-sheet) | Composed from Bayrust parts | — |  |\n| [Checkbox](/checkbox#checkbox) | In Bayrust | `Checkbox` |  |\n| [Checkbox Group](/checkbox#checkbox-group) | Composed from Bayrust parts | — |  |\n| [Color Picker](/color-picker-slider#color-picker) | In Bayrust | `ColorPicker`, `ColorEditor`, `ColorSlider`, `ColorSwatch` |  |\n| [Date Picker](/date-time#date-picker) | In Bayrust | `DatePicker` |  |\n| [Date Range Picker](/date-time#date-range-picker) | Composed from Bayrust parts | — |  |\n| [Time Picker](/date-time#time-picker) | In Bayrust | `DurationPicker`, `DurationMenu` | A duration picker: Start Focus Session › Duration. |\n| [Date & Time Picker](/date-time#date-time-picker) | Composed from Bayrust parts | — | The shipped DatePicker takes `type=\"date\"` only. |\n| [Digit Input](/input#digit-input) | Composed from Bayrust parts | — |  |\n| [OTP Input](/input#otp-input) | Composed from Bayrust parts | — |  |\n| [File Upload](/file-upload#file-upload) | In Bayrust | `FilePickerPrimitive.Root` |  |\n| [Drag & Drop Upload](/file-upload#drag-drop-upload) | In Bayrust | `ChatDropzoneOverlay` |  |\n| [Form](/form#form) | In Bayrust | — |  |\n| [Form Field](/form#form-field) | In Bayrust | `FormLabel` |  |\n| [Form Group](/form#form-group) | In Bayrust | — |  |\n| [Form Validation](/input#form-validation) | In Bayrust | `InputField` | Fields take `variant=\"error\"` / `\"success\"`; `Textarea` takes `data-state=\"error\"`. |\n| [Hint](/input#hint) | In Bayrust | `RootSearchNavHint` |  |\n| [Helper Text](/input#helper-text) | In Bayrust | — | Descriptions under setting titles. |\n| [Input](/input#input) | In Bayrust | `InputField` |  |\n| [Input Group](/input#input-group) | In Bayrust | — |  |\n| [Search Input](/input#search-input) | In Bayrust | `SearchInput` |  |\n| [Password Input](/input#password-input) | In Bayrust | `LegacyDatabasePasswordView` | Shown when a legacy encrypted database needs its password. |\n| [Number Input](/input#number-input) | Variant | `ZoomControls` | The shipped stepper (`ZoomControls`: reset, −, value, +), used for AI and Notes zoom. |\n| [Label](/input#label) | In Bayrust | `FormLabel` |  |\n| [Radio](/radio-segmented-control#radio) | Variant | `ButtonRadioGroupPrimitive.Item` | Single choices are made in radio button groups. |\n| [Radio Group](/radio-segmented-control#radio-group) | In Bayrust | `ButtonRadioGroupPrimitive.Root`, `ColumnCountRadioGroup.Root` |  |\n| [Select](/select#select) | In Bayrust | `Select` |  |\n| [Multi Select](/select#multi-select) | In Bayrust | `MultiSelect` |  |\n| [Combobox](/select#combobox) | In Bayrust | `DynamicPlaceholderAutocomplete` |  |\n| [Autocomplete](/select#autocomplete) | In Bayrust | `DynamicPlaceholderAutocomplete` |  |\n| [Slider](/color-picker-slider#slider) | In Bayrust | `ColorSlider` | Hue, saturation and lightness in the colour picker. |\n| [Range Slider](/color-picker-slider#range-slider) | Composed from Bayrust parts | — |  |\n| [Switch](/switch#switch) | In Bayrust | `Toggle` |  |\n| [Textarea](/textarea-rich-text#textarea) | In Bayrust | `Textarea` |  |\n| [Rich Text Editor](/textarea-rich-text#rich-text-editor) | In Bayrust | — | The Notes editor. |\n| [Accordion](/c-layout#accordion) | In Bayrust | `CollapsibleContent` |  |\n| [Breadcrumb](/navigation#breadcrumb) | Composed from Bayrust parts | — |  |\n| [Segmented Control](/radio-segmented-control#segmented-control) | In Bayrust | `ButtonRadioGroupPrimitive.Root` |  |\n| [Tabs](/navigation#tabs) | Composed from Bayrust parts | — |  |\n| [Tab Menu Horizontal](/navigation#tab-menu-horizontal) | Variant | `ButtonRadioGroupPrimitive.Root` | The shipped segmented control. |\n| [Tab Menu Vertical](/navigation#tab-menu-vertical) | Variant | — | The Settings sidebar switches between pages. |\n| [Navigation Menu](/navigation#navigation-menu) | In Bayrust | — | The dropdown in a view’s navigation bar. |\n| [Sidebar](/navigation#sidebar) | In Bayrust | — |  |\n| [Top Navigation](/navigation#top-navigation) | In Bayrust | — |  |\n| [Bottom Navigation](/navigation#bottom-navigation) | Composed from Bayrust parts | — |  |\n| [App Bar](/navigation#app-bar) | In Bayrust | — |  |\n| [Header](/navigation#header) | In Bayrust | — |  |\n| [Footer](/navigation#footer) | In Bayrust | — |  |\n| [Menu](/menu#menu) | In Bayrust | — |  |\n| [Dropdown Menu](/select#dropdown-menu) | In Bayrust | `DropdownButton` |  |\n| [Context Menu](/menu#context-menu) | In Bayrust | — | The Action Panel (⌘K), opened from any item. |\n| [Mega Menu](/menu#mega-menu) | Composed from Bayrust parts | — |  |\n| [Pagination](/navigation#pagination) | Composed from Bayrust parts | — |  |\n| [Stepper](/progress#stepper) | In Bayrust | — | Onboarding navigation: back, step dots, next. |\n| [Steps](/progress#steps) | In Bayrust | — |  |\n| [Timeline](/list#timeline) | Composed from Bayrust parts | — |  |\n| [Tree View](/list#tree-view) | Composed from Bayrust parts | — |  |\n| [List](/list#list) | In Bayrust | `List.Root`, `List.Item`, `List.SectionHeader` |  |\n| [List Item](/list#list-item) | In Bayrust | `StandardListItem.Root`, `List.Item` |  |\n| [Description List](/table#description-list) | In Bayrust | `DataList.Root`, `DataList.Item` |  |\n| [Command Menu](/menu#command-menu) | In Bayrust | — |  |\n| [Command Palette](/menu#command-palette) | In Bayrust | — | The launcher itself. |\n| [Search](/search-filter#search) | In Bayrust | `SearchInput` |  |\n| [Search Results](/search-filter#search-results) | In Bayrust | — |  |\n| [Filter](/search-filter#filter) | In Bayrust | — | The filter dropdown in Clipboard History’s search bar. |\n| [Filter Bar](/search-filter#filter-bar) | Variant | — | Filters sit in the search bar. |\n| [Sort Control](/search-filter#sort-control) | In the code, not shown in the sandbox | `ModelSortSelect` | Sorting in AI › Models. |\n| [Toolbar](/toolbar#toolbar) | In Bayrust | `Toolbar` | A row of actions: along the launcher’s bottom edge (the selected item, its primary action and Actions ⌘K) and under each AI Chat answer. |\n| [Carousel](/media#carousel) | In the code, not shown in the sandbox | `StackCarousel` | Bayrust’s only carousel switches between the component stack, the call stack and diagnostics in the extension crash view, which needs a crashing extension and so never opens in the sandbox. |\n| [Image Gallery](/media#image-gallery) | In Bayrust | — |  |\n| [Lightbox](/media#lightbox) | Composed from Bayrust parts | — |  |\n| [Aspect Ratio](/media#aspect-ratio) | Composed from Bayrust parts | — |  |\n| [Scroll Area](/c-layout#scroll-area) | In Bayrust | `ScrollArea.Root` |  |\n| [Separator](/divider#separator) | In Bayrust | — |  |\n| [Collapsible](/c-layout#collapsible) | In Bayrust | `CollapsibleContent` |  |\n| [Resizable Panels](/c-layout#resizable-panels) | In Bayrust | `MasterDetailLayout.Root`, `MasterDetailLayout.Master`, `MasterDetailLayout.Detail` | List and detail side by side: Search AI Commands, Snippets, Quicklinks, Store, File Search, Clipboard History. The detail takes `size`. |\n| [Split View](/c-layout#split-view) | In Bayrust | `MasterDetailLayout.Root` | List and detail in the launcher; sidebar and page in Settings and AI Chat. |\n| [Container](/c-layout#container) | Composed from Bayrust parts | — |  |\n| [Stack](/c-layout#stack) | Composed from Bayrust parts | — |  |\n| [Grid](/c-layout#grid) | In Bayrust | `Grid.Root`, `Grid.Item` |  |\n| [Flex](/c-layout#flex) | Composed from Bayrust parts | — |  |\n| [Spacer](/c-layout#spacer) | Composed from Bayrust parts | — |  |\n| [Surface](/c-layout#surface) | Variant | — | Surface colours are tokens (`--color-surface-*`). |\n| [Panel](/c-layout#panel) | In Bayrust | — |  |\n| [Section](/c-layout#section) | In Bayrust | — |  |\n| [Page Header](/c-layout#page-header) | In Bayrust | — |  |\n| [Stat Card](/card#stat-card) | In Bayrust | — |  |\n| [KPI Card](/card#kpi-card) | Composed from Bayrust parts | — |  |\n| [Charts](/charts#charts) | In Bayrust | `DictationActivityGraph`, `AudioLevelWaveform` |  |\n| [Bar Chart](/charts#bar-chart) | In Bayrust | `DictationActivityGraph` | Dictation activity, Settings › Dictation. |\n| [Line Chart](/charts#line-chart) | Composed from Bayrust parts | — |  |\n| [Area Chart](/charts#area-chart) | Composed from Bayrust parts | — |  |\n| [Pie Chart](/charts#pie-chart) | Composed from Bayrust parts | — |  |\n| [Donut Chart](/charts#donut-chart) | Composed from Bayrust parts | — |  |\n| [Scatter Chart](/charts#scatter-chart) | Composed from Bayrust parts | — |  |\n| [Sparkline](/charts#sparkline) | Composed from Bayrust parts | — |  |\n| [Data Visualization](/charts#data-visualization) | In Bayrust | `DictationActivityGraph`, `AudioLevelWaveform` |  |\n| [Calendar](/date-time#calendar) | In the code, not shown in the sandbox | `Calendar` | Rendered only inside `ClockFlyout` (with its agenda), which none of the captured macOS windows opens. |\n| [Event Calendar](/date-time#event-calendar) | In the code, not shown in the sandbox | `MyScheduleView` | Needs calendar access. |\n| [Map](/media#map) | In the code, not shown in the sandbox | `FlightMap` | Shown by the flight tracker with live flight data. |\n| [Media Player](/media#media-player) | In the code, not shown in the sandbox | `MediaView` | Rendered only inside `MenuBarItemFlyout`, which none of the captured macOS windows opens. |\n| [Video Player](/media#video-player) | In the code, not shown in the sandbox | `VideoFilePreview` | File previews need a selected file. |\n| [Audio Player](/media#audio-player) | In the code, not shown in the sandbox | `AudioFilePreview` | File previews need a selected file. |\n| [Image](/media#image) | In Bayrust | — |  |\n| [Video](/media#video) | In Bayrust | — |  |\n| [Link](/c-typography#link) | In Bayrust | — |  |\n| [Text](/c-typography#text) | In Bayrust | — |  |\n| [Heading](/c-typography#heading) | In Bayrust | — |  |\n| [Paragraph](/c-typography#paragraph) | In Bayrust | — |  |\n| [Code Block](/c-typography#code-block) | In Bayrust | — |  |\n| [Inline Code](/c-typography#inline-code) | In Bayrust | — |  |\n| [Blockquote](/c-typography#blockquote) | In Bayrust | — |  |\n| [Table of Contents](/navigation#table-of-contents) | Composed from Bayrust parts | — |  |\n| [Copy to Clipboard](/alert#copy-to-clipboard) | In Bayrust | `Hud.Root` | Copy actions confirm with the HUD. |\n| [QR Code](/media#qr-code) | Not in Bayrust | — |  |\n| [User Profile](/avatar#user-profile) | In Bayrust | — | Settings › Account. |\n| [User Menu](/avatar#user-menu) | In Bayrust | — |  |\n| [Login](/form#login) | In Bayrust | `SignInView`, `SignInComponent` | Sign-in happens in the browser; the app shows the entry points. |\n| [Registration](/form#registration) | Composed from Bayrust parts | — |  |\n| [Password Reset](/form#password-reset) | Composed from Bayrust parts | — |  |\n| [Verification](/form#verification) | Composed from Bayrust parts | — |  |\n\n## Patterns\n\n| Item | Status | Bayrust | Note |\n|---|---|---|---|\n| [Error State](/states#error-state) | In Bayrust | `ErrorState` |  |\n| [Success State](/states#success-state) | In Bayrust | — |  |\n| [Warning State](/states#warning-state) | In Bayrust | — |  |\n| [Loading State](/states#loading-state) | In Bayrust | — |  |\n| [Disabled State](/states#disabled-state) | In Bayrust | — |  |\n| [Hover State](/states#hover-state) | In Bayrust | — |  |\n| [Focus State](/states#focus-state) | In Bayrust | — |  |\n| [Active State](/states#active-state) | In Bayrust | — |  |\n| [Selected State](/states#selected-state) | In Bayrust | — |  |\n| [Read-only State](/states#read-only-state) | In Bayrust | — | Notes shows a read-only banner (`NotesReadOnlyBanner`). |\n| [Drag & Drop](/drag-drop#drag-drop) | In Bayrust | `ChatDropzoneOverlay` |  |\n| [Drag Handle](/c-layout#drag-handle) | Composed from Bayrust parts | — |  |\n| [Resize Handle](/c-layout#resize-handle) | Composed from Bayrust parts | — |  |\n| [Back to Top](/button#back-to-top) | Composed from Bayrust parts | — |  |\n| [Scroll Indicator](/drag-drop#scroll-indicator) | In Bayrust | `ProgressiveBlur`, `ScrollArea.Root` | Scroll fades and progressive blur at the edges of scroll areas. |\n| [Floating Panel](/overlays#floating-panel) | In Bayrust | — | Native child panels: the Action Panel, menus, popovers. |\n| [Confirmation Dialog](/overlays#confirmation-dialog) | In Bayrust | `Alert` |  |\n| [Cookie Banner](/alert#cookie-banner) | Composed from Bayrust parts | — |  |\n| [Onboarding](/onboarding#onboarding) | In Bayrust | — |  |\n| [Guided Tour](/onboarding#guided-tour) | In the code, not shown in the sandbox | `CoachMark` | Bayrust’s guided tour is the Pro walkthrough (see the Pro walkthrough flow). Its coach mark only flashes for a moment inside the animated demos, so no captured state holds it. |\n| [Spotlight](/overlays#spotlight) | Variant | — | Screen Awareness highlights a region of the screen the way a spotlight does. |\n| [Walkthrough](/onboarding#walkthrough) | In Bayrust | — |  |\n\n## Documentation\n\n| Item | Status | Bayrust | Note |\n|---|---|---|---|\n| Component Anatomy | In Bayrust | — | Every component page lists its parts (CSS module parts and sub-components). |\n| Component Variants | In Bayrust | — | From the CSS `data-*` selectors and Bayrust’s own playground variants. |\n| Component Properties | In Bayrust | — | Props recovered from the shipped bundle. |\n| Component States | In Bayrust | — | State selectors (`data-state`, `data-selected`, …) per component. |\n| Component Behavior | In Bayrust | — | Bayrust’s playground notes, where it has them. |\n| Component Usage Guidelines | In Bayrust | — | Where each component appears in the app. |\n| Component Do’s & Don’ts | Not in Bayrust | — | The app ships no do’s and don’ts. |\n| Component Accessibility Guidelines | In Bayrust | — | Roles and labels found in each component’s markup. |\n| [Component Responsive Behavior](/responsive-design) | In Bayrust | — | All components scale with Interface Size. |\n| Component Content Guidelines | Not in Bayrust | — | The app ships no content guidelines. |\n| [Component Interaction Patterns](/states) | In Bayrust | — |  |\n| Component Code Examples | In Bayrust | — | The Code tab of every example. |\n| Component API Documentation | In Bayrust | — | API reference on every component page. |\n| [Component Versioning](/changelog) | In Bayrust | — | Every page names its source module from 2.8.2. |\n| Contribution Guidelines | Not in Bayrust | — |  |\n| [Changelog](/changelog) | In Bayrust | — |  |\n\n"
   },
   "changelog": {
    "title": "Changelog",
@@ -12928,8 +13606,8 @@
      "path": "logo"
     },
     {
-     "title": "Command icons",
-     "path": "command-icons"
+     "title": "Product icons",
+     "path": "product-icons"
     },
     {
      "title": "Elevation & materials",

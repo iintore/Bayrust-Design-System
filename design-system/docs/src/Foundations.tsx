@@ -212,7 +212,11 @@ export function AppIconGallery({ page }: { page: Page }) {
   const icons = page.appicons ?? [];
   const [q, setQ] = useState('');
   const [copied, setCopied] = useState('');
-  const shown = useMemo(() => icons.filter((i) => i.name.toLowerCase().includes(q.toLowerCase())), [icons, q]);
+  const shown = useMemo(() => {
+    const t = q.trim().toLowerCase();
+    if (!t) return icons;
+    return icons.filter((i) => `${i.name} ${i.slug} ${i.kind}`.toLowerCase().includes(t));
+  }, [icons, q]);
   return (
     <div>
       <label className="doc-filter">
@@ -225,7 +229,7 @@ export function AppIconGallery({ page }: { page: Page }) {
           const path = `/ds/assets/${f.file}`;
           return (
             <button
-              key={i.name}
+              key={i.slug}
               className="doc-appicon-tile"
               title={`Copy ${path}`}
               onClick={() => {
@@ -239,7 +243,11 @@ export function AppIconGallery({ page }: { page: Page }) {
               }}
             >
               <img src={`${BASE}ds/assets/${f.file}`} width={44} height={44} alt="" loading="lazy" />
-              <span className="doc-appicon-name">{copied === i.name ? 'Copied' : i.name}</span>
+              <span className="doc-appicon-name">
+                {copied === i.name ? 'Copied' : i.name}
+                {i.appearance && !copied && <span className="doc-appicon-variant"> {i.appearance}</span>}
+              </span>
+              <span className="doc-appicon-kind">{i.kind}</span>
             </button>
           );
         })}

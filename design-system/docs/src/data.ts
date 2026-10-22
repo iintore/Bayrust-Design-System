@@ -98,8 +98,18 @@ export interface Page {
   windows?: { win: WindowRef; caption: string; group?: string }[];
   /** Native renders shown in the page gallery (flows, templates, logo, introduction). */
   shots?: Shot[];
-  /** Command, extension and app icons (Command icons page). */
-  appicons?: { name: string; small: { file: string; w: number; h: number } | null; large: { file: string; w: number; h: number } | null }[];
+  /** Product icons: the artwork each command, extension and app has (Product icons page). */
+  appicons?: {
+    /** The name a person would use, e.g. "AI Chat". */
+    name: string;
+    /** The file's own name, which is what gets copied. */
+    slug: string;
+    kind: 'Command' | 'Extension' | 'App';
+    /** Set when the icon ships a per-appearance variant. */
+    appearance?: string | null;
+    small: { file: string; w: number; h: number } | null;
+    large: { file: string; w: number; h: number } | null;
+  }[];
   /** Bundled themes (Themes page). */
   themes?: Record<string, string>[];
   /** A gallery of values from the shipped stylesheets, rendered with them (shadows, borders, opacity, gradients). */

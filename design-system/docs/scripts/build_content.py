@@ -702,7 +702,7 @@ ctx = dict(J=J, md_table=md_table, slug=slug, brand=brand, shot=shot, localize=l
 pages2.build(ctx)
 
 FOUNDATION_ORDER = ['design-tokens', 'color', 'typography', 'spacing', 'sizing', 'grid', 'layout', 'breakpoints', 'responsive-design', 'iconography',
-                    'logo', 'command-icons', 'elevation', 'shadows', 'borders', 'radius', 'opacity', 'gradients', 'motion', 'animation',
+                    'logo', 'product-icons', 'elevation', 'shadows', 'borders', 'radius', 'opacity', 'gradients', 'motion', 'animation',
                     'transitions', 'accessibility', 'themes', 'dark-mode', 'states']
 def nav_item(path): return {'title': pages[path]['title'], 'path': path}
 nav[:] = [

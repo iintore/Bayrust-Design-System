@@ -643,9 +643,17 @@ svg {
 }
 .doc-appicon-name {
   font: 450 11px/14px var(--doc-font);
-  color: var(--color-text-secondary);
+  color: var(--color-text-primary);
   overflow-wrap: anywhere;
   text-align: center;
+}
+.doc-appicon-variant {
+  color: var(--color-text-tertiary);
+}
+.doc-appicon-kind {
+  margin-top: -4px;
+  font: 450 10px/13px var(--doc-font);
+  color: var(--color-text-tertiary);
 }
 .doc-icons {
   display: grid;
