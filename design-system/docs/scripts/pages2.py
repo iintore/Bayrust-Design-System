@@ -348,6 +348,39 @@ Notes sizes its window to the note's height until it's resized by hand ("Enable 
     # Illustrations and Imagery are not published as galleries: they were the only thing pulling every image file
     # galleries were the only thing pulling all 490 image files into the site. Only the images the component and
     # window markup actually references are collected (build_content.localize and the stylesheet URLs).
+    # ---- command and extension icons: the app-icon artwork shipped with the app, browsable and copyable.
+    # These are the only images the galleries used to carry that say anything about the design system; the
+    # illustrations and screenshots they sat beside do not, which is why this page is just the icons.
+    import collections as _c
+    seen = _c.OrderedDict()
+    for i in sorted(facts['images'], key=lambda i: i['file']):
+        if not i['file'].startswith(('command-', 'extension-', 'app-')) or i['type'] != 'png': continue
+        base = re.sub(r'(_large)?-[A-Za-z0-9_-]{8}\.png$', '', i['file'])
+        large = '_large' in i['file']
+        e = seen.setdefault(base, {'name': base, 'small': None, 'large': None})
+        e['large' if large else 'small'] = {'file': i['file'], 'w': i['w'], 'h': i['h']}
+    icons = [e for e in seen.values() if e['small'] or e['large']]
+    for e in icons:
+        for k in ('small', 'large'):
+            if e[k]: ctx['assets'].add(e[k]['file'])
+    F('command-icons', 'Command icons', f'{len(icons)} command, extension and app icons shipped with the app, at 44 and 108 points.', """## What these are
+
+Each command, extension and app ships an icon: a rounded square with a gradient and a glyph, drawn as artwork
+rather than composed from the icon set on [Iconography](/iconography). They are raster, at two sizes — 44 points
+for lists and menus, 108 for larger surfaces.
+
+## Using one
+
+Click an icon to copy its path. From the package the same files sit under the runtime the Vite plugin serves:
+
+```tsx
+<img src="/bayrust/runtime/command-ai-chat-BSU8W46l.png" width={44} height={44} alt="" />
+```
+
+The file name carries the build hash, so it changes when the app is rebuilt; copy it from here rather than
+typing it.
+""", 'appicons', appicons=icons)
+
     # ---- "in use" galleries: every value from the shipped stylesheets, rendered with those stylesheets
     GLOBAL_VARS = set(raw['dark']['tokens'])
     TX = 'text__text_054b5 text__align-left_43d84 '

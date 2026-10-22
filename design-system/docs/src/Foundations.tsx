@@ -207,6 +207,48 @@ export function Screens({ page }: { page: Page }) {
   );
 }
 
+/** Command, extension and app icons: filterable, and a click copies the path. */
+export function AppIconGallery({ page }: { page: Page }) {
+  const icons = page.appicons ?? [];
+  const [q, setQ] = useState('');
+  const [copied, setCopied] = useState('');
+  const shown = useMemo(() => icons.filter((i) => i.name.toLowerCase().includes(q.toLowerCase())), [icons, q]);
+  return (
+    <div>
+      <label className="doc-filter">
+        <input value={q} onChange={(e) => setQ(e.target.value)} placeholder={`Filter ${icons.length} icons`} aria-label="Filter command icons" />
+      </label>
+      <div className="doc-appicons">
+        {shown.map((i) => {
+          const f = i.large ?? i.small;
+          if (!f) return null;
+          const path = `/ds/assets/${f.file}`;
+          return (
+            <button
+              key={i.name}
+              className="doc-appicon-tile"
+              title={`Copy ${path}`}
+              onClick={() => {
+                navigator.clipboard?.writeText(path).then(
+                  () => {
+                    setCopied(i.name);
+                    window.setTimeout(() => setCopied(''), 1200);
+                  },
+                  () => undefined,
+                );
+              }}
+            >
+              <img src={`${BASE}ds/assets/${f.file}`} width={44} height={44} alt="" loading="lazy" />
+              <span className="doc-appicon-name">{copied === i.name ? 'Copied' : i.name}</span>
+            </button>
+          );
+        })}
+      </div>
+      {!shown.length && <p className="doc-lead">No icon matches that filter.</p>}
+    </div>
+  );
+}
+
 /** The bundled themes, drawn from their own base colours. */
 export function ThemeTable({ page }: { page: Page }) {
   const hues = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'magenta'];

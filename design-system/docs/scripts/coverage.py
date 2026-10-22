@@ -39,7 +39,7 @@ CHECKLIST = [
     ('Responsive Design', FOUNDATION, 'yes', [], ['page:responsive-design'], ''),
     ('Icons', FOUNDATION, 'yes', ['Icon'], ['page:iconography'], ''),
     ('Illustrations', FOUNDATION, 'excluded', ['EmptyStateImage'], [], 'The 219 shipped illustrations are the app vendor\u2019s artwork and are not published with the design system. `EmptyStateImage` ships; the artwork it draws does not.'),
-    ('Imagery', FOUNDATION, 'excluded', [], [], 'Backgrounds, textures, the two videos and the command and extension icons are the app vendor\u2019s artwork and are not published with the design system.'),
+    ('Imagery', FOUNDATION, 'yes', [], ['page:command-icons'], 'The command, extension and app icons are documented on their own page. The backgrounds, textures and the two videos are not published.'),
     ('Elevation', FOUNDATION, 'yes', [], ['page:elevation'], ''),
     ('Shadows', FOUNDATION, 'yes', [], ['page:shadows'], ''),
     ('Borders', FOUNDATION, 'yes', [], ['page:borders'], ''),

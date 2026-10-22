@@ -98,6 +98,8 @@ export interface Page {
   windows?: { win: WindowRef; caption: string; group?: string }[];
   /** Native renders shown in the page gallery (flows, templates, logo, introduction). */
   shots?: Shot[];
+  /** Command, extension and app icons (Command icons page). */
+  appicons?: { name: string; small: { file: string; w: number; h: number } | null; large: { file: string; w: number; h: number } | null }[];
   /** Bundled themes (Themes page). */
   themes?: Record<string, string>[];
   /** A gallery of values from the shipped stylesheets, rendered with them (shadows, borders, opacity, gradients). */

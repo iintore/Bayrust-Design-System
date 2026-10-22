@@ -4,7 +4,7 @@ import type { Page } from './data';
 import { navigate, pageHref } from './router';
 import { Icon } from './icons';
 import { Example, LiveMarkup, WindowPreview } from './Preview';
-import { ColorGallery, Elevation, IconGallery, LogoShowcase, RadiusScale, Screens, SpacingScale, ThemeTable, TypeScale } from './Foundations';
+import { AppIconGallery, ColorGallery, Elevation, IconGallery, LogoShowcase, RadiusScale, Screens, SpacingScale, ThemeTable, TypeScale } from './Foundations';
 
 const GALLERY: Record<string, (page: Page) => React.ReactNode> = {
   colors: () => <ColorGallery />,
@@ -13,11 +13,12 @@ const GALLERY: Record<string, (page: Page) => React.ReactNode> = {
   radius: () => <RadiusScale />,
   elevation: () => <Elevation />,
   icons: () => <IconGallery />,
+  appicons: (page) => <AppIconGallery page={page} />,
   logo: (page) => <LogoShowcase page={page} />,
   screens: (page) => <Screens page={page} />,
   themes: (page) => <ThemeTable page={page} />,
 };
-const GALLERY_TITLE: Record<string, string> = { colors: 'Tokens', type: 'Text styles', spacing: 'Scale', radius: 'Scale', elevation: 'Shadow tokens', icons: 'Icon set', logo: 'App icons', screens: 'Screens', themes: 'Bundled themes' };
+const GALLERY_TITLE: Record<string, string> = { colors: 'Tokens', type: 'Text styles', spacing: 'Scale', radius: 'Scale', elevation: 'Shadow tokens', icons: 'Icon set', appicons: 'Icons', logo: 'App icons', screens: 'Screens', themes: 'Bundled themes' };
 const galleryTitle = (page: Page) => (page.path.startsWith('flow-') ? 'States' : page.path.startsWith('templates-') ? 'Layouts' : page.path === 'introduction' ? 'Windows' : GALLERY_TITLE[page.kind!]);
 
 function Outline({ items }: { items: { id: string; text: string; level: number }[] }) {
