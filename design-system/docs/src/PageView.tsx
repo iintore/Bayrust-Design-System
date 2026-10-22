@@ -132,12 +132,20 @@ export function PageView({ path, pages }: { path: string; pages: Page[] }) {
   }, [page]);
 
   if (!page) {
+    // the same .doc-page wrapper every other page uses, so this one keeps the page gutter too
     return (
-      <main className="doc-main" id="doc-main">
-        <article className="doc-article">
-          <h1>Page not found</h1>
-          <p className="doc-lead">There’s no page at this address. Use the sidebar or search (/) to find what you need.</p>
-        </article>
+      <main className="doc-main" id="doc-main" tabIndex={-1}>
+        <div className="doc-page">
+          <article className="doc-article">
+            <h1>Page not found</h1>
+            <p className="doc-lead">There’s no page at this address. Use the sidebar or search (/) to find what you need.</p>
+            <p className="doc-lead">
+              <a href={pageHref('introduction')} onClick={(e) => (e.preventDefault(), navigate('introduction'))}>
+                Go to Introduction
+              </a>
+            </p>
+          </article>
+        </div>
       </main>
     );
   }
