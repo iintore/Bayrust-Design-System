@@ -2,7 +2,7 @@
   "name": "bayrust-design-system",
   "private": true,
   "version": "2.8.2",
-  "description": "Bayrust design system: 2.8.2 rebuilt from its shipped frontend, with a live harness and documentation site",
+  "description": "Bayrust design system: Raycast 2.8.2 rebuilt from its shipped frontend, with a live harness and documentation site",
   "author": "Tony Lewis MANZI",
   "type": "module",
   "scripts": {
@@ -12,14 +12,9 @@
     "docs:content": "npm --prefix design-system/docs run content",
     "docs:build": "npm --prefix design-system/docs run build",
     "check": "npm --prefix design-system/docs run check",
-    "format": "prettier --write \"design-system/site/*.js\" \"packages/bayrust/src/*.js\"",
-    "format:check": "prettier --check \"design-system/site/*.js\" \"packages/bayrust/src/*.js\"",
     "audit": "node harness/docs-audit.mjs",
     "verify": "node harness/docs-verify.mjs",
     "package:build": "npm --prefix packages/bayrust run build",
     "package:test": "npm --prefix packages/bayrust test"
-  },
-  "devDependencies": {
-    "prettier": "^3.6.2"
   }
 }

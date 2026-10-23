@@ -184,7 +184,7 @@ def build(ctx):
         return '\n'.join(f"- **[{brand(fl)}](/flow-{fid})**: " + ', '.join(sorted(set(v))[:12]) + (f' and {len(set(v)) - 12} more' if len(set(v)) > 12 else '') for (fl, fid), v in sorted(by.items())) + '\n'
 
     # ------------------------------------------------------------ component and pattern pages (families)
-    STATUS = {'yes': 'In Bayrust', 'variant': 'Variant', 'composed': 'Composed from Bayrust parts', 'uncaptured': 'In the code, not shown in the sandbox', 'excluded': 'In Bayrust, not published', 'no': 'Not in Bayrust'}
+    STATUS = {'yes': 'In Bayrust', 'variant': 'Variant', 'composed': 'Composed from Bayrust parts', 'uncaptured': 'In the code, not shown in the sandbox', 'no': 'Not in Bayrust'}
     by_item = {c[0]: c for c in CHECK}
     item_page = {}
 
@@ -274,7 +274,7 @@ def build(ctx):
     # ------------------------------------------------------------ new foundation pages
     F = ctx['fpage']
     fam = collections.Counter(); ex1 = {}
-    tj = J('design-system', 'tokens', 'bayrust.tokens.json')
+    tj = J('design-system', 'tokens', 'raycast.tokens.json')
     for g, v in tj.items(): fam[g] = len(v); ex1[g] = next(iter(v))
     F('design-tokens', 'Design tokens', f"{sum(fam.values())} CSS variables, resolved for Bayrust Dark and Bayrust Light.", """## How tokens work
 
@@ -291,7 +291,7 @@ Every value in the interface is a CSS variable. Some are fixed (`--radius-8: 8px
 
 | File | Contents |
 |---|---|
-| `design-system/tokens/bayrust.tokens.json` | W3C-style tokens by family, with the source declaration and the Dark and Light values |
+| `design-system/tokens/raycast.tokens.json` | W3C-style tokens by family, with the source declaration and the Dark and Light values |
 | `design-system/tokens/tokens.css` | The resolved values as CSS, one block per theme |
 | `design-system/tokens/tokens-raw.json` | Every variable with its declaration, resolved value and declaring selectors |
 """)
@@ -345,60 +345,15 @@ Notes sizes its window to the note's height until it's resized by hand ("Enable 
 
 {facts['reducedMotion']} rules apply under `prefers-reduced-motion: reduce`. See [Breakpoints](/breakpoints) for the queries.
 """)
-    # Illustrations and Imagery are not published as galleries: they were the only thing pulling every image file
-    # galleries were the only thing pulling all 490 image files into the site. Only the images the component and
-    # window markup actually references are collected (build_content.localize and the stylesheet URLs).
-    # ---- command and extension icons: the app-icon artwork shipped with the app, browsable and copyable.
-    # These are the only images the galleries used to carry that say anything about the design system; the
-    # illustrations and screenshots they sat beside do not, which is why this page is just the icons.
-    import collections as _c
-    # The file names are a build artefact: a kind prefix, the name in kebab case, sometimes an appearance suffix.
-    # The page shows the name a person would use, with the kind and the appearance as their own fields.
-    ICON_WORDS = {'ai': 'AI', 'mcp': 'MCP', 'ios': 'iOS', 'macos': 'macOS', 'os': 'OS', 'url': 'URL', 'pdf': 'PDF',
-                  'qr': 'QR', 'id': 'ID', 'ui': 'UI', 'tv': 'TV', 'wifi': 'Wi-Fi', 'vscode': 'VS Code',
-                  '1password': '1Password', 'vpn': 'VPN', 'cpu': 'CPU', 'gpu': 'GPU', 'api': 'API', 'ocr': 'OCR'}
-    def icon_label(slug):
-        return ' '.join(ICON_WORDS.get(w, w[:1].upper() + w[1:]) for w in slug.split('-'))
-
-    seen = _c.OrderedDict()
-    for i in sorted(facts['images'], key=lambda i: i['file']):
-        if not i['file'].startswith(('command-', 'extension-', 'app-')) or i['type'] != 'png': continue
-        # the file is published under the Bayrust name, so the name shown here matches it
-        base = re.sub(r'(_large)?-[A-Za-z0-9_-]{8}\.png$', '', i['file']).replace('raycast', 'bayrust')
-        large = '_large' in i['file']
-        kind, _, rest = base.partition('-')
-        slug, appearance = rest, None
-        m_app = re.search(r'-(dark|light)$', rest)
-        if m_app:
-            slug, appearance = rest[: m_app.start()], m_app.group(1).capitalize()
-        e = seen.setdefault(base, {'name': icon_label(slug), 'slug': base,
-                                   'kind': {'app': 'App', 'extension': 'Extension'}.get(kind, 'Command'),
-                                   'appearance': appearance, 'small': None, 'large': None})
-        e['large' if large else 'small'] = {'file': i['file'], 'w': i['w'], 'h': i['h']}
-    icons = [e for e in seen.values() if e['small'] or e['large']]
-    for e in icons:
-        for k in ('small', 'large'):
-            if e[k]: ctx['assets'].add(e[k]['file'])
-    kinds = _c.Counter(e['kind'] for e in icons)
-    F('product-icons', 'Product icons', f"{len(icons)} product icons: {kinds['Command']} commands, {kinds['Extension']} extensions and {kinds['App']} apps, at 44 and 108 points.", """## What these are
-
-Every command, extension and app has an icon of its own: a rounded square with a gradient and a glyph, drawn as
-artwork. They are the product icons, as distinct from the interface icons on [Iconography](/iconography), which are
-monochrome and take their colour from the text around them. These are raster, at two sizes — 44 points for lists and
-menus, 108 for larger surfaces.
-
-## Using one
-
-Click an icon to copy its path. From the package the same files sit under the runtime the Vite plugin serves:
-
-```tsx
-<img src="/bayrust/runtime/command-ai-chat-BSU8W46l.png" width={44} height={44} alt="" />
-```
-
-The file name carries the build hash, so it changes when the app is rebuilt; copy it from here rather than
-typing it.
-""", 'appicons', appicons=icons)
-
+    illus = [i for i in facts['images'] if not i['file'].startswith(('command-', 'extension-', 'app-', 'icons-')) and i['type'] in ('png', 'svg', 'webp', 'jpg') and not re.search(r'background|grain|bg[-_]', i['file'])]
+    imagery = [i for i in facts['images'] if re.search(r'background|grain|bg[-_]', i['file']) or i['type'] == 'mp4']
+    cmd_icons = [i for i in facts['images'] if i['file'].startswith(('command-', 'extension-', 'app-'))]
+    for i in facts['images']: ctx['assets'].add(i['file'])
+    F('illustrations', 'Illustrations', f'{len(illus)} illustrations shipped with the app: onboarding, paywalls, empty states, weather symbols and more.', '', 'gallery',
+      gallery=[{'src': f"/ds/assets/{i['file']}", 'caption': re.sub(r'-[A-Za-z0-9_-]{8}\.\w+$', '', i['file']), 'w': i['w'], 'h': i['h']} for i in illus])
+    F('imagery', 'Imagery', f'Backgrounds, textures and video, and {len(cmd_icons)} command and extension icons.', '', 'gallery',
+      gallery=[{'src': f"/ds/assets/{i['file']}", 'caption': re.sub(r'-[A-Za-z0-9_-]{8}\.\w+$', '', i['file']), 'w': i['w'], 'h': i['h'], 'video': i['type'] == 'mp4'} for i in imagery]
+      + [{'src': f"/ds/assets/{i['file']}", 'caption': re.sub(r'-[A-Za-z0-9_-]{8}\.\w+$', '', i['file']), 'w': i['w'], 'h': i['h'], 'group': 'Command and extension icons'} for i in cmd_icons if '_large' not in i['file']])
     # ---- "in use" galleries: every value from the shipped stylesheets, rendered with those stylesheets
     GLOBAL_VARS = set(raw['dark']['tokens'])
     TX = 'text__text_054b5 text__align-left_43d84 '
@@ -557,7 +512,6 @@ Components set state as attributes, and the stylesheets style the attributes: `d
 | Variant of another component | {cnt['variant']} |
 | Composed from Bayrust parts | {cnt['composed']} |
 | In the code, not shown in the sandbox | {cnt['uncaptured']} |
-| In Bayrust, not published | {cnt['excluded']} |
 | Not in Bayrust | {cnt['no']} |
 
 Composed components aren't shipped by the app: they are built only from Bayrust's own primitives, text styles and
@@ -567,20 +521,12 @@ tokens, and each one is labelled.
     for sec in ('Getting started', 'Foundations', 'Components', 'Patterns', 'Documentation'):
         md += f'## {sec}\n\n' + md_table(['Item', 'Status', 'Bayrust', 'Note'], [r for s, r in rows if s == sec]) + '\n'
     pages['coverage'] = {'title': 'Coverage', 'lead': f'Every item of the design-system checklist ({len(CHECK)}), and what Bayrust has for it.', 'md': md}
-    pages['changelog'] = {'title': 'Changelog', 'lead': 'What these docs were built from, and when.', 'md': """## 2026-10-22
-
-- The Illustrations and Imagery galleries are gone, and the site
-  carries only the images the component and window markup references. Both checklist items now read
-  "In Bayrust, not published".
-- The two shipped `.mp4` files are left out of the site and the package.
-- `@krackedui/bayrust` is public on npm, and its runtime carries code, styles, fonts and SVG only.
-
-## 2026-10-21 (later)
+    pages['changelog'] = {'title': 'Changelog', 'lead': 'What these docs were built from, and when.', 'md': """## 2026-10-21 (later)
 
 - Components are grouped into 32 families (Button holds every kind of button, Input every kind of input…), with each checklist item a section.
 - Every preview is live: components, Bayrust's playground sections, live views and dialogs, and whole windows (flows, templates, blocks) rendered from their own markup. No screenshots remain.
 - Previews follow Bayrust's playground: components straight on the canvas at their real size, with Variant/source annotations.
-- The sandbox runs as a Pro trial account (the app's own auth-override shape), so Pro screens are documented: Account, AI sub-pages, Cloud Sync, automations.
+- The sandbox runs as a Pro trial account (Raycast's own auth-override shape), so Pro screens are documented: Account, AI sub-pages, Cloud Sync, automations.
 - Components Bayrust doesn't ship are composed from its own primitives and tokens, and labelled.
 - New live captures: Start Focus Session (duration picker, block list), Search AI Commands (master-detail layout), legacy password form, crash view, Dictation activity graph.
 
@@ -600,6 +546,6 @@ tokens, and each one is labelled.
 
 ## Source
 
-Everything is extracted from the shipped macOS app at version 2.8.2, nothing is drawn or estimated. Module names on each page carry the shipped file's hash, which identifies the exact build.
+Everything is extracted from Raycast 2.8.2 (`/Applications/Raycast.app`). Module names on each page carry the shipped file's hash, which identifies the exact build.
 """
 }

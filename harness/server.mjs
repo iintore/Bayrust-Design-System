@@ -1,4 +1,4 @@
-// Serves Bayrust's shipped frontend unchanged, injecting shim.js (host bridge stub) into each HTML page.
+// Serves Raycast's shipped frontend unchanged, injecting shim.js (host bridge stub) into each HTML page.
 import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';

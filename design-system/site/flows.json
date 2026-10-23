@@ -1597,7 +1597,7 @@
      },
      {
       "id": "01-ai",
-      "label": "Pro Walkthrough \u2014 Bayrust AI",
+      "label": "Pro Walkthrough \u2014 Raycast AI",
       "url": "/pro-walkthrough-window.html",
       "viewport": {
        "width": 1280,
@@ -3000,8 +3000,8 @@
       "panels": []
      },
      {
-      "id": "25-bayrust",
-      "label": "Settings \u2014 Bayrust",
+      "id": "25-raycast",
+      "label": "Settings \u2014 Raycast",
       "url": "/settings-window.html",
       "viewport": {
        "width": 800,
@@ -3031,13 +3031,13 @@
        "ai.getPricing",
        "ai.getCreditsBalance"
       ],
-      "image": "research/captures/settings/webkit/25-bayrust.png",
+      "image": "research/captures/settings/webkit/25-raycast.png",
       "engine": "webkit",
       "panels": []
      },
      {
-      "id": "26-bayrust-focus",
-      "label": "Settings \u2014 Bayrust Focus",
+      "id": "26-raycast-focus",
+      "label": "Settings \u2014 Raycast Focus",
       "url": "/settings-window.html",
       "viewport": {
        "width": 800,
@@ -3067,13 +3067,13 @@
        "ai.getPricing",
        "ai.getCreditsBalance"
       ],
-      "image": "research/captures/settings/webkit/26-bayrust-focus.png",
+      "image": "research/captures/settings/webkit/26-raycast-focus.png",
       "engine": "webkit",
       "panels": []
      },
      {
-      "id": "27-bayrust-for-teams",
-      "label": "Settings \u2014 Bayrust for Teams",
+      "id": "27-raycast-for-teams",
+      "label": "Settings \u2014 Raycast for Teams",
       "url": "/settings-window.html",
       "viewport": {
        "width": 800,
@@ -3103,13 +3103,13 @@
        "ai.getPricing",
        "ai.getCreditsBalance"
       ],
-      "image": "research/captures/settings/webkit/27-bayrust-for-teams.png",
+      "image": "research/captures/settings/webkit/27-raycast-for-teams.png",
       "engine": "webkit",
       "panels": []
      },
      {
-      "id": "28-bayrust-notes",
-      "label": "Settings \u2014 Bayrust Notes",
+      "id": "28-raycast-notes",
+      "label": "Settings \u2014 Raycast Notes",
       "url": "/settings-window.html",
       "viewport": {
        "width": 800,
@@ -3139,13 +3139,13 @@
        "ai.getPricing",
        "ai.getCreditsBalance"
       ],
-      "image": "research/captures/settings/webkit/28-bayrust-notes.png",
+      "image": "research/captures/settings/webkit/28-raycast-notes.png",
       "engine": "webkit",
       "panels": []
      },
      {
-      "id": "29-bayrust-settings",
-      "label": "Settings \u2014 Bayrust Settings",
+      "id": "29-raycast-settings",
+      "label": "Settings \u2014 Raycast Settings",
       "url": "/settings-window.html",
       "viewport": {
        "width": 800,
@@ -3175,7 +3175,7 @@
        "ai.getPricing",
        "ai.getCreditsBalance"
       ],
-      "image": "research/captures/settings/webkit/29-bayrust-settings.png",
+      "image": "research/captures/settings/webkit/29-raycast-settings.png",
       "engine": "webkit",
       "panels": []
      },
@@ -3718,8 +3718,8 @@
     "prefix": "",
     "states": [
      {
-      "id": "01-bayrust-dark",
-      "label": "Theme Studio \u2014 Bayrust Dark",
+      "id": "01-raycast-dark",
+      "label": "Theme Studio \u2014 Raycast Dark",
       "url": "/theme-studio-window.html",
       "viewport": {
        "width": 1370,
@@ -3738,7 +3738,7 @@
        "settings.getInternalExtensionSettings",
        "settings.previewThemeBackgroundColors"
       ],
-      "image": "research/captures/theme-studio/webkit/01-bayrust-dark.png",
+      "image": "research/captures/theme-studio/webkit/01-raycast-dark.png",
       "engine": "webkit",
       "panels": []
      },
@@ -3768,8 +3768,8 @@
       "panels": []
      },
      {
-      "id": "03-bayrust-light",
-      "label": "Theme Studio \u2014 Bayrust Light",
+      "id": "03-raycast-light",
+      "label": "Theme Studio \u2014 Raycast Light",
       "url": "/theme-studio-window.html",
       "viewport": {
        "width": 1370,
@@ -3788,14 +3788,14 @@
        "settings.getInternalExtensionSettings",
        "settings.previewThemeBackgroundColors"
       ],
-      "image": "research/captures/theme-studio/webkit/03-bayrust-light--composite.png",
+      "image": "research/captures/theme-studio/webkit/03-raycast-light--composite.png",
       "engine": "webkit",
       "panels": [
-       "03-bayrust-light--tooltip.png"
+       "03-raycast-light--tooltip.png"
       ]
      },
      {
-      "id": "fs-01-bayrust-dark",
+      "id": "fs-01-raycast-dark",
       "label": "Theme Studio \u2014 full screen",
       "url": "/theme-studio-window.html",
       "viewport": {
@@ -3815,7 +3815,7 @@
        "settings.getInternalExtensionSettings",
        "settings.previewThemeBackgroundColors"
       ],
-      "image": "research/captures/theme-studio/webkit/fs-01-bayrust-dark.png",
+      "image": "research/captures/theme-studio/webkit/fs-01-raycast-dark.png",
       "engine": "webkit",
       "panels": []
      }

@@ -8,9 +8,7 @@ Every value comes from the extraction outputs; nothing here is drawn or estimate
   research/organisms/        native crops of each block
   research/captures/*/webkit native WebKit renders of every flow state
   reference/frontend/        the shipped stylesheets, fonts, images and icon sprite
-Display text carries the Bayrust name, as harness/brand.js does in the running app: every capitalised occurrence of
-the original name is rewritten. Lowercase identifiers (CSS module classes, data attributes, asset file names, the
-sprite URL scheme) are left exactly as shipped, because the stylesheets and the module graph depend on them.
+Display text is renamed Raycast → Bayrust, as harness/brand.js does in the running app.
 """
 import json, os, re, shutil, glob, hashlib
 
@@ -26,8 +24,6 @@ def brand(s):
 
 # previews are live; screenshots are no longer published
 if os.path.isdir(os.path.join(DS, 'shots')): shutil.rmtree(os.path.join(DS, 'shots'))
-# assets/ is collected fresh each build, so a file an earlier build referenced doesn't stay behind
-if os.path.isdir(os.path.join(DS, 'assets')): shutil.rmtree(os.path.join(DS, 'assets'))
 for d in ['assets', 'sprite', 'icons', 'appicons', 'shots', 'native']:
     os.makedirs(os.path.join(DS, d), exist_ok=True)
 
@@ -44,7 +40,7 @@ def css_urls(css):
 # css-*.css (globals, tokens) first, then every module stylesheet in name order
 files = sorted(glob.glob(os.path.join(FE, '*.css')), key=lambda f: (not os.path.basename(f).startswith('css-'), os.path.basename(f)))
 bundle = [f'/* {os.path.basename(f)} */\n' + css_urls(open(f).read()) for f in files]
-open(os.path.join(DS, 'bundle.css'), 'w').write('/* The 158 stylesheets shipped in Bayrust 2.8.2 frontend/, unmodified except asset URLs. */\n' + '\n'.join(bundle))
+open(os.path.join(DS, 'bundle.css'), 'w').write('/* The 158 stylesheets shipped in Raycast 2.8.2 frontend/, unmodified except asset URLs. */\n' + '\n'.join(bundle))
 
 # The theme's base colours are set at runtime on .active-theme (from the theme JSON). Write them out
 # per mode exactly as resolved, so previews outside the app get the same theme.
@@ -173,8 +169,8 @@ def png_size(path):
     return int.from_bytes(b[16:20], 'big'), int.from_bytes(b[20:24], 'big')
 
 # ---------------------------------------------------------------- tokens
-tok = J('design-system', 'tokens', 'bayrust.tokens.json')
-def ext(t): return t['$extensions']['bayrust']
+tok = J('design-system', 'tokens', 'raycast.tokens.json')
+def ext(t): return t['$extensions']['raycast']
 def usage(e):
     src = e['source']
     return f"Source `{src}` · declared in `{', '.join(e['declaredIn'][:2])}`" if src not in (e['dark'], e['light']) else f"Declared in `{', '.join(e['declaredIn'][:2])}`"
@@ -264,36 +260,8 @@ def one_copy(html):
     parts = re.split(r'\n(?=<)', html)
     return parts[0] if len(parts) > 1 and all(p.strip() == parts[0].strip() for p in parts) else html
 
-# The captures were taken against the running harness, so some image URLs are absolute to it
-# (http://localhost:4317/<file>). Those 404 wherever the harness is not running — the deployed docs included —
-# so they are rewritten to the site's own copy of the file.
-HARNESS_URL = re.compile(r'https?://(?:localhost|127\.0\.0\.1)(?::\d+)?/([A-Za-z0-9@._-]+\.(?:png|jpe?g|webp|gif|avif|svg))')
-
-# The app's playground draws its Image specimens from a sample asset that is a screenshot of an internal design
-# file, tab names and layer tree included. It says nothing about the Image component and it is not ours to publish,
-# so the specimens use one of the shipped abstract images instead. Same component, same markup, different sample.
-SAMPLE_SWAP = {
-    'smart-context-sample-wide-3j-STtM2.png': 'grid-item-1-dark-CwUBzXhW.jpg',
-    'smart-context-sample-narrow-Cem1VzYe.png': 'grid-item-2-dark-DvoHvLMG.jpg',
-}
-
-# Image files whose own name carries the old app name. They are published under the Bayrust name and every
-# reference is rewritten to match; the shipped frontend keeps its own file names, as it keeps everything else.
-ASSET_RENAME = {f: f.replace('raycast', 'bayrust') for f in os.listdir(FE)
-                if 'raycast' in f and re.search(r'\.(png|jpe?g|webp|gif|avif|svg)$', f)}
-
 def localize(html):
-    """Points the captured markup's images at public/ds/assets, and collects the files it references."""
-    for old_name, new_name in SAMPLE_SWAP.items():
-        html = html.replace(old_name, new_name)
-    for old_name, new_name in ASSET_RENAME.items():
-        html = html.replace(old_name, new_name)
-    def to_local(m):
-        name = m.group(1)
-        if not os.path.exists(os.path.join(FE, name)): return m.group(0)
-        assets.add(name)
-        return f'/ds/assets/{name}'
-    html = HARNESS_URL.sub(to_local, html)
+    """Collects the frontend images the captured markup references into public/ds/assets."""
     for name in re.findall(r'/ds/assets/([^"&\')\s]+)', html):
         if os.path.exists(os.path.join(FE, name)): assets.add(name)
     return html
@@ -302,22 +270,7 @@ def localize(html):
 # ---------------------------------------------------------------- live windows (harness/docs-windows.mjs)
 WIN_SRC = os.path.join(ROOT, 'research', 'docs', 'windows')
 if os.path.isdir(os.path.join(DS, 'windows')): shutil.rmtree(os.path.join(DS, 'windows'))
-if os.path.isdir(WIN_SRC):
-    shutil.copytree(WIN_SRC, os.path.join(DS, 'windows'))
-    # these are copied as files, so they never pass through localize(): point their images at the site's own copies
-    _win_fixed = 0
-    for _dir, _, _files in os.walk(os.path.join(DS, 'windows')):
-        for _f in _files:
-            if not _f.endswith(('.html', '.json')): continue
-            _p = os.path.join(_dir, _f)
-            _before = open(_p, encoding='utf8').read()
-            # localize() points images at the site's copies; brand() renames the display text (window labels and
-            # anything the capture kept), and touches only the capitalised name, so ids and class names are safe.
-            _after = brand(localize(_before))
-            if _after != _before:
-                open(_p, 'w', encoding='utf8').write(_after)
-                _win_fixed += 1
-    if _win_fixed: print(f'window captures pointed at the harness, rewritten: {_win_fixed} files')
+if os.path.isdir(WIN_SRC): shutil.copytree(WIN_SRC, os.path.join(DS, 'windows'))
 # States whose capture is identical to an earlier state of the same flow didn't reach the screen they're named after
 # (the capture never advanced); they're left out rather than shown under the wrong name. Typing in the compact
 # launcher expands it to the full search, so that pair is equal by design.
@@ -397,10 +350,7 @@ pages['installation'] = {
 @krackedui/bayrust
 ```
 
-It's public on npm under the `@krackedui` scope: `npm install`, `pnpm add` or `yarn add` works with no login.
-
-The package carries the images the components load, so icons, empty states and illustrations render as they do in
-the app. Video is the one thing left out: the two shipped `.mp4` files are not published.
+It's published under the `@krackedui` scope with restricted access: log in to npm as a member of the scope (`npm login`) before installing.
 
 | Import | What it is |
 |---|---|
@@ -481,7 +431,7 @@ node harness/server.mjs
 | `http://localhost:4317/theme-studio-window.html` | Theme Studio, 1370 × 570 |
 | `http://localhost:4317/feedback-window.html` | Send Feedback, 420 × 714 |
 
-Add `?brand=original` to any window to turn the Bayrust rename off.
+Add `?brand=raycast` to any window to turn the Bayrust rename off.
 
 ## The docs
 
@@ -667,7 +617,7 @@ TEMPLATES = [
     ('settings', 'Settings', 'Sidebar and page, 800 × 786 by default, or the full screen.', [('settings', '01-general', 'Default, 800 × 786'), ('settings', 'fs-01-general', 'Full screen, 1710 × 1107'), ('settings', 'fs-02-ai', 'Full screen, AI page')]),
     ('ai-chat', 'AI Chat', 'Chat with sidebar and composer, 750 × 600 by default, or the full screen.', [('ai-chat', '01-new-chat', 'Default, 750 × 600'), ('ai-chat', 'fs-01-new-chat', 'Full screen, 1710 × 1107'), ('ai-chat', 'fs-02-typing', 'Full screen, typing')]),
     ('notes', 'Notes', 'A single note, 396 wide with the height of the note, or the full screen.', [('notes', '01-welcome-note', 'Default, 396 × 830'), ('notes', 'fs-01-welcome-note', 'Full screen, 1710 × 1107')]),
-    ('theme-studio', 'Theme Studio', 'Theme list, editor and preview, 1370 × 570, or the full screen.', [('theme-studio', '01-bayrust-dark', 'Default, 1370 × 570'), ('theme-studio', 'fs-01-bayrust-dark', 'Full screen, 1710 × 1107')]),
+    ('theme-studio', 'Theme Studio', 'Theme list, editor and preview, 1370 × 570, or the full screen.', [('theme-studio', '01-raycast-dark', 'Default, 1370 × 570'), ('theme-studio', 'fs-01-raycast-dark', 'Full screen, 1710 × 1107')]),
     ('feedback', 'Send Feedback', 'A single form, 420 × 714, or the full screen.', [('feedback', '01-empty', 'Default, 420 × 714'), ('feedback', 'fs-01-empty', 'Full screen, 1710 × 1107')]),
     ('pro-walkthrough', 'Pro walkthrough', 'Welcome page at 1280 × 760, feature pages at 1280 × 712.', [('pro-walkthrough', '00-welcome', 'Welcome, 1280 × 760'), ('pro-walkthrough', '02-dictation', 'Feature page')]),
 ]
@@ -702,7 +652,7 @@ ctx = dict(J=J, md_table=md_table, slug=slug, brand=brand, shot=shot, localize=l
 pages2.build(ctx)
 
 FOUNDATION_ORDER = ['design-tokens', 'color', 'typography', 'spacing', 'sizing', 'grid', 'layout', 'breakpoints', 'responsive-design', 'iconography',
-                    'logo', 'product-icons', 'elevation', 'shadows', 'borders', 'radius', 'opacity', 'gradients', 'motion', 'animation',
+                    'illustrations', 'imagery', 'logo', 'elevation', 'shadows', 'borders', 'radius', 'opacity', 'gradients', 'motion', 'animation',
                     'transitions', 'accessibility', 'themes', 'dark-mode', 'states']
 def nav_item(path): return {'title': pages[path]['title'], 'path': path}
 nav[:] = [
@@ -726,23 +676,9 @@ for path, p in pages.items():
 missing = [p for p in pages if not any(i['path'] == p for g in nav for i in g['items'])]
 if missing: print('pages not in nav:', missing)
 
-# ---------------------------------------------------------------- assets referenced by CSS, markup and the shipped code
-# The components load their own images at runtime (`new URL('command-x.png', import.meta.url)`), so an image named
-# anywhere in the shipped JS or CSS is one a live preview can ask for: 484 of the 490 shipped images are. Collecting
-# only what the captured markup references leaves those previews with broken images, so the rule is what the code
-# can load. The Illustrations and Imagery galleries stay gone; this is about components rendering, not browsing art.
-for p_ in glob.glob(os.path.join(FE, '*.js')) + glob.glob(os.path.join(FE, '*.css')):
-    for name in re.findall(r'[A-Za-z0-9@._-]+\.(?:png|jpe?g|webp|gif|avif)', open(p_, encoding='utf8', errors='ignore').read()):
-        if os.path.exists(os.path.join(FE, name)): assets.add(name)
-
-# Video is still not published: the two shipped .mp4 files are the app vendor's and nothing in the docs plays them.
-VIDEO = ('.mp4', '.webm', '.mov', '.m4v')
-skipped_video = sorted(n for n in assets if n.lower().endswith(VIDEO))
-# the design-file screenshots are swapped out of every specimen above, so they are not published either
-skipped_video += [n for n in assets if n in SAMPLE_SWAP]
-for name in sorted(assets - set(skipped_video)):
-    shutil.copy(os.path.join(FE, name), os.path.join(DS, 'assets', ASSET_RENAME.get(name, name)))
-if skipped_video: print('left out:', ', '.join(skipped_video))
+# ---------------------------------------------------------------- assets referenced by CSS and markup
+for name in assets:
+    shutil.copy(os.path.join(FE, name), os.path.join(DS, 'assets', name))
 
 def pt(url):
     w, h = png_size(os.path.join(PUB, url.lstrip('/')))
@@ -753,21 +689,7 @@ for p in pages.values():
             sh['w'], sh['h'] = pt(sh['src'])
     for e in p.get('examples') or []:
         if e.get('image'): e['w'], e['h'] = pt(e['image'])
-def swap_samples(s):
-    for old_name, new_name in SAMPLE_SWAP.items(): s = s.replace(old_name, new_name)
-    for old_name, new_name in ASSET_RENAME.items(): s = s.replace(old_name, new_name)
-    return s
-
-def brand_deep(x):
-    """Renames display text everywhere in the content, including captured markup and the JSX of the Code tab.
-    Only the capitalised name is rewritten, so CSS module classes, data attributes, asset file names and the
-    ipc://raycast-sprite/ scheme keep the spelling the stylesheets and the module graph rely on."""
-    if isinstance(x, str): return swap_samples(brand(x))
-    if isinstance(x, list): return [brand_deep(v) for v in x]
-    if isinstance(x, dict): return {k: brand_deep(v) for k, v in x.items()}
-    return x
-
-content = {'pages': brand_deep(pages), 'nav': brand_deep(nav), 'tokens': tokens, 'icons': symbols}
+content = {'pages': pages, 'nav': nav, 'tokens': tokens, 'icons': symbols}
 out = os.path.join(DOCS, 'src', 'content', 'content.json')
 json.dump(content, open(out, 'w'), ensure_ascii=False, indent=1)
-print(f"pages {len(pages)} · components {len(nav[2]['items'])} · patterns {len(nav[3]['items'])} · blocks {len(block_items)} · templates {len(tmpl_items)} · flows {len(flow_items)} · icons {len(symbols)} · assets {len(assets) - len(skipped_video)} · shots {len(os.listdir(os.path.join(DS, 'shots')))}")
+print(f"pages {len(pages)} · components {len(nav[2]['items'])} · patterns {len(nav[3]['items'])} · blocks {len(block_items)} · templates {len(tmpl_items)} · flows {len(flow_items)} · icons {len(symbols)} · assets {len(assets)} · shots {len(os.listdir(os.path.join(DS, 'shots')))}")

@@ -1,6 +1,6 @@
-// Runs a sandboxed copy of Bayrust's shipped backend (HOME = harness/sandbox-home) over its stdio protocol.
+// Runs a sandboxed copy of Raycast's shipped backend (HOME = harness/sandbox-home) over its stdio protocol.
 // Browser IPC requests addressed to "backend" are forwarded here; the backend's own requests to "host"
-// are answered from host-mocks.mjs. Never touches the user's real Bayrust data.
+// are answered from host-mocks.mjs. Never touches the user's real Raycast data.
 import { spawn } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';

@@ -9,11 +9,7 @@ pnpm add @krackedui/bayrust
 yarn add @krackedui/bayrust
 ```
 
-Public on npm under the `@krackedui` scope: no login needed to install.
-
-**Images included, video not.** The components load their own images at runtime, so the package carries them: icons,
-empty states, backgrounds and illustrations render as they do in the app. The two shipped `.mp4` files are the only
-thing left out.
+Published with restricted access under `@krackedui`: log in to npm as a member of the scope first.
 
 ## Entry points
 
@@ -59,3 +55,4 @@ npm run build   # dist/ from the repository (run `npm run content` in design-sys
 npm test        # packs, installs with npm, pnpm and yarn into a Vite + React app, and checks it in Chrome
 ```
 
+Raycast's code, artwork and icons are Raycast's property.

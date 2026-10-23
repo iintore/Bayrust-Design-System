@@ -585,6 +585,44 @@ kbd {
   font: 400 13px/20px var(--doc-font);
   color: var(--b-color-text-primary);
 }
+.doc-files {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+}
+.doc-files.small {
+  grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+}
+.doc-files figure {
+  margin: 0;
+}
+.doc-file-stage {
+  display: grid;
+  place-items: center;
+  min-height: 120px;
+  padding: 12px;
+  border-radius: 12px;
+  background: var(--b-fg-5);
+  overflow: hidden;
+}
+.doc-files.small .doc-file-stage {
+  min-height: 72px;
+}
+.doc-file-stage img,
+.doc-file-stage video {
+  max-width: 100%;
+  max-height: 260px;
+  height: auto;
+}
+.doc-files figcaption {
+  margin-top: 6px;
+  font: 400 11px/16px var(--doc-font);
+  color: var(--b-color-text-secondary);
+  overflow-wrap: anywhere;
+}
+.doc-files figcaption span {
+  color: var(--b-color-text-tertiary);
+}
 .doc-themes {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));

@@ -1,4 +1,4 @@
-/* Documentation chrome only — built from Bayrust tokens. Specimens inside .ds-stage are untouched shipped components. */
+/* Documentation chrome only — built from Raycast tokens. Specimens inside .ds-stage are untouched shipped components. */
 html, body { overflow: hidden; -webkit-user-select: text; user-select: text; height: 100vh; }
 #settings-window-root { display: none !important; }
 #ds-root { position: relative; z-index: 1; height: 100vh; }

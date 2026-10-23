@@ -1,4 +1,4 @@
-// Captures states of the shipped Bayrust frontend (served by server.mjs) at native window size @2x.
+// Captures states of the shipped Raycast frontend (served by server.mjs) at native window size @2x.
 // For each state: PNG, rendered DOM, computed CSS custom properties, IPC methods used, and an
 // icon-extraction capture produced by tools/web-icon-extraction-workflow/workflow/capture.js (unmodified).
 // Usage: node capture.mjs states/onboarding.json
@@ -95,9 +95,9 @@ for (const state of spec.states.filter(s => !only || only.test(s.id))) {
   });
   await fs.writeFile(path.join(outDir, `${id}.json`), JSON.stringify({ id, label: state.label, viewport, ...snapshot }, null, 1));
   const capture = await ctx.createIconCapture(tab, iconRunDir, { run: {
-    name: `Bayrust 2.8.2 — ${spec.name}`, entryUrl: base + spec.states[0].url, timezone: 'Africa/Kigali',
+    name: `Raycast 2.8.2 — ${spec.name}`, entryUrl: base + spec.states[0].url, timezone: 'Africa/Kigali',
     scope: { origin: base, pathPrefix: '/' },
-    limitations: ['Shipped frontend served locally with a stubbed native host bridge; host-provided images (ipc://) are unavailable.'],
+    limitations: ['Shipped Raycast frontend served locally with a stubbed native host bridge; host-provided images (ipc://) are unavailable.'],
     notes: ['Source: /Applications/Raycast.app (2.8.2) macos-app_RaycastDesktopApp.bundle/Contents/Resources/frontend'],
   } });
   const r = await capture(state.label, { status: 'rendered state verified', notes: state.notes || '' });

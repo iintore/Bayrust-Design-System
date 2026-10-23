@@ -1,5 +1,5 @@
 // Re-renders the states in a states/*.json file with native/viewer (WKWebView in an NSGlassEffectView window —
-// Bayrust's own engine and materials) and composites native child panels at their computed frames.
+// Raycast's own engine and materials) and composites native child panels at their computed frames.
 // Usage: node capture-native.mjs states/onboarding.json [idRegex]
 import fs from 'node:fs/promises';
 import path from 'node:path';

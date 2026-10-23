@@ -19,7 +19,7 @@ for f in sorted(os.listdir(fe)):
     fam, base = family(f)
     assets.append({'file': f, 'name': base, 'family': fam if ext not in ('mp4', 'woff2') else ('Video' if ext == 'mp4' else 'Fonts'), 'type': ext, 'bytes': os.path.getsize(f'{fe}/{f}')})
 audio = [{'file': 'audio/dictation/' + f, 'name': f} for f in sorted(os.listdir('reference/audio/dictation'))]
-json.dump({'source': 'the shipped macOS app 2.8.2 — Contents/Resources/frontend',
+json.dump({'source': '/Applications/Raycast.app 2.8.2 — Contents/Resources/macos-app_RaycastDesktopApp.bundle/Contents/Resources/frontend',
            'sprite': os.path.basename(sprite), 'symbols': symbols, 'assets': assets, 'audio': audio},
           open('design-system/site/manifest.json', 'w'), indent=1)
 from collections import Counter

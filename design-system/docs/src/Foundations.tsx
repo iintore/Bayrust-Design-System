@@ -207,52 +207,34 @@ export function Screens({ page }: { page: Page }) {
   );
 }
 
-/** Command, extension and app icons: filterable, and a click copies the path. */
-export function AppIconGallery({ page }: { page: Page }) {
-  const icons = page.appicons ?? [];
-  const [q, setQ] = useState('');
-  const [copied, setCopied] = useState('');
-  const shown = useMemo(() => {
-    const t = q.trim().toLowerCase();
-    if (!t) return icons;
-    return icons.filter((i) => `${i.name} ${i.slug} ${i.kind}`.toLowerCase().includes(t));
-  }, [icons, q]);
+/** Shipped image files (illustrations, imagery), grouped, at their own size up to the column width. */
+export function Gallery({ page }: { page: Page }) {
+  const groups = new Map<string, NonNullable<Page['gallery']>>();
+  for (const g of page.gallery ?? []) groups.set(g.group ?? '', [...(groups.get(g.group ?? '') ?? []), g]);
   return (
-    <div>
-      <label className="doc-filter">
-        <input value={q} onChange={(e) => setQ(e.target.value)} placeholder={`Filter ${icons.length} icons`} aria-label="Filter command icons" />
-      </label>
-      <div className="doc-appicons">
-        {shown.map((i) => {
-          const f = i.large ?? i.small;
-          if (!f) return null;
-          const path = `/ds/assets/${f.file}`;
-          return (
-            <button
-              key={i.slug}
-              className="doc-appicon-tile"
-              title={`Copy ${path}`}
-              onClick={() => {
-                navigator.clipboard?.writeText(path).then(
-                  () => {
-                    setCopied(i.name);
-                    window.setTimeout(() => setCopied(''), 1200);
-                  },
-                  () => undefined,
-                );
-              }}
-            >
-              <img src={`${BASE}ds/assets/${f.file}`} width={44} height={44} alt="" loading="lazy" />
-              <span className="doc-appicon-name">
-                {copied === i.name ? 'Copied' : i.name}
-                {i.appearance && !copied && <span className="doc-appicon-variant"> {i.appearance}</span>}
-              </span>
-              <span className="doc-appicon-kind">{i.kind}</span>
-            </button>
-          );
-        })}
-      </div>
-      {!shown.length && <p className="doc-lead">No icon matches that filter.</p>}
+    <div className="doc-gallery-files">
+      {[...groups].map(([name, items]) => (
+        <div key={name}>
+          {name && <h3 id={'files-' + name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}>{name}</h3>}
+          <div className={'doc-files' + (name ? ' small' : '')}>
+            {items.map((g) => (
+              <figure key={g.src}>
+                <div className="doc-file-stage">
+                  {g.video ? (
+                    <video src={g.src.replace(/^\/ds\//, `${BASE}ds/`)} muted loop autoPlay playsInline />
+                  ) : (
+                    <img src={g.src.replace(/^\/ds\//, `${BASE}ds/`)} alt={g.caption} loading="lazy" style={{ maxWidth: g.w ? Math.min(g.w / (name ? 1 : 2), 100000) : undefined }} />
+                  )}
+                </div>
+                <figcaption>
+                  {g.caption}
+                  {g.w ? <span> · {g.w} × {g.h}</span> : null}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      ))}
     </div>
   );
 }
@@ -265,7 +247,7 @@ export function ThemeTable({ page }: { page: Page }) {
       {(page.themes ?? []).map((t) => (
         <figure key={t.id} className="doc-theme-card">
           <div className="doc-theme-stage" style={{ background: `linear-gradient(to bottom, ${t.background}, ${t.backgroundSecondary})`, color: t.foreground }}>
-            <span className="doc-theme-name">{t.name}</span>
+            <span className="doc-theme-name">{t.name.replace('Raycast', 'Bayrust')}</span>
             <span className="doc-theme-sel" style={{ background: t.selection, opacity: 0.2 }} />
             <span className="doc-theme-hues">
               {hues.map((h) => (

@@ -10,47 +10,27 @@ const REACT_DOM = 'window-shell-core-BIQZePcT.js';
 const REACT = 'time-BgPLLP_H.js';
 const SPRITE = 'ipc://raycast-sprite/';
 
-// One instance per assets base: the same base returns the same instance, a different one loads its own.
-const loading = new Map();
+let loading = null;
 
-/** Loads the runtime for an assets base once; later calls with that base return the same instance. */
+/** Loads the runtime once; later calls return the same instance. */
 export function loadBayrust(options = {}) {
-  const base = options.base ?? assetsBase();
-  let instance = loading.get(base);
-  if (!instance) {
-    // a failed boot is not kept, so a later call can try again
-    instance = boot(base).catch((e) => {
-      loading.delete(base);
-      throw e;
-    });
-    loading.set(base, instance);
-  }
-  return instance;
+  return (loading ??= boot(options.base ?? assetsBase()));
 }
 
 /** The names of every component that can be loaded with `get`. */
 export const componentNames = Object.keys(components);
 
-// The app asks its Mac host for icons (ipc://raycast-sprite/<name>#s); here they are the package's icon files.
-// The interceptor is installed once, however many bases are loaded, and resolves against the base booted last.
-let spriteRoot = null;
-function interceptSpriteUrls(root) {
-  spriteRoot = root;
-  if (interceptSpriteUrls.installed) return;
-  interceptSpriteUrls.installed = true;
-  const setAttribute = Element.prototype.setAttribute;
-  Element.prototype.setAttribute = function (name, value) {
-    if ((name === 'href' || name === 'src') && typeof value === 'string' && value.startsWith(SPRITE)) {
-      value = `${spriteRoot}icons/${value.slice(SPRITE.length).replace(/#s$/, '')}.svg#s`;
-    }
-    return setAttribute.call(this, name, value);
-  };
-}
-
 async function boot(base) {
   const root = new URL(base, typeof document === 'undefined' ? undefined : document.baseURI).href.replace(/\/?$/, '/');
   const load = (file) => import(/* @vite-ignore */ `${root}runtime/${file}`);
-  interceptSpriteUrls(root);
+  // The app asks its Mac host for icons (ipc://raycast-sprite/<name>#s); here they're the package's icon files.
+  const setAttribute = Element.prototype.setAttribute;
+  Element.prototype.setAttribute = function (name, value) {
+    if ((name === 'href' || name === 'src') && typeof value === 'string' && value.startsWith(SPRITE)) {
+      value = `${root}icons/${value.slice(SPRITE.length).replace(/#s$/, '')}.svg#s`;
+    }
+    return setAttribute.call(this, name, value);
+  };
   const [jsxModule, interop, reactDom, react] = await Promise.all([JSX, INTEROP, REACT_DOM, REACT].map(load));
   const jsx = jsxModule.O();
   const ReactDOM = interop.o(reactDom.i(), 1);

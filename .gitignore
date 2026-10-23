@@ -6,7 +6,7 @@ __pycache__/
 *.pyc
 .DS_Store
 
-# restored by scripts/setup.sh (the official Node release the app's backend runs on)
+# restored by scripts/setup.sh (the official Node release Raycast's backend runs on)
 harness/runtime/
 
 # runtime state: the sandboxed backend recreates its home on first run

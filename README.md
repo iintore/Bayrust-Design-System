@@ -1,14 +1,15 @@
 # Bayrust Design System
 
-Bayrust 2.8.2, rebuilt from its own shipped frontend, documented as a design system:
+Raycast 2.8.2, rebuilt from its own shipped frontend and renamed **Bayrust**, documented as a design system:
 foundations → components → patterns → blocks → templates → flows. Every preview in the docs is the real component,
 running live.
 
-> **Private study material.** Keep this repository private.
+> **Private study material.** Raycast's code, artwork and icons (in `reference/frontend/` and everything captured from
+> it) are Raycast's property. Keep this repository private and don't redistribute it.
 
-The Bayrust name is applied at the display layer: `harness/brand.js` rewrites visible text and labels in every
-window. Add `?brand=original` to a URL to turn it off. Logo and app-icon artwork are unchanged. Nothing is redrawn or
-approximated: the UI is rendered by the shipped JavaScript, CSS, fonts and images, its backend runs from its own
+The rename is display-only: `harness/brand.js` rewrites visible text and labels (`Raycast` → `Bayrust`) in every
+window. Add `?brand=raycast` to a URL to turn it off. Logo and app-icon artwork are unchanged. Nothing is redrawn or
+approximated: the UI is rendered by Raycast's own JavaScript, CSS, fonts and images, its backend runs from its own
 Node code, and only the native host bridge is stubbed.
 
 ## Quick start
@@ -44,7 +45,7 @@ captured markup.
 | `design-system/site/` | The `/ds/` component runtime inside the live app; `composed.js` holds the components composed from Bayrust parts |
 | `design-system/tokens/`, `assets/` | Design tokens (Dark and Light), 730 icons, native catalog images, the icon-workflow package |
 | `harness/` | The server, sandboxed backend, host stubs, specimen tools and the capture, audit and verify scripts |
-| `reference/frontend/` | The shipped 2.8.2 web frontend, unmodified |
+| `reference/frontend/` | Raycast 2.8.2's web frontend, unmodified |
 | `research/` | Captures (DOM, tokens, native renders), component inventory and props, ground-truth screenshots, REA evidence |
 | `tools/` | `rea`, `extract-site` and `web-icon-extraction-workflow`, as git submodules |
 
@@ -53,16 +54,12 @@ runtime state (recreated on first run) and audit output. The REA graphs are stor
 
 ## Package and hosting
 
-**Package.** `packages/bayrust` builds `@krackedui/bayrust` (see its README), published publicly under the
-`@krackedui` scope. It carries the images the components load; the two shipped `.mp4` files are the only thing left
-out.
+**Package.** `packages/bayrust` builds `@krackedui/bayrust` (see its README). It's set to publish with restricted
+access, so only members of the `@krackedui` scope can install it:
 
 ```bash
-cd packages/bayrust && npm publish
+cd packages/bayrust && npm login && npm publish
 ```
-
-Publishing needs an npm token for the `@krackedui` organization in `~/.npmrc`
-(`//registry.npmjs.org/:_authToken=…`), or `npm login` as a member of the scope.
 
 **Docs on Vercel.** `vercel.json` builds only the docs app and serves it as a static site (deep links included);
 `.vercelignore` keeps the upload to the docs folder (about 56 MB). Without the harness, each preview shows its captured
@@ -98,7 +95,7 @@ takes Bayrust's own look: the layout, type and colours of the app's internal com
 | Section | Contents |
 |---|---|
 | Getting started | Introduction, Installation, **Coverage** (all 226 checklist items and what Bayrust has for each), Changelog |
-| Foundations | 24 pages: tokens, colour, type, spacing, sizing, grid, layout, breakpoints, responsive design, icons, logo, elevation, shadows, borders, radius, opacity, gradients, motion, animation, transitions, accessibility, themes, dark mode, interaction states |
+| Foundations | 26 pages: tokens, colour, type, spacing, sizing, grid, layout, breakpoints, responsive design, icons, illustrations, imagery, logo, elevation, shadows, borders, radius, opacity, gradients, motion, animation, transitions, accessibility, themes, dark mode, interaction states |
 | Components | 32 families, A–Z (Button holds Button, Compact, Fancy, Link, Icon, Toggle, Group, Split, Floating Action, Back to Top; Input holds every kind of input…), each checklist item a section |
 | Patterns | States, overlays, drag & drop, onboarding |
 | Blocks, Templates, Flows | Live windows: each captured window's own DOM at its size, with open panels at their native frames |
@@ -107,11 +104,8 @@ Every preview is the real thing. Shipped components run live in the harness, in 
 preview is ready its captured markup stands in (it renders at once from the shipped stylesheets), so the shimmer
 skeleton only shows for an example with nothing to stand in. Live previews boot six at a time in the order they come
 into view. The Code tab shows the JSX each example is written with, read from React. Window states render from their
-captured DOM with their native panels. Nothing on the docs pages is a screenshot (only the app-icon renditions, on Logo).
-
-**Artwork is not published.** The Illustrations and Imagery galleries are gone, and the site carries only the images
-the component and window markup actually references. The two shipped `.mp4` files are left out everywhere. On the
-Coverage checklist both items read "In Bayrust, not published".
+captured DOM with their native panels. Nothing on the docs pages is a screenshot (only the image assets themselves, on
+Illustrations, Imagery and Logo).
 
 The docs' own navigation is Bayrust's component index (the playground sidebar), rendered with the shipped class names;
 `scripts/build_content.py` extracts the rules it needs from the bundle into `public/ds/native.css`, scoped to the nav.
@@ -163,13 +157,13 @@ page structure and interactions. None of their content or styling ships in the B
 
 | Piece | Path | Role |
 |---|---|---|
-| Shipped frontend (copy) | `reference/frontend/` | The app's web UI, unmodified |
+| Shipped frontend (copy) | `reference/frontend/` | Raycast's web UI, unmodified |
 | Harness server | `harness/server.mjs` | Serves the frontend and injects the bridge stub (`shim.js`, `mocks.js`, `keyboard-layout-abc.js`) |
-| Real backend, sandboxed | `harness/backend.mjs` | Runs the app's own `backend/index.mjs` on its bundled Node 22 over its stdio protocol (`0x1E header 0x1F data 0x1D`), with `HOME=harness/sandbox-home`. It never touches your real app data. |
+| Real backend, sandboxed | `harness/backend.mjs` | Runs Raycast's own `backend/index.mjs` on its bundled Node 22 over its stdio protocol (`0x1E header 0x1F data 0x1D`), with `HOME=harness/sandbox-home`. It never touches your real Raycast data. |
 | Host responses | `harness/host-table.mjs` | Answers the native host's methods; hot-reloaded. Unknown calls are listed at `/__unknown-host` |
 | Mac data | `harness/native/macos-host` | Installed/running apps and exact system icons via AppKit (read-only) |
-| Native renderer | `harness/native/viewer` | WKWebView inside an `NSGlassEffectView` window with WebKit `useSystemAppearance` on, as the app's host does. This draws the `-apple-visual-effect` Liquid Glass and opens `window.open()` child panels (⌘K, menus) as native panels. |
-| Ground-truth watcher | `harness/native/watcher` | Read-only screenshots of the real app's windows into `research/ground-truth/auto/` |
+| Native renderer | `harness/native/viewer` | WKWebView inside an `NSGlassEffectView` window with WebKit `useSystemAppearance` on, as Raycast's host does. This draws the `-apple-visual-effect` Liquid Glass and opens `window.open()` child panels (⌘K, menus) as native panels. |
+| Ground-truth watcher | `harness/native/watcher` | Read-only screenshots of real Raycast windows into `research/ground-truth/auto/` |
 
 Capture pipelines: `harness/capture.mjs` (Chromium: DOM, tokens, IPC log and icon capture) and
 `harness/capture-native.mjs` (WebKit: final images, child panels composited at their computed frames),
@@ -184,7 +178,7 @@ both driven by `harness/states/*.json`. Organism crops come from `harness/organi
 | Variant matrices | `research/css-variants.json` | Taken from the CSS-module `[data-*=…]` selectors |
 | Motion | `design-system/site/motion.json` | 118 keyframes, transitions and animations, 28 Framer Motion configs |
 | Icons | `design-system/assets/icons-svg/` | 730 sprite symbols as standalone SVGs |
-| Icon-workflow package | `design-system/assets/icon-workflow/bayrust-2.8.2/` (+ `.zip`) | Built by `web-icon-extraction-workflow`: 1,599 verified SVGs, 646 originals, gallery and coverage report |
+| Icon-workflow package | `design-system/assets/icon-workflow/raycast-2.8.2/` (+ `.zip`) | Built by `web-icon-extraction-workflow`: 1,599 verified SVGs, 646 originals, gallery and coverage report |
 | Native catalog images | `design-system/assets/native/` | App icons (Production/Internal/Dev/RayConfig) and menu-bar glyphs (PNG + PDF) from `Assets.car` |
 | Flows | `research/captures/<flow>/` (`webkit/` = native renders) | Onboarding 13, Launcher 13, AI Chat 5, Pro Walkthrough 7, Settings 39, Notes 3, Theme Studio 3, Feedback 2 |
 | Organisms | `research/organisms/` | Exact element crops from live states |
@@ -205,15 +199,15 @@ both driven by `harness/states/*.json`. Organism crops come from `harness/organi
   Native captures show them in the inactive (gray) state.
 - **Notes backdrop.** The real Notes window uses a lighter native material than the default `NSGlassEffectView`. Its content
   matches exactly, but the backdrop tone differs.
-- **Account-dependent content.** Signed in, Send Feedback has no Email field and adds "Include Bayrust Logs". The sandbox is signed out.
+- **Account-dependent content.** Signed in, Send Feedback has no Email field and adds "Include Raycast Logs". The sandbox is signed out.
 - **Inferred host response.** `applications.getDefaultSearchScopes`: the paths come from the host binary's strings; the
   `canDisable` flags are not visible statically.
 - **Settings › Account** is a Chromium capture. Its router ignores scripted clicks in the native viewer.
-- **Window backdrop.** The native renders use a default `NSGlassEffectView`. The app's private glass variant settings are not reproduced.
+- **Window backdrop.** The native renders use a default `NSGlassEffectView`. Raycast's private glass variant settings are not reproduced.
 - **Account state.** The sandboxed backend can't sign in (the sign-in redirect returns to the real app). The harness
-  answers `auth.getUser` the way the app's own Internal Settings › Auth State override builds a user: a Pro trial ending
+  answers `auth.getUser` the way Raycast's own Internal Settings › Auth State override builds a user: a Pro trial ending
   27 Oct, this Mac's plan (`?account=trial`, the default; `pro`; `signed-out`, the default in onboarding). Pro screens
-  render fully; anything served by the vendor's servers (AI answers, synced data, credit amounts) stays empty.
+  render fully; anything served by Raycast's servers (AI answers, synced data, credit amounts) stays empty.
 - **Locale.** The harness uses this Mac's locale (`en_RW`), so dates read "27 Oct" as in the app.
 - **Figma** (`IST UX & Design` drafts, file `mB3mUgeHlPKGWt5BJ93glv`). Done: variables, text styles, Foundations, 730 icon components,
   Atoms/Molecules/Organisms captures, Templates and Onboarding. Paused on request: the Launcher, AI Chat, Pro, Settings and

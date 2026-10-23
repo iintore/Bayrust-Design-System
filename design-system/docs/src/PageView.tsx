@@ -4,7 +4,7 @@ import type { Page } from './data';
 import { navigate, pageHref } from './router';
 import { Icon } from './icons';
 import { Example, LiveMarkup, WindowPreview } from './Preview';
-import { AppIconGallery, ColorGallery, Elevation, IconGallery, LogoShowcase, RadiusScale, Screens, SpacingScale, ThemeTable, TypeScale } from './Foundations';
+import { ColorGallery, Elevation, Gallery, IconGallery, LogoShowcase, RadiusScale, Screens, SpacingScale, ThemeTable, TypeScale } from './Foundations';
 
 const GALLERY: Record<string, (page: Page) => React.ReactNode> = {
   colors: () => <ColorGallery />,
@@ -13,12 +13,12 @@ const GALLERY: Record<string, (page: Page) => React.ReactNode> = {
   radius: () => <RadiusScale />,
   elevation: () => <Elevation />,
   icons: () => <IconGallery />,
-  appicons: (page) => <AppIconGallery page={page} />,
   logo: (page) => <LogoShowcase page={page} />,
   screens: (page) => <Screens page={page} />,
+  gallery: (page) => <Gallery page={page} />,
   themes: (page) => <ThemeTable page={page} />,
 };
-const GALLERY_TITLE: Record<string, string> = { colors: 'Tokens', type: 'Text styles', spacing: 'Scale', radius: 'Scale', elevation: 'Shadow tokens', icons: 'Icon set', appicons: 'The set', logo: 'App icons', screens: 'Screens', themes: 'Bundled themes' };
+const GALLERY_TITLE: Record<string, string> = { colors: 'Tokens', type: 'Text styles', spacing: 'Scale', radius: 'Scale', elevation: 'Shadow tokens', icons: 'Icon set', logo: 'App icons', screens: 'Screens', gallery: 'Files', themes: 'Bundled themes' };
 const galleryTitle = (page: Page) => (page.path.startsWith('flow-') ? 'States' : page.path.startsWith('templates-') ? 'Layouts' : page.path === 'introduction' ? 'Windows' : GALLERY_TITLE[page.kind!]);
 
 function Outline({ items }: { items: { id: string; text: string; level: number }[] }) {
@@ -133,20 +133,12 @@ export function PageView({ path, pages }: { path: string; pages: Page[] }) {
   }, [page]);
 
   if (!page) {
-    // the same .doc-page wrapper every other page uses, so this one keeps the page gutter too
     return (
-      <main className="doc-main" id="doc-main" tabIndex={-1}>
-        <div className="doc-page">
-          <article className="doc-article">
-            <h1>Page not found</h1>
-            <p className="doc-lead">There’s no page at this address. Use the sidebar or search (/) to find what you need.</p>
-            <p className="doc-lead">
-              <a href={pageHref('introduction')} onClick={(e) => (e.preventDefault(), navigate('introduction'))}>
-                Go to Introduction
-              </a>
-            </p>
-          </article>
-        </div>
+      <main className="doc-main" id="doc-main">
+        <article className="doc-article">
+          <h1>Page not found</h1>
+          <p className="doc-lead">There’s no page at this address. Use the sidebar or search (/) to find what you need.</p>
+        </article>
       </main>
     );
   }

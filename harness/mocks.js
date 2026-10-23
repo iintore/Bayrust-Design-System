@@ -2,7 +2,7 @@
 // URL params let the harness open a specific state, e.g. welcome-window.html?step=ai&userType=new
 (() => {
   const q = new URLSearchParams(location.search);
-  // Host-injected globals (names from the frontend's own reads; values from this Mac: sw_vers / Bayrust 2.8.2).
+  // Host-injected globals (names from the frontend's own reads; values from this Mac: sw_vers / Raycast 2.8.2).
   Object.assign(window, {
     identifier: location.pathname.startsWith('/ds') ? 'settings' : location.pathname.replace(/^\/|-window\.html$/g, ''),
     osName: 'macOS', osVersion: '27.0.1', osArch: 'arm64', version: '2.8.2',
@@ -24,7 +24,7 @@
     'system.getImportSettingsDataStatus': { inProgress: false },
     'userDefaults.get': null,
     // Account state. The sandboxed backend is signed out, and signing in would return to the real app, so the
-    // harness answers auth.getUser the way Bayrust's own Internal Settings › Auth State override builds a user:
+    // harness answers auth.getUser the way Raycast's own Internal Settings › Auth State override builds a user:
     // ?account=trial (default; this Mac's plan: Pro trial ending 27 Oct), pro, or signed-out (default in onboarding).
     ...(() => {
       const mode = q.get('account') ?? (location.pathname.startsWith('/welcome') ? 'signed-out' : 'trial');
